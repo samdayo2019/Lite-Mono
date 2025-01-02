@@ -195,9 +195,9 @@ class DilatedConv(nn.Module):
         self.bn1 = nn.BatchNorm2d(dim)
 
         self.norm = LayerNorm(dim, eps=1e-6)
-        self.pwconv1 = nn.Linear(dim, expan_ratio * dim)
+        self.pwconv1 = nn.Linear(dim, expan_ratio * dim) # dim --> dim*6. bias also has dim*6 elements
         self.act = nn.GELU()
-        self.pwconv2 = nn.Linear(expan_ratio * dim, dim)
+        self.pwconv2 = nn.Linear(expan_ratio * dim, dim) # dim*6 --> dim. bias has dim elements
         self.gamma = nn.Parameter(layer_scale_init_value * torch.ones(dim),
                                   requires_grad=True) if layer_scale_init_value > 0 else None
         self.drop_path = DropPath(drop_path) if drop_path > 0. else nn.Identity()
@@ -293,7 +293,7 @@ class AvgPool(nn.Module):
 
 class LiteMono(nn.Module):
     """
-    Lite-Mono
+    Lite-Mono 
     """
     def __init__(self, in_chans=3, model='lite-mono', height=192, width=640,
                  global_block=[1, 1, 1], global_block_type=['LGFI', 'LGFI', 'LGFI'],
@@ -354,9 +354,14 @@ class LiteMono(nn.Module):
 
         self.downsample_layers.append(stem1)
 
+        # create 4 average pooling modules Takes HxWX3 --> H/2 x W/2 x 3 for example. Add no parameters
         self.input_downsample = nn.ModuleList()
         for i in range(1, 5):
             self.input_downsample.append(AvgPool(i))
+            # sample 1 : H/2 x W/2 X 3
+            # sample 2 : H/4 x W/4 X 3
+            # Sample 3 : H/8 x W/8 X 3
+            # Sample 4 : H/16 x W/16 x 3
 
         for i in range(2):
             downsample_layer = nn.Sequential(
