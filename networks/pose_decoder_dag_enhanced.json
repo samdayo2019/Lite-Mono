@@ -1,0 +1,267 @@
+{
+  "nodes": [
+    {
+      "id": 0,
+      "name": "Conv2d_0",
+      "op_type": "Conv2d",
+      "weight_shape": [
+        256,
+        512,
+        1,
+        1
+      ],
+      "weight_bytes": 524288,
+      "flops": 12832512,
+      "input_shape": [
+        1,
+        512,
+        7,
+        7
+      ],
+      "output_shape": [
+        1,
+        256,
+        7,
+        7
+      ],
+      "estimated_runtime": 1.2832512e-06,
+      "estimated_energy": 6.416256e-05
+    },
+    {
+      "id": 1,
+      "name": "ReLU_1",
+      "op_type": "ReLU",
+      "weight_shape": [],
+      "weight_bytes": 0,
+      "flops": 12544,
+      "input_shape": [
+        1,
+        256,
+        7,
+        7
+      ],
+      "output_shape": [
+        1,
+        256,
+        7,
+        7
+      ],
+      "estimated_runtime": 1.2544e-09,
+      "estimated_energy": 6.272e-08
+    },
+    {
+      "id": 2,
+      "name": "Conv2d_2",
+      "op_type": "Conv2d",
+      "weight_shape": [
+        256,
+        256,
+        3,
+        3
+      ],
+      "weight_bytes": 2359296,
+      "flops": 57790208,
+      "input_shape": [
+        1,
+        256,
+        7,
+        7
+      ],
+      "output_shape": [
+        1,
+        256,
+        7,
+        7
+      ],
+      "estimated_runtime": 5.7790208e-06,
+      "estimated_energy": 0.00028895103999999997
+    },
+    {
+      "id": 3,
+      "name": "ReLU_3",
+      "op_type": "ReLU",
+      "weight_shape": [],
+      "weight_bytes": 0,
+      "flops": 12544,
+      "input_shape": [
+        1,
+        256,
+        7,
+        7
+      ],
+      "output_shape": [
+        1,
+        256,
+        7,
+        7
+      ],
+      "estimated_runtime": 1.2544e-09,
+      "estimated_energy": 6.272e-08
+    },
+    {
+      "id": 4,
+      "name": "Conv2d_4",
+      "op_type": "Conv2d",
+      "weight_shape": [
+        256,
+        256,
+        3,
+        3
+      ],
+      "weight_bytes": 2359296,
+      "flops": 57790208,
+      "input_shape": [
+        1,
+        256,
+        7,
+        7
+      ],
+      "output_shape": [
+        1,
+        256,
+        7,
+        7
+      ],
+      "estimated_runtime": 5.7790208e-06,
+      "estimated_energy": 0.00028895103999999997
+    },
+    {
+      "id": 5,
+      "name": "ReLU_5",
+      "op_type": "ReLU",
+      "weight_shape": [],
+      "weight_bytes": 0,
+      "flops": 12544,
+      "input_shape": [
+        1,
+        256,
+        7,
+        7
+      ],
+      "output_shape": [
+        1,
+        256,
+        7,
+        7
+      ],
+      "estimated_runtime": 1.2544e-09,
+      "estimated_energy": 6.272e-08
+    },
+    {
+      "id": 6,
+      "name": "Conv2d_6",
+      "op_type": "Conv2d",
+      "weight_shape": [
+        12,
+        256,
+        1,
+        1
+      ],
+      "weight_bytes": 12288,
+      "flops": 300468,
+      "input_shape": [
+        1,
+        256,
+        7,
+        7
+      ],
+      "output_shape": [
+        1,
+        12,
+        7,
+        7
+      ],
+      "estimated_runtime": 3.00468e-08,
+      "estimated_energy": 1.5023399999999998e-06
+    }
+  ],
+  "edges": [
+    {
+      "source": 0,
+      "destination": 1,
+      "tensor_shape": [
+        1,
+        256,
+        7,
+        7
+      ],
+      "tensor_bytes": 50176,
+      "estimated_latency": 1.1035199999999998e-06,
+      "estimated_energy": 4.01408e-07
+    },
+    {
+      "source": 1,
+      "destination": 2,
+      "tensor_shape": [
+        1,
+        256,
+        7,
+        7
+      ],
+      "tensor_bytes": 50176,
+      "estimated_latency": 1.1035199999999998e-06,
+      "estimated_energy": 4.01408e-07
+    },
+    {
+      "source": 2,
+      "destination": 3,
+      "tensor_shape": [
+        1,
+        256,
+        7,
+        7
+      ],
+      "tensor_bytes": 50176,
+      "estimated_latency": 1.1035199999999998e-06,
+      "estimated_energy": 4.01408e-07
+    },
+    {
+      "source": 3,
+      "destination": 4,
+      "tensor_shape": [
+        1,
+        256,
+        7,
+        7
+      ],
+      "tensor_bytes": 50176,
+      "estimated_latency": 1.1035199999999998e-06,
+      "estimated_energy": 4.01408e-07
+    },
+    {
+      "source": 4,
+      "destination": 5,
+      "tensor_shape": [
+        1,
+        256,
+        7,
+        7
+      ],
+      "tensor_bytes": 50176,
+      "estimated_latency": 1.1035199999999998e-06,
+      "estimated_energy": 4.01408e-07
+    },
+    {
+      "source": 5,
+      "destination": 6,
+      "tensor_shape": [
+        1,
+        256,
+        7,
+        7
+      ],
+      "tensor_bytes": 50176,
+      "estimated_latency": 1.1035199999999998e-06,
+      "estimated_energy": 4.01408e-07
+    }
+  ],
+  "hardware_config": {
+    "compute_throughput": 10000000000000.0,
+    "compute_efficiency": 5e-12,
+    "memory_bandwidth": 900000000000.0,
+    "memory_energy": 2e-11,
+    "interconnect_bandwidth": 400000000000.0,
+    "interconnect_latency": 1e-07,
+    "interconnect_energy": 1e-12
+  }
+}

@@ -1,0 +1,2556 @@
+{
+  "nodes": [
+    {
+      "id": 0,
+      "name": "Conv2d_0",
+      "op_type": "Conv2d",
+      "weight_shape": [
+        64,
+        6,
+        7,
+        7
+      ],
+      "weight_bytes": 75264,
+      "flops": 471252992,
+      "input_shape": [
+        1,
+        6,
+        224,
+        224
+      ],
+      "output_shape": [
+        1,
+        64,
+        112,
+        112
+      ],
+      "estimated_runtime": 4.71252992e-05,
+      "estimated_energy": 0.00235626496
+    },
+    {
+      "id": 1,
+      "name": "BatchNorm2d_1",
+      "op_type": "BatchNorm2d",
+      "weight_shape": [
+        64
+      ],
+      "weight_bytes": 256,
+      "flops": 1605632,
+      "input_shape": [
+        1,
+        64,
+        112,
+        112
+      ],
+      "output_shape": [
+        1,
+        64,
+        112,
+        112
+      ],
+      "estimated_runtime": 1.605632e-07,
+      "estimated_energy": 8.02816e-06
+    },
+    {
+      "id": 2,
+      "name": "ReLU_2",
+      "op_type": "ReLU",
+      "weight_shape": [],
+      "weight_bytes": 0,
+      "flops": 802816,
+      "input_shape": [
+        1,
+        64,
+        112,
+        112
+      ],
+      "output_shape": [
+        1,
+        64,
+        112,
+        112
+      ],
+      "estimated_runtime": 8.02816e-08,
+      "estimated_energy": 4.01408e-06
+    },
+    {
+      "id": 3,
+      "name": "MaxPool2d_3",
+      "op_type": "MaxPool2d",
+      "weight_shape": [],
+      "weight_bytes": 0,
+      "flops": 1605632,
+      "input_shape": [
+        1,
+        64,
+        112,
+        112
+      ],
+      "output_shape": [
+        1,
+        64,
+        56,
+        56
+      ],
+      "estimated_runtime": 1.605632e-07,
+      "estimated_energy": 8.02816e-06
+    },
+    {
+      "id": 4,
+      "name": "Conv2d_4",
+      "op_type": "Conv2d",
+      "weight_shape": [
+        64,
+        64,
+        3,
+        3
+      ],
+      "weight_bytes": 147456,
+      "flops": 231010304,
+      "input_shape": [
+        1,
+        64,
+        56,
+        56
+      ],
+      "output_shape": [
+        1,
+        64,
+        56,
+        56
+      ],
+      "estimated_runtime": 2.31010304e-05,
+      "estimated_energy": 0.00115505152
+    },
+    {
+      "id": 5,
+      "name": "BatchNorm2d_5",
+      "op_type": "BatchNorm2d",
+      "weight_shape": [
+        64
+      ],
+      "weight_bytes": 256,
+      "flops": 401408,
+      "input_shape": [
+        1,
+        64,
+        56,
+        56
+      ],
+      "output_shape": [
+        1,
+        64,
+        56,
+        56
+      ],
+      "estimated_runtime": 4.01408e-08,
+      "estimated_energy": 2.00704e-06
+    },
+    {
+      "id": 6,
+      "name": "ReLU_6",
+      "op_type": "ReLU",
+      "weight_shape": [],
+      "weight_bytes": 0,
+      "flops": 200704,
+      "input_shape": [
+        1,
+        64,
+        56,
+        56
+      ],
+      "output_shape": [
+        1,
+        64,
+        56,
+        56
+      ],
+      "estimated_runtime": 2.00704e-08,
+      "estimated_energy": 1.00352e-06
+    },
+    {
+      "id": 7,
+      "name": "Conv2d_7",
+      "op_type": "Conv2d",
+      "weight_shape": [
+        64,
+        64,
+        3,
+        3
+      ],
+      "weight_bytes": 147456,
+      "flops": 231010304,
+      "input_shape": [
+        1,
+        64,
+        56,
+        56
+      ],
+      "output_shape": [
+        1,
+        64,
+        56,
+        56
+      ],
+      "estimated_runtime": 2.31010304e-05,
+      "estimated_energy": 0.00115505152
+    },
+    {
+      "id": 8,
+      "name": "BatchNorm2d_8",
+      "op_type": "BatchNorm2d",
+      "weight_shape": [
+        64
+      ],
+      "weight_bytes": 256,
+      "flops": 401408,
+      "input_shape": [
+        1,
+        64,
+        56,
+        56
+      ],
+      "output_shape": [
+        1,
+        64,
+        56,
+        56
+      ],
+      "estimated_runtime": 4.01408e-08,
+      "estimated_energy": 2.00704e-06
+    },
+    {
+      "id": 9,
+      "name": "ResidualAdd_9",
+      "op_type": "ResidualAdd",
+      "weight_shape": [],
+      "weight_bytes": 0,
+      "flops": 0,
+      "input_shape": [
+        1,
+        64,
+        56,
+        56
+      ],
+      "output_shape": [
+        1,
+        64,
+        56,
+        56
+      ],
+      "estimated_runtime": 0.0,
+      "estimated_energy": 0.0
+    },
+    {
+      "id": 10,
+      "name": "ReLU_10",
+      "op_type": "ReLU",
+      "weight_shape": [],
+      "weight_bytes": 0,
+      "flops": 200704,
+      "input_shape": [
+        1,
+        64,
+        56,
+        56
+      ],
+      "output_shape": [
+        1,
+        64,
+        56,
+        56
+      ],
+      "estimated_runtime": 2.00704e-08,
+      "estimated_energy": 1.00352e-06
+    },
+    {
+      "id": 11,
+      "name": "Conv2d_11",
+      "op_type": "Conv2d",
+      "weight_shape": [
+        64,
+        64,
+        3,
+        3
+      ],
+      "weight_bytes": 147456,
+      "flops": 231010304,
+      "input_shape": [
+        1,
+        64,
+        56,
+        56
+      ],
+      "output_shape": [
+        1,
+        64,
+        56,
+        56
+      ],
+      "estimated_runtime": 2.31010304e-05,
+      "estimated_energy": 0.00115505152
+    },
+    {
+      "id": 12,
+      "name": "BatchNorm2d_12",
+      "op_type": "BatchNorm2d",
+      "weight_shape": [
+        64
+      ],
+      "weight_bytes": 256,
+      "flops": 401408,
+      "input_shape": [
+        1,
+        64,
+        56,
+        56
+      ],
+      "output_shape": [
+        1,
+        64,
+        56,
+        56
+      ],
+      "estimated_runtime": 4.01408e-08,
+      "estimated_energy": 2.00704e-06
+    },
+    {
+      "id": 13,
+      "name": "ReLU_13",
+      "op_type": "ReLU",
+      "weight_shape": [],
+      "weight_bytes": 0,
+      "flops": 200704,
+      "input_shape": [
+        1,
+        64,
+        56,
+        56
+      ],
+      "output_shape": [
+        1,
+        64,
+        56,
+        56
+      ],
+      "estimated_runtime": 2.00704e-08,
+      "estimated_energy": 1.00352e-06
+    },
+    {
+      "id": 14,
+      "name": "Conv2d_14",
+      "op_type": "Conv2d",
+      "weight_shape": [
+        64,
+        64,
+        3,
+        3
+      ],
+      "weight_bytes": 147456,
+      "flops": 231010304,
+      "input_shape": [
+        1,
+        64,
+        56,
+        56
+      ],
+      "output_shape": [
+        1,
+        64,
+        56,
+        56
+      ],
+      "estimated_runtime": 2.31010304e-05,
+      "estimated_energy": 0.00115505152
+    },
+    {
+      "id": 15,
+      "name": "BatchNorm2d_15",
+      "op_type": "BatchNorm2d",
+      "weight_shape": [
+        64
+      ],
+      "weight_bytes": 256,
+      "flops": 401408,
+      "input_shape": [
+        1,
+        64,
+        56,
+        56
+      ],
+      "output_shape": [
+        1,
+        64,
+        56,
+        56
+      ],
+      "estimated_runtime": 4.01408e-08,
+      "estimated_energy": 2.00704e-06
+    },
+    {
+      "id": 16,
+      "name": "ResidualAdd_16",
+      "op_type": "ResidualAdd",
+      "weight_shape": [],
+      "weight_bytes": 0,
+      "flops": 0,
+      "input_shape": [
+        1,
+        64,
+        56,
+        56
+      ],
+      "output_shape": [
+        1,
+        64,
+        56,
+        56
+      ],
+      "estimated_runtime": 0.0,
+      "estimated_energy": 0.0
+    },
+    {
+      "id": 17,
+      "name": "ReLU_17",
+      "op_type": "ReLU",
+      "weight_shape": [],
+      "weight_bytes": 0,
+      "flops": 200704,
+      "input_shape": [
+        1,
+        64,
+        56,
+        56
+      ],
+      "output_shape": [
+        1,
+        64,
+        56,
+        56
+      ],
+      "estimated_runtime": 2.00704e-08,
+      "estimated_energy": 1.00352e-06
+    },
+    {
+      "id": 18,
+      "name": "Conv2d_18",
+      "op_type": "Conv2d",
+      "weight_shape": [
+        128,
+        64,
+        3,
+        3
+      ],
+      "weight_bytes": 294912,
+      "flops": 115505152,
+      "input_shape": [
+        1,
+        64,
+        56,
+        56
+      ],
+      "output_shape": [
+        1,
+        128,
+        28,
+        28
+      ],
+      "estimated_runtime": 1.15505152e-05,
+      "estimated_energy": 0.00057752576
+    },
+    {
+      "id": 19,
+      "name": "BatchNorm2d_19",
+      "op_type": "BatchNorm2d",
+      "weight_shape": [
+        128
+      ],
+      "weight_bytes": 512,
+      "flops": 200704,
+      "input_shape": [
+        1,
+        128,
+        28,
+        28
+      ],
+      "output_shape": [
+        1,
+        128,
+        28,
+        28
+      ],
+      "estimated_runtime": 2.00704e-08,
+      "estimated_energy": 1.00352e-06
+    },
+    {
+      "id": 20,
+      "name": "ReLU_20",
+      "op_type": "ReLU",
+      "weight_shape": [],
+      "weight_bytes": 0,
+      "flops": 100352,
+      "input_shape": [
+        1,
+        128,
+        28,
+        28
+      ],
+      "output_shape": [
+        1,
+        128,
+        28,
+        28
+      ],
+      "estimated_runtime": 1.00352e-08,
+      "estimated_energy": 5.0176e-07
+    },
+    {
+      "id": 21,
+      "name": "Conv2d_21",
+      "op_type": "Conv2d",
+      "weight_shape": [
+        128,
+        128,
+        3,
+        3
+      ],
+      "weight_bytes": 589824,
+      "flops": 231110656,
+      "input_shape": [
+        1,
+        128,
+        28,
+        28
+      ],
+      "output_shape": [
+        1,
+        128,
+        28,
+        28
+      ],
+      "estimated_runtime": 2.31110656e-05,
+      "estimated_energy": 0.0011555532799999999
+    },
+    {
+      "id": 22,
+      "name": "BatchNorm2d_22",
+      "op_type": "BatchNorm2d",
+      "weight_shape": [
+        128
+      ],
+      "weight_bytes": 512,
+      "flops": 200704,
+      "input_shape": [
+        1,
+        128,
+        28,
+        28
+      ],
+      "output_shape": [
+        1,
+        128,
+        28,
+        28
+      ],
+      "estimated_runtime": 2.00704e-08,
+      "estimated_energy": 1.00352e-06
+    },
+    {
+      "id": 23,
+      "name": "Conv2d_23",
+      "op_type": "Conv2d",
+      "weight_shape": [
+        128,
+        64,
+        1,
+        1
+      ],
+      "weight_bytes": 32768,
+      "flops": 12744704,
+      "input_shape": [
+        1,
+        64,
+        56,
+        56
+      ],
+      "output_shape": [
+        1,
+        128,
+        28,
+        28
+      ],
+      "estimated_runtime": 1.2744704e-06,
+      "estimated_energy": 6.372352e-05
+    },
+    {
+      "id": 24,
+      "name": "BatchNorm2d_24",
+      "op_type": "BatchNorm2d",
+      "weight_shape": [
+        128
+      ],
+      "weight_bytes": 512,
+      "flops": 200704,
+      "input_shape": [
+        1,
+        128,
+        28,
+        28
+      ],
+      "output_shape": [
+        1,
+        128,
+        28,
+        28
+      ],
+      "estimated_runtime": 2.00704e-08,
+      "estimated_energy": 1.00352e-06
+    },
+    {
+      "id": 25,
+      "name": "ResidualAdd_25",
+      "op_type": "ResidualAdd",
+      "weight_shape": [],
+      "weight_bytes": 0,
+      "flops": 0,
+      "input_shape": [
+        1,
+        128,
+        28,
+        28
+      ],
+      "output_shape": [
+        1,
+        128,
+        28,
+        28
+      ],
+      "estimated_runtime": 0.0,
+      "estimated_energy": 0.0
+    },
+    {
+      "id": 26,
+      "name": "ReLU_26",
+      "op_type": "ReLU",
+      "weight_shape": [],
+      "weight_bytes": 0,
+      "flops": 100352,
+      "input_shape": [
+        1,
+        128,
+        28,
+        28
+      ],
+      "output_shape": [
+        1,
+        128,
+        28,
+        28
+      ],
+      "estimated_runtime": 1.00352e-08,
+      "estimated_energy": 5.0176e-07
+    },
+    {
+      "id": 27,
+      "name": "Conv2d_27",
+      "op_type": "Conv2d",
+      "weight_shape": [
+        128,
+        128,
+        3,
+        3
+      ],
+      "weight_bytes": 589824,
+      "flops": 231110656,
+      "input_shape": [
+        1,
+        128,
+        28,
+        28
+      ],
+      "output_shape": [
+        1,
+        128,
+        28,
+        28
+      ],
+      "estimated_runtime": 2.31110656e-05,
+      "estimated_energy": 0.0011555532799999999
+    },
+    {
+      "id": 28,
+      "name": "BatchNorm2d_28",
+      "op_type": "BatchNorm2d",
+      "weight_shape": [
+        128
+      ],
+      "weight_bytes": 512,
+      "flops": 200704,
+      "input_shape": [
+        1,
+        128,
+        28,
+        28
+      ],
+      "output_shape": [
+        1,
+        128,
+        28,
+        28
+      ],
+      "estimated_runtime": 2.00704e-08,
+      "estimated_energy": 1.00352e-06
+    },
+    {
+      "id": 29,
+      "name": "ReLU_29",
+      "op_type": "ReLU",
+      "weight_shape": [],
+      "weight_bytes": 0,
+      "flops": 100352,
+      "input_shape": [
+        1,
+        128,
+        28,
+        28
+      ],
+      "output_shape": [
+        1,
+        128,
+        28,
+        28
+      ],
+      "estimated_runtime": 1.00352e-08,
+      "estimated_energy": 5.0176e-07
+    },
+    {
+      "id": 30,
+      "name": "Conv2d_30",
+      "op_type": "Conv2d",
+      "weight_shape": [
+        128,
+        128,
+        3,
+        3
+      ],
+      "weight_bytes": 589824,
+      "flops": 231110656,
+      "input_shape": [
+        1,
+        128,
+        28,
+        28
+      ],
+      "output_shape": [
+        1,
+        128,
+        28,
+        28
+      ],
+      "estimated_runtime": 2.31110656e-05,
+      "estimated_energy": 0.0011555532799999999
+    },
+    {
+      "id": 31,
+      "name": "BatchNorm2d_31",
+      "op_type": "BatchNorm2d",
+      "weight_shape": [
+        128
+      ],
+      "weight_bytes": 512,
+      "flops": 200704,
+      "input_shape": [
+        1,
+        128,
+        28,
+        28
+      ],
+      "output_shape": [
+        1,
+        128,
+        28,
+        28
+      ],
+      "estimated_runtime": 2.00704e-08,
+      "estimated_energy": 1.00352e-06
+    },
+    {
+      "id": 32,
+      "name": "ResidualAdd_32",
+      "op_type": "ResidualAdd",
+      "weight_shape": [],
+      "weight_bytes": 0,
+      "flops": 0,
+      "input_shape": [
+        1,
+        128,
+        28,
+        28
+      ],
+      "output_shape": [
+        1,
+        128,
+        28,
+        28
+      ],
+      "estimated_runtime": 0.0,
+      "estimated_energy": 0.0
+    },
+    {
+      "id": 33,
+      "name": "ReLU_33",
+      "op_type": "ReLU",
+      "weight_shape": [],
+      "weight_bytes": 0,
+      "flops": 100352,
+      "input_shape": [
+        1,
+        128,
+        28,
+        28
+      ],
+      "output_shape": [
+        1,
+        128,
+        28,
+        28
+      ],
+      "estimated_runtime": 1.00352e-08,
+      "estimated_energy": 5.0176e-07
+    },
+    {
+      "id": 34,
+      "name": "Conv2d_34",
+      "op_type": "Conv2d",
+      "weight_shape": [
+        256,
+        128,
+        3,
+        3
+      ],
+      "weight_bytes": 1179648,
+      "flops": 115555328,
+      "input_shape": [
+        1,
+        128,
+        28,
+        28
+      ],
+      "output_shape": [
+        1,
+        256,
+        14,
+        14
+      ],
+      "estimated_runtime": 1.15555328e-05,
+      "estimated_energy": 0.0005777766399999999
+    },
+    {
+      "id": 35,
+      "name": "BatchNorm2d_35",
+      "op_type": "BatchNorm2d",
+      "weight_shape": [
+        256
+      ],
+      "weight_bytes": 1024,
+      "flops": 100352,
+      "input_shape": [
+        1,
+        256,
+        14,
+        14
+      ],
+      "output_shape": [
+        1,
+        256,
+        14,
+        14
+      ],
+      "estimated_runtime": 1.00352e-08,
+      "estimated_energy": 5.0176e-07
+    },
+    {
+      "id": 36,
+      "name": "ReLU_36",
+      "op_type": "ReLU",
+      "weight_shape": [],
+      "weight_bytes": 0,
+      "flops": 50176,
+      "input_shape": [
+        1,
+        256,
+        14,
+        14
+      ],
+      "output_shape": [
+        1,
+        256,
+        14,
+        14
+      ],
+      "estimated_runtime": 5.0176e-09,
+      "estimated_energy": 2.5088e-07
+    },
+    {
+      "id": 37,
+      "name": "Conv2d_37",
+      "op_type": "Conv2d",
+      "weight_shape": [
+        256,
+        256,
+        3,
+        3
+      ],
+      "weight_bytes": 2359296,
+      "flops": 231160832,
+      "input_shape": [
+        1,
+        256,
+        14,
+        14
+      ],
+      "output_shape": [
+        1,
+        256,
+        14,
+        14
+      ],
+      "estimated_runtime": 2.31160832e-05,
+      "estimated_energy": 0.0011558041599999999
+    },
+    {
+      "id": 38,
+      "name": "BatchNorm2d_38",
+      "op_type": "BatchNorm2d",
+      "weight_shape": [
+        256
+      ],
+      "weight_bytes": 1024,
+      "flops": 100352,
+      "input_shape": [
+        1,
+        256,
+        14,
+        14
+      ],
+      "output_shape": [
+        1,
+        256,
+        14,
+        14
+      ],
+      "estimated_runtime": 1.00352e-08,
+      "estimated_energy": 5.0176e-07
+    },
+    {
+      "id": 39,
+      "name": "Conv2d_39",
+      "op_type": "Conv2d",
+      "weight_shape": [
+        256,
+        128,
+        1,
+        1
+      ],
+      "weight_bytes": 131072,
+      "flops": 12794880,
+      "input_shape": [
+        1,
+        128,
+        28,
+        28
+      ],
+      "output_shape": [
+        1,
+        256,
+        14,
+        14
+      ],
+      "estimated_runtime": 1.279488e-06,
+      "estimated_energy": 6.39744e-05
+    },
+    {
+      "id": 40,
+      "name": "BatchNorm2d_40",
+      "op_type": "BatchNorm2d",
+      "weight_shape": [
+        256
+      ],
+      "weight_bytes": 1024,
+      "flops": 100352,
+      "input_shape": [
+        1,
+        256,
+        14,
+        14
+      ],
+      "output_shape": [
+        1,
+        256,
+        14,
+        14
+      ],
+      "estimated_runtime": 1.00352e-08,
+      "estimated_energy": 5.0176e-07
+    },
+    {
+      "id": 41,
+      "name": "ResidualAdd_41",
+      "op_type": "ResidualAdd",
+      "weight_shape": [],
+      "weight_bytes": 0,
+      "flops": 0,
+      "input_shape": [
+        1,
+        256,
+        14,
+        14
+      ],
+      "output_shape": [
+        1,
+        256,
+        14,
+        14
+      ],
+      "estimated_runtime": 0.0,
+      "estimated_energy": 0.0
+    },
+    {
+      "id": 42,
+      "name": "ReLU_42",
+      "op_type": "ReLU",
+      "weight_shape": [],
+      "weight_bytes": 0,
+      "flops": 50176,
+      "input_shape": [
+        1,
+        256,
+        14,
+        14
+      ],
+      "output_shape": [
+        1,
+        256,
+        14,
+        14
+      ],
+      "estimated_runtime": 5.0176e-09,
+      "estimated_energy": 2.5088e-07
+    },
+    {
+      "id": 43,
+      "name": "Conv2d_43",
+      "op_type": "Conv2d",
+      "weight_shape": [
+        256,
+        256,
+        3,
+        3
+      ],
+      "weight_bytes": 2359296,
+      "flops": 231160832,
+      "input_shape": [
+        1,
+        256,
+        14,
+        14
+      ],
+      "output_shape": [
+        1,
+        256,
+        14,
+        14
+      ],
+      "estimated_runtime": 2.31160832e-05,
+      "estimated_energy": 0.0011558041599999999
+    },
+    {
+      "id": 44,
+      "name": "BatchNorm2d_44",
+      "op_type": "BatchNorm2d",
+      "weight_shape": [
+        256
+      ],
+      "weight_bytes": 1024,
+      "flops": 100352,
+      "input_shape": [
+        1,
+        256,
+        14,
+        14
+      ],
+      "output_shape": [
+        1,
+        256,
+        14,
+        14
+      ],
+      "estimated_runtime": 1.00352e-08,
+      "estimated_energy": 5.0176e-07
+    },
+    {
+      "id": 45,
+      "name": "ReLU_45",
+      "op_type": "ReLU",
+      "weight_shape": [],
+      "weight_bytes": 0,
+      "flops": 50176,
+      "input_shape": [
+        1,
+        256,
+        14,
+        14
+      ],
+      "output_shape": [
+        1,
+        256,
+        14,
+        14
+      ],
+      "estimated_runtime": 5.0176e-09,
+      "estimated_energy": 2.5088e-07
+    },
+    {
+      "id": 46,
+      "name": "Conv2d_46",
+      "op_type": "Conv2d",
+      "weight_shape": [
+        256,
+        256,
+        3,
+        3
+      ],
+      "weight_bytes": 2359296,
+      "flops": 231160832,
+      "input_shape": [
+        1,
+        256,
+        14,
+        14
+      ],
+      "output_shape": [
+        1,
+        256,
+        14,
+        14
+      ],
+      "estimated_runtime": 2.31160832e-05,
+      "estimated_energy": 0.0011558041599999999
+    },
+    {
+      "id": 47,
+      "name": "BatchNorm2d_47",
+      "op_type": "BatchNorm2d",
+      "weight_shape": [
+        256
+      ],
+      "weight_bytes": 1024,
+      "flops": 100352,
+      "input_shape": [
+        1,
+        256,
+        14,
+        14
+      ],
+      "output_shape": [
+        1,
+        256,
+        14,
+        14
+      ],
+      "estimated_runtime": 1.00352e-08,
+      "estimated_energy": 5.0176e-07
+    },
+    {
+      "id": 48,
+      "name": "ResidualAdd_48",
+      "op_type": "ResidualAdd",
+      "weight_shape": [],
+      "weight_bytes": 0,
+      "flops": 0,
+      "input_shape": [
+        1,
+        256,
+        14,
+        14
+      ],
+      "output_shape": [
+        1,
+        256,
+        14,
+        14
+      ],
+      "estimated_runtime": 0.0,
+      "estimated_energy": 0.0
+    },
+    {
+      "id": 49,
+      "name": "ReLU_49",
+      "op_type": "ReLU",
+      "weight_shape": [],
+      "weight_bytes": 0,
+      "flops": 50176,
+      "input_shape": [
+        1,
+        256,
+        14,
+        14
+      ],
+      "output_shape": [
+        1,
+        256,
+        14,
+        14
+      ],
+      "estimated_runtime": 5.0176e-09,
+      "estimated_energy": 2.5088e-07
+    },
+    {
+      "id": 50,
+      "name": "Conv2d_50",
+      "op_type": "Conv2d",
+      "weight_shape": [
+        512,
+        256,
+        3,
+        3
+      ],
+      "weight_bytes": 4718592,
+      "flops": 115580416,
+      "input_shape": [
+        1,
+        256,
+        14,
+        14
+      ],
+      "output_shape": [
+        1,
+        512,
+        7,
+        7
+      ],
+      "estimated_runtime": 1.15580416e-05,
+      "estimated_energy": 0.0005779020799999999
+    },
+    {
+      "id": 51,
+      "name": "BatchNorm2d_51",
+      "op_type": "BatchNorm2d",
+      "weight_shape": [
+        512
+      ],
+      "weight_bytes": 2048,
+      "flops": 50176,
+      "input_shape": [
+        1,
+        512,
+        7,
+        7
+      ],
+      "output_shape": [
+        1,
+        512,
+        7,
+        7
+      ],
+      "estimated_runtime": 5.0176e-09,
+      "estimated_energy": 2.5088e-07
+    },
+    {
+      "id": 52,
+      "name": "ReLU_52",
+      "op_type": "ReLU",
+      "weight_shape": [],
+      "weight_bytes": 0,
+      "flops": 25088,
+      "input_shape": [
+        1,
+        512,
+        7,
+        7
+      ],
+      "output_shape": [
+        1,
+        512,
+        7,
+        7
+      ],
+      "estimated_runtime": 2.5088e-09,
+      "estimated_energy": 1.2544e-07
+    },
+    {
+      "id": 53,
+      "name": "Conv2d_53",
+      "op_type": "Conv2d",
+      "weight_shape": [
+        512,
+        512,
+        3,
+        3
+      ],
+      "weight_bytes": 9437184,
+      "flops": 231185920,
+      "input_shape": [
+        1,
+        512,
+        7,
+        7
+      ],
+      "output_shape": [
+        1,
+        512,
+        7,
+        7
+      ],
+      "estimated_runtime": 2.3118592e-05,
+      "estimated_energy": 0.0011559296
+    },
+    {
+      "id": 54,
+      "name": "BatchNorm2d_54",
+      "op_type": "BatchNorm2d",
+      "weight_shape": [
+        512
+      ],
+      "weight_bytes": 2048,
+      "flops": 50176,
+      "input_shape": [
+        1,
+        512,
+        7,
+        7
+      ],
+      "output_shape": [
+        1,
+        512,
+        7,
+        7
+      ],
+      "estimated_runtime": 5.0176e-09,
+      "estimated_energy": 2.5088e-07
+    },
+    {
+      "id": 55,
+      "name": "Conv2d_55",
+      "op_type": "Conv2d",
+      "weight_shape": [
+        512,
+        256,
+        1,
+        1
+      ],
+      "weight_bytes": 524288,
+      "flops": 12819968,
+      "input_shape": [
+        1,
+        256,
+        14,
+        14
+      ],
+      "output_shape": [
+        1,
+        512,
+        7,
+        7
+      ],
+      "estimated_runtime": 1.2819968e-06,
+      "estimated_energy": 6.409984e-05
+    },
+    {
+      "id": 56,
+      "name": "BatchNorm2d_56",
+      "op_type": "BatchNorm2d",
+      "weight_shape": [
+        512
+      ],
+      "weight_bytes": 2048,
+      "flops": 50176,
+      "input_shape": [
+        1,
+        512,
+        7,
+        7
+      ],
+      "output_shape": [
+        1,
+        512,
+        7,
+        7
+      ],
+      "estimated_runtime": 5.0176e-09,
+      "estimated_energy": 2.5088e-07
+    },
+    {
+      "id": 57,
+      "name": "ResidualAdd_57",
+      "op_type": "ResidualAdd",
+      "weight_shape": [],
+      "weight_bytes": 0,
+      "flops": 0,
+      "input_shape": [
+        1,
+        512,
+        7,
+        7
+      ],
+      "output_shape": [
+        1,
+        512,
+        7,
+        7
+      ],
+      "estimated_runtime": 0.0,
+      "estimated_energy": 0.0
+    },
+    {
+      "id": 58,
+      "name": "ReLU_58",
+      "op_type": "ReLU",
+      "weight_shape": [],
+      "weight_bytes": 0,
+      "flops": 25088,
+      "input_shape": [
+        1,
+        512,
+        7,
+        7
+      ],
+      "output_shape": [
+        1,
+        512,
+        7,
+        7
+      ],
+      "estimated_runtime": 2.5088e-09,
+      "estimated_energy": 1.2544e-07
+    },
+    {
+      "id": 59,
+      "name": "Conv2d_59",
+      "op_type": "Conv2d",
+      "weight_shape": [
+        512,
+        512,
+        3,
+        3
+      ],
+      "weight_bytes": 9437184,
+      "flops": 231185920,
+      "input_shape": [
+        1,
+        512,
+        7,
+        7
+      ],
+      "output_shape": [
+        1,
+        512,
+        7,
+        7
+      ],
+      "estimated_runtime": 2.3118592e-05,
+      "estimated_energy": 0.0011559296
+    },
+    {
+      "id": 60,
+      "name": "BatchNorm2d_60",
+      "op_type": "BatchNorm2d",
+      "weight_shape": [
+        512
+      ],
+      "weight_bytes": 2048,
+      "flops": 50176,
+      "input_shape": [
+        1,
+        512,
+        7,
+        7
+      ],
+      "output_shape": [
+        1,
+        512,
+        7,
+        7
+      ],
+      "estimated_runtime": 5.0176e-09,
+      "estimated_energy": 2.5088e-07
+    },
+    {
+      "id": 61,
+      "name": "ReLU_61",
+      "op_type": "ReLU",
+      "weight_shape": [],
+      "weight_bytes": 0,
+      "flops": 25088,
+      "input_shape": [
+        1,
+        512,
+        7,
+        7
+      ],
+      "output_shape": [
+        1,
+        512,
+        7,
+        7
+      ],
+      "estimated_runtime": 2.5088e-09,
+      "estimated_energy": 1.2544e-07
+    },
+    {
+      "id": 62,
+      "name": "Conv2d_62",
+      "op_type": "Conv2d",
+      "weight_shape": [
+        512,
+        512,
+        3,
+        3
+      ],
+      "weight_bytes": 9437184,
+      "flops": 231185920,
+      "input_shape": [
+        1,
+        512,
+        7,
+        7
+      ],
+      "output_shape": [
+        1,
+        512,
+        7,
+        7
+      ],
+      "estimated_runtime": 2.3118592e-05,
+      "estimated_energy": 0.0011559296
+    },
+    {
+      "id": 63,
+      "name": "BatchNorm2d_63",
+      "op_type": "BatchNorm2d",
+      "weight_shape": [
+        512
+      ],
+      "weight_bytes": 2048,
+      "flops": 50176,
+      "input_shape": [
+        1,
+        512,
+        7,
+        7
+      ],
+      "output_shape": [
+        1,
+        512,
+        7,
+        7
+      ],
+      "estimated_runtime": 5.0176e-09,
+      "estimated_energy": 2.5088e-07
+    },
+    {
+      "id": 64,
+      "name": "ResidualAdd_64",
+      "op_type": "ResidualAdd",
+      "weight_shape": [],
+      "weight_bytes": 0,
+      "flops": 0,
+      "input_shape": [
+        1,
+        512,
+        7,
+        7
+      ],
+      "output_shape": [
+        1,
+        512,
+        7,
+        7
+      ],
+      "estimated_runtime": 0.0,
+      "estimated_energy": 0.0
+    },
+    {
+      "id": 65,
+      "name": "ReLU_65",
+      "op_type": "ReLU",
+      "weight_shape": [],
+      "weight_bytes": 0,
+      "flops": 25088,
+      "input_shape": [
+        1,
+        512,
+        7,
+        7
+      ],
+      "output_shape": [
+        1,
+        512,
+        7,
+        7
+      ],
+      "estimated_runtime": 2.5088e-09,
+      "estimated_energy": 1.2544e-07
+    }
+  ],
+  "edges": [
+    {
+      "source": 0,
+      "destination": 1,
+      "tensor_shape": [
+        1,
+        64,
+        112,
+        112
+      ],
+      "tensor_bytes": 3211264,
+      "estimated_latency": 6.432528e-05,
+      "estimated_energy": 2.5690112e-05
+    },
+    {
+      "source": 1,
+      "destination": 2,
+      "tensor_shape": [
+        1,
+        64,
+        112,
+        112
+      ],
+      "tensor_bytes": 3211264,
+      "estimated_latency": 6.432528e-05,
+      "estimated_energy": 2.5690112e-05
+    },
+    {
+      "source": 2,
+      "destination": 3,
+      "tensor_shape": [
+        1,
+        64,
+        112,
+        112
+      ],
+      "tensor_bytes": 3211264,
+      "estimated_latency": 6.432528e-05,
+      "estimated_energy": 2.5690112e-05
+    },
+    {
+      "source": 3,
+      "destination": 4,
+      "tensor_shape": [
+        1,
+        64,
+        56,
+        56
+      ],
+      "tensor_bytes": 802816,
+      "estimated_latency": 1.6156319999999998e-05,
+      "estimated_energy": 6.422528e-06
+    },
+    {
+      "source": 4,
+      "destination": 5,
+      "tensor_shape": [
+        1,
+        64,
+        56,
+        56
+      ],
+      "tensor_bytes": 802816,
+      "estimated_latency": 1.6156319999999998e-05,
+      "estimated_energy": 6.422528e-06
+    },
+    {
+      "source": 5,
+      "destination": 6,
+      "tensor_shape": [
+        1,
+        64,
+        56,
+        56
+      ],
+      "tensor_bytes": 802816,
+      "estimated_latency": 1.6156319999999998e-05,
+      "estimated_energy": 6.422528e-06
+    },
+    {
+      "source": 6,
+      "destination": 7,
+      "tensor_shape": [
+        1,
+        64,
+        56,
+        56
+      ],
+      "tensor_bytes": 802816,
+      "estimated_latency": 1.6156319999999998e-05,
+      "estimated_energy": 6.422528e-06
+    },
+    {
+      "source": 7,
+      "destination": 8,
+      "tensor_shape": [
+        1,
+        64,
+        56,
+        56
+      ],
+      "tensor_bytes": 802816,
+      "estimated_latency": 1.6156319999999998e-05,
+      "estimated_energy": 6.422528e-06
+    },
+    {
+      "source": 8,
+      "destination": 9,
+      "tensor_shape": [
+        1,
+        64,
+        56,
+        56
+      ],
+      "tensor_bytes": 802816,
+      "estimated_latency": 1.6156319999999998e-05,
+      "estimated_energy": 6.422528e-06
+    },
+    {
+      "source": 3,
+      "destination": 9,
+      "tensor_shape": [
+        1,
+        64,
+        56,
+        56
+      ],
+      "tensor_bytes": 802816,
+      "estimated_latency": 1.6156319999999998e-05,
+      "estimated_energy": 6.422528e-06
+    },
+    {
+      "source": 9,
+      "destination": 10,
+      "tensor_shape": [
+        1,
+        64,
+        56,
+        56
+      ],
+      "tensor_bytes": 802816,
+      "estimated_latency": 1.6156319999999998e-05,
+      "estimated_energy": 6.422528e-06
+    },
+    {
+      "source": 10,
+      "destination": 11,
+      "tensor_shape": [
+        1,
+        64,
+        56,
+        56
+      ],
+      "tensor_bytes": 802816,
+      "estimated_latency": 1.6156319999999998e-05,
+      "estimated_energy": 6.422528e-06
+    },
+    {
+      "source": 11,
+      "destination": 12,
+      "tensor_shape": [
+        1,
+        64,
+        56,
+        56
+      ],
+      "tensor_bytes": 802816,
+      "estimated_latency": 1.6156319999999998e-05,
+      "estimated_energy": 6.422528e-06
+    },
+    {
+      "source": 12,
+      "destination": 13,
+      "tensor_shape": [
+        1,
+        64,
+        56,
+        56
+      ],
+      "tensor_bytes": 802816,
+      "estimated_latency": 1.6156319999999998e-05,
+      "estimated_energy": 6.422528e-06
+    },
+    {
+      "source": 13,
+      "destination": 14,
+      "tensor_shape": [
+        1,
+        64,
+        56,
+        56
+      ],
+      "tensor_bytes": 802816,
+      "estimated_latency": 1.6156319999999998e-05,
+      "estimated_energy": 6.422528e-06
+    },
+    {
+      "source": 14,
+      "destination": 15,
+      "tensor_shape": [
+        1,
+        64,
+        56,
+        56
+      ],
+      "tensor_bytes": 802816,
+      "estimated_latency": 1.6156319999999998e-05,
+      "estimated_energy": 6.422528e-06
+    },
+    {
+      "source": 15,
+      "destination": 16,
+      "tensor_shape": [
+        1,
+        64,
+        56,
+        56
+      ],
+      "tensor_bytes": 802816,
+      "estimated_latency": 1.6156319999999998e-05,
+      "estimated_energy": 6.422528e-06
+    },
+    {
+      "source": 10,
+      "destination": 16,
+      "tensor_shape": [
+        1,
+        64,
+        56,
+        56
+      ],
+      "tensor_bytes": 802816,
+      "estimated_latency": 1.6156319999999998e-05,
+      "estimated_energy": 6.422528e-06
+    },
+    {
+      "source": 16,
+      "destination": 17,
+      "tensor_shape": [
+        1,
+        64,
+        56,
+        56
+      ],
+      "tensor_bytes": 802816,
+      "estimated_latency": 1.6156319999999998e-05,
+      "estimated_energy": 6.422528e-06
+    },
+    {
+      "source": 17,
+      "destination": 18,
+      "tensor_shape": [
+        1,
+        64,
+        56,
+        56
+      ],
+      "tensor_bytes": 802816,
+      "estimated_latency": 1.6156319999999998e-05,
+      "estimated_energy": 6.422528e-06
+    },
+    {
+      "source": 18,
+      "destination": 19,
+      "tensor_shape": [
+        1,
+        128,
+        28,
+        28
+      ],
+      "tensor_bytes": 401408,
+      "estimated_latency": 8.12816e-06,
+      "estimated_energy": 3.211264e-06
+    },
+    {
+      "source": 19,
+      "destination": 20,
+      "tensor_shape": [
+        1,
+        128,
+        28,
+        28
+      ],
+      "tensor_bytes": 401408,
+      "estimated_latency": 8.12816e-06,
+      "estimated_energy": 3.211264e-06
+    },
+    {
+      "source": 20,
+      "destination": 21,
+      "tensor_shape": [
+        1,
+        128,
+        28,
+        28
+      ],
+      "tensor_bytes": 401408,
+      "estimated_latency": 8.12816e-06,
+      "estimated_energy": 3.211264e-06
+    },
+    {
+      "source": 21,
+      "destination": 22,
+      "tensor_shape": [
+        1,
+        128,
+        28,
+        28
+      ],
+      "tensor_bytes": 401408,
+      "estimated_latency": 8.12816e-06,
+      "estimated_energy": 3.211264e-06
+    },
+    {
+      "source": 17,
+      "destination": 23,
+      "tensor_shape": [
+        1,
+        64,
+        56,
+        56
+      ],
+      "tensor_bytes": 802816,
+      "estimated_latency": 1.6156319999999998e-05,
+      "estimated_energy": 6.422528e-06
+    },
+    {
+      "source": 23,
+      "destination": 24,
+      "tensor_shape": [
+        1,
+        128,
+        28,
+        28
+      ],
+      "tensor_bytes": 401408,
+      "estimated_latency": 8.12816e-06,
+      "estimated_energy": 3.211264e-06
+    },
+    {
+      "source": 22,
+      "destination": 25,
+      "tensor_shape": [
+        1,
+        128,
+        28,
+        28
+      ],
+      "tensor_bytes": 401408,
+      "estimated_latency": 8.12816e-06,
+      "estimated_energy": 3.211264e-06
+    },
+    {
+      "source": 24,
+      "destination": 25,
+      "tensor_shape": [
+        1,
+        128,
+        28,
+        28
+      ],
+      "tensor_bytes": 401408,
+      "estimated_latency": 8.12816e-06,
+      "estimated_energy": 3.211264e-06
+    },
+    {
+      "source": 25,
+      "destination": 26,
+      "tensor_shape": [
+        1,
+        128,
+        28,
+        28
+      ],
+      "tensor_bytes": 401408,
+      "estimated_latency": 8.12816e-06,
+      "estimated_energy": 3.211264e-06
+    },
+    {
+      "source": 26,
+      "destination": 27,
+      "tensor_shape": [
+        1,
+        128,
+        28,
+        28
+      ],
+      "tensor_bytes": 401408,
+      "estimated_latency": 8.12816e-06,
+      "estimated_energy": 3.211264e-06
+    },
+    {
+      "source": 27,
+      "destination": 28,
+      "tensor_shape": [
+        1,
+        128,
+        28,
+        28
+      ],
+      "tensor_bytes": 401408,
+      "estimated_latency": 8.12816e-06,
+      "estimated_energy": 3.211264e-06
+    },
+    {
+      "source": 28,
+      "destination": 29,
+      "tensor_shape": [
+        1,
+        128,
+        28,
+        28
+      ],
+      "tensor_bytes": 401408,
+      "estimated_latency": 8.12816e-06,
+      "estimated_energy": 3.211264e-06
+    },
+    {
+      "source": 29,
+      "destination": 30,
+      "tensor_shape": [
+        1,
+        128,
+        28,
+        28
+      ],
+      "tensor_bytes": 401408,
+      "estimated_latency": 8.12816e-06,
+      "estimated_energy": 3.211264e-06
+    },
+    {
+      "source": 30,
+      "destination": 31,
+      "tensor_shape": [
+        1,
+        128,
+        28,
+        28
+      ],
+      "tensor_bytes": 401408,
+      "estimated_latency": 8.12816e-06,
+      "estimated_energy": 3.211264e-06
+    },
+    {
+      "source": 31,
+      "destination": 32,
+      "tensor_shape": [
+        1,
+        128,
+        28,
+        28
+      ],
+      "tensor_bytes": 401408,
+      "estimated_latency": 8.12816e-06,
+      "estimated_energy": 3.211264e-06
+    },
+    {
+      "source": 26,
+      "destination": 32,
+      "tensor_shape": [
+        1,
+        128,
+        28,
+        28
+      ],
+      "tensor_bytes": 401408,
+      "estimated_latency": 8.12816e-06,
+      "estimated_energy": 3.211264e-06
+    },
+    {
+      "source": 32,
+      "destination": 33,
+      "tensor_shape": [
+        1,
+        128,
+        28,
+        28
+      ],
+      "tensor_bytes": 401408,
+      "estimated_latency": 8.12816e-06,
+      "estimated_energy": 3.211264e-06
+    },
+    {
+      "source": 33,
+      "destination": 34,
+      "tensor_shape": [
+        1,
+        128,
+        28,
+        28
+      ],
+      "tensor_bytes": 401408,
+      "estimated_latency": 8.12816e-06,
+      "estimated_energy": 3.211264e-06
+    },
+    {
+      "source": 34,
+      "destination": 35,
+      "tensor_shape": [
+        1,
+        256,
+        14,
+        14
+      ],
+      "tensor_bytes": 200704,
+      "estimated_latency": 4.11408e-06,
+      "estimated_energy": 1.605632e-06
+    },
+    {
+      "source": 35,
+      "destination": 36,
+      "tensor_shape": [
+        1,
+        256,
+        14,
+        14
+      ],
+      "tensor_bytes": 200704,
+      "estimated_latency": 4.11408e-06,
+      "estimated_energy": 1.605632e-06
+    },
+    {
+      "source": 36,
+      "destination": 37,
+      "tensor_shape": [
+        1,
+        256,
+        14,
+        14
+      ],
+      "tensor_bytes": 200704,
+      "estimated_latency": 4.11408e-06,
+      "estimated_energy": 1.605632e-06
+    },
+    {
+      "source": 37,
+      "destination": 38,
+      "tensor_shape": [
+        1,
+        256,
+        14,
+        14
+      ],
+      "tensor_bytes": 200704,
+      "estimated_latency": 4.11408e-06,
+      "estimated_energy": 1.605632e-06
+    },
+    {
+      "source": 33,
+      "destination": 39,
+      "tensor_shape": [
+        1,
+        128,
+        28,
+        28
+      ],
+      "tensor_bytes": 401408,
+      "estimated_latency": 8.12816e-06,
+      "estimated_energy": 3.211264e-06
+    },
+    {
+      "source": 39,
+      "destination": 40,
+      "tensor_shape": [
+        1,
+        256,
+        14,
+        14
+      ],
+      "tensor_bytes": 200704,
+      "estimated_latency": 4.11408e-06,
+      "estimated_energy": 1.605632e-06
+    },
+    {
+      "source": 38,
+      "destination": 41,
+      "tensor_shape": [
+        1,
+        256,
+        14,
+        14
+      ],
+      "tensor_bytes": 200704,
+      "estimated_latency": 4.11408e-06,
+      "estimated_energy": 1.605632e-06
+    },
+    {
+      "source": 40,
+      "destination": 41,
+      "tensor_shape": [
+        1,
+        256,
+        14,
+        14
+      ],
+      "tensor_bytes": 200704,
+      "estimated_latency": 4.11408e-06,
+      "estimated_energy": 1.605632e-06
+    },
+    {
+      "source": 41,
+      "destination": 42,
+      "tensor_shape": [
+        1,
+        256,
+        14,
+        14
+      ],
+      "tensor_bytes": 200704,
+      "estimated_latency": 4.11408e-06,
+      "estimated_energy": 1.605632e-06
+    },
+    {
+      "source": 42,
+      "destination": 43,
+      "tensor_shape": [
+        1,
+        256,
+        14,
+        14
+      ],
+      "tensor_bytes": 200704,
+      "estimated_latency": 4.11408e-06,
+      "estimated_energy": 1.605632e-06
+    },
+    {
+      "source": 43,
+      "destination": 44,
+      "tensor_shape": [
+        1,
+        256,
+        14,
+        14
+      ],
+      "tensor_bytes": 200704,
+      "estimated_latency": 4.11408e-06,
+      "estimated_energy": 1.605632e-06
+    },
+    {
+      "source": 44,
+      "destination": 45,
+      "tensor_shape": [
+        1,
+        256,
+        14,
+        14
+      ],
+      "tensor_bytes": 200704,
+      "estimated_latency": 4.11408e-06,
+      "estimated_energy": 1.605632e-06
+    },
+    {
+      "source": 45,
+      "destination": 46,
+      "tensor_shape": [
+        1,
+        256,
+        14,
+        14
+      ],
+      "tensor_bytes": 200704,
+      "estimated_latency": 4.11408e-06,
+      "estimated_energy": 1.605632e-06
+    },
+    {
+      "source": 46,
+      "destination": 47,
+      "tensor_shape": [
+        1,
+        256,
+        14,
+        14
+      ],
+      "tensor_bytes": 200704,
+      "estimated_latency": 4.11408e-06,
+      "estimated_energy": 1.605632e-06
+    },
+    {
+      "source": 47,
+      "destination": 48,
+      "tensor_shape": [
+        1,
+        256,
+        14,
+        14
+      ],
+      "tensor_bytes": 200704,
+      "estimated_latency": 4.11408e-06,
+      "estimated_energy": 1.605632e-06
+    },
+    {
+      "source": 42,
+      "destination": 48,
+      "tensor_shape": [
+        1,
+        256,
+        14,
+        14
+      ],
+      "tensor_bytes": 200704,
+      "estimated_latency": 4.11408e-06,
+      "estimated_energy": 1.605632e-06
+    },
+    {
+      "source": 48,
+      "destination": 49,
+      "tensor_shape": [
+        1,
+        256,
+        14,
+        14
+      ],
+      "tensor_bytes": 200704,
+      "estimated_latency": 4.11408e-06,
+      "estimated_energy": 1.605632e-06
+    },
+    {
+      "source": 49,
+      "destination": 50,
+      "tensor_shape": [
+        1,
+        256,
+        14,
+        14
+      ],
+      "tensor_bytes": 200704,
+      "estimated_latency": 4.11408e-06,
+      "estimated_energy": 1.605632e-06
+    },
+    {
+      "source": 50,
+      "destination": 51,
+      "tensor_shape": [
+        1,
+        512,
+        7,
+        7
+      ],
+      "tensor_bytes": 100352,
+      "estimated_latency": 2.1070399999999997e-06,
+      "estimated_energy": 8.02816e-07
+    },
+    {
+      "source": 51,
+      "destination": 52,
+      "tensor_shape": [
+        1,
+        512,
+        7,
+        7
+      ],
+      "tensor_bytes": 100352,
+      "estimated_latency": 2.1070399999999997e-06,
+      "estimated_energy": 8.02816e-07
+    },
+    {
+      "source": 52,
+      "destination": 53,
+      "tensor_shape": [
+        1,
+        512,
+        7,
+        7
+      ],
+      "tensor_bytes": 100352,
+      "estimated_latency": 2.1070399999999997e-06,
+      "estimated_energy": 8.02816e-07
+    },
+    {
+      "source": 53,
+      "destination": 54,
+      "tensor_shape": [
+        1,
+        512,
+        7,
+        7
+      ],
+      "tensor_bytes": 100352,
+      "estimated_latency": 2.1070399999999997e-06,
+      "estimated_energy": 8.02816e-07
+    },
+    {
+      "source": 49,
+      "destination": 55,
+      "tensor_shape": [
+        1,
+        256,
+        14,
+        14
+      ],
+      "tensor_bytes": 200704,
+      "estimated_latency": 4.11408e-06,
+      "estimated_energy": 1.605632e-06
+    },
+    {
+      "source": 55,
+      "destination": 56,
+      "tensor_shape": [
+        1,
+        512,
+        7,
+        7
+      ],
+      "tensor_bytes": 100352,
+      "estimated_latency": 2.1070399999999997e-06,
+      "estimated_energy": 8.02816e-07
+    },
+    {
+      "source": 54,
+      "destination": 57,
+      "tensor_shape": [
+        1,
+        512,
+        7,
+        7
+      ],
+      "tensor_bytes": 100352,
+      "estimated_latency": 2.1070399999999997e-06,
+      "estimated_energy": 8.02816e-07
+    },
+    {
+      "source": 56,
+      "destination": 57,
+      "tensor_shape": [
+        1,
+        512,
+        7,
+        7
+      ],
+      "tensor_bytes": 100352,
+      "estimated_latency": 2.1070399999999997e-06,
+      "estimated_energy": 8.02816e-07
+    },
+    {
+      "source": 57,
+      "destination": 58,
+      "tensor_shape": [
+        1,
+        512,
+        7,
+        7
+      ],
+      "tensor_bytes": 100352,
+      "estimated_latency": 2.1070399999999997e-06,
+      "estimated_energy": 8.02816e-07
+    },
+    {
+      "source": 58,
+      "destination": 59,
+      "tensor_shape": [
+        1,
+        512,
+        7,
+        7
+      ],
+      "tensor_bytes": 100352,
+      "estimated_latency": 2.1070399999999997e-06,
+      "estimated_energy": 8.02816e-07
+    },
+    {
+      "source": 59,
+      "destination": 60,
+      "tensor_shape": [
+        1,
+        512,
+        7,
+        7
+      ],
+      "tensor_bytes": 100352,
+      "estimated_latency": 2.1070399999999997e-06,
+      "estimated_energy": 8.02816e-07
+    },
+    {
+      "source": 60,
+      "destination": 61,
+      "tensor_shape": [
+        1,
+        512,
+        7,
+        7
+      ],
+      "tensor_bytes": 100352,
+      "estimated_latency": 2.1070399999999997e-06,
+      "estimated_energy": 8.02816e-07
+    },
+    {
+      "source": 61,
+      "destination": 62,
+      "tensor_shape": [
+        1,
+        512,
+        7,
+        7
+      ],
+      "tensor_bytes": 100352,
+      "estimated_latency": 2.1070399999999997e-06,
+      "estimated_energy": 8.02816e-07
+    },
+    {
+      "source": 62,
+      "destination": 63,
+      "tensor_shape": [
+        1,
+        512,
+        7,
+        7
+      ],
+      "tensor_bytes": 100352,
+      "estimated_latency": 2.1070399999999997e-06,
+      "estimated_energy": 8.02816e-07
+    },
+    {
+      "source": 63,
+      "destination": 64,
+      "tensor_shape": [
+        1,
+        512,
+        7,
+        7
+      ],
+      "tensor_bytes": 100352,
+      "estimated_latency": 2.1070399999999997e-06,
+      "estimated_energy": 8.02816e-07
+    },
+    {
+      "source": 58,
+      "destination": 64,
+      "tensor_shape": [
+        1,
+        512,
+        7,
+        7
+      ],
+      "tensor_bytes": 100352,
+      "estimated_latency": 2.1070399999999997e-06,
+      "estimated_energy": 8.02816e-07
+    },
+    {
+      "source": 64,
+      "destination": 65,
+      "tensor_shape": [
+        1,
+        512,
+        7,
+        7
+      ],
+      "tensor_bytes": 100352,
+      "estimated_latency": 2.1070399999999997e-06,
+      "estimated_energy": 8.02816e-07
+    }
+  ],
+  "hardware_config": {
+    "compute_throughput": 10000000000000.0,
+    "compute_efficiency": 5e-12,
+    "memory_bandwidth": 900000000000.0,
+    "memory_energy": 2e-11,
+    "interconnect_bandwidth": 400000000000.0,
+    "interconnect_latency": 1e-07,
+    "interconnect_energy": 1e-12
+  }
+}
