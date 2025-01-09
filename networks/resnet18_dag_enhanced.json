@@ -225,7 +225,7 @@
       "op_type": "ResidualAdd",
       "weight_shape": [],
       "weight_bytes": 0,
-      "flops": 0,
+      "flops": 200704,
       "input_shape": [
         1,
         64,
@@ -238,8 +238,8 @@
         56,
         56
       ],
-      "estimated_runtime": 0.0,
-      "estimated_energy": 0.0
+      "estimated_runtime": 2.00704e-08,
+      "estimated_energy": 1.00352e-06
     },
     {
       "id": 10,
@@ -393,7 +393,7 @@
       "op_type": "ResidualAdd",
       "weight_shape": [],
       "weight_bytes": 0,
-      "flops": 0,
+      "flops": 200704,
       "input_shape": [
         1,
         64,
@@ -406,8 +406,8 @@
         56,
         56
       ],
-      "estimated_runtime": 0.0,
-      "estimated_energy": 0.0
+      "estimated_runtime": 2.00704e-08,
+      "estimated_energy": 1.00352e-06
     },
     {
       "id": 17,
@@ -612,7 +612,7 @@
       "op_type": "ResidualAdd",
       "weight_shape": [],
       "weight_bytes": 0,
-      "flops": 0,
+      "flops": 100352,
       "input_shape": [
         1,
         128,
@@ -625,8 +625,8 @@
         28,
         28
       ],
-      "estimated_runtime": 0.0,
-      "estimated_energy": 0.0
+      "estimated_runtime": 1.00352e-08,
+      "estimated_energy": 5.0176e-07
     },
     {
       "id": 26,
@@ -780,7 +780,7 @@
       "op_type": "ResidualAdd",
       "weight_shape": [],
       "weight_bytes": 0,
-      "flops": 0,
+      "flops": 100352,
       "input_shape": [
         1,
         128,
@@ -793,8 +793,8 @@
         28,
         28
       ],
-      "estimated_runtime": 0.0,
-      "estimated_energy": 0.0
+      "estimated_runtime": 1.00352e-08,
+      "estimated_energy": 5.0176e-07
     },
     {
       "id": 33,
@@ -999,7 +999,7 @@
       "op_type": "ResidualAdd",
       "weight_shape": [],
       "weight_bytes": 0,
-      "flops": 0,
+      "flops": 50176,
       "input_shape": [
         1,
         256,
@@ -1012,8 +1012,8 @@
         14,
         14
       ],
-      "estimated_runtime": 0.0,
-      "estimated_energy": 0.0
+      "estimated_runtime": 5.0176e-09,
+      "estimated_energy": 2.5088e-07
     },
     {
       "id": 42,
@@ -1167,7 +1167,7 @@
       "op_type": "ResidualAdd",
       "weight_shape": [],
       "weight_bytes": 0,
-      "flops": 0,
+      "flops": 50176,
       "input_shape": [
         1,
         256,
@@ -1180,8 +1180,8 @@
         14,
         14
       ],
-      "estimated_runtime": 0.0,
-      "estimated_energy": 0.0
+      "estimated_runtime": 5.0176e-09,
+      "estimated_energy": 2.5088e-07
     },
     {
       "id": 49,
@@ -1386,7 +1386,7 @@
       "op_type": "ResidualAdd",
       "weight_shape": [],
       "weight_bytes": 0,
-      "flops": 0,
+      "flops": 25088,
       "input_shape": [
         1,
         512,
@@ -1399,8 +1399,8 @@
         7,
         7
       ],
-      "estimated_runtime": 0.0,
-      "estimated_energy": 0.0
+      "estimated_runtime": 2.5088e-09,
+      "estimated_energy": 1.2544e-07
     },
     {
       "id": 58,
@@ -1554,7 +1554,7 @@
       "op_type": "ResidualAdd",
       "weight_shape": [],
       "weight_bytes": 0,
-      "flops": 0,
+      "flops": 25088,
       "input_shape": [
         1,
         512,
@@ -1567,8 +1567,8 @@
         7,
         7
       ],
-      "estimated_runtime": 0.0,
-      "estimated_energy": 0.0
+      "estimated_runtime": 2.5088e-09,
+      "estimated_energy": 1.2544e-07
     },
     {
       "id": 65,
