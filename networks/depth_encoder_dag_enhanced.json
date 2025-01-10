@@ -1,0 +1,9840 @@
+{
+  "nodes": [
+    {
+      "id": 0,
+      "name": "AvgPool2d_0",
+      "op_type": "AvgPool2d",
+      "weight_shape": [],
+      "weight_bytes": 0,
+      "flops": 338688,
+      "input_shape": [
+        1,
+        3,
+        224,
+        224
+      ],
+      "output_shape": [
+        1,
+        3,
+        112,
+        112
+      ],
+      "estimated_runtime": 3.38688e-08,
+      "estimated_energy": 1.69344e-06
+    },
+    {
+      "id": 1,
+      "name": "AvgPool2d_1",
+      "op_type": "AvgPool2d",
+      "weight_shape": [],
+      "weight_bytes": 0,
+      "flops": 338688,
+      "input_shape": [
+        1,
+        3,
+        224,
+        224
+      ],
+      "output_shape": [
+        1,
+        3,
+        112,
+        112
+      ],
+      "estimated_runtime": 3.38688e-08,
+      "estimated_energy": 1.69344e-06
+    },
+    {
+      "id": 2,
+      "name": "AvgPool2d_2",
+      "op_type": "AvgPool2d",
+      "weight_shape": [],
+      "weight_bytes": 0,
+      "flops": 84672,
+      "input_shape": [
+        1,
+        3,
+        112,
+        112
+      ],
+      "output_shape": [
+        1,
+        3,
+        56,
+        56
+      ],
+      "estimated_runtime": 8.4672e-09,
+      "estimated_energy": 4.2336e-07
+    },
+    {
+      "id": 3,
+      "name": "AvgPool2d_3",
+      "op_type": "AvgPool2d",
+      "weight_shape": [],
+      "weight_bytes": 0,
+      "flops": 338688,
+      "input_shape": [
+        1,
+        3,
+        224,
+        224
+      ],
+      "output_shape": [
+        1,
+        3,
+        112,
+        112
+      ],
+      "estimated_runtime": 3.38688e-08,
+      "estimated_energy": 1.69344e-06
+    },
+    {
+      "id": 4,
+      "name": "AvgPool2d_4",
+      "op_type": "AvgPool2d",
+      "weight_shape": [],
+      "weight_bytes": 0,
+      "flops": 84672,
+      "input_shape": [
+        1,
+        3,
+        112,
+        112
+      ],
+      "output_shape": [
+        1,
+        3,
+        56,
+        56
+      ],
+      "estimated_runtime": 8.4672e-09,
+      "estimated_energy": 4.2336e-07
+    },
+    {
+      "id": 5,
+      "name": "AvgPool2d_5",
+      "op_type": "AvgPool2d",
+      "weight_shape": [],
+      "weight_bytes": 0,
+      "flops": 21168,
+      "input_shape": [
+        1,
+        3,
+        56,
+        56
+      ],
+      "output_shape": [
+        1,
+        3,
+        28,
+        28
+      ],
+      "estimated_runtime": 2.1168e-09,
+      "estimated_energy": 1.0584e-07
+    },
+    {
+      "id": 6,
+      "name": "AvgPool2d_6",
+      "op_type": "AvgPool2d",
+      "weight_shape": [],
+      "weight_bytes": 0,
+      "flops": 338688,
+      "input_shape": [
+        1,
+        3,
+        224,
+        224
+      ],
+      "output_shape": [
+        1,
+        3,
+        112,
+        112
+      ],
+      "estimated_runtime": 3.38688e-08,
+      "estimated_energy": 1.69344e-06
+    },
+    {
+      "id": 7,
+      "name": "AvgPool2d_7",
+      "op_type": "AvgPool2d",
+      "weight_shape": [],
+      "weight_bytes": 0,
+      "flops": 84672,
+      "input_shape": [
+        1,
+        3,
+        112,
+        112
+      ],
+      "output_shape": [
+        1,
+        3,
+        56,
+        56
+      ],
+      "estimated_runtime": 8.4672e-09,
+      "estimated_energy": 4.2336e-07
+    },
+    {
+      "id": 8,
+      "name": "AvgPool2d_8",
+      "op_type": "AvgPool2d",
+      "weight_shape": [],
+      "weight_bytes": 0,
+      "flops": 21168,
+      "input_shape": [
+        1,
+        3,
+        56,
+        56
+      ],
+      "output_shape": [
+        1,
+        3,
+        28,
+        28
+      ],
+      "estimated_runtime": 2.1168e-09,
+      "estimated_energy": 1.0584e-07
+    },
+    {
+      "id": 9,
+      "name": "AvgPool2d_9",
+      "op_type": "AvgPool2d",
+      "weight_shape": [],
+      "weight_bytes": 0,
+      "flops": 5292,
+      "input_shape": [
+        1,
+        3,
+        28,
+        28
+      ],
+      "output_shape": [
+        1,
+        3,
+        14,
+        14
+      ],
+      "estimated_runtime": 5.292e-10,
+      "estimated_energy": 2.646e-08
+    },
+    {
+      "id": 10,
+      "name": "Conv2d_10",
+      "op_type": "Conv2d",
+      "weight_shape": [
+        48,
+        3,
+        3,
+        3
+      ],
+      "weight_bytes": 5184,
+      "flops": 31911936,
+      "input_shape": [
+        1,
+        3,
+        224,
+        224
+      ],
+      "output_shape": [
+        1,
+        48,
+        112,
+        112
+      ],
+      "estimated_runtime": 3.1911936e-06,
+      "estimated_energy": 0.00015955968
+    },
+    {
+      "id": 11,
+      "name": "BatchNorm2d_11",
+      "op_type": "BatchNorm2d",
+      "weight_shape": [
+        48
+      ],
+      "weight_bytes": 192,
+      "flops": 1204224,
+      "input_shape": [
+        1,
+        48,
+        112,
+        112
+      ],
+      "output_shape": [
+        1,
+        48,
+        112,
+        112
+      ],
+      "estimated_runtime": 1.204224e-07,
+      "estimated_energy": 6.0211199999999995e-06
+    },
+    {
+      "id": 12,
+      "name": "GELU_12",
+      "op_type": "GELU",
+      "weight_shape": [],
+      "weight_bytes": 0,
+      "flops": 0,
+      "input_shape": [
+        1,
+        48,
+        112,
+        112
+      ],
+      "output_shape": [
+        1,
+        48,
+        112,
+        112
+      ],
+      "estimated_runtime": 0.0,
+      "estimated_energy": 0.0
+    },
+    {
+      "id": 13,
+      "name": "Conv2d_13",
+      "op_type": "Conv2d",
+      "weight_shape": [
+        48,
+        48,
+        3,
+        3
+      ],
+      "weight_bytes": 82944,
+      "flops": 519622656,
+      "input_shape": [
+        1,
+        48,
+        112,
+        112
+      ],
+      "output_shape": [
+        1,
+        48,
+        112,
+        112
+      ],
+      "estimated_runtime": 5.19622656e-05,
+      "estimated_energy": 0.0025981132799999997
+    },
+    {
+      "id": 14,
+      "name": "BatchNorm2d_14",
+      "op_type": "BatchNorm2d",
+      "weight_shape": [
+        48
+      ],
+      "weight_bytes": 192,
+      "flops": 1204224,
+      "input_shape": [
+        1,
+        48,
+        112,
+        112
+      ],
+      "output_shape": [
+        1,
+        48,
+        112,
+        112
+      ],
+      "estimated_runtime": 1.204224e-07,
+      "estimated_energy": 6.0211199999999995e-06
+    },
+    {
+      "id": 15,
+      "name": "GELU_15",
+      "op_type": "GELU",
+      "weight_shape": [],
+      "weight_bytes": 0,
+      "flops": 0,
+      "input_shape": [
+        1,
+        48,
+        112,
+        112
+      ],
+      "output_shape": [
+        1,
+        48,
+        112,
+        112
+      ],
+      "estimated_runtime": 0.0,
+      "estimated_energy": 0.0
+    },
+    {
+      "id": 16,
+      "name": "Conv2d_16",
+      "op_type": "Conv2d",
+      "weight_shape": [
+        48,
+        48,
+        3,
+        3
+      ],
+      "weight_bytes": 82944,
+      "flops": 519622656,
+      "input_shape": [
+        1,
+        48,
+        112,
+        112
+      ],
+      "output_shape": [
+        1,
+        48,
+        112,
+        112
+      ],
+      "estimated_runtime": 5.19622656e-05,
+      "estimated_energy": 0.0025981132799999997
+    },
+    {
+      "id": 17,
+      "name": "BatchNorm2d_17",
+      "op_type": "BatchNorm2d",
+      "weight_shape": [
+        48
+      ],
+      "weight_bytes": 192,
+      "flops": 1204224,
+      "input_shape": [
+        1,
+        48,
+        112,
+        112
+      ],
+      "output_shape": [
+        1,
+        48,
+        112,
+        112
+      ],
+      "estimated_runtime": 1.204224e-07,
+      "estimated_energy": 6.0211199999999995e-06
+    },
+    {
+      "id": 18,
+      "name": "GELU_18",
+      "op_type": "GELU",
+      "weight_shape": [],
+      "weight_bytes": 0,
+      "flops": 0,
+      "input_shape": [
+        1,
+        48,
+        112,
+        112
+      ],
+      "output_shape": [
+        1,
+        48,
+        112,
+        112
+      ],
+      "estimated_runtime": 0.0,
+      "estimated_energy": 0.0
+    },
+    {
+      "id": 19,
+      "name": "Conv2d_19",
+      "op_type": "Conv2d",
+      "weight_shape": [
+        48,
+        51,
+        3,
+        3
+      ],
+      "weight_bytes": 88128,
+      "flops": 138034176,
+      "input_shape": [
+        1,
+        51,
+        112,
+        112
+      ],
+      "output_shape": [
+        1,
+        48,
+        56,
+        56
+      ],
+      "estimated_runtime": 1.38034176e-05,
+      "estimated_energy": 0.00069017088
+    },
+    {
+      "id": 20,
+      "name": "Conv2d_20",
+      "op_type": "Conv2d",
+      "weight_shape": [
+        48,
+        1,
+        3,
+        3
+      ],
+      "weight_bytes": 1728,
+      "flops": 2558976,
+      "input_shape": [
+        1,
+        48,
+        56,
+        56
+      ],
+      "output_shape": [
+        1,
+        48,
+        56,
+        56
+      ],
+      "estimated_runtime": 2.558976e-07,
+      "estimated_energy": 1.2794879999999999e-05
+    },
+    {
+      "id": 21,
+      "name": "BatchNorm2d_21",
+      "op_type": "BatchNorm2d",
+      "weight_shape": [
+        48
+      ],
+      "weight_bytes": 192,
+      "flops": 301056,
+      "input_shape": [
+        1,
+        48,
+        56,
+        56
+      ],
+      "output_shape": [
+        1,
+        48,
+        56,
+        56
+      ],
+      "estimated_runtime": 3.01056e-08,
+      "estimated_energy": 1.5052799999999999e-06
+    },
+    {
+      "id": 22,
+      "name": "Permute4d_22",
+      "op_type": "Permute4d",
+      "weight_shape": [],
+      "weight_bytes": 0,
+      "flops": 0,
+      "input_shape": [
+        1,
+        48,
+        56,
+        56
+      ],
+      "output_shape": [
+        1,
+        56,
+        56,
+        48
+      ],
+      "estimated_runtime": 0.0,
+      "estimated_energy": 0.0
+    },
+    {
+      "id": 23,
+      "name": "Linear_23",
+      "op_type": "Linear",
+      "weight_shape": [
+        288,
+        48
+      ],
+      "weight_bytes": 55296,
+      "flops": 27360,
+      "input_shape": [
+        1,
+        56,
+        56,
+        48
+      ],
+      "output_shape": [
+        1,
+        56,
+        56,
+        288
+      ],
+      "estimated_runtime": 2.736e-09,
+      "estimated_energy": 1.3679999999999998e-07
+    },
+    {
+      "id": 24,
+      "name": "GELU_24",
+      "op_type": "GELU",
+      "weight_shape": [],
+      "weight_bytes": 0,
+      "flops": 0,
+      "input_shape": [
+        1,
+        56,
+        56,
+        288
+      ],
+      "output_shape": [
+        1,
+        56,
+        56,
+        288
+      ],
+      "estimated_runtime": 0.0,
+      "estimated_energy": 0.0
+    },
+    {
+      "id": 25,
+      "name": "Linear_25",
+      "op_type": "Linear",
+      "weight_shape": [
+        48,
+        288
+      ],
+      "weight_bytes": 55296,
+      "flops": 27600,
+      "input_shape": [
+        1,
+        56,
+        56,
+        288
+      ],
+      "output_shape": [
+        1,
+        56,
+        56,
+        48
+      ],
+      "estimated_runtime": 2.76e-09,
+      "estimated_energy": 1.38e-07
+    },
+    {
+      "id": 26,
+      "name": "GammaMultiply_26",
+      "op_type": "GammaMultiply",
+      "weight_shape": [],
+      "weight_bytes": 0,
+      "flops": 48,
+      "input_shape": [
+        48
+      ],
+      "output_shape": [
+        1,
+        56,
+        56,
+        48
+      ],
+      "estimated_runtime": 4.8e-12,
+      "estimated_energy": 2.4e-10
+    },
+    {
+      "id": 27,
+      "name": "Permute4d_27",
+      "op_type": "Permute4d",
+      "weight_shape": [],
+      "weight_bytes": 0,
+      "flops": 0,
+      "input_shape": [
+        1,
+        56,
+        56,
+        48
+      ],
+      "output_shape": [
+        1,
+        48,
+        56,
+        56
+      ],
+      "estimated_runtime": 0.0,
+      "estimated_energy": 0.0
+    },
+    {
+      "id": 28,
+      "name": "ResidualAdd_28",
+      "op_type": "ResidualAdd",
+      "weight_shape": [],
+      "weight_bytes": 0,
+      "flops": 150528,
+      "input_shape": [
+        1,
+        48,
+        56,
+        56
+      ],
+      "output_shape": [
+        1,
+        48,
+        56,
+        56
+      ],
+      "estimated_runtime": 1.50528e-08,
+      "estimated_energy": 7.526399999999999e-07
+    },
+    {
+      "id": 29,
+      "name": "Conv2d_29",
+      "op_type": "Conv2d",
+      "weight_shape": [
+        48,
+        1,
+        3,
+        3
+      ],
+      "weight_bytes": 1728,
+      "flops": 2558976,
+      "input_shape": [
+        1,
+        48,
+        56,
+        56
+      ],
+      "output_shape": [
+        1,
+        48,
+        56,
+        56
+      ],
+      "estimated_runtime": 2.558976e-07,
+      "estimated_energy": 1.2794879999999999e-05
+    },
+    {
+      "id": 30,
+      "name": "BatchNorm2d_30",
+      "op_type": "BatchNorm2d",
+      "weight_shape": [
+        48
+      ],
+      "weight_bytes": 192,
+      "flops": 301056,
+      "input_shape": [
+        1,
+        48,
+        56,
+        56
+      ],
+      "output_shape": [
+        1,
+        48,
+        56,
+        56
+      ],
+      "estimated_runtime": 3.01056e-08,
+      "estimated_energy": 1.5052799999999999e-06
+    },
+    {
+      "id": 31,
+      "name": "Permute4d_31",
+      "op_type": "Permute4d",
+      "weight_shape": [],
+      "weight_bytes": 0,
+      "flops": 0,
+      "input_shape": [
+        1,
+        48,
+        56,
+        56
+      ],
+      "output_shape": [
+        1,
+        56,
+        56,
+        48
+      ],
+      "estimated_runtime": 0.0,
+      "estimated_energy": 0.0
+    },
+    {
+      "id": 32,
+      "name": "Linear_32",
+      "op_type": "Linear",
+      "weight_shape": [
+        288,
+        48
+      ],
+      "weight_bytes": 55296,
+      "flops": 27360,
+      "input_shape": [
+        1,
+        56,
+        56,
+        48
+      ],
+      "output_shape": [
+        1,
+        56,
+        56,
+        288
+      ],
+      "estimated_runtime": 2.736e-09,
+      "estimated_energy": 1.3679999999999998e-07
+    },
+    {
+      "id": 33,
+      "name": "GELU_33",
+      "op_type": "GELU",
+      "weight_shape": [],
+      "weight_bytes": 0,
+      "flops": 0,
+      "input_shape": [
+        1,
+        56,
+        56,
+        288
+      ],
+      "output_shape": [
+        1,
+        56,
+        56,
+        288
+      ],
+      "estimated_runtime": 0.0,
+      "estimated_energy": 0.0
+    },
+    {
+      "id": 34,
+      "name": "Linear_34",
+      "op_type": "Linear",
+      "weight_shape": [
+        48,
+        288
+      ],
+      "weight_bytes": 55296,
+      "flops": 27600,
+      "input_shape": [
+        1,
+        56,
+        56,
+        288
+      ],
+      "output_shape": [
+        1,
+        56,
+        56,
+        48
+      ],
+      "estimated_runtime": 2.76e-09,
+      "estimated_energy": 1.38e-07
+    },
+    {
+      "id": 35,
+      "name": "GammaMultiply_35",
+      "op_type": "GammaMultiply",
+      "weight_shape": [],
+      "weight_bytes": 0,
+      "flops": 48,
+      "input_shape": [
+        48
+      ],
+      "output_shape": [
+        1,
+        56,
+        56,
+        48
+      ],
+      "estimated_runtime": 4.8e-12,
+      "estimated_energy": 2.4e-10
+    },
+    {
+      "id": 36,
+      "name": "Permute4d_36",
+      "op_type": "Permute4d",
+      "weight_shape": [],
+      "weight_bytes": 0,
+      "flops": 0,
+      "input_shape": [
+        1,
+        56,
+        56,
+        48
+      ],
+      "output_shape": [
+        1,
+        48,
+        56,
+        56
+      ],
+      "estimated_runtime": 0.0,
+      "estimated_energy": 0.0
+    },
+    {
+      "id": 37,
+      "name": "DropPath_37",
+      "op_type": "DropPath",
+      "weight_shape": [],
+      "weight_bytes": 0,
+      "flops": 0,
+      "input_shape": [
+        1,
+        48,
+        56,
+        56
+      ],
+      "output_shape": [
+        1,
+        48,
+        56,
+        56
+      ],
+      "estimated_runtime": 0.0,
+      "estimated_energy": 0.0
+    },
+    {
+      "id": 38,
+      "name": "ResidualAdd_38",
+      "op_type": "ResidualAdd",
+      "weight_shape": [],
+      "weight_bytes": 0,
+      "flops": 150528,
+      "input_shape": [
+        1,
+        48,
+        56,
+        56
+      ],
+      "output_shape": [
+        1,
+        48,
+        56,
+        56
+      ],
+      "estimated_runtime": 1.50528e-08,
+      "estimated_energy": 7.526399999999999e-07
+    },
+    {
+      "id": 39,
+      "name": "Conv2d_39",
+      "op_type": "Conv2d",
+      "weight_shape": [
+        48,
+        1,
+        3,
+        3
+      ],
+      "weight_bytes": 1728,
+      "flops": 2558976,
+      "input_shape": [
+        1,
+        48,
+        56,
+        56
+      ],
+      "output_shape": [
+        1,
+        48,
+        56,
+        56
+      ],
+      "estimated_runtime": 2.558976e-07,
+      "estimated_energy": 1.2794879999999999e-05
+    },
+    {
+      "id": 40,
+      "name": "BatchNorm2d_40",
+      "op_type": "BatchNorm2d",
+      "weight_shape": [
+        48
+      ],
+      "weight_bytes": 192,
+      "flops": 301056,
+      "input_shape": [
+        1,
+        48,
+        56,
+        56
+      ],
+      "output_shape": [
+        1,
+        48,
+        56,
+        56
+      ],
+      "estimated_runtime": 3.01056e-08,
+      "estimated_energy": 1.5052799999999999e-06
+    },
+    {
+      "id": 41,
+      "name": "Permute4d_41",
+      "op_type": "Permute4d",
+      "weight_shape": [],
+      "weight_bytes": 0,
+      "flops": 0,
+      "input_shape": [
+        1,
+        48,
+        56,
+        56
+      ],
+      "output_shape": [
+        1,
+        56,
+        56,
+        48
+      ],
+      "estimated_runtime": 0.0,
+      "estimated_energy": 0.0
+    },
+    {
+      "id": 42,
+      "name": "Linear_42",
+      "op_type": "Linear",
+      "weight_shape": [
+        288,
+        48
+      ],
+      "weight_bytes": 55296,
+      "flops": 27360,
+      "input_shape": [
+        1,
+        56,
+        56,
+        48
+      ],
+      "output_shape": [
+        1,
+        56,
+        56,
+        288
+      ],
+      "estimated_runtime": 2.736e-09,
+      "estimated_energy": 1.3679999999999998e-07
+    },
+    {
+      "id": 43,
+      "name": "GELU_43",
+      "op_type": "GELU",
+      "weight_shape": [],
+      "weight_bytes": 0,
+      "flops": 0,
+      "input_shape": [
+        1,
+        56,
+        56,
+        288
+      ],
+      "output_shape": [
+        1,
+        56,
+        56,
+        288
+      ],
+      "estimated_runtime": 0.0,
+      "estimated_energy": 0.0
+    },
+    {
+      "id": 44,
+      "name": "Linear_44",
+      "op_type": "Linear",
+      "weight_shape": [
+        48,
+        288
+      ],
+      "weight_bytes": 55296,
+      "flops": 27600,
+      "input_shape": [
+        1,
+        56,
+        56,
+        288
+      ],
+      "output_shape": [
+        1,
+        56,
+        56,
+        48
+      ],
+      "estimated_runtime": 2.76e-09,
+      "estimated_energy": 1.38e-07
+    },
+    {
+      "id": 45,
+      "name": "GammaMultiply_45",
+      "op_type": "GammaMultiply",
+      "weight_shape": [],
+      "weight_bytes": 0,
+      "flops": 48,
+      "input_shape": [
+        48
+      ],
+      "output_shape": [
+        1,
+        56,
+        56,
+        48
+      ],
+      "estimated_runtime": 4.8e-12,
+      "estimated_energy": 2.4e-10
+    },
+    {
+      "id": 46,
+      "name": "Permute4d_46",
+      "op_type": "Permute4d",
+      "weight_shape": [],
+      "weight_bytes": 0,
+      "flops": 0,
+      "input_shape": [
+        1,
+        56,
+        56,
+        48
+      ],
+      "output_shape": [
+        1,
+        48,
+        56,
+        56
+      ],
+      "estimated_runtime": 0.0,
+      "estimated_energy": 0.0
+    },
+    {
+      "id": 47,
+      "name": "DropPath_47",
+      "op_type": "DropPath",
+      "weight_shape": [],
+      "weight_bytes": 0,
+      "flops": 0,
+      "input_shape": [
+        1,
+        48,
+        56,
+        56
+      ],
+      "output_shape": [
+        1,
+        48,
+        56,
+        56
+      ],
+      "estimated_runtime": 0.0,
+      "estimated_energy": 0.0
+    },
+    {
+      "id": 48,
+      "name": "ResidualAdd_48",
+      "op_type": "ResidualAdd",
+      "weight_shape": [],
+      "weight_bytes": 0,
+      "flops": 150528,
+      "input_shape": [
+        1,
+        48,
+        56,
+        56
+      ],
+      "output_shape": [
+        1,
+        48,
+        56,
+        56
+      ],
+      "estimated_runtime": 1.50528e-08,
+      "estimated_energy": 7.526399999999999e-07
+    },
+    {
+      "id": 49,
+      "name": "Reshape3d_49",
+      "op_type": "Reshape3d",
+      "weight_shape": [],
+      "weight_bytes": 0,
+      "flops": 0,
+      "input_shape": [
+        1,
+        48,
+        56,
+        56
+      ],
+      "output_shape": [
+        1,
+        48,
+        3136
+      ],
+      "estimated_runtime": 0.0,
+      "estimated_energy": 0.0
+    },
+    {
+      "id": 50,
+      "name": "Permute3d_50",
+      "op_type": "Permute3d",
+      "weight_shape": [],
+      "weight_bytes": 0,
+      "flops": 0,
+      "input_shape": [
+        1,
+        48,
+        3136
+      ],
+      "output_shape": [
+        1,
+        3136,
+        48
+      ],
+      "estimated_runtime": 0.0,
+      "estimated_energy": 0.0
+    },
+    {
+      "id": 51,
+      "name": "Conv2d_51",
+      "op_type": "Conv2d",
+      "weight_shape": [
+        48,
+        64,
+        1,
+        1
+      ],
+      "weight_bytes": 12288,
+      "flops": 19117056,
+      "input_shape": [
+        1,
+        64,
+        56,
+        56
+      ],
+      "output_shape": [
+        1,
+        48,
+        56,
+        56
+      ],
+      "estimated_runtime": 1.9117056e-06,
+      "estimated_energy": 9.558527999999999e-05
+    },
+    {
+      "id": 52,
+      "name": "PositionalEncodingFourier_52",
+      "op_type": "PositionalEncodingFourier",
+      "weight_shape": [],
+      "weight_bytes": 0,
+      "flops": 19684800,
+      "input_shape": [
+        1,
+        56,
+        56
+      ],
+      "output_shape": [
+        1,
+        48,
+        56,
+        56
+      ],
+      "estimated_runtime": 1.96848e-06,
+      "estimated_energy": 9.842399999999999e-05
+    },
+    {
+      "id": 53,
+      "name": "Reshape3d_53",
+      "op_type": "Reshape3d",
+      "weight_shape": [],
+      "weight_bytes": 0,
+      "flops": 0,
+      "input_shape": [
+        1,
+        48,
+        56,
+        56
+      ],
+      "output_shape": [
+        1,
+        48,
+        3136
+      ],
+      "estimated_runtime": 0.0,
+      "estimated_energy": 0.0
+    },
+    {
+      "id": 54,
+      "name": "Permute3d_54",
+      "op_type": "Permute3d",
+      "weight_shape": [],
+      "weight_bytes": 0,
+      "flops": 0,
+      "input_shape": [
+        1,
+        48,
+        3136
+      ],
+      "output_shape": [
+        1,
+        3136,
+        48
+      ],
+      "estimated_runtime": 0.0,
+      "estimated_energy": 0.0
+    },
+    {
+      "id": 55,
+      "name": "ResidualAdd_55",
+      "op_type": "ResidualAdd",
+      "weight_shape": [],
+      "weight_bytes": 0,
+      "flops": 0,
+      "input_shape": [
+        1,
+        3136,
+        48
+      ],
+      "output_shape": [
+        1,
+        3136,
+        48
+      ],
+      "estimated_runtime": 0.0,
+      "estimated_energy": 0.0
+    },
+    {
+      "id": 56,
+      "name": "LayerNorm_56",
+      "op_type": "LayerNorm",
+      "weight_shape": [
+        48
+      ],
+      "weight_bytes": 192,
+      "flops": 1204224,
+      "input_shape": [
+        1,
+        3136,
+        48
+      ],
+      "output_shape": [
+        1,
+        3136,
+        48
+      ],
+      "estimated_runtime": 1.204224e-07,
+      "estimated_energy": 6.0211199999999995e-06
+    },
+    {
+      "id": 57,
+      "name": "Linear_57",
+      "op_type": "Linear",
+      "weight_shape": [
+        144,
+        48
+      ],
+      "weight_bytes": 27648,
+      "flops": 13680,
+      "input_shape": [
+        1,
+        3136,
+        48
+      ],
+      "output_shape": [
+        1,
+        3136,
+        144
+      ],
+      "estimated_runtime": 1.368e-09,
+      "estimated_energy": 6.839999999999999e-08
+    },
+    {
+      "id": 58,
+      "name": "Reshape5d_58",
+      "op_type": "Reshape5d",
+      "weight_shape": [],
+      "weight_bytes": 0,
+      "flops": 0,
+      "input_shape": [
+        1,
+        3136,
+        144
+      ],
+      "output_shape": [
+        1,
+        3136,
+        3,
+        8,
+        6
+      ],
+      "estimated_runtime": 0.0,
+      "estimated_energy": 0.0
+    },
+    {
+      "id": 59,
+      "name": "Permute5d_59",
+      "op_type": "Permute5d",
+      "weight_shape": [],
+      "weight_bytes": 0,
+      "flops": 0,
+      "input_shape": [
+        1,
+        3136,
+        3,
+        8,
+        6
+      ],
+      "output_shape": [
+        3,
+        1,
+        8,
+        3136,
+        6
+      ],
+      "estimated_runtime": 0.0,
+      "estimated_energy": 0.0
+    },
+    {
+      "id": 60,
+      "name": "Extract2dq_60",
+      "op_type": "Extract2dq",
+      "weight_shape": [],
+      "weight_bytes": 0,
+      "flops": 0,
+      "input_shape": [
+        3,
+        1,
+        8,
+        3136,
+        6
+      ],
+      "output_shape": [
+        1,
+        8,
+        3136,
+        6
+      ],
+      "estimated_runtime": 0.0,
+      "estimated_energy": 0.0
+    },
+    {
+      "id": 61,
+      "name": "Extract2dk_61",
+      "op_type": "Extract2dk",
+      "weight_shape": [],
+      "weight_bytes": 0,
+      "flops": 0,
+      "input_shape": [
+        3,
+        1,
+        8,
+        3136,
+        6
+      ],
+      "output_shape": [
+        1,
+        8,
+        3136,
+        6
+      ],
+      "estimated_runtime": 0.0,
+      "estimated_energy": 0.0
+    },
+    {
+      "id": 62,
+      "name": "Extract2dv_62",
+      "op_type": "Extract2dv",
+      "weight_shape": [],
+      "weight_bytes": 0,
+      "flops": 0,
+      "input_shape": [
+        3,
+        1,
+        8,
+        3136,
+        6
+      ],
+      "output_shape": [
+        1,
+        8,
+        3136,
+        6
+      ],
+      "estimated_runtime": 0.0,
+      "estimated_energy": 0.0
+    },
+    {
+      "id": 63,
+      "name": "Transpose2d_63",
+      "op_type": "Transpose2d",
+      "weight_shape": [],
+      "weight_bytes": 0,
+      "flops": 0,
+      "input_shape": [
+        1,
+        8,
+        3136,
+        6
+      ],
+      "output_shape": [
+        1,
+        8,
+        6,
+        3136
+      ],
+      "estimated_runtime": 0.0,
+      "estimated_energy": 0.0
+    },
+    {
+      "id": 64,
+      "name": "Transpose2d_64",
+      "op_type": "Transpose2d",
+      "weight_shape": [],
+      "weight_bytes": 0,
+      "flops": 0,
+      "input_shape": [
+        1,
+        8,
+        3136,
+        6
+      ],
+      "output_shape": [
+        1,
+        8,
+        6,
+        3136
+      ],
+      "estimated_runtime": 0.0,
+      "estimated_energy": 0.0
+    },
+    {
+      "id": 65,
+      "name": "Transpose2d_65",
+      "op_type": "Transpose2d",
+      "weight_shape": [],
+      "weight_bytes": 0,
+      "flops": 0,
+      "input_shape": [
+        1,
+        8,
+        3136,
+        6
+      ],
+      "output_shape": [
+        1,
+        8,
+        6,
+        3136
+      ],
+      "estimated_runtime": 0.0,
+      "estimated_energy": 0.0
+    },
+    {
+      "id": 66,
+      "name": "Normalize2d_66",
+      "op_type": "Normalize2d",
+      "weight_shape": [],
+      "weight_bytes": 0,
+      "flops": 0,
+      "input_shape": [
+        1,
+        8,
+        6,
+        3136
+      ],
+      "output_shape": [
+        1,
+        8,
+        6,
+        3136
+      ],
+      "estimated_runtime": 0.0,
+      "estimated_energy": 0.0
+    },
+    {
+      "id": 67,
+      "name": "Normalize2d_67",
+      "op_type": "Normalize2d",
+      "weight_shape": [],
+      "weight_bytes": 0,
+      "flops": 0,
+      "input_shape": [
+        1,
+        8,
+        6,
+        3136
+      ],
+      "output_shape": [
+        1,
+        8,
+        6,
+        3136
+      ],
+      "estimated_runtime": 0.0,
+      "estimated_energy": 0.0
+    },
+    {
+      "id": 68,
+      "name": "MatrixMultiply_68",
+      "op_type": "MatrixMultiply",
+      "weight_shape": [],
+      "weight_bytes": 0,
+      "flops": 1806336,
+      "input_shape": [
+        1,
+        8,
+        6,
+        3136
+      ],
+      "output_shape": [
+        1,
+        8,
+        6,
+        6
+      ],
+      "estimated_runtime": 1.806336e-07,
+      "estimated_energy": 9.031679999999999e-06
+    },
+    {
+      "id": 69,
+      "name": "Softmax_69",
+      "op_type": "Softmax",
+      "weight_shape": [],
+      "weight_bytes": 0,
+      "flops": 576,
+      "input_shape": [
+        1,
+        8,
+        6,
+        6
+      ],
+      "output_shape": [
+        1,
+        8,
+        6,
+        6
+      ],
+      "estimated_runtime": 5.76e-11,
+      "estimated_energy": 2.88e-09
+    },
+    {
+      "id": 70,
+      "name": "WeightedSum_70",
+      "op_type": "WeightedSum",
+      "weight_shape": [],
+      "weight_bytes": 0,
+      "flops": 0,
+      "input_shape": [
+        1,
+        8,
+        6,
+        6
+      ],
+      "output_shape": [
+        1,
+        8,
+        6,
+        3136
+      ],
+      "estimated_runtime": 0.0,
+      "estimated_energy": 0.0
+    },
+    {
+      "id": 71,
+      "name": "Permute4d_71",
+      "op_type": "Permute4d",
+      "weight_shape": [],
+      "weight_bytes": 0,
+      "flops": 0,
+      "input_shape": [
+        1,
+        8,
+        6,
+        3136
+      ],
+      "output_shape": [
+        1,
+        3136,
+        8,
+        6
+      ],
+      "estimated_runtime": 0.0,
+      "estimated_energy": 0.0
+    },
+    {
+      "id": 72,
+      "name": "Reshape3d_72",
+      "op_type": "Reshape3d",
+      "weight_shape": [],
+      "weight_bytes": 0,
+      "flops": 0,
+      "input_shape": [
+        1,
+        3136,
+        8,
+        6
+      ],
+      "output_shape": [
+        1,
+        3136,
+        48
+      ],
+      "estimated_runtime": 0.0,
+      "estimated_energy": 0.0
+    },
+    {
+      "id": 73,
+      "name": "Linear_73",
+      "op_type": "Linear",
+      "weight_shape": [
+        48,
+        48
+      ],
+      "weight_bytes": 9216,
+      "flops": 4560,
+      "input_shape": [
+        1,
+        3136,
+        48
+      ],
+      "output_shape": [
+        1,
+        3136,
+        48
+      ],
+      "estimated_runtime": 4.56e-10,
+      "estimated_energy": 2.28e-08
+    },
+    {
+      "id": 74,
+      "name": "GammaMultiply_74",
+      "op_type": "GammaMultiply",
+      "weight_shape": [],
+      "weight_bytes": 0,
+      "flops": 150528,
+      "input_shape": [
+        1,
+        3136,
+        48
+      ],
+      "output_shape": [
+        1,
+        3136,
+        48
+      ],
+      "estimated_runtime": 1.50528e-08,
+      "estimated_energy": 7.526399999999999e-07
+    },
+    {
+      "id": 75,
+      "name": "ResidualAdd_75",
+      "op_type": "ResidualAdd",
+      "weight_shape": [],
+      "weight_bytes": 0,
+      "flops": 0,
+      "input_shape": [
+        1,
+        3136,
+        48
+      ],
+      "output_shape": [
+        1,
+        3136,
+        48
+      ],
+      "estimated_runtime": 0.0,
+      "estimated_energy": 0.0
+    },
+    {
+      "id": 76,
+      "name": "Reshape4d_76",
+      "op_type": "Reshape4d",
+      "weight_shape": [],
+      "weight_bytes": 0,
+      "flops": 0,
+      "input_shape": [
+        1,
+        3136,
+        48
+      ],
+      "output_shape": [
+        1,
+        56,
+        56,
+        48
+      ],
+      "estimated_runtime": 0.0,
+      "estimated_energy": 0.0
+    },
+    {
+      "id": 77,
+      "name": "LayerNorm_77",
+      "op_type": "LayerNorm",
+      "weight_shape": [
+        48
+      ],
+      "weight_bytes": 192,
+      "flops": 1204224,
+      "input_shape": [
+        1,
+        56,
+        56,
+        48
+      ],
+      "output_shape": [
+        1,
+        56,
+        56,
+        48
+      ],
+      "estimated_runtime": 1.204224e-07,
+      "estimated_energy": 6.0211199999999995e-06
+    },
+    {
+      "id": 78,
+      "name": "Linear_78",
+      "op_type": "Linear",
+      "weight_shape": [
+        288,
+        48
+      ],
+      "weight_bytes": 55296,
+      "flops": 27360,
+      "input_shape": [
+        1,
+        56,
+        56,
+        48
+      ],
+      "output_shape": [
+        1,
+        56,
+        56,
+        288
+      ],
+      "estimated_runtime": 2.736e-09,
+      "estimated_energy": 1.3679999999999998e-07
+    },
+    {
+      "id": 79,
+      "name": "GELU_79",
+      "op_type": "GELU",
+      "weight_shape": [],
+      "weight_bytes": 0,
+      "flops": 0,
+      "input_shape": [
+        1,
+        56,
+        56,
+        288
+      ],
+      "output_shape": [
+        1,
+        56,
+        56,
+        288
+      ],
+      "estimated_runtime": 0.0,
+      "estimated_energy": 0.0
+    },
+    {
+      "id": 80,
+      "name": "Linear_80",
+      "op_type": "Linear",
+      "weight_shape": [
+        48,
+        288
+      ],
+      "weight_bytes": 55296,
+      "flops": 27600,
+      "input_shape": [
+        1,
+        56,
+        56,
+        288
+      ],
+      "output_shape": [
+        1,
+        56,
+        56,
+        48
+      ],
+      "estimated_runtime": 2.76e-09,
+      "estimated_energy": 1.38e-07
+    },
+    {
+      "id": 81,
+      "name": "GammaMultiply_81",
+      "op_type": "GammaMultiply",
+      "weight_shape": [],
+      "weight_bytes": 0,
+      "flops": 48,
+      "input_shape": [
+        48
+      ],
+      "output_shape": [
+        1,
+        56,
+        56,
+        48
+      ],
+      "estimated_runtime": 4.8e-12,
+      "estimated_energy": 2.4e-10
+    },
+    {
+      "id": 82,
+      "name": "Permute4d_82",
+      "op_type": "Permute4d",
+      "weight_shape": [],
+      "weight_bytes": 0,
+      "flops": 0,
+      "input_shape": [
+        1,
+        56,
+        56,
+        48
+      ],
+      "output_shape": [
+        1,
+        48,
+        56,
+        56
+      ],
+      "estimated_runtime": 0.0,
+      "estimated_energy": 0.0
+    },
+    {
+      "id": 83,
+      "name": "DropPath_83",
+      "op_type": "DropPath",
+      "weight_shape": [],
+      "weight_bytes": 0,
+      "flops": 0,
+      "input_shape": [
+        1,
+        48,
+        56,
+        56
+      ],
+      "output_shape": [
+        1,
+        48,
+        56,
+        56
+      ],
+      "estimated_runtime": 0.0,
+      "estimated_energy": 0.0
+    },
+    {
+      "id": 84,
+      "name": "ResidualAdd_84",
+      "op_type": "ResidualAdd",
+      "weight_shape": [],
+      "weight_bytes": 0,
+      "flops": 150528,
+      "input_shape": [
+        1,
+        48,
+        56,
+        56
+      ],
+      "output_shape": [
+        1,
+        48,
+        56,
+        56
+      ],
+      "estimated_runtime": 1.50528e-08,
+      "estimated_energy": 7.526399999999999e-07
+    },
+    {
+      "id": 85,
+      "name": "Conv2d_85",
+      "op_type": "Conv2d",
+      "weight_shape": [
+        80,
+        99,
+        3,
+        3
+      ],
+      "weight_bytes": 285120,
+      "flops": 111704320,
+      "input_shape": [
+        1,
+        99,
+        56,
+        56
+      ],
+      "output_shape": [
+        1,
+        80,
+        28,
+        28
+      ],
+      "estimated_runtime": 1.1170432e-05,
+      "estimated_energy": 0.0005585216
+    },
+    {
+      "id": 86,
+      "name": "Conv2d_86",
+      "op_type": "Conv2d",
+      "weight_shape": [
+        80,
+        1,
+        3,
+        3
+      ],
+      "weight_bytes": 2880,
+      "flops": 1066240,
+      "input_shape": [
+        1,
+        80,
+        28,
+        28
+      ],
+      "output_shape": [
+        1,
+        80,
+        28,
+        28
+      ],
+      "estimated_runtime": 1.06624e-07,
+      "estimated_energy": 5.3312e-06
+    },
+    {
+      "id": 87,
+      "name": "BatchNorm2d_87",
+      "op_type": "BatchNorm2d",
+      "weight_shape": [
+        80
+      ],
+      "weight_bytes": 320,
+      "flops": 125440,
+      "input_shape": [
+        1,
+        80,
+        28,
+        28
+      ],
+      "output_shape": [
+        1,
+        80,
+        28,
+        28
+      ],
+      "estimated_runtime": 1.2544e-08,
+      "estimated_energy": 6.272e-07
+    },
+    {
+      "id": 88,
+      "name": "Permute4d_88",
+      "op_type": "Permute4d",
+      "weight_shape": [],
+      "weight_bytes": 0,
+      "flops": 0,
+      "input_shape": [
+        1,
+        80,
+        28,
+        28
+      ],
+      "output_shape": [
+        1,
+        28,
+        28,
+        80
+      ],
+      "estimated_runtime": 0.0,
+      "estimated_energy": 0.0
+    },
+    {
+      "id": 89,
+      "name": "Linear_89",
+      "op_type": "Linear",
+      "weight_shape": [
+        480,
+        80
+      ],
+      "weight_bytes": 153600,
+      "flops": 76320,
+      "input_shape": [
+        1,
+        28,
+        28,
+        80
+      ],
+      "output_shape": [
+        1,
+        28,
+        28,
+        480
+      ],
+      "estimated_runtime": 7.632e-09,
+      "estimated_energy": 3.816e-07
+    },
+    {
+      "id": 90,
+      "name": "GELU_90",
+      "op_type": "GELU",
+      "weight_shape": [],
+      "weight_bytes": 0,
+      "flops": 0,
+      "input_shape": [
+        1,
+        28,
+        28,
+        480
+      ],
+      "output_shape": [
+        1,
+        28,
+        28,
+        480
+      ],
+      "estimated_runtime": 0.0,
+      "estimated_energy": 0.0
+    },
+    {
+      "id": 91,
+      "name": "Linear_91",
+      "op_type": "Linear",
+      "weight_shape": [
+        80,
+        480
+      ],
+      "weight_bytes": 153600,
+      "flops": 76720,
+      "input_shape": [
+        1,
+        28,
+        28,
+        480
+      ],
+      "output_shape": [
+        1,
+        28,
+        28,
+        80
+      ],
+      "estimated_runtime": 7.672e-09,
+      "estimated_energy": 3.8359999999999997e-07
+    },
+    {
+      "id": 92,
+      "name": "GammaMultiply_92",
+      "op_type": "GammaMultiply",
+      "weight_shape": [],
+      "weight_bytes": 0,
+      "flops": 80,
+      "input_shape": [
+        80
+      ],
+      "output_shape": [
+        1,
+        28,
+        28,
+        80
+      ],
+      "estimated_runtime": 8e-12,
+      "estimated_energy": 3.9999999999999996e-10
+    },
+    {
+      "id": 93,
+      "name": "Permute4d_93",
+      "op_type": "Permute4d",
+      "weight_shape": [],
+      "weight_bytes": 0,
+      "flops": 0,
+      "input_shape": [
+        1,
+        28,
+        28,
+        80
+      ],
+      "output_shape": [
+        1,
+        80,
+        28,
+        28
+      ],
+      "estimated_runtime": 0.0,
+      "estimated_energy": 0.0
+    },
+    {
+      "id": 94,
+      "name": "DropPath_94",
+      "op_type": "DropPath",
+      "weight_shape": [],
+      "weight_bytes": 0,
+      "flops": 0,
+      "input_shape": [
+        1,
+        80,
+        28,
+        28
+      ],
+      "output_shape": [
+        1,
+        80,
+        28,
+        28
+      ],
+      "estimated_runtime": 0.0,
+      "estimated_energy": 0.0
+    },
+    {
+      "id": 95,
+      "name": "ResidualAdd_95",
+      "op_type": "ResidualAdd",
+      "weight_shape": [],
+      "weight_bytes": 0,
+      "flops": 62720,
+      "input_shape": [
+        1,
+        80,
+        28,
+        28
+      ],
+      "output_shape": [
+        1,
+        80,
+        28,
+        28
+      ],
+      "estimated_runtime": 6.272e-09,
+      "estimated_energy": 3.136e-07
+    },
+    {
+      "id": 96,
+      "name": "Conv2d_96",
+      "op_type": "Conv2d",
+      "weight_shape": [
+        80,
+        1,
+        3,
+        3
+      ],
+      "weight_bytes": 2880,
+      "flops": 1066240,
+      "input_shape": [
+        1,
+        80,
+        28,
+        28
+      ],
+      "output_shape": [
+        1,
+        80,
+        28,
+        28
+      ],
+      "estimated_runtime": 1.06624e-07,
+      "estimated_energy": 5.3312e-06
+    },
+    {
+      "id": 97,
+      "name": "BatchNorm2d_97",
+      "op_type": "BatchNorm2d",
+      "weight_shape": [
+        80
+      ],
+      "weight_bytes": 320,
+      "flops": 125440,
+      "input_shape": [
+        1,
+        80,
+        28,
+        28
+      ],
+      "output_shape": [
+        1,
+        80,
+        28,
+        28
+      ],
+      "estimated_runtime": 1.2544e-08,
+      "estimated_energy": 6.272e-07
+    },
+    {
+      "id": 98,
+      "name": "Permute4d_98",
+      "op_type": "Permute4d",
+      "weight_shape": [],
+      "weight_bytes": 0,
+      "flops": 0,
+      "input_shape": [
+        1,
+        80,
+        28,
+        28
+      ],
+      "output_shape": [
+        1,
+        28,
+        28,
+        80
+      ],
+      "estimated_runtime": 0.0,
+      "estimated_energy": 0.0
+    },
+    {
+      "id": 99,
+      "name": "Linear_99",
+      "op_type": "Linear",
+      "weight_shape": [
+        480,
+        80
+      ],
+      "weight_bytes": 153600,
+      "flops": 76320,
+      "input_shape": [
+        1,
+        28,
+        28,
+        80
+      ],
+      "output_shape": [
+        1,
+        28,
+        28,
+        480
+      ],
+      "estimated_runtime": 7.632e-09,
+      "estimated_energy": 3.816e-07
+    },
+    {
+      "id": 100,
+      "name": "GELU_100",
+      "op_type": "GELU",
+      "weight_shape": [],
+      "weight_bytes": 0,
+      "flops": 0,
+      "input_shape": [
+        1,
+        28,
+        28,
+        480
+      ],
+      "output_shape": [
+        1,
+        28,
+        28,
+        480
+      ],
+      "estimated_runtime": 0.0,
+      "estimated_energy": 0.0
+    },
+    {
+      "id": 101,
+      "name": "Linear_101",
+      "op_type": "Linear",
+      "weight_shape": [
+        80,
+        480
+      ],
+      "weight_bytes": 153600,
+      "flops": 76720,
+      "input_shape": [
+        1,
+        28,
+        28,
+        480
+      ],
+      "output_shape": [
+        1,
+        28,
+        28,
+        80
+      ],
+      "estimated_runtime": 7.672e-09,
+      "estimated_energy": 3.8359999999999997e-07
+    },
+    {
+      "id": 102,
+      "name": "GammaMultiply_102",
+      "op_type": "GammaMultiply",
+      "weight_shape": [],
+      "weight_bytes": 0,
+      "flops": 80,
+      "input_shape": [
+        80
+      ],
+      "output_shape": [
+        1,
+        28,
+        28,
+        80
+      ],
+      "estimated_runtime": 8e-12,
+      "estimated_energy": 3.9999999999999996e-10
+    },
+    {
+      "id": 103,
+      "name": "Permute4d_103",
+      "op_type": "Permute4d",
+      "weight_shape": [],
+      "weight_bytes": 0,
+      "flops": 0,
+      "input_shape": [
+        1,
+        28,
+        28,
+        80
+      ],
+      "output_shape": [
+        1,
+        80,
+        28,
+        28
+      ],
+      "estimated_runtime": 0.0,
+      "estimated_energy": 0.0
+    },
+    {
+      "id": 104,
+      "name": "DropPath_104",
+      "op_type": "DropPath",
+      "weight_shape": [],
+      "weight_bytes": 0,
+      "flops": 0,
+      "input_shape": [
+        1,
+        80,
+        28,
+        28
+      ],
+      "output_shape": [
+        1,
+        80,
+        28,
+        28
+      ],
+      "estimated_runtime": 0.0,
+      "estimated_energy": 0.0
+    },
+    {
+      "id": 105,
+      "name": "ResidualAdd_105",
+      "op_type": "ResidualAdd",
+      "weight_shape": [],
+      "weight_bytes": 0,
+      "flops": 62720,
+      "input_shape": [
+        1,
+        80,
+        28,
+        28
+      ],
+      "output_shape": [
+        1,
+        80,
+        28,
+        28
+      ],
+      "estimated_runtime": 6.272e-09,
+      "estimated_energy": 3.136e-07
+    },
+    {
+      "id": 106,
+      "name": "Conv2d_106",
+      "op_type": "Conv2d",
+      "weight_shape": [
+        80,
+        1,
+        3,
+        3
+      ],
+      "weight_bytes": 2880,
+      "flops": 1066240,
+      "input_shape": [
+        1,
+        80,
+        28,
+        28
+      ],
+      "output_shape": [
+        1,
+        80,
+        28,
+        28
+      ],
+      "estimated_runtime": 1.06624e-07,
+      "estimated_energy": 5.3312e-06
+    },
+    {
+      "id": 107,
+      "name": "BatchNorm2d_107",
+      "op_type": "BatchNorm2d",
+      "weight_shape": [
+        80
+      ],
+      "weight_bytes": 320,
+      "flops": 125440,
+      "input_shape": [
+        1,
+        80,
+        28,
+        28
+      ],
+      "output_shape": [
+        1,
+        80,
+        28,
+        28
+      ],
+      "estimated_runtime": 1.2544e-08,
+      "estimated_energy": 6.272e-07
+    },
+    {
+      "id": 108,
+      "name": "Permute4d_108",
+      "op_type": "Permute4d",
+      "weight_shape": [],
+      "weight_bytes": 0,
+      "flops": 0,
+      "input_shape": [
+        1,
+        80,
+        28,
+        28
+      ],
+      "output_shape": [
+        1,
+        28,
+        28,
+        80
+      ],
+      "estimated_runtime": 0.0,
+      "estimated_energy": 0.0
+    },
+    {
+      "id": 109,
+      "name": "Linear_109",
+      "op_type": "Linear",
+      "weight_shape": [
+        480,
+        80
+      ],
+      "weight_bytes": 153600,
+      "flops": 76320,
+      "input_shape": [
+        1,
+        28,
+        28,
+        80
+      ],
+      "output_shape": [
+        1,
+        28,
+        28,
+        480
+      ],
+      "estimated_runtime": 7.632e-09,
+      "estimated_energy": 3.816e-07
+    },
+    {
+      "id": 110,
+      "name": "GELU_110",
+      "op_type": "GELU",
+      "weight_shape": [],
+      "weight_bytes": 0,
+      "flops": 0,
+      "input_shape": [
+        1,
+        28,
+        28,
+        480
+      ],
+      "output_shape": [
+        1,
+        28,
+        28,
+        480
+      ],
+      "estimated_runtime": 0.0,
+      "estimated_energy": 0.0
+    },
+    {
+      "id": 111,
+      "name": "Linear_111",
+      "op_type": "Linear",
+      "weight_shape": [
+        80,
+        480
+      ],
+      "weight_bytes": 153600,
+      "flops": 76720,
+      "input_shape": [
+        1,
+        28,
+        28,
+        480
+      ],
+      "output_shape": [
+        1,
+        28,
+        28,
+        80
+      ],
+      "estimated_runtime": 7.672e-09,
+      "estimated_energy": 3.8359999999999997e-07
+    },
+    {
+      "id": 112,
+      "name": "GammaMultiply_112",
+      "op_type": "GammaMultiply",
+      "weight_shape": [],
+      "weight_bytes": 0,
+      "flops": 80,
+      "input_shape": [
+        80
+      ],
+      "output_shape": [
+        1,
+        28,
+        28,
+        80
+      ],
+      "estimated_runtime": 8e-12,
+      "estimated_energy": 3.9999999999999996e-10
+    },
+    {
+      "id": 113,
+      "name": "Permute4d_113",
+      "op_type": "Permute4d",
+      "weight_shape": [],
+      "weight_bytes": 0,
+      "flops": 0,
+      "input_shape": [
+        1,
+        28,
+        28,
+        80
+      ],
+      "output_shape": [
+        1,
+        80,
+        28,
+        28
+      ],
+      "estimated_runtime": 0.0,
+      "estimated_energy": 0.0
+    },
+    {
+      "id": 114,
+      "name": "DropPath_114",
+      "op_type": "DropPath",
+      "weight_shape": [],
+      "weight_bytes": 0,
+      "flops": 0,
+      "input_shape": [
+        1,
+        80,
+        28,
+        28
+      ],
+      "output_shape": [
+        1,
+        80,
+        28,
+        28
+      ],
+      "estimated_runtime": 0.0,
+      "estimated_energy": 0.0
+    },
+    {
+      "id": 115,
+      "name": "ResidualAdd_115",
+      "op_type": "ResidualAdd",
+      "weight_shape": [],
+      "weight_bytes": 0,
+      "flops": 62720,
+      "input_shape": [
+        1,
+        80,
+        28,
+        28
+      ],
+      "output_shape": [
+        1,
+        80,
+        28,
+        28
+      ],
+      "estimated_runtime": 6.272e-09,
+      "estimated_energy": 3.136e-07
+    },
+    {
+      "id": 116,
+      "name": "Reshape3d_116",
+      "op_type": "Reshape3d",
+      "weight_shape": [],
+      "weight_bytes": 0,
+      "flops": 0,
+      "input_shape": [
+        1,
+        80,
+        28,
+        28
+      ],
+      "output_shape": [
+        1,
+        80,
+        784
+      ],
+      "estimated_runtime": 0.0,
+      "estimated_energy": 0.0
+    },
+    {
+      "id": 117,
+      "name": "Permute3d_117",
+      "op_type": "Permute3d",
+      "weight_shape": [],
+      "weight_bytes": 0,
+      "flops": 0,
+      "input_shape": [
+        1,
+        80,
+        784
+      ],
+      "output_shape": [
+        1,
+        784,
+        80
+      ],
+      "estimated_runtime": 0.0,
+      "estimated_energy": 0.0
+    },
+    {
+      "id": 118,
+      "name": "LayerNorm_118",
+      "op_type": "LayerNorm",
+      "weight_shape": [
+        80
+      ],
+      "weight_bytes": 320,
+      "flops": 501760,
+      "input_shape": [
+        1,
+        784,
+        80
+      ],
+      "output_shape": [
+        1,
+        784,
+        80
+      ],
+      "estimated_runtime": 5.0176e-08,
+      "estimated_energy": 2.5088e-06
+    },
+    {
+      "id": 119,
+      "name": "Linear_119",
+      "op_type": "Linear",
+      "weight_shape": [
+        240,
+        80
+      ],
+      "weight_bytes": 76800,
+      "flops": 38160,
+      "input_shape": [
+        1,
+        784,
+        80
+      ],
+      "output_shape": [
+        1,
+        784,
+        240
+      ],
+      "estimated_runtime": 3.816e-09,
+      "estimated_energy": 1.908e-07
+    },
+    {
+      "id": 120,
+      "name": "Reshape5d_120",
+      "op_type": "Reshape5d",
+      "weight_shape": [],
+      "weight_bytes": 0,
+      "flops": 0,
+      "input_shape": [
+        1,
+        784,
+        240
+      ],
+      "output_shape": [
+        1,
+        784,
+        3,
+        8,
+        10
+      ],
+      "estimated_runtime": 0.0,
+      "estimated_energy": 0.0
+    },
+    {
+      "id": 121,
+      "name": "Permute5d_121",
+      "op_type": "Permute5d",
+      "weight_shape": [],
+      "weight_bytes": 0,
+      "flops": 0,
+      "input_shape": [
+        1,
+        784,
+        3,
+        8,
+        10
+      ],
+      "output_shape": [
+        3,
+        1,
+        8,
+        784,
+        10
+      ],
+      "estimated_runtime": 0.0,
+      "estimated_energy": 0.0
+    },
+    {
+      "id": 122,
+      "name": "Extract2dq_122",
+      "op_type": "Extract2dq",
+      "weight_shape": [],
+      "weight_bytes": 0,
+      "flops": 0,
+      "input_shape": [
+        3,
+        1,
+        8,
+        784,
+        10
+      ],
+      "output_shape": [
+        1,
+        8,
+        784,
+        10
+      ],
+      "estimated_runtime": 0.0,
+      "estimated_energy": 0.0
+    },
+    {
+      "id": 123,
+      "name": "Extract2dk_123",
+      "op_type": "Extract2dk",
+      "weight_shape": [],
+      "weight_bytes": 0,
+      "flops": 0,
+      "input_shape": [
+        3,
+        1,
+        8,
+        784,
+        10
+      ],
+      "output_shape": [
+        1,
+        8,
+        784,
+        10
+      ],
+      "estimated_runtime": 0.0,
+      "estimated_energy": 0.0
+    },
+    {
+      "id": 124,
+      "name": "Extract2dv_124",
+      "op_type": "Extract2dv",
+      "weight_shape": [],
+      "weight_bytes": 0,
+      "flops": 0,
+      "input_shape": [
+        3,
+        1,
+        8,
+        784,
+        10
+      ],
+      "output_shape": [
+        1,
+        8,
+        784,
+        10
+      ],
+      "estimated_runtime": 0.0,
+      "estimated_energy": 0.0
+    },
+    {
+      "id": 125,
+      "name": "Transpose2d_125",
+      "op_type": "Transpose2d",
+      "weight_shape": [],
+      "weight_bytes": 0,
+      "flops": 0,
+      "input_shape": [
+        1,
+        8,
+        784,
+        10
+      ],
+      "output_shape": [
+        1,
+        8,
+        10,
+        784
+      ],
+      "estimated_runtime": 0.0,
+      "estimated_energy": 0.0
+    },
+    {
+      "id": 126,
+      "name": "Transpose2d_126",
+      "op_type": "Transpose2d",
+      "weight_shape": [],
+      "weight_bytes": 0,
+      "flops": 0,
+      "input_shape": [
+        1,
+        8,
+        784,
+        10
+      ],
+      "output_shape": [
+        1,
+        8,
+        10,
+        784
+      ],
+      "estimated_runtime": 0.0,
+      "estimated_energy": 0.0
+    },
+    {
+      "id": 127,
+      "name": "Transpose2d_127",
+      "op_type": "Transpose2d",
+      "weight_shape": [],
+      "weight_bytes": 0,
+      "flops": 0,
+      "input_shape": [
+        1,
+        8,
+        784,
+        10
+      ],
+      "output_shape": [
+        1,
+        8,
+        10,
+        784
+      ],
+      "estimated_runtime": 0.0,
+      "estimated_energy": 0.0
+    },
+    {
+      "id": 128,
+      "name": "Normalize2d_128",
+      "op_type": "Normalize2d",
+      "weight_shape": [],
+      "weight_bytes": 0,
+      "flops": 0,
+      "input_shape": [
+        1,
+        8,
+        10,
+        784
+      ],
+      "output_shape": [
+        1,
+        8,
+        10,
+        784
+      ],
+      "estimated_runtime": 0.0,
+      "estimated_energy": 0.0
+    },
+    {
+      "id": 129,
+      "name": "Normalize2d_129",
+      "op_type": "Normalize2d",
+      "weight_shape": [],
+      "weight_bytes": 0,
+      "flops": 0,
+      "input_shape": [
+        1,
+        8,
+        10,
+        784
+      ],
+      "output_shape": [
+        1,
+        8,
+        10,
+        784
+      ],
+      "estimated_runtime": 0.0,
+      "estimated_energy": 0.0
+    },
+    {
+      "id": 130,
+      "name": "MatrixMultiply_130",
+      "op_type": "MatrixMultiply",
+      "weight_shape": [],
+      "weight_bytes": 0,
+      "flops": 1254400,
+      "input_shape": [
+        1,
+        8,
+        10,
+        784
+      ],
+      "output_shape": [
+        1,
+        8,
+        10,
+        10
+      ],
+      "estimated_runtime": 1.2544e-07,
+      "estimated_energy": 6.271999999999999e-06
+    },
+    {
+      "id": 131,
+      "name": "Softmax_131",
+      "op_type": "Softmax",
+      "weight_shape": [],
+      "weight_bytes": 0,
+      "flops": 1600,
+      "input_shape": [
+        1,
+        8,
+        10,
+        10
+      ],
+      "output_shape": [
+        1,
+        8,
+        10,
+        10
+      ],
+      "estimated_runtime": 1.6e-10,
+      "estimated_energy": 7.999999999999999e-09
+    },
+    {
+      "id": 132,
+      "name": "WeightedSum_132",
+      "op_type": "WeightedSum",
+      "weight_shape": [],
+      "weight_bytes": 0,
+      "flops": 0,
+      "input_shape": [
+        1,
+        8,
+        10,
+        10
+      ],
+      "output_shape": [
+        1,
+        8,
+        10,
+        784
+      ],
+      "estimated_runtime": 0.0,
+      "estimated_energy": 0.0
+    },
+    {
+      "id": 133,
+      "name": "Permute4d_133",
+      "op_type": "Permute4d",
+      "weight_shape": [],
+      "weight_bytes": 0,
+      "flops": 0,
+      "input_shape": [
+        1,
+        8,
+        10,
+        784
+      ],
+      "output_shape": [
+        1,
+        784,
+        8,
+        10
+      ],
+      "estimated_runtime": 0.0,
+      "estimated_energy": 0.0
+    },
+    {
+      "id": 134,
+      "name": "Reshape3d_134",
+      "op_type": "Reshape3d",
+      "weight_shape": [],
+      "weight_bytes": 0,
+      "flops": 0,
+      "input_shape": [
+        1,
+        784,
+        8,
+        10
+      ],
+      "output_shape": [
+        1,
+        784,
+        80
+      ],
+      "estimated_runtime": 0.0,
+      "estimated_energy": 0.0
+    },
+    {
+      "id": 135,
+      "name": "Linear_135",
+      "op_type": "Linear",
+      "weight_shape": [
+        80,
+        80
+      ],
+      "weight_bytes": 25600,
+      "flops": 12720,
+      "input_shape": [
+        1,
+        784,
+        80
+      ],
+      "output_shape": [
+        1,
+        784,
+        80
+      ],
+      "estimated_runtime": 1.272e-09,
+      "estimated_energy": 6.36e-08
+    },
+    {
+      "id": 136,
+      "name": "GammaMultiply_136",
+      "op_type": "GammaMultiply",
+      "weight_shape": [],
+      "weight_bytes": 0,
+      "flops": 62720,
+      "input_shape": [
+        1,
+        784,
+        80
+      ],
+      "output_shape": [
+        1,
+        784,
+        80
+      ],
+      "estimated_runtime": 6.272e-09,
+      "estimated_energy": 3.136e-07
+    },
+    {
+      "id": 137,
+      "name": "ResidualAdd_137",
+      "op_type": "ResidualAdd",
+      "weight_shape": [],
+      "weight_bytes": 0,
+      "flops": 0,
+      "input_shape": [
+        1,
+        784,
+        80
+      ],
+      "output_shape": [
+        1,
+        784,
+        80
+      ],
+      "estimated_runtime": 0.0,
+      "estimated_energy": 0.0
+    },
+    {
+      "id": 138,
+      "name": "Reshape4d_138",
+      "op_type": "Reshape4d",
+      "weight_shape": [],
+      "weight_bytes": 0,
+      "flops": 0,
+      "input_shape": [
+        1,
+        784,
+        80
+      ],
+      "output_shape": [
+        1,
+        28,
+        28,
+        80
+      ],
+      "estimated_runtime": 0.0,
+      "estimated_energy": 0.0
+    },
+    {
+      "id": 139,
+      "name": "LayerNorm_139",
+      "op_type": "LayerNorm",
+      "weight_shape": [
+        80
+      ],
+      "weight_bytes": 320,
+      "flops": 501760,
+      "input_shape": [
+        1,
+        28,
+        28,
+        80
+      ],
+      "output_shape": [
+        1,
+        28,
+        28,
+        80
+      ],
+      "estimated_runtime": 5.0176e-08,
+      "estimated_energy": 2.5088e-06
+    },
+    {
+      "id": 140,
+      "name": "Linear_140",
+      "op_type": "Linear",
+      "weight_shape": [
+        480,
+        80
+      ],
+      "weight_bytes": 153600,
+      "flops": 76320,
+      "input_shape": [
+        1,
+        28,
+        28,
+        80
+      ],
+      "output_shape": [
+        1,
+        28,
+        28,
+        480
+      ],
+      "estimated_runtime": 7.632e-09,
+      "estimated_energy": 3.816e-07
+    },
+    {
+      "id": 141,
+      "name": "GELU_141",
+      "op_type": "GELU",
+      "weight_shape": [],
+      "weight_bytes": 0,
+      "flops": 0,
+      "input_shape": [
+        1,
+        28,
+        28,
+        480
+      ],
+      "output_shape": [
+        1,
+        28,
+        28,
+        480
+      ],
+      "estimated_runtime": 0.0,
+      "estimated_energy": 0.0
+    },
+    {
+      "id": 142,
+      "name": "Linear_142",
+      "op_type": "Linear",
+      "weight_shape": [
+        80,
+        480
+      ],
+      "weight_bytes": 153600,
+      "flops": 76720,
+      "input_shape": [
+        1,
+        28,
+        28,
+        480
+      ],
+      "output_shape": [
+        1,
+        28,
+        28,
+        80
+      ],
+      "estimated_runtime": 7.672e-09,
+      "estimated_energy": 3.8359999999999997e-07
+    },
+    {
+      "id": 143,
+      "name": "GammaMultiply_143",
+      "op_type": "GammaMultiply",
+      "weight_shape": [],
+      "weight_bytes": 0,
+      "flops": 80,
+      "input_shape": [
+        80
+      ],
+      "output_shape": [
+        1,
+        28,
+        28,
+        80
+      ],
+      "estimated_runtime": 8e-12,
+      "estimated_energy": 3.9999999999999996e-10
+    },
+    {
+      "id": 144,
+      "name": "Permute4d_144",
+      "op_type": "Permute4d",
+      "weight_shape": [],
+      "weight_bytes": 0,
+      "flops": 0,
+      "input_shape": [
+        1,
+        28,
+        28,
+        80
+      ],
+      "output_shape": [
+        1,
+        80,
+        28,
+        28
+      ],
+      "estimated_runtime": 0.0,
+      "estimated_energy": 0.0
+    },
+    {
+      "id": 145,
+      "name": "DropPath_145",
+      "op_type": "DropPath",
+      "weight_shape": [],
+      "weight_bytes": 0,
+      "flops": 0,
+      "input_shape": [
+        1,
+        80,
+        28,
+        28
+      ],
+      "output_shape": [
+        1,
+        80,
+        28,
+        28
+      ],
+      "estimated_runtime": 0.0,
+      "estimated_energy": 0.0
+    },
+    {
+      "id": 146,
+      "name": "ResidualAdd_146",
+      "op_type": "ResidualAdd",
+      "weight_shape": [],
+      "weight_bytes": 0,
+      "flops": 62720,
+      "input_shape": [
+        1,
+        80,
+        28,
+        28
+      ],
+      "output_shape": [
+        1,
+        80,
+        28,
+        28
+      ],
+      "estimated_runtime": 6.272e-09,
+      "estimated_energy": 3.136e-07
+    },
+    {
+      "id": 147,
+      "name": "Conv2d_147",
+      "op_type": "Conv2d",
+      "weight_shape": [
+        128,
+        163,
+        3,
+        3
+      ],
+      "weight_bytes": 751104,
+      "flops": 73583104,
+      "input_shape": [
+        1,
+        163,
+        28,
+        28
+      ],
+      "output_shape": [
+        1,
+        128,
+        14,
+        14
+      ],
+      "estimated_runtime": 7.3583104e-06,
+      "estimated_energy": 0.00036791552
+    },
+    {
+      "id": 148,
+      "name": "Conv2d_148",
+      "op_type": "Conv2d",
+      "weight_shape": [
+        128,
+        1,
+        3,
+        3
+      ],
+      "weight_bytes": 4608,
+      "flops": 426496,
+      "input_shape": [
+        1,
+        128,
+        14,
+        14
+      ],
+      "output_shape": [
+        1,
+        128,
+        14,
+        14
+      ],
+      "estimated_runtime": 4.26496e-08,
+      "estimated_energy": 2.1324799999999998e-06
+    },
+    {
+      "id": 149,
+      "name": "BatchNorm2d_149",
+      "op_type": "BatchNorm2d",
+      "weight_shape": [
+        128
+      ],
+      "weight_bytes": 512,
+      "flops": 50176,
+      "input_shape": [
+        1,
+        128,
+        14,
+        14
+      ],
+      "output_shape": [
+        1,
+        128,
+        14,
+        14
+      ],
+      "estimated_runtime": 5.0176e-09,
+      "estimated_energy": 2.5088e-07
+    },
+    {
+      "id": 150,
+      "name": "Permute4d_150",
+      "op_type": "Permute4d",
+      "weight_shape": [],
+      "weight_bytes": 0,
+      "flops": 0,
+      "input_shape": [
+        1,
+        128,
+        14,
+        14
+      ],
+      "output_shape": [
+        1,
+        14,
+        14,
+        128
+      ],
+      "estimated_runtime": 0.0,
+      "estimated_energy": 0.0
+    },
+    {
+      "id": 151,
+      "name": "Linear_151",
+      "op_type": "Linear",
+      "weight_shape": [
+        768,
+        128
+      ],
+      "weight_bytes": 393216,
+      "flops": 195840,
+      "input_shape": [
+        1,
+        14,
+        14,
+        128
+      ],
+      "output_shape": [
+        1,
+        14,
+        14,
+        768
+      ],
+      "estimated_runtime": 1.9584e-08,
+      "estimated_energy": 9.791999999999999e-07
+    },
+    {
+      "id": 152,
+      "name": "GELU_152",
+      "op_type": "GELU",
+      "weight_shape": [],
+      "weight_bytes": 0,
+      "flops": 0,
+      "input_shape": [
+        1,
+        14,
+        14,
+        768
+      ],
+      "output_shape": [
+        1,
+        14,
+        14,
+        768
+      ],
+      "estimated_runtime": 0.0,
+      "estimated_energy": 0.0
+    },
+    {
+      "id": 153,
+      "name": "Linear_153",
+      "op_type": "Linear",
+      "weight_shape": [
+        128,
+        768
+      ],
+      "weight_bytes": 393216,
+      "flops": 196480,
+      "input_shape": [
+        1,
+        14,
+        14,
+        768
+      ],
+      "output_shape": [
+        1,
+        14,
+        14,
+        128
+      ],
+      "estimated_runtime": 1.9648e-08,
+      "estimated_energy": 9.824e-07
+    },
+    {
+      "id": 154,
+      "name": "GammaMultiply_154",
+      "op_type": "GammaMultiply",
+      "weight_shape": [],
+      "weight_bytes": 0,
+      "flops": 128,
+      "input_shape": [
+        128
+      ],
+      "output_shape": [
+        1,
+        14,
+        14,
+        128
+      ],
+      "estimated_runtime": 1.28e-11,
+      "estimated_energy": 6.4e-10
+    },
+    {
+      "id": 155,
+      "name": "Permute4d_155",
+      "op_type": "Permute4d",
+      "weight_shape": [],
+      "weight_bytes": 0,
+      "flops": 0,
+      "input_shape": [
+        1,
+        14,
+        14,
+        128
+      ],
+      "output_shape": [
+        1,
+        128,
+        14,
+        14
+      ],
+      "estimated_runtime": 0.0,
+      "estimated_energy": 0.0
+    },
+    {
+      "id": 156,
+      "name": "DropPath_156",
+      "op_type": "DropPath",
+      "weight_shape": [],
+      "weight_bytes": 0,
+      "flops": 0,
+      "input_shape": [
+        1,
+        128,
+        14,
+        14
+      ],
+      "output_shape": [
+        1,
+        128,
+        14,
+        14
+      ],
+      "estimated_runtime": 0.0,
+      "estimated_energy": 0.0
+    },
+    {
+      "id": 157,
+      "name": "ResidualAdd_157",
+      "op_type": "ResidualAdd",
+      "weight_shape": [],
+      "weight_bytes": 0,
+      "flops": 25088,
+      "input_shape": [
+        1,
+        128,
+        14,
+        14
+      ],
+      "output_shape": [
+        1,
+        128,
+        14,
+        14
+      ],
+      "estimated_runtime": 2.5088e-09,
+      "estimated_energy": 1.2544e-07
+    },
+    {
+      "id": 158,
+      "name": "Conv2d_158",
+      "op_type": "Conv2d",
+      "weight_shape": [
+        128,
+        1,
+        3,
+        3
+      ],
+      "weight_bytes": 4608,
+      "flops": 426496,
+      "input_shape": [
+        1,
+        128,
+        14,
+        14
+      ],
+      "output_shape": [
+        1,
+        128,
+        14,
+        14
+      ],
+      "estimated_runtime": 4.26496e-08,
+      "estimated_energy": 2.1324799999999998e-06
+    },
+    {
+      "id": 159,
+      "name": "BatchNorm2d_159",
+      "op_type": "BatchNorm2d",
+      "weight_shape": [
+        128
+      ],
+      "weight_bytes": 512,
+      "flops": 50176,
+      "input_shape": [
+        1,
+        128,
+        14,
+        14
+      ],
+      "output_shape": [
+        1,
+        128,
+        14,
+        14
+      ],
+      "estimated_runtime": 5.0176e-09,
+      "estimated_energy": 2.5088e-07
+    },
+    {
+      "id": 160,
+      "name": "Permute4d_160",
+      "op_type": "Permute4d",
+      "weight_shape": [],
+      "weight_bytes": 0,
+      "flops": 0,
+      "input_shape": [
+        1,
+        128,
+        14,
+        14
+      ],
+      "output_shape": [
+        1,
+        14,
+        14,
+        128
+      ],
+      "estimated_runtime": 0.0,
+      "estimated_energy": 0.0
+    },
+    {
+      "id": 161,
+      "name": "Linear_161",
+      "op_type": "Linear",
+      "weight_shape": [
+        768,
+        128
+      ],
+      "weight_bytes": 393216,
+      "flops": 195840,
+      "input_shape": [
+        1,
+        14,
+        14,
+        128
+      ],
+      "output_shape": [
+        1,
+        14,
+        14,
+        768
+      ],
+      "estimated_runtime": 1.9584e-08,
+      "estimated_energy": 9.791999999999999e-07
+    },
+    {
+      "id": 162,
+      "name": "GELU_162",
+      "op_type": "GELU",
+      "weight_shape": [],
+      "weight_bytes": 0,
+      "flops": 0,
+      "input_shape": [
+        1,
+        14,
+        14,
+        768
+      ],
+      "output_shape": [
+        1,
+        14,
+        14,
+        768
+      ],
+      "estimated_runtime": 0.0,
+      "estimated_energy": 0.0
+    },
+    {
+      "id": 163,
+      "name": "Linear_163",
+      "op_type": "Linear",
+      "weight_shape": [
+        128,
+        768
+      ],
+      "weight_bytes": 393216,
+      "flops": 196480,
+      "input_shape": [
+        1,
+        14,
+        14,
+        768
+      ],
+      "output_shape": [
+        1,
+        14,
+        14,
+        128
+      ],
+      "estimated_runtime": 1.9648e-08,
+      "estimated_energy": 9.824e-07
+    },
+    {
+      "id": 164,
+      "name": "GammaMultiply_164",
+      "op_type": "GammaMultiply",
+      "weight_shape": [],
+      "weight_bytes": 0,
+      "flops": 128,
+      "input_shape": [
+        128
+      ],
+      "output_shape": [
+        1,
+        14,
+        14,
+        128
+      ],
+      "estimated_runtime": 1.28e-11,
+      "estimated_energy": 6.4e-10
+    },
+    {
+      "id": 165,
+      "name": "Permute4d_165",
+      "op_type": "Permute4d",
+      "weight_shape": [],
+      "weight_bytes": 0,
+      "flops": 0,
+      "input_shape": [
+        1,
+        14,
+        14,
+        128
+      ],
+      "output_shape": [
+        1,
+        128,
+        14,
+        14
+      ],
+      "estimated_runtime": 0.0,
+      "estimated_energy": 0.0
+    },
+    {
+      "id": 166,
+      "name": "DropPath_166",
+      "op_type": "DropPath",
+      "weight_shape": [],
+      "weight_bytes": 0,
+      "flops": 0,
+      "input_shape": [
+        1,
+        128,
+        14,
+        14
+      ],
+      "output_shape": [
+        1,
+        128,
+        14,
+        14
+      ],
+      "estimated_runtime": 0.0,
+      "estimated_energy": 0.0
+    },
+    {
+      "id": 167,
+      "name": "ResidualAdd_167",
+      "op_type": "ResidualAdd",
+      "weight_shape": [],
+      "weight_bytes": 0,
+      "flops": 25088,
+      "input_shape": [
+        1,
+        128,
+        14,
+        14
+      ],
+      "output_shape": [
+        1,
+        128,
+        14,
+        14
+      ],
+      "estimated_runtime": 2.5088e-09,
+      "estimated_energy": 1.2544e-07
+    },
+    {
+      "id": 168,
+      "name": "Conv2d_168",
+      "op_type": "Conv2d",
+      "weight_shape": [
+        128,
+        1,
+        3,
+        3
+      ],
+      "weight_bytes": 4608,
+      "flops": 426496,
+      "input_shape": [
+        1,
+        128,
+        14,
+        14
+      ],
+      "output_shape": [
+        1,
+        128,
+        14,
+        14
+      ],
+      "estimated_runtime": 4.26496e-08,
+      "estimated_energy": 2.1324799999999998e-06
+    },
+    {
+      "id": 169,
+      "name": "BatchNorm2d_169",
+      "op_type": "BatchNorm2d",
+      "weight_shape": [
+        128
+      ],
+      "weight_bytes": 512,
+      "flops": 50176,
+      "input_shape": [
+        1,
+        128,
+        14,
+        14
+      ],
+      "output_shape": [
+        1,
+        128,
+        14,
+        14
+      ],
+      "estimated_runtime": 5.0176e-09,
+      "estimated_energy": 2.5088e-07
+    },
+    {
+      "id": 170,
+      "name": "Permute4d_170",
+      "op_type": "Permute4d",
+      "weight_shape": [],
+      "weight_bytes": 0,
+      "flops": 0,
+      "input_shape": [
+        1,
+        128,
+        14,
+        14
+      ],
+      "output_shape": [
+        1,
+        14,
+        14,
+        128
+      ],
+      "estimated_runtime": 0.0,
+      "estimated_energy": 0.0
+    },
+    {
+      "id": 171,
+      "name": "Linear_171",
+      "op_type": "Linear",
+      "weight_shape": [
+        768,
+        128
+      ],
+      "weight_bytes": 393216,
+      "flops": 195840,
+      "input_shape": [
+        1,
+        14,
+        14,
+        128
+      ],
+      "output_shape": [
+        1,
+        14,
+        14,
+        768
+      ],
+      "estimated_runtime": 1.9584e-08,
+      "estimated_energy": 9.791999999999999e-07
+    },
+    {
+      "id": 172,
+      "name": "GELU_172",
+      "op_type": "GELU",
+      "weight_shape": [],
+      "weight_bytes": 0,
+      "flops": 0,
+      "input_shape": [
+        1,
+        14,
+        14,
+        768
+      ],
+      "output_shape": [
+        1,
+        14,
+        14,
+        768
+      ],
+      "estimated_runtime": 0.0,
+      "estimated_energy": 0.0
+    },
+    {
+      "id": 173,
+      "name": "Linear_173",
+      "op_type": "Linear",
+      "weight_shape": [
+        128,
+        768
+      ],
+      "weight_bytes": 393216,
+      "flops": 196480,
+      "input_shape": [
+        1,
+        14,
+        14,
+        768
+      ],
+      "output_shape": [
+        1,
+        14,
+        14,
+        128
+      ],
+      "estimated_runtime": 1.9648e-08,
+      "estimated_energy": 9.824e-07
+    },
+    {
+      "id": 174,
+      "name": "GammaMultiply_174",
+      "op_type": "GammaMultiply",
+      "weight_shape": [],
+      "weight_bytes": 0,
+      "flops": 128,
+      "input_shape": [
+        128
+      ],
+      "output_shape": [
+        1,
+        14,
+        14,
+        128
+      ],
+      "estimated_runtime": 1.28e-11,
+      "estimated_energy": 6.4e-10
+    },
+    {
+      "id": 175,
+      "name": "Permute4d_175",
+      "op_type": "Permute4d",
+      "weight_shape": [],
+      "weight_bytes": 0,
+      "flops": 0,
+      "input_shape": [
+        1,
+        14,
+        14,
+        128
+      ],
+      "output_shape": [
+        1,
+        128,
+        14,
+        14
+      ],
+      "estimated_runtime": 0.0,
+      "estimated_energy": 0.0
+    },
+    {
+      "id": 176,
+      "name": "DropPath_176",
+      "op_type": "DropPath",
+      "weight_shape": [],
+      "weight_bytes": 0,
+      "flops": 0,
+      "input_shape": [
+        1,
+        128,
+        14,
+        14
+      ],
+      "output_shape": [
+        1,
+        128,
+        14,
+        14
+      ],
+      "estimated_runtime": 0.0,
+      "estimated_energy": 0.0
+    },
+    {
+      "id": 177,
+      "name": "ResidualAdd_177",
+      "op_type": "ResidualAdd",
+      "weight_shape": [],
+      "weight_bytes": 0,
+      "flops": 25088,
+      "input_shape": [
+        1,
+        128,
+        14,
+        14
+      ],
+      "output_shape": [
+        1,
+        128,
+        14,
+        14
+      ],
+      "estimated_runtime": 2.5088e-09,
+      "estimated_energy": 1.2544e-07
+    },
+    {
+      "id": 178,
+      "name": "Conv2d_178",
+      "op_type": "Conv2d",
+      "weight_shape": [
+        128,
+        1,
+        3,
+        3
+      ],
+      "weight_bytes": 4608,
+      "flops": 426496,
+      "input_shape": [
+        1,
+        128,
+        14,
+        14
+      ],
+      "output_shape": [
+        1,
+        128,
+        14,
+        14
+      ],
+      "estimated_runtime": 4.26496e-08,
+      "estimated_energy": 2.1324799999999998e-06
+    },
+    {
+      "id": 179,
+      "name": "BatchNorm2d_179",
+      "op_type": "BatchNorm2d",
+      "weight_shape": [
+        128
+      ],
+      "weight_bytes": 512,
+      "flops": 50176,
+      "input_shape": [
+        1,
+        128,
+        14,
+        14
+      ],
+      "output_shape": [
+        1,
+        128,
+        14,
+        14
+      ],
+      "estimated_runtime": 5.0176e-09,
+      "estimated_energy": 2.5088e-07
+    },
+    {
+      "id": 180,
+      "name": "Permute4d_180",
+      "op_type": "Permute4d",
+      "weight_shape": [],
+      "weight_bytes": 0,
+      "flops": 0,
+      "input_shape": [
+        1,
+        128,
+        14,
+        14
+      ],
+      "output_shape": [
+        1,
+        14,
+        14,
+        128
+      ],
+      "estimated_runtime": 0.0,
+      "estimated_energy": 0.0
+    },
+    {
+      "id": 181,
+      "name": "Linear_181",
+      "op_type": "Linear",
+      "weight_shape": [
+        768,
+        128
+      ],
+      "weight_bytes": 393216,
+      "flops": 195840,
+      "input_shape": [
+        1,
+        14,
+        14,
+        128
+      ],
+      "output_shape": [
+        1,
+        14,
+        14,
+        768
+      ],
+      "estimated_runtime": 1.9584e-08,
+      "estimated_energy": 9.791999999999999e-07
+    },
+    {
+      "id": 182,
+      "name": "GELU_182",
+      "op_type": "GELU",
+      "weight_shape": [],
+      "weight_bytes": 0,
+      "flops": 0,
+      "input_shape": [
+        1,
+        14,
+        14,
+        768
+      ],
+      "output_shape": [
+        1,
+        14,
+        14,
+        768
+      ],
+      "estimated_runtime": 0.0,
+      "estimated_energy": 0.0
+    },
+    {
+      "id": 183,
+      "name": "Linear_183",
+      "op_type": "Linear",
+      "weight_shape": [
+        128,
+        768
+      ],
+      "weight_bytes": 393216,
+      "flops": 196480,
+      "input_shape": [
+        1,
+        14,
+        14,
+        768
+      ],
+      "output_shape": [
+        1,
+        14,
+        14,
+        128
+      ],
+      "estimated_runtime": 1.9648e-08,
+      "estimated_energy": 9.824e-07
+    },
+    {
+      "id": 184,
+      "name": "GammaMultiply_184",
+      "op_type": "GammaMultiply",
+      "weight_shape": [],
+      "weight_bytes": 0,
+      "flops": 128,
+      "input_shape": [
+        128
+      ],
+      "output_shape": [
+        1,
+        14,
+        14,
+        128
+      ],
+      "estimated_runtime": 1.28e-11,
+      "estimated_energy": 6.4e-10
+    },
+    {
+      "id": 185,
+      "name": "Permute4d_185",
+      "op_type": "Permute4d",
+      "weight_shape": [],
+      "weight_bytes": 0,
+      "flops": 0,
+      "input_shape": [
+        1,
+        14,
+        14,
+        128
+      ],
+      "output_shape": [
+        1,
+        128,
+        14,
+        14
+      ],
+      "estimated_runtime": 0.0,
+      "estimated_energy": 0.0
+    },
+    {
+      "id": 186,
+      "name": "DropPath_186",
+      "op_type": "DropPath",
+      "weight_shape": [],
+      "weight_bytes": 0,
+      "flops": 0,
+      "input_shape": [
+        1,
+        128,
+        14,
+        14
+      ],
+      "output_shape": [
+        1,
+        128,
+        14,
+        14
+      ],
+      "estimated_runtime": 0.0,
+      "estimated_energy": 0.0
+    },
+    {
+      "id": 187,
+      "name": "ResidualAdd_187",
+      "op_type": "ResidualAdd",
+      "weight_shape": [],
+      "weight_bytes": 0,
+      "flops": 25088,
+      "input_shape": [
+        1,
+        128,
+        14,
+        14
+      ],
+      "output_shape": [
+        1,
+        128,
+        14,
+        14
+      ],
+      "estimated_runtime": 2.5088e-09,
+      "estimated_energy": 1.2544e-07
+    },
+    {
+      "id": 188,
+      "name": "Conv2d_188",
+      "op_type": "Conv2d",
+      "weight_shape": [
+        128,
+        1,
+        3,
+        3
+      ],
+      "weight_bytes": 4608,
+      "flops": 426496,
+      "input_shape": [
+        1,
+        128,
+        14,
+        14
+      ],
+      "output_shape": [
+        1,
+        128,
+        14,
+        14
+      ],
+      "estimated_runtime": 4.26496e-08,
+      "estimated_energy": 2.1324799999999998e-06
+    },
+    {
+      "id": 189,
+      "name": "BatchNorm2d_189",
+      "op_type": "BatchNorm2d",
+      "weight_shape": [
+        128
+      ],
+      "weight_bytes": 512,
+      "flops": 50176,
+      "input_shape": [
+        1,
+        128,
+        14,
+        14
+      ],
+      "output_shape": [
+        1,
+        128,
+        14,
+        14
+      ],
+      "estimated_runtime": 5.0176e-09,
+      "estimated_energy": 2.5088e-07
+    },
+    {
+      "id": 190,
+      "name": "Permute4d_190",
+      "op_type": "Permute4d",
+      "weight_shape": [],
+      "weight_bytes": 0,
+      "flops": 0,
+      "input_shape": [
+        1,
+        128,
+        14,
+        14
+      ],
+      "output_shape": [
+        1,
+        14,
+        14,
+        128
+      ],
+      "estimated_runtime": 0.0,
+      "estimated_energy": 0.0
+    },
+    {
+      "id": 191,
+      "name": "Linear_191",
+      "op_type": "Linear",
+      "weight_shape": [
+        768,
+        128
+      ],
+      "weight_bytes": 393216,
+      "flops": 195840,
+      "input_shape": [
+        1,
+        14,
+        14,
+        128
+      ],
+      "output_shape": [
+        1,
+        14,
+        14,
+        768
+      ],
+      "estimated_runtime": 1.9584e-08,
+      "estimated_energy": 9.791999999999999e-07
+    },
+    {
+      "id": 192,
+      "name": "GELU_192",
+      "op_type": "GELU",
+      "weight_shape": [],
+      "weight_bytes": 0,
+      "flops": 0,
+      "input_shape": [
+        1,
+        14,
+        14,
+        768
+      ],
+      "output_shape": [
+        1,
+        14,
+        14,
+        768
+      ],
+      "estimated_runtime": 0.0,
+      "estimated_energy": 0.0
+    },
+    {
+      "id": 193,
+      "name": "Linear_193",
+      "op_type": "Linear",
+      "weight_shape": [
+        128,
+        768
+      ],
+      "weight_bytes": 393216,
+      "flops": 196480,
+      "input_shape": [
+        1,
+        14,
+        14,
+        768
+      ],
+      "output_shape": [
+        1,
+        14,
+        14,
+        128
+      ],
+      "estimated_runtime": 1.9648e-08,
+      "estimated_energy": 9.824e-07
+    },
+    {
+      "id": 194,
+      "name": "GammaMultiply_194",
+      "op_type": "GammaMultiply",
+      "weight_shape": [],
+      "weight_bytes": 0,
+      "flops": 128,
+      "input_shape": [
+        128
+      ],
+      "output_shape": [
+        1,
+        14,
+        14,
+        128
+      ],
+      "estimated_runtime": 1.28e-11,
+      "estimated_energy": 6.4e-10
+    },
+    {
+      "id": 195,
+      "name": "Permute4d_195",
+      "op_type": "Permute4d",
+      "weight_shape": [],
+      "weight_bytes": 0,
+      "flops": 0,
+      "input_shape": [
+        1,
+        14,
+        14,
+        128
+      ],
+      "output_shape": [
+        1,
+        128,
+        14,
+        14
+      ],
+      "estimated_runtime": 0.0,
+      "estimated_energy": 0.0
+    },
+    {
+      "id": 196,
+      "name": "DropPath_196",
+      "op_type": "DropPath",
+      "weight_shape": [],
+      "weight_bytes": 0,
+      "flops": 0,
+      "input_shape": [
+        1,
+        128,
+        14,
+        14
+      ],
+      "output_shape": [
+        1,
+        128,
+        14,
+        14
+      ],
+      "estimated_runtime": 0.0,
+      "estimated_energy": 0.0
+    },
+    {
+      "id": 197,
+      "name": "ResidualAdd_197",
+      "op_type": "ResidualAdd",
+      "weight_shape": [],
+      "weight_bytes": 0,
+      "flops": 25088,
+      "input_shape": [
+        1,
+        128,
+        14,
+        14
+      ],
+      "output_shape": [
+        1,
+        128,
+        14,
+        14
+      ],
+      "estimated_runtime": 2.5088e-09,
+      "estimated_energy": 1.2544e-07
+    },
+    {
+      "id": 198,
+      "name": "Conv2d_198",
+      "op_type": "Conv2d",
+      "weight_shape": [
+        128,
+        1,
+        3,
+        3
+      ],
+      "weight_bytes": 4608,
+      "flops": 426496,
+      "input_shape": [
+        1,
+        128,
+        14,
+        14
+      ],
+      "output_shape": [
+        1,
+        128,
+        14,
+        14
+      ],
+      "estimated_runtime": 4.26496e-08,
+      "estimated_energy": 2.1324799999999998e-06
+    },
+    {
+      "id": 199,
+      "name": "BatchNorm2d_199",
+      "op_type": "BatchNorm2d",
+      "weight_shape": [
+        128
+      ],
+      "weight_bytes": 512,
+      "flops": 50176,
+      "input_shape": [
+        1,
+        128,
+        14,
+        14
+      ],
+      "output_shape": [
+        1,
+        128,
+        14,
+        14
+      ],
+      "estimated_runtime": 5.0176e-09,
+      "estimated_energy": 2.5088e-07
+    },
+    {
+      "id": 200,
+      "name": "Permute4d_200",
+      "op_type": "Permute4d",
+      "weight_shape": [],
+      "weight_bytes": 0,
+      "flops": 0,
+      "input_shape": [
+        1,
+        128,
+        14,
+        14
+      ],
+      "output_shape": [
+        1,
+        14,
+        14,
+        128
+      ],
+      "estimated_runtime": 0.0,
+      "estimated_energy": 0.0
+    },
+    {
+      "id": 201,
+      "name": "Linear_201",
+      "op_type": "Linear",
+      "weight_shape": [
+        768,
+        128
+      ],
+      "weight_bytes": 393216,
+      "flops": 195840,
+      "input_shape": [
+        1,
+        14,
+        14,
+        128
+      ],
+      "output_shape": [
+        1,
+        14,
+        14,
+        768
+      ],
+      "estimated_runtime": 1.9584e-08,
+      "estimated_energy": 9.791999999999999e-07
+    },
+    {
+      "id": 202,
+      "name": "GELU_202",
+      "op_type": "GELU",
+      "weight_shape": [],
+      "weight_bytes": 0,
+      "flops": 0,
+      "input_shape": [
+        1,
+        14,
+        14,
+        768
+      ],
+      "output_shape": [
+        1,
+        14,
+        14,
+        768
+      ],
+      "estimated_runtime": 0.0,
+      "estimated_energy": 0.0
+    },
+    {
+      "id": 203,
+      "name": "Linear_203",
+      "op_type": "Linear",
+      "weight_shape": [
+        128,
+        768
+      ],
+      "weight_bytes": 393216,
+      "flops": 196480,
+      "input_shape": [
+        1,
+        14,
+        14,
+        768
+      ],
+      "output_shape": [
+        1,
+        14,
+        14,
+        128
+      ],
+      "estimated_runtime": 1.9648e-08,
+      "estimated_energy": 9.824e-07
+    },
+    {
+      "id": 204,
+      "name": "GammaMultiply_204",
+      "op_type": "GammaMultiply",
+      "weight_shape": [],
+      "weight_bytes": 0,
+      "flops": 128,
+      "input_shape": [
+        128
+      ],
+      "output_shape": [
+        1,
+        14,
+        14,
+        128
+      ],
+      "estimated_runtime": 1.28e-11,
+      "estimated_energy": 6.4e-10
+    },
+    {
+      "id": 205,
+      "name": "Permute4d_205",
+      "op_type": "Permute4d",
+      "weight_shape": [],
+      "weight_bytes": 0,
+      "flops": 0,
+      "input_shape": [
+        1,
+        14,
+        14,
+        128
+      ],
+      "output_shape": [
+        1,
+        128,
+        14,
+        14
+      ],
+      "estimated_runtime": 0.0,
+      "estimated_energy": 0.0
+    },
+    {
+      "id": 206,
+      "name": "DropPath_206",
+      "op_type": "DropPath",
+      "weight_shape": [],
+      "weight_bytes": 0,
+      "flops": 0,
+      "input_shape": [
+        1,
+        128,
+        14,
+        14
+      ],
+      "output_shape": [
+        1,
+        128,
+        14,
+        14
+      ],
+      "estimated_runtime": 0.0,
+      "estimated_energy": 0.0
+    },
+    {
+      "id": 207,
+      "name": "ResidualAdd_207",
+      "op_type": "ResidualAdd",
+      "weight_shape": [],
+      "weight_bytes": 0,
+      "flops": 25088,
+      "input_shape": [
+        1,
+        128,
+        14,
+        14
+      ],
+      "output_shape": [
+        1,
+        128,
+        14,
+        14
+      ],
+      "estimated_runtime": 2.5088e-09,
+      "estimated_energy": 1.2544e-07
+    },
+    {
+      "id": 208,
+      "name": "Conv2d_208",
+      "op_type": "Conv2d",
+      "weight_shape": [
+        128,
+        1,
+        3,
+        3
+      ],
+      "weight_bytes": 4608,
+      "flops": 426496,
+      "input_shape": [
+        1,
+        128,
+        14,
+        14
+      ],
+      "output_shape": [
+        1,
+        128,
+        14,
+        14
+      ],
+      "estimated_runtime": 4.26496e-08,
+      "estimated_energy": 2.1324799999999998e-06
+    },
+    {
+      "id": 209,
+      "name": "BatchNorm2d_209",
+      "op_type": "BatchNorm2d",
+      "weight_shape": [
+        128
+      ],
+      "weight_bytes": 512,
+      "flops": 50176,
+      "input_shape": [
+        1,
+        128,
+        14,
+        14
+      ],
+      "output_shape": [
+        1,
+        128,
+        14,
+        14
+      ],
+      "estimated_runtime": 5.0176e-09,
+      "estimated_energy": 2.5088e-07
+    },
+    {
+      "id": 210,
+      "name": "Permute4d_210",
+      "op_type": "Permute4d",
+      "weight_shape": [],
+      "weight_bytes": 0,
+      "flops": 0,
+      "input_shape": [
+        1,
+        128,
+        14,
+        14
+      ],
+      "output_shape": [
+        1,
+        14,
+        14,
+        128
+      ],
+      "estimated_runtime": 0.0,
+      "estimated_energy": 0.0
+    },
+    {
+      "id": 211,
+      "name": "Linear_211",
+      "op_type": "Linear",
+      "weight_shape": [
+        768,
+        128
+      ],
+      "weight_bytes": 393216,
+      "flops": 195840,
+      "input_shape": [
+        1,
+        14,
+        14,
+        128
+      ],
+      "output_shape": [
+        1,
+        14,
+        14,
+        768
+      ],
+      "estimated_runtime": 1.9584e-08,
+      "estimated_energy": 9.791999999999999e-07
+    },
+    {
+      "id": 212,
+      "name": "GELU_212",
+      "op_type": "GELU",
+      "weight_shape": [],
+      "weight_bytes": 0,
+      "flops": 0,
+      "input_shape": [
+        1,
+        14,
+        14,
+        768
+      ],
+      "output_shape": [
+        1,
+        14,
+        14,
+        768
+      ],
+      "estimated_runtime": 0.0,
+      "estimated_energy": 0.0
+    },
+    {
+      "id": 213,
+      "name": "Linear_213",
+      "op_type": "Linear",
+      "weight_shape": [
+        128,
+        768
+      ],
+      "weight_bytes": 393216,
+      "flops": 196480,
+      "input_shape": [
+        1,
+        14,
+        14,
+        768
+      ],
+      "output_shape": [
+        1,
+        14,
+        14,
+        128
+      ],
+      "estimated_runtime": 1.9648e-08,
+      "estimated_energy": 9.824e-07
+    },
+    {
+      "id": 214,
+      "name": "GammaMultiply_214",
+      "op_type": "GammaMultiply",
+      "weight_shape": [],
+      "weight_bytes": 0,
+      "flops": 128,
+      "input_shape": [
+        128
+      ],
+      "output_shape": [
+        1,
+        14,
+        14,
+        128
+      ],
+      "estimated_runtime": 1.28e-11,
+      "estimated_energy": 6.4e-10
+    },
+    {
+      "id": 215,
+      "name": "Permute4d_215",
+      "op_type": "Permute4d",
+      "weight_shape": [],
+      "weight_bytes": 0,
+      "flops": 0,
+      "input_shape": [
+        1,
+        14,
+        14,
+        128
+      ],
+      "output_shape": [
+        1,
+        128,
+        14,
+        14
+      ],
+      "estimated_runtime": 0.0,
+      "estimated_energy": 0.0
+    },
+    {
+      "id": 216,
+      "name": "DropPath_216",
+      "op_type": "DropPath",
+      "weight_shape": [],
+      "weight_bytes": 0,
+      "flops": 0,
+      "input_shape": [
+        1,
+        128,
+        14,
+        14
+      ],
+      "output_shape": [
+        1,
+        128,
+        14,
+        14
+      ],
+      "estimated_runtime": 0.0,
+      "estimated_energy": 0.0
+    },
+    {
+      "id": 217,
+      "name": "ResidualAdd_217",
+      "op_type": "ResidualAdd",
+      "weight_shape": [],
+      "weight_bytes": 0,
+      "flops": 25088,
+      "input_shape": [
+        1,
+        128,
+        14,
+        14
+      ],
+      "output_shape": [
+        1,
+        128,
+        14,
+        14
+      ],
+      "estimated_runtime": 2.5088e-09,
+      "estimated_energy": 1.2544e-07
+    },
+    {
+      "id": 218,
+      "name": "Conv2d_218",
+      "op_type": "Conv2d",
+      "weight_shape": [
+        128,
+        1,
+        3,
+        3
+      ],
+      "weight_bytes": 4608,
+      "flops": 426496,
+      "input_shape": [
+        1,
+        128,
+        14,
+        14
+      ],
+      "output_shape": [
+        1,
+        128,
+        14,
+        14
+      ],
+      "estimated_runtime": 4.26496e-08,
+      "estimated_energy": 2.1324799999999998e-06
+    },
+    {
+      "id": 219,
+      "name": "BatchNorm2d_219",
+      "op_type": "BatchNorm2d",
+      "weight_shape": [
+        128
+      ],
+      "weight_bytes": 512,
+      "flops": 50176,
+      "input_shape": [
+        1,
+        128,
+        14,
+        14
+      ],
+      "output_shape": [
+        1,
+        128,
+        14,
+        14
+      ],
+      "estimated_runtime": 5.0176e-09,
+      "estimated_energy": 2.5088e-07
+    },
+    {
+      "id": 220,
+      "name": "Permute4d_220",
+      "op_type": "Permute4d",
+      "weight_shape": [],
+      "weight_bytes": 0,
+      "flops": 0,
+      "input_shape": [
+        1,
+        128,
+        14,
+        14
+      ],
+      "output_shape": [
+        1,
+        14,
+        14,
+        128
+      ],
+      "estimated_runtime": 0.0,
+      "estimated_energy": 0.0
+    },
+    {
+      "id": 221,
+      "name": "Linear_221",
+      "op_type": "Linear",
+      "weight_shape": [
+        768,
+        128
+      ],
+      "weight_bytes": 393216,
+      "flops": 195840,
+      "input_shape": [
+        1,
+        14,
+        14,
+        128
+      ],
+      "output_shape": [
+        1,
+        14,
+        14,
+        768
+      ],
+      "estimated_runtime": 1.9584e-08,
+      "estimated_energy": 9.791999999999999e-07
+    },
+    {
+      "id": 222,
+      "name": "GELU_222",
+      "op_type": "GELU",
+      "weight_shape": [],
+      "weight_bytes": 0,
+      "flops": 0,
+      "input_shape": [
+        1,
+        14,
+        14,
+        768
+      ],
+      "output_shape": [
+        1,
+        14,
+        14,
+        768
+      ],
+      "estimated_runtime": 0.0,
+      "estimated_energy": 0.0
+    },
+    {
+      "id": 223,
+      "name": "Linear_223",
+      "op_type": "Linear",
+      "weight_shape": [
+        128,
+        768
+      ],
+      "weight_bytes": 393216,
+      "flops": 196480,
+      "input_shape": [
+        1,
+        14,
+        14,
+        768
+      ],
+      "output_shape": [
+        1,
+        14,
+        14,
+        128
+      ],
+      "estimated_runtime": 1.9648e-08,
+      "estimated_energy": 9.824e-07
+    },
+    {
+      "id": 224,
+      "name": "GammaMultiply_224",
+      "op_type": "GammaMultiply",
+      "weight_shape": [],
+      "weight_bytes": 0,
+      "flops": 128,
+      "input_shape": [
+        128
+      ],
+      "output_shape": [
+        1,
+        14,
+        14,
+        128
+      ],
+      "estimated_runtime": 1.28e-11,
+      "estimated_energy": 6.4e-10
+    },
+    {
+      "id": 225,
+      "name": "Permute4d_225",
+      "op_type": "Permute4d",
+      "weight_shape": [],
+      "weight_bytes": 0,
+      "flops": 0,
+      "input_shape": [
+        1,
+        14,
+        14,
+        128
+      ],
+      "output_shape": [
+        1,
+        128,
+        14,
+        14
+      ],
+      "estimated_runtime": 0.0,
+      "estimated_energy": 0.0
+    },
+    {
+      "id": 226,
+      "name": "DropPath_226",
+      "op_type": "DropPath",
+      "weight_shape": [],
+      "weight_bytes": 0,
+      "flops": 0,
+      "input_shape": [
+        1,
+        128,
+        14,
+        14
+      ],
+      "output_shape": [
+        1,
+        128,
+        14,
+        14
+      ],
+      "estimated_runtime": 0.0,
+      "estimated_energy": 0.0
+    },
+    {
+      "id": 227,
+      "name": "ResidualAdd_227",
+      "op_type": "ResidualAdd",
+      "weight_shape": [],
+      "weight_bytes": 0,
+      "flops": 25088,
+      "input_shape": [
+        1,
+        128,
+        14,
+        14
+      ],
+      "output_shape": [
+        1,
+        128,
+        14,
+        14
+      ],
+      "estimated_runtime": 2.5088e-09,
+      "estimated_energy": 1.2544e-07
+    },
+    {
+      "id": 228,
+      "name": "Conv2d_228",
+      "op_type": "Conv2d",
+      "weight_shape": [
+        128,
+        1,
+        3,
+        3
+      ],
+      "weight_bytes": 4608,
+      "flops": 426496,
+      "input_shape": [
+        1,
+        128,
+        14,
+        14
+      ],
+      "output_shape": [
+        1,
+        128,
+        14,
+        14
+      ],
+      "estimated_runtime": 4.26496e-08,
+      "estimated_energy": 2.1324799999999998e-06
+    },
+    {
+      "id": 229,
+      "name": "BatchNorm2d_229",
+      "op_type": "BatchNorm2d",
+      "weight_shape": [
+        128
+      ],
+      "weight_bytes": 512,
+      "flops": 50176,
+      "input_shape": [
+        1,
+        128,
+        14,
+        14
+      ],
+      "output_shape": [
+        1,
+        128,
+        14,
+        14
+      ],
+      "estimated_runtime": 5.0176e-09,
+      "estimated_energy": 2.5088e-07
+    },
+    {
+      "id": 230,
+      "name": "Permute4d_230",
+      "op_type": "Permute4d",
+      "weight_shape": [],
+      "weight_bytes": 0,
+      "flops": 0,
+      "input_shape": [
+        1,
+        128,
+        14,
+        14
+      ],
+      "output_shape": [
+        1,
+        14,
+        14,
+        128
+      ],
+      "estimated_runtime": 0.0,
+      "estimated_energy": 0.0
+    },
+    {
+      "id": 231,
+      "name": "Linear_231",
+      "op_type": "Linear",
+      "weight_shape": [
+        768,
+        128
+      ],
+      "weight_bytes": 393216,
+      "flops": 195840,
+      "input_shape": [
+        1,
+        14,
+        14,
+        128
+      ],
+      "output_shape": [
+        1,
+        14,
+        14,
+        768
+      ],
+      "estimated_runtime": 1.9584e-08,
+      "estimated_energy": 9.791999999999999e-07
+    },
+    {
+      "id": 232,
+      "name": "GELU_232",
+      "op_type": "GELU",
+      "weight_shape": [],
+      "weight_bytes": 0,
+      "flops": 0,
+      "input_shape": [
+        1,
+        14,
+        14,
+        768
+      ],
+      "output_shape": [
+        1,
+        14,
+        14,
+        768
+      ],
+      "estimated_runtime": 0.0,
+      "estimated_energy": 0.0
+    },
+    {
+      "id": 233,
+      "name": "Linear_233",
+      "op_type": "Linear",
+      "weight_shape": [
+        128,
+        768
+      ],
+      "weight_bytes": 393216,
+      "flops": 196480,
+      "input_shape": [
+        1,
+        14,
+        14,
+        768
+      ],
+      "output_shape": [
+        1,
+        14,
+        14,
+        128
+      ],
+      "estimated_runtime": 1.9648e-08,
+      "estimated_energy": 9.824e-07
+    },
+    {
+      "id": 234,
+      "name": "GammaMultiply_234",
+      "op_type": "GammaMultiply",
+      "weight_shape": [],
+      "weight_bytes": 0,
+      "flops": 128,
+      "input_shape": [
+        128
+      ],
+      "output_shape": [
+        1,
+        14,
+        14,
+        128
+      ],
+      "estimated_runtime": 1.28e-11,
+      "estimated_energy": 6.4e-10
+    },
+    {
+      "id": 235,
+      "name": "Permute4d_235",
+      "op_type": "Permute4d",
+      "weight_shape": [],
+      "weight_bytes": 0,
+      "flops": 0,
+      "input_shape": [
+        1,
+        14,
+        14,
+        128
+      ],
+      "output_shape": [
+        1,
+        128,
+        14,
+        14
+      ],
+      "estimated_runtime": 0.0,
+      "estimated_energy": 0.0
+    },
+    {
+      "id": 236,
+      "name": "DropPath_236",
+      "op_type": "DropPath",
+      "weight_shape": [],
+      "weight_bytes": 0,
+      "flops": 0,
+      "input_shape": [
+        1,
+        128,
+        14,
+        14
+      ],
+      "output_shape": [
+        1,
+        128,
+        14,
+        14
+      ],
+      "estimated_runtime": 0.0,
+      "estimated_energy": 0.0
+    },
+    {
+      "id": 237,
+      "name": "ResidualAdd_237",
+      "op_type": "ResidualAdd",
+      "weight_shape": [],
+      "weight_bytes": 0,
+      "flops": 25088,
+      "input_shape": [
+        1,
+        128,
+        14,
+        14
+      ],
+      "output_shape": [
+        1,
+        128,
+        14,
+        14
+      ],
+      "estimated_runtime": 2.5088e-09,
+      "estimated_energy": 1.2544e-07
+    },
+    {
+      "id": 238,
+      "name": "Reshape3d_238",
+      "op_type": "Reshape3d",
+      "weight_shape": [],
+      "weight_bytes": 0,
+      "flops": 0,
+      "input_shape": [
+        1,
+        128,
+        14,
+        14
+      ],
+      "output_shape": [
+        1,
+        128,
+        196
+      ],
+      "estimated_runtime": 0.0,
+      "estimated_energy": 0.0
+    },
+    {
+      "id": 239,
+      "name": "Permute3d_239",
+      "op_type": "Permute3d",
+      "weight_shape": [],
+      "weight_bytes": 0,
+      "flops": 0,
+      "input_shape": [
+        1,
+        128,
+        196
+      ],
+      "output_shape": [
+        1,
+        196,
+        128
+      ],
+      "estimated_runtime": 0.0,
+      "estimated_energy": 0.0
+    },
+    {
+      "id": 240,
+      "name": "LayerNorm_240",
+      "op_type": "LayerNorm",
+      "weight_shape": [
+        128
+      ],
+      "weight_bytes": 512,
+      "flops": 200704,
+      "input_shape": [
+        1,
+        196,
+        128
+      ],
+      "output_shape": [
+        1,
+        196,
+        128
+      ],
+      "estimated_runtime": 2.00704e-08,
+      "estimated_energy": 1.00352e-06
+    },
+    {
+      "id": 241,
+      "name": "Linear_241",
+      "op_type": "Linear",
+      "weight_shape": [
+        384,
+        128
+      ],
+      "weight_bytes": 196608,
+      "flops": 97920,
+      "input_shape": [
+        1,
+        196,
+        128
+      ],
+      "output_shape": [
+        1,
+        196,
+        384
+      ],
+      "estimated_runtime": 9.792e-09,
+      "estimated_energy": 4.895999999999999e-07
+    },
+    {
+      "id": 242,
+      "name": "Reshape5d_242",
+      "op_type": "Reshape5d",
+      "weight_shape": [],
+      "weight_bytes": 0,
+      "flops": 0,
+      "input_shape": [
+        1,
+        196,
+        384
+      ],
+      "output_shape": [
+        1,
+        196,
+        3,
+        8,
+        16
+      ],
+      "estimated_runtime": 0.0,
+      "estimated_energy": 0.0
+    },
+    {
+      "id": 243,
+      "name": "Permute5d_243",
+      "op_type": "Permute5d",
+      "weight_shape": [],
+      "weight_bytes": 0,
+      "flops": 0,
+      "input_shape": [
+        1,
+        196,
+        3,
+        8,
+        16
+      ],
+      "output_shape": [
+        3,
+        1,
+        8,
+        196,
+        16
+      ],
+      "estimated_runtime": 0.0,
+      "estimated_energy": 0.0
+    },
+    {
+      "id": 244,
+      "name": "Extract2dq_244",
+      "op_type": "Extract2dq",
+      "weight_shape": [],
+      "weight_bytes": 0,
+      "flops": 0,
+      "input_shape": [
+        3,
+        1,
+        8,
+        196,
+        16
+      ],
+      "output_shape": [
+        1,
+        8,
+        196,
+        16
+      ],
+      "estimated_runtime": 0.0,
+      "estimated_energy": 0.0
+    },
+    {
+      "id": 245,
+      "name": "Extract2dk_245",
+      "op_type": "Extract2dk",
+      "weight_shape": [],
+      "weight_bytes": 0,
+      "flops": 0,
+      "input_shape": [
+        3,
+        1,
+        8,
+        196,
+        16
+      ],
+      "output_shape": [
+        1,
+        8,
+        196,
+        16
+      ],
+      "estimated_runtime": 0.0,
+      "estimated_energy": 0.0
+    },
+    {
+      "id": 246,
+      "name": "Extract2dv_246",
+      "op_type": "Extract2dv",
+      "weight_shape": [],
+      "weight_bytes": 0,
+      "flops": 0,
+      "input_shape": [
+        3,
+        1,
+        8,
+        196,
+        16
+      ],
+      "output_shape": [
+        1,
+        8,
+        196,
+        16
+      ],
+      "estimated_runtime": 0.0,
+      "estimated_energy": 0.0
+    },
+    {
+      "id": 247,
+      "name": "Transpose2d_247",
+      "op_type": "Transpose2d",
+      "weight_shape": [],
+      "weight_bytes": 0,
+      "flops": 0,
+      "input_shape": [
+        1,
+        8,
+        196,
+        16
+      ],
+      "output_shape": [
+        1,
+        8,
+        16,
+        196
+      ],
+      "estimated_runtime": 0.0,
+      "estimated_energy": 0.0
+    },
+    {
+      "id": 248,
+      "name": "Transpose2d_248",
+      "op_type": "Transpose2d",
+      "weight_shape": [],
+      "weight_bytes": 0,
+      "flops": 0,
+      "input_shape": [
+        1,
+        8,
+        196,
+        16
+      ],
+      "output_shape": [
+        1,
+        8,
+        16,
+        196
+      ],
+      "estimated_runtime": 0.0,
+      "estimated_energy": 0.0
+    },
+    {
+      "id": 249,
+      "name": "Transpose2d_249",
+      "op_type": "Transpose2d",
+      "weight_shape": [],
+      "weight_bytes": 0,
+      "flops": 0,
+      "input_shape": [
+        1,
+        8,
+        196,
+        16
+      ],
+      "output_shape": [
+        1,
+        8,
+        16,
+        196
+      ],
+      "estimated_runtime": 0.0,
+      "estimated_energy": 0.0
+    },
+    {
+      "id": 250,
+      "name": "Normalize2d_250",
+      "op_type": "Normalize2d",
+      "weight_shape": [],
+      "weight_bytes": 0,
+      "flops": 0,
+      "input_shape": [
+        1,
+        8,
+        16,
+        196
+      ],
+      "output_shape": [
+        1,
+        8,
+        16,
+        196
+      ],
+      "estimated_runtime": 0.0,
+      "estimated_energy": 0.0
+    },
+    {
+      "id": 251,
+      "name": "Normalize2d_251",
+      "op_type": "Normalize2d",
+      "weight_shape": [],
+      "weight_bytes": 0,
+      "flops": 0,
+      "input_shape": [
+        1,
+        8,
+        16,
+        196
+      ],
+      "output_shape": [
+        1,
+        8,
+        16,
+        196
+      ],
+      "estimated_runtime": 0.0,
+      "estimated_energy": 0.0
+    },
+    {
+      "id": 252,
+      "name": "MatrixMultiply_252",
+      "op_type": "MatrixMultiply",
+      "weight_shape": [],
+      "weight_bytes": 0,
+      "flops": 802816,
+      "input_shape": [
+        1,
+        8,
+        16,
+        196
+      ],
+      "output_shape": [
+        1,
+        8,
+        16,
+        16
+      ],
+      "estimated_runtime": 8.02816e-08,
+      "estimated_energy": 4.01408e-06
+    },
+    {
+      "id": 253,
+      "name": "Softmax_253",
+      "op_type": "Softmax",
+      "weight_shape": [],
+      "weight_bytes": 0,
+      "flops": 4096,
+      "input_shape": [
+        1,
+        8,
+        16,
+        16
+      ],
+      "output_shape": [
+        1,
+        8,
+        16,
+        16
+      ],
+      "estimated_runtime": 4.096e-10,
+      "estimated_energy": 2.048e-08
+    },
+    {
+      "id": 254,
+      "name": "WeightedSum_254",
+      "op_type": "WeightedSum",
+      "weight_shape": [],
+      "weight_bytes": 0,
+      "flops": 0,
+      "input_shape": [
+        1,
+        8,
+        16,
+        16
+      ],
+      "output_shape": [
+        1,
+        8,
+        16,
+        196
+      ],
+      "estimated_runtime": 0.0,
+      "estimated_energy": 0.0
+    },
+    {
+      "id": 255,
+      "name": "Permute4d_255",
+      "op_type": "Permute4d",
+      "weight_shape": [],
+      "weight_bytes": 0,
+      "flops": 0,
+      "input_shape": [
+        1,
+        8,
+        16,
+        196
+      ],
+      "output_shape": [
+        1,
+        196,
+        8,
+        16
+      ],
+      "estimated_runtime": 0.0,
+      "estimated_energy": 0.0
+    },
+    {
+      "id": 256,
+      "name": "Reshape3d_256",
+      "op_type": "Reshape3d",
+      "weight_shape": [],
+      "weight_bytes": 0,
+      "flops": 0,
+      "input_shape": [
+        1,
+        196,
+        8,
+        16
+      ],
+      "output_shape": [
+        1,
+        196,
+        128
+      ],
+      "estimated_runtime": 0.0,
+      "estimated_energy": 0.0
+    },
+    {
+      "id": 257,
+      "name": "Linear_257",
+      "op_type": "Linear",
+      "weight_shape": [
+        128,
+        128
+      ],
+      "weight_bytes": 65536,
+      "flops": 32640,
+      "input_shape": [
+        1,
+        196,
+        128
+      ],
+      "output_shape": [
+        1,
+        196,
+        128
+      ],
+      "estimated_runtime": 3.264e-09,
+      "estimated_energy": 1.6319999999999998e-07
+    },
+    {
+      "id": 258,
+      "name": "GammaMultiply_258",
+      "op_type": "GammaMultiply",
+      "weight_shape": [],
+      "weight_bytes": 0,
+      "flops": 25088,
+      "input_shape": [
+        1,
+        196,
+        128
+      ],
+      "output_shape": [
+        1,
+        196,
+        128
+      ],
+      "estimated_runtime": 2.5088e-09,
+      "estimated_energy": 1.2544e-07
+    },
+    {
+      "id": 259,
+      "name": "ResidualAdd_259",
+      "op_type": "ResidualAdd",
+      "weight_shape": [],
+      "weight_bytes": 0,
+      "flops": 0,
+      "input_shape": [
+        1,
+        196,
+        128
+      ],
+      "output_shape": [
+        1,
+        196,
+        128
+      ],
+      "estimated_runtime": 0.0,
+      "estimated_energy": 0.0
+    },
+    {
+      "id": 260,
+      "name": "Reshape4d_260",
+      "op_type": "Reshape4d",
+      "weight_shape": [],
+      "weight_bytes": 0,
+      "flops": 0,
+      "input_shape": [
+        1,
+        196,
+        128
+      ],
+      "output_shape": [
+        1,
+        14,
+        14,
+        128
+      ],
+      "estimated_runtime": 0.0,
+      "estimated_energy": 0.0
+    },
+    {
+      "id": 261,
+      "name": "LayerNorm_261",
+      "op_type": "LayerNorm",
+      "weight_shape": [
+        128
+      ],
+      "weight_bytes": 512,
+      "flops": 200704,
+      "input_shape": [
+        1,
+        14,
+        14,
+        128
+      ],
+      "output_shape": [
+        1,
+        14,
+        14,
+        128
+      ],
+      "estimated_runtime": 2.00704e-08,
+      "estimated_energy": 1.00352e-06
+    },
+    {
+      "id": 262,
+      "name": "Linear_262",
+      "op_type": "Linear",
+      "weight_shape": [
+        768,
+        128
+      ],
+      "weight_bytes": 393216,
+      "flops": 195840,
+      "input_shape": [
+        1,
+        14,
+        14,
+        128
+      ],
+      "output_shape": [
+        1,
+        14,
+        14,
+        768
+      ],
+      "estimated_runtime": 1.9584e-08,
+      "estimated_energy": 9.791999999999999e-07
+    },
+    {
+      "id": 263,
+      "name": "GELU_263",
+      "op_type": "GELU",
+      "weight_shape": [],
+      "weight_bytes": 0,
+      "flops": 0,
+      "input_shape": [
+        1,
+        14,
+        14,
+        768
+      ],
+      "output_shape": [
+        1,
+        14,
+        14,
+        768
+      ],
+      "estimated_runtime": 0.0,
+      "estimated_energy": 0.0
+    },
+    {
+      "id": 264,
+      "name": "Linear_264",
+      "op_type": "Linear",
+      "weight_shape": [
+        128,
+        768
+      ],
+      "weight_bytes": 393216,
+      "flops": 196480,
+      "input_shape": [
+        1,
+        14,
+        14,
+        768
+      ],
+      "output_shape": [
+        1,
+        14,
+        14,
+        128
+      ],
+      "estimated_runtime": 1.9648e-08,
+      "estimated_energy": 9.824e-07
+    },
+    {
+      "id": 265,
+      "name": "GammaMultiply_265",
+      "op_type": "GammaMultiply",
+      "weight_shape": [],
+      "weight_bytes": 0,
+      "flops": 128,
+      "input_shape": [
+        128
+      ],
+      "output_shape": [
+        1,
+        14,
+        14,
+        128
+      ],
+      "estimated_runtime": 1.28e-11,
+      "estimated_energy": 6.4e-10
+    },
+    {
+      "id": 266,
+      "name": "Permute4d_266",
+      "op_type": "Permute4d",
+      "weight_shape": [],
+      "weight_bytes": 0,
+      "flops": 0,
+      "input_shape": [
+        1,
+        14,
+        14,
+        128
+      ],
+      "output_shape": [
+        1,
+        128,
+        14,
+        14
+      ],
+      "estimated_runtime": 0.0,
+      "estimated_energy": 0.0
+    },
+    {
+      "id": 267,
+      "name": "DropPath_267",
+      "op_type": "DropPath",
+      "weight_shape": [],
+      "weight_bytes": 0,
+      "flops": 0,
+      "input_shape": [
+        1,
+        128,
+        14,
+        14
+      ],
+      "output_shape": [
+        1,
+        128,
+        14,
+        14
+      ],
+      "estimated_runtime": 0.0,
+      "estimated_energy": 0.0
+    },
+    {
+      "id": 268,
+      "name": "ResidualAdd_268",
+      "op_type": "ResidualAdd",
+      "weight_shape": [],
+      "weight_bytes": 0,
+      "flops": 25088,
+      "input_shape": [
+        1,
+        128,
+        14,
+        14
+      ],
+      "output_shape": [
+        1,
+        128,
+        14,
+        14
+      ],
+      "estimated_runtime": 2.5088e-09,
+      "estimated_energy": 1.2544e-07
+    }
+  ],
+  "edges": [
+    {
+      "source": 1,
+      "destination": 2,
+      "tensor_shape": [
+        1,
+        3,
+        112,
+        112
+      ],
+      "tensor_bytes": 150528,
+      "estimated_latency": 3.11056e-06,
+      "estimated_energy": 1.204224e-06
+    },
+    {
+      "source": 3,
+      "destination": 4,
+      "tensor_shape": [
+        1,
+        3,
+        112,
+        112
+      ],
+      "tensor_bytes": 150528,
+      "estimated_latency": 3.11056e-06,
+      "estimated_energy": 1.204224e-06
+    },
+    {
+      "source": 4,
+      "destination": 5,
+      "tensor_shape": [
+        1,
+        3,
+        56,
+        56
+      ],
+      "tensor_bytes": 37632,
+      "estimated_latency": 8.5264e-07,
+      "estimated_energy": 3.01056e-07
+    },
+    {
+      "source": 6,
+      "destination": 7,
+      "tensor_shape": [
+        1,
+        3,
+        112,
+        112
+      ],
+      "tensor_bytes": 150528,
+      "estimated_latency": 3.11056e-06,
+      "estimated_energy": 1.204224e-06
+    },
+    {
+      "source": 7,
+      "destination": 8,
+      "tensor_shape": [
+        1,
+        3,
+        56,
+        56
+      ],
+      "tensor_bytes": 37632,
+      "estimated_latency": 8.5264e-07,
+      "estimated_energy": 3.01056e-07
+    },
+    {
+      "source": 8,
+      "destination": 9,
+      "tensor_shape": [
+        1,
+        3,
+        28,
+        28
+      ],
+      "tensor_bytes": 9408,
+      "estimated_latency": 2.8816e-07,
+      "estimated_energy": 7.5264e-08
+    },
+    {
+      "source": 10,
+      "destination": 11,
+      "tensor_shape": [
+        1,
+        48,
+        112,
+        112
+      ],
+      "tensor_bytes": 2408448,
+      "estimated_latency": 4.8268960000000005e-05,
+      "estimated_energy": 1.9267584e-05
+    },
+    {
+      "source": 11,
+      "destination": 12,
+      "tensor_shape": [
+        1,
+        48,
+        112,
+        112
+      ],
+      "tensor_bytes": 2408448,
+      "estimated_latency": 4.8268960000000005e-05,
+      "estimated_energy": 1.9267584e-05
+    },
+    {
+      "source": 12,
+      "destination": 13,
+      "tensor_shape": [
+        1,
+        48,
+        112,
+        112
+      ],
+      "tensor_bytes": 2408448,
+      "estimated_latency": 4.8268960000000005e-05,
+      "estimated_energy": 1.9267584e-05
+    },
+    {
+      "source": 13,
+      "destination": 14,
+      "tensor_shape": [
+        1,
+        48,
+        112,
+        112
+      ],
+      "tensor_bytes": 2408448,
+      "estimated_latency": 4.8268960000000005e-05,
+      "estimated_energy": 1.9267584e-05
+    },
+    {
+      "source": 14,
+      "destination": 15,
+      "tensor_shape": [
+        1,
+        48,
+        112,
+        112
+      ],
+      "tensor_bytes": 2408448,
+      "estimated_latency": 4.8268960000000005e-05,
+      "estimated_energy": 1.9267584e-05
+    },
+    {
+      "source": 15,
+      "destination": 16,
+      "tensor_shape": [
+        1,
+        48,
+        112,
+        112
+      ],
+      "tensor_bytes": 2408448,
+      "estimated_latency": 4.8268960000000005e-05,
+      "estimated_energy": 1.9267584e-05
+    },
+    {
+      "source": 16,
+      "destination": 17,
+      "tensor_shape": [
+        1,
+        48,
+        112,
+        112
+      ],
+      "tensor_bytes": 2408448,
+      "estimated_latency": 4.8268960000000005e-05,
+      "estimated_energy": 1.9267584e-05
+    },
+    {
+      "source": 17,
+      "destination": 18,
+      "tensor_shape": [
+        1,
+        48,
+        112,
+        112
+      ],
+      "tensor_bytes": 2408448,
+      "estimated_latency": 4.8268960000000005e-05,
+      "estimated_energy": 1.9267584e-05
+    },
+    {
+      "source": 19,
+      "destination": 20,
+      "tensor_shape": [
+        1,
+        48,
+        56,
+        56
+      ],
+      "tensor_bytes": 602112,
+      "estimated_latency": 1.2142240000000002e-05,
+      "estimated_energy": 4.816896e-06
+    },
+    {
+      "source": 20,
+      "destination": 21,
+      "tensor_shape": [
+        1,
+        48,
+        56,
+        56
+      ],
+      "tensor_bytes": 602112,
+      "estimated_latency": 1.2142240000000002e-05,
+      "estimated_energy": 4.816896e-06
+    },
+    {
+      "source": 21,
+      "destination": 22,
+      "tensor_shape": [
+        1,
+        48,
+        56,
+        56
+      ],
+      "tensor_bytes": 602112,
+      "estimated_latency": 1.2142240000000002e-05,
+      "estimated_energy": 4.816896e-06
+    },
+    {
+      "source": 22,
+      "destination": 23,
+      "tensor_shape": [
+        1,
+        56,
+        56,
+        48
+      ],
+      "tensor_bytes": 602112,
+      "estimated_latency": 1.2142240000000002e-05,
+      "estimated_energy": 4.816896e-06
+    },
+    {
+      "source": 23,
+      "destination": 24,
+      "tensor_shape": [
+        1,
+        56,
+        56,
+        288
+      ],
+      "tensor_bytes": 3612672,
+      "estimated_latency": 7.235344000000001e-05,
+      "estimated_energy": 2.8901376e-05
+    },
+    {
+      "source": 24,
+      "destination": 25,
+      "tensor_shape": [
+        1,
+        56,
+        56,
+        288
+      ],
+      "tensor_bytes": 3612672,
+      "estimated_latency": 7.235344000000001e-05,
+      "estimated_energy": 2.8901376e-05
+    },
+    {
+      "source": 25,
+      "destination": 26,
+      "tensor_shape": [
+        1,
+        56,
+        56,
+        48
+      ],
+      "tensor_bytes": 602112,
+      "estimated_latency": 1.2142240000000002e-05,
+      "estimated_energy": 4.816896e-06
+    },
+    {
+      "source": 26,
+      "destination": 27,
+      "tensor_shape": [
+        1,
+        56,
+        56,
+        48
+      ],
+      "tensor_bytes": 602112,
+      "estimated_latency": 1.2142240000000002e-05,
+      "estimated_energy": 4.816896e-06
+    },
+    {
+      "source": 27,
+      "destination": 28,
+      "tensor_shape": [
+        1,
+        48,
+        56,
+        56
+      ],
+      "tensor_bytes": 602112,
+      "estimated_latency": 1.2142240000000002e-05,
+      "estimated_energy": 4.816896e-06
+    },
+    {
+      "source": 19,
+      "destination": 28,
+      "tensor_shape": [
+        1,
+        48,
+        56,
+        56
+      ],
+      "tensor_bytes": 602112,
+      "estimated_latency": 1.2142240000000002e-05,
+      "estimated_energy": 4.816896e-06
+    },
+    {
+      "source": 28,
+      "destination": 29,
+      "tensor_shape": [
+        1,
+        48,
+        56,
+        56
+      ],
+      "tensor_bytes": 602112,
+      "estimated_latency": 1.2142240000000002e-05,
+      "estimated_energy": 4.816896e-06
+    },
+    {
+      "source": 29,
+      "destination": 30,
+      "tensor_shape": [
+        1,
+        48,
+        56,
+        56
+      ],
+      "tensor_bytes": 602112,
+      "estimated_latency": 1.2142240000000002e-05,
+      "estimated_energy": 4.816896e-06
+    },
+    {
+      "source": 30,
+      "destination": 31,
+      "tensor_shape": [
+        1,
+        48,
+        56,
+        56
+      ],
+      "tensor_bytes": 602112,
+      "estimated_latency": 1.2142240000000002e-05,
+      "estimated_energy": 4.816896e-06
+    },
+    {
+      "source": 31,
+      "destination": 32,
+      "tensor_shape": [
+        1,
+        56,
+        56,
+        48
+      ],
+      "tensor_bytes": 602112,
+      "estimated_latency": 1.2142240000000002e-05,
+      "estimated_energy": 4.816896e-06
+    },
+    {
+      "source": 32,
+      "destination": 33,
+      "tensor_shape": [
+        1,
+        56,
+        56,
+        288
+      ],
+      "tensor_bytes": 3612672,
+      "estimated_latency": 7.235344000000001e-05,
+      "estimated_energy": 2.8901376e-05
+    },
+    {
+      "source": 33,
+      "destination": 34,
+      "tensor_shape": [
+        1,
+        56,
+        56,
+        288
+      ],
+      "tensor_bytes": 3612672,
+      "estimated_latency": 7.235344000000001e-05,
+      "estimated_energy": 2.8901376e-05
+    },
+    {
+      "source": 34,
+      "destination": 35,
+      "tensor_shape": [
+        1,
+        56,
+        56,
+        48
+      ],
+      "tensor_bytes": 602112,
+      "estimated_latency": 1.2142240000000002e-05,
+      "estimated_energy": 4.816896e-06
+    },
+    {
+      "source": 35,
+      "destination": 36,
+      "tensor_shape": [
+        1,
+        56,
+        56,
+        48
+      ],
+      "tensor_bytes": 602112,
+      "estimated_latency": 1.2142240000000002e-05,
+      "estimated_energy": 4.816896e-06
+    },
+    {
+      "source": 36,
+      "destination": 37,
+      "tensor_shape": [
+        1,
+        48,
+        56,
+        56
+      ],
+      "tensor_bytes": 602112,
+      "estimated_latency": 1.2142240000000002e-05,
+      "estimated_energy": 4.816896e-06
+    },
+    {
+      "source": 37,
+      "destination": 38,
+      "tensor_shape": [
+        1,
+        48,
+        56,
+        56
+      ],
+      "tensor_bytes": 602112,
+      "estimated_latency": 1.2142240000000002e-05,
+      "estimated_energy": 4.816896e-06
+    },
+    {
+      "source": 28,
+      "destination": 38,
+      "tensor_shape": [
+        1,
+        48,
+        56,
+        56
+      ],
+      "tensor_bytes": 602112,
+      "estimated_latency": 1.2142240000000002e-05,
+      "estimated_energy": 4.816896e-06
+    },
+    {
+      "source": 38,
+      "destination": 39,
+      "tensor_shape": [
+        1,
+        48,
+        56,
+        56
+      ],
+      "tensor_bytes": 602112,
+      "estimated_latency": 1.2142240000000002e-05,
+      "estimated_energy": 4.816896e-06
+    },
+    {
+      "source": 39,
+      "destination": 40,
+      "tensor_shape": [
+        1,
+        48,
+        56,
+        56
+      ],
+      "tensor_bytes": 602112,
+      "estimated_latency": 1.2142240000000002e-05,
+      "estimated_energy": 4.816896e-06
+    },
+    {
+      "source": 40,
+      "destination": 41,
+      "tensor_shape": [
+        1,
+        48,
+        56,
+        56
+      ],
+      "tensor_bytes": 602112,
+      "estimated_latency": 1.2142240000000002e-05,
+      "estimated_energy": 4.816896e-06
+    },
+    {
+      "source": 41,
+      "destination": 42,
+      "tensor_shape": [
+        1,
+        56,
+        56,
+        48
+      ],
+      "tensor_bytes": 602112,
+      "estimated_latency": 1.2142240000000002e-05,
+      "estimated_energy": 4.816896e-06
+    },
+    {
+      "source": 42,
+      "destination": 43,
+      "tensor_shape": [
+        1,
+        56,
+        56,
+        288
+      ],
+      "tensor_bytes": 3612672,
+      "estimated_latency": 7.235344000000001e-05,
+      "estimated_energy": 2.8901376e-05
+    },
+    {
+      "source": 43,
+      "destination": 44,
+      "tensor_shape": [
+        1,
+        56,
+        56,
+        288
+      ],
+      "tensor_bytes": 3612672,
+      "estimated_latency": 7.235344000000001e-05,
+      "estimated_energy": 2.8901376e-05
+    },
+    {
+      "source": 44,
+      "destination": 45,
+      "tensor_shape": [
+        1,
+        56,
+        56,
+        48
+      ],
+      "tensor_bytes": 602112,
+      "estimated_latency": 1.2142240000000002e-05,
+      "estimated_energy": 4.816896e-06
+    },
+    {
+      "source": 45,
+      "destination": 46,
+      "tensor_shape": [
+        1,
+        56,
+        56,
+        48
+      ],
+      "tensor_bytes": 602112,
+      "estimated_latency": 1.2142240000000002e-05,
+      "estimated_energy": 4.816896e-06
+    },
+    {
+      "source": 46,
+      "destination": 47,
+      "tensor_shape": [
+        1,
+        48,
+        56,
+        56
+      ],
+      "tensor_bytes": 602112,
+      "estimated_latency": 1.2142240000000002e-05,
+      "estimated_energy": 4.816896e-06
+    },
+    {
+      "source": 47,
+      "destination": 48,
+      "tensor_shape": [
+        1,
+        48,
+        56,
+        56
+      ],
+      "tensor_bytes": 602112,
+      "estimated_latency": 1.2142240000000002e-05,
+      "estimated_energy": 4.816896e-06
+    },
+    {
+      "source": 38,
+      "destination": 48,
+      "tensor_shape": [
+        1,
+        48,
+        56,
+        56
+      ],
+      "tensor_bytes": 602112,
+      "estimated_latency": 1.2142240000000002e-05,
+      "estimated_energy": 4.816896e-06
+    },
+    {
+      "source": 48,
+      "destination": 49,
+      "tensor_shape": [
+        1,
+        48,
+        56,
+        56
+      ],
+      "tensor_bytes": 602112,
+      "estimated_latency": 1.2142240000000002e-05,
+      "estimated_energy": 4.816896e-06
+    },
+    {
+      "source": 49,
+      "destination": 50,
+      "tensor_shape": [
+        1,
+        48,
+        3136
+      ],
+      "tensor_bytes": 602112,
+      "estimated_latency": 1.2142240000000002e-05,
+      "estimated_energy": 4.816896e-06
+    },
+    {
+      "source": 52,
+      "destination": 53,
+      "tensor_shape": [
+        1,
+        48,
+        56,
+        56
+      ],
+      "tensor_bytes": 602112,
+      "estimated_latency": 1.2142240000000002e-05,
+      "estimated_energy": 4.816896e-06
+    },
+    {
+      "source": 53,
+      "destination": 54,
+      "tensor_shape": [
+        1,
+        48,
+        3136
+      ],
+      "tensor_bytes": 602112,
+      "estimated_latency": 1.2142240000000002e-05,
+      "estimated_energy": 4.816896e-06
+    },
+    {
+      "source": 50,
+      "destination": 55,
+      "tensor_shape": [
+        1,
+        3136,
+        48
+      ],
+      "tensor_bytes": 602112,
+      "estimated_latency": 1.2142240000000002e-05,
+      "estimated_energy": 4.816896e-06
+    },
+    {
+      "source": 54,
+      "destination": 55,
+      "tensor_shape": [
+        1,
+        3136,
+        48
+      ],
+      "tensor_bytes": 602112,
+      "estimated_latency": 1.2142240000000002e-05,
+      "estimated_energy": 4.816896e-06
+    },
+    {
+      "source": 55,
+      "destination": 56,
+      "tensor_shape": [
+        1,
+        3136,
+        48
+      ],
+      "tensor_bytes": 602112,
+      "estimated_latency": 1.2142240000000002e-05,
+      "estimated_energy": 4.816896e-06
+    },
+    {
+      "source": 56,
+      "destination": 57,
+      "tensor_shape": [
+        1,
+        3136,
+        48
+      ],
+      "tensor_bytes": 602112,
+      "estimated_latency": 1.2142240000000002e-05,
+      "estimated_energy": 4.816896e-06
+    },
+    {
+      "source": 57,
+      "destination": 58,
+      "tensor_shape": [
+        1,
+        3136,
+        144
+      ],
+      "tensor_bytes": 1806336,
+      "estimated_latency": 3.6226720000000005e-05,
+      "estimated_energy": 1.4450688e-05
+    },
+    {
+      "source": 58,
+      "destination": 59,
+      "tensor_shape": [
+        1,
+        3136,
+        3,
+        8,
+        6
+      ],
+      "tensor_bytes": 1806336,
+      "estimated_latency": 3.6226720000000005e-05,
+      "estimated_energy": 1.4450688e-05
+    },
+    {
+      "source": 59,
+      "destination": 60,
+      "tensor_shape": [
+        3,
+        1,
+        8,
+        3136,
+        6
+      ],
+      "tensor_bytes": 1806336,
+      "estimated_latency": 3.6226720000000005e-05,
+      "estimated_energy": 1.4450688e-05
+    },
+    {
+      "source": 59,
+      "destination": 61,
+      "tensor_shape": [
+        3,
+        1,
+        8,
+        3136,
+        6
+      ],
+      "tensor_bytes": 1806336,
+      "estimated_latency": 3.6226720000000005e-05,
+      "estimated_energy": 1.4450688e-05
+    },
+    {
+      "source": 59,
+      "destination": 62,
+      "tensor_shape": [
+        3,
+        1,
+        8,
+        3136,
+        6
+      ],
+      "tensor_bytes": 1806336,
+      "estimated_latency": 3.6226720000000005e-05,
+      "estimated_energy": 1.4450688e-05
+    },
+    {
+      "source": 60,
+      "destination": 63,
+      "tensor_shape": [
+        1,
+        8,
+        3136,
+        6
+      ],
+      "tensor_bytes": 602112,
+      "estimated_latency": 1.2142240000000002e-05,
+      "estimated_energy": 4.816896e-06
+    },
+    {
+      "source": 61,
+      "destination": 64,
+      "tensor_shape": [
+        1,
+        8,
+        3136,
+        6
+      ],
+      "tensor_bytes": 602112,
+      "estimated_latency": 1.2142240000000002e-05,
+      "estimated_energy": 4.816896e-06
+    },
+    {
+      "source": 62,
+      "destination": 65,
+      "tensor_shape": [
+        1,
+        8,
+        3136,
+        6
+      ],
+      "tensor_bytes": 602112,
+      "estimated_latency": 1.2142240000000002e-05,
+      "estimated_energy": 4.816896e-06
+    },
+    {
+      "source": 63,
+      "destination": 66,
+      "tensor_shape": [
+        1,
+        8,
+        6,
+        3136
+      ],
+      "tensor_bytes": 602112,
+      "estimated_latency": 1.2142240000000002e-05,
+      "estimated_energy": 4.816896e-06
+    },
+    {
+      "source": 64,
+      "destination": 67,
+      "tensor_shape": [
+        1,
+        8,
+        6,
+        3136
+      ],
+      "tensor_bytes": 602112,
+      "estimated_latency": 1.2142240000000002e-05,
+      "estimated_energy": 4.816896e-06
+    },
+    {
+      "source": 66,
+      "destination": 68,
+      "tensor_shape": [
+        1,
+        8,
+        6,
+        3136
+      ],
+      "tensor_bytes": 602112,
+      "estimated_latency": 1.2142240000000002e-05,
+      "estimated_energy": 4.816896e-06
+    },
+    {
+      "source": 67,
+      "destination": 68,
+      "tensor_shape": [
+        1,
+        8,
+        6,
+        3136
+      ],
+      "tensor_bytes": 602112,
+      "estimated_latency": 1.2142240000000002e-05,
+      "estimated_energy": 4.816896e-06
+    },
+    {
+      "source": 68,
+      "destination": 69,
+      "tensor_shape": [
+        1,
+        8,
+        6,
+        6
+      ],
+      "tensor_bytes": 1152,
+      "estimated_latency": 1.2304e-07,
+      "estimated_energy": 9.216e-09
+    },
+    {
+      "source": 69,
+      "destination": 70,
+      "tensor_shape": [
+        1,
+        8,
+        6,
+        6
+      ],
+      "tensor_bytes": 1152,
+      "estimated_latency": 1.2304e-07,
+      "estimated_energy": 9.216e-09
+    },
+    {
+      "source": 65,
+      "destination": 70,
+      "tensor_shape": [
+        1,
+        8,
+        6,
+        3136
+      ],
+      "tensor_bytes": 602112,
+      "estimated_latency": 1.2142240000000002e-05,
+      "estimated_energy": 4.816896e-06
+    },
+    {
+      "source": 70,
+      "destination": 71,
+      "tensor_shape": [
+        1,
+        8,
+        6,
+        3136
+      ],
+      "tensor_bytes": 602112,
+      "estimated_latency": 1.2142240000000002e-05,
+      "estimated_energy": 4.816896e-06
+    },
+    {
+      "source": 71,
+      "destination": 72,
+      "tensor_shape": [
+        1,
+        3136,
+        8,
+        6
+      ],
+      "tensor_bytes": 602112,
+      "estimated_latency": 1.2142240000000002e-05,
+      "estimated_energy": 4.816896e-06
+    },
+    {
+      "source": 72,
+      "destination": 73,
+      "tensor_shape": [
+        1,
+        3136,
+        48
+      ],
+      "tensor_bytes": 602112,
+      "estimated_latency": 1.2142240000000002e-05,
+      "estimated_energy": 4.816896e-06
+    },
+    {
+      "source": 73,
+      "destination": 74,
+      "tensor_shape": [
+        1,
+        3136,
+        48
+      ],
+      "tensor_bytes": 602112,
+      "estimated_latency": 1.2142240000000002e-05,
+      "estimated_energy": 4.816896e-06
+    },
+    {
+      "source": 74,
+      "destination": 75,
+      "tensor_shape": [
+        1,
+        3136,
+        48
+      ],
+      "tensor_bytes": 602112,
+      "estimated_latency": 1.2142240000000002e-05,
+      "estimated_energy": 4.816896e-06
+    },
+    {
+      "source": 55,
+      "destination": 75,
+      "tensor_shape": [
+        1,
+        3136,
+        48
+      ],
+      "tensor_bytes": 602112,
+      "estimated_latency": 1.2142240000000002e-05,
+      "estimated_energy": 4.816896e-06
+    },
+    {
+      "source": 75,
+      "destination": 76,
+      "tensor_shape": [
+        1,
+        3136,
+        48
+      ],
+      "tensor_bytes": 602112,
+      "estimated_latency": 1.2142240000000002e-05,
+      "estimated_energy": 4.816896e-06
+    },
+    {
+      "source": 76,
+      "destination": 77,
+      "tensor_shape": [
+        1,
+        56,
+        56,
+        48
+      ],
+      "tensor_bytes": 602112,
+      "estimated_latency": 1.2142240000000002e-05,
+      "estimated_energy": 4.816896e-06
+    },
+    {
+      "source": 77,
+      "destination": 78,
+      "tensor_shape": [
+        1,
+        56,
+        56,
+        48
+      ],
+      "tensor_bytes": 602112,
+      "estimated_latency": 1.2142240000000002e-05,
+      "estimated_energy": 4.816896e-06
+    },
+    {
+      "source": 78,
+      "destination": 79,
+      "tensor_shape": [
+        1,
+        56,
+        56,
+        288
+      ],
+      "tensor_bytes": 3612672,
+      "estimated_latency": 7.235344000000001e-05,
+      "estimated_energy": 2.8901376e-05
+    },
+    {
+      "source": 79,
+      "destination": 80,
+      "tensor_shape": [
+        1,
+        56,
+        56,
+        288
+      ],
+      "tensor_bytes": 3612672,
+      "estimated_latency": 7.235344000000001e-05,
+      "estimated_energy": 2.8901376e-05
+    },
+    {
+      "source": 80,
+      "destination": 81,
+      "tensor_shape": [
+        1,
+        56,
+        56,
+        48
+      ],
+      "tensor_bytes": 602112,
+      "estimated_latency": 1.2142240000000002e-05,
+      "estimated_energy": 4.816896e-06
+    },
+    {
+      "source": 81,
+      "destination": 82,
+      "tensor_shape": [
+        1,
+        56,
+        56,
+        48
+      ],
+      "tensor_bytes": 602112,
+      "estimated_latency": 1.2142240000000002e-05,
+      "estimated_energy": 4.816896e-06
+    },
+    {
+      "source": 82,
+      "destination": 83,
+      "tensor_shape": [
+        1,
+        48,
+        56,
+        56
+      ],
+      "tensor_bytes": 602112,
+      "estimated_latency": 1.2142240000000002e-05,
+      "estimated_energy": 4.816896e-06
+    },
+    {
+      "source": 83,
+      "destination": 84,
+      "tensor_shape": [
+        1,
+        48,
+        56,
+        56
+      ],
+      "tensor_bytes": 602112,
+      "estimated_latency": 1.2142240000000002e-05,
+      "estimated_energy": 4.816896e-06
+    },
+    {
+      "source": 48,
+      "destination": 84,
+      "tensor_shape": [
+        1,
+        48,
+        56,
+        56
+      ],
+      "tensor_bytes": 602112,
+      "estimated_latency": 1.2142240000000002e-05,
+      "estimated_energy": 4.816896e-06
+    },
+    {
+      "source": 85,
+      "destination": 86,
+      "tensor_shape": [
+        1,
+        80,
+        28,
+        28
+      ],
+      "tensor_bytes": 250880,
+      "estimated_latency": 5.1176e-06,
+      "estimated_energy": 2.00704e-06
+    },
+    {
+      "source": 86,
+      "destination": 87,
+      "tensor_shape": [
+        1,
+        80,
+        28,
+        28
+      ],
+      "tensor_bytes": 250880,
+      "estimated_latency": 5.1176e-06,
+      "estimated_energy": 2.00704e-06
+    },
+    {
+      "source": 87,
+      "destination": 88,
+      "tensor_shape": [
+        1,
+        80,
+        28,
+        28
+      ],
+      "tensor_bytes": 250880,
+      "estimated_latency": 5.1176e-06,
+      "estimated_energy": 2.00704e-06
+    },
+    {
+      "source": 88,
+      "destination": 89,
+      "tensor_shape": [
+        1,
+        28,
+        28,
+        80
+      ],
+      "tensor_bytes": 250880,
+      "estimated_latency": 5.1176e-06,
+      "estimated_energy": 2.00704e-06
+    },
+    {
+      "source": 89,
+      "destination": 90,
+      "tensor_shape": [
+        1,
+        28,
+        28,
+        480
+      ],
+      "tensor_bytes": 1505280,
+      "estimated_latency": 3.0205599999999998e-05,
+      "estimated_energy": 1.2042239999999999e-05
+    },
+    {
+      "source": 90,
+      "destination": 91,
+      "tensor_shape": [
+        1,
+        28,
+        28,
+        480
+      ],
+      "tensor_bytes": 1505280,
+      "estimated_latency": 3.0205599999999998e-05,
+      "estimated_energy": 1.2042239999999999e-05
+    },
+    {
+      "source": 91,
+      "destination": 92,
+      "tensor_shape": [
+        1,
+        28,
+        28,
+        80
+      ],
+      "tensor_bytes": 250880,
+      "estimated_latency": 5.1176e-06,
+      "estimated_energy": 2.00704e-06
+    },
+    {
+      "source": 92,
+      "destination": 93,
+      "tensor_shape": [
+        1,
+        28,
+        28,
+        80
+      ],
+      "tensor_bytes": 250880,
+      "estimated_latency": 5.1176e-06,
+      "estimated_energy": 2.00704e-06
+    },
+    {
+      "source": 93,
+      "destination": 94,
+      "tensor_shape": [
+        1,
+        80,
+        28,
+        28
+      ],
+      "tensor_bytes": 250880,
+      "estimated_latency": 5.1176e-06,
+      "estimated_energy": 2.00704e-06
+    },
+    {
+      "source": 94,
+      "destination": 95,
+      "tensor_shape": [
+        1,
+        80,
+        28,
+        28
+      ],
+      "tensor_bytes": 250880,
+      "estimated_latency": 5.1176e-06,
+      "estimated_energy": 2.00704e-06
+    },
+    {
+      "source": 85,
+      "destination": 95,
+      "tensor_shape": [
+        1,
+        80,
+        28,
+        28
+      ],
+      "tensor_bytes": 250880,
+      "estimated_latency": 5.1176e-06,
+      "estimated_energy": 2.00704e-06
+    },
+    {
+      "source": 95,
+      "destination": 96,
+      "tensor_shape": [
+        1,
+        80,
+        28,
+        28
+      ],
+      "tensor_bytes": 250880,
+      "estimated_latency": 5.1176e-06,
+      "estimated_energy": 2.00704e-06
+    },
+    {
+      "source": 96,
+      "destination": 97,
+      "tensor_shape": [
+        1,
+        80,
+        28,
+        28
+      ],
+      "tensor_bytes": 250880,
+      "estimated_latency": 5.1176e-06,
+      "estimated_energy": 2.00704e-06
+    },
+    {
+      "source": 97,
+      "destination": 98,
+      "tensor_shape": [
+        1,
+        80,
+        28,
+        28
+      ],
+      "tensor_bytes": 250880,
+      "estimated_latency": 5.1176e-06,
+      "estimated_energy": 2.00704e-06
+    },
+    {
+      "source": 98,
+      "destination": 99,
+      "tensor_shape": [
+        1,
+        28,
+        28,
+        80
+      ],
+      "tensor_bytes": 250880,
+      "estimated_latency": 5.1176e-06,
+      "estimated_energy": 2.00704e-06
+    },
+    {
+      "source": 99,
+      "destination": 100,
+      "tensor_shape": [
+        1,
+        28,
+        28,
+        480
+      ],
+      "tensor_bytes": 1505280,
+      "estimated_latency": 3.0205599999999998e-05,
+      "estimated_energy": 1.2042239999999999e-05
+    },
+    {
+      "source": 100,
+      "destination": 101,
+      "tensor_shape": [
+        1,
+        28,
+        28,
+        480
+      ],
+      "tensor_bytes": 1505280,
+      "estimated_latency": 3.0205599999999998e-05,
+      "estimated_energy": 1.2042239999999999e-05
+    },
+    {
+      "source": 101,
+      "destination": 102,
+      "tensor_shape": [
+        1,
+        28,
+        28,
+        80
+      ],
+      "tensor_bytes": 250880,
+      "estimated_latency": 5.1176e-06,
+      "estimated_energy": 2.00704e-06
+    },
+    {
+      "source": 102,
+      "destination": 103,
+      "tensor_shape": [
+        1,
+        28,
+        28,
+        80
+      ],
+      "tensor_bytes": 250880,
+      "estimated_latency": 5.1176e-06,
+      "estimated_energy": 2.00704e-06
+    },
+    {
+      "source": 103,
+      "destination": 104,
+      "tensor_shape": [
+        1,
+        80,
+        28,
+        28
+      ],
+      "tensor_bytes": 250880,
+      "estimated_latency": 5.1176e-06,
+      "estimated_energy": 2.00704e-06
+    },
+    {
+      "source": 104,
+      "destination": 105,
+      "tensor_shape": [
+        1,
+        80,
+        28,
+        28
+      ],
+      "tensor_bytes": 250880,
+      "estimated_latency": 5.1176e-06,
+      "estimated_energy": 2.00704e-06
+    },
+    {
+      "source": 95,
+      "destination": 105,
+      "tensor_shape": [
+        1,
+        80,
+        28,
+        28
+      ],
+      "tensor_bytes": 250880,
+      "estimated_latency": 5.1176e-06,
+      "estimated_energy": 2.00704e-06
+    },
+    {
+      "source": 105,
+      "destination": 106,
+      "tensor_shape": [
+        1,
+        80,
+        28,
+        28
+      ],
+      "tensor_bytes": 250880,
+      "estimated_latency": 5.1176e-06,
+      "estimated_energy": 2.00704e-06
+    },
+    {
+      "source": 106,
+      "destination": 107,
+      "tensor_shape": [
+        1,
+        80,
+        28,
+        28
+      ],
+      "tensor_bytes": 250880,
+      "estimated_latency": 5.1176e-06,
+      "estimated_energy": 2.00704e-06
+    },
+    {
+      "source": 107,
+      "destination": 108,
+      "tensor_shape": [
+        1,
+        80,
+        28,
+        28
+      ],
+      "tensor_bytes": 250880,
+      "estimated_latency": 5.1176e-06,
+      "estimated_energy": 2.00704e-06
+    },
+    {
+      "source": 108,
+      "destination": 109,
+      "tensor_shape": [
+        1,
+        28,
+        28,
+        80
+      ],
+      "tensor_bytes": 250880,
+      "estimated_latency": 5.1176e-06,
+      "estimated_energy": 2.00704e-06
+    },
+    {
+      "source": 109,
+      "destination": 110,
+      "tensor_shape": [
+        1,
+        28,
+        28,
+        480
+      ],
+      "tensor_bytes": 1505280,
+      "estimated_latency": 3.0205599999999998e-05,
+      "estimated_energy": 1.2042239999999999e-05
+    },
+    {
+      "source": 110,
+      "destination": 111,
+      "tensor_shape": [
+        1,
+        28,
+        28,
+        480
+      ],
+      "tensor_bytes": 1505280,
+      "estimated_latency": 3.0205599999999998e-05,
+      "estimated_energy": 1.2042239999999999e-05
+    },
+    {
+      "source": 111,
+      "destination": 112,
+      "tensor_shape": [
+        1,
+        28,
+        28,
+        80
+      ],
+      "tensor_bytes": 250880,
+      "estimated_latency": 5.1176e-06,
+      "estimated_energy": 2.00704e-06
+    },
+    {
+      "source": 112,
+      "destination": 113,
+      "tensor_shape": [
+        1,
+        28,
+        28,
+        80
+      ],
+      "tensor_bytes": 250880,
+      "estimated_latency": 5.1176e-06,
+      "estimated_energy": 2.00704e-06
+    },
+    {
+      "source": 113,
+      "destination": 114,
+      "tensor_shape": [
+        1,
+        80,
+        28,
+        28
+      ],
+      "tensor_bytes": 250880,
+      "estimated_latency": 5.1176e-06,
+      "estimated_energy": 2.00704e-06
+    },
+    {
+      "source": 114,
+      "destination": 115,
+      "tensor_shape": [
+        1,
+        80,
+        28,
+        28
+      ],
+      "tensor_bytes": 250880,
+      "estimated_latency": 5.1176e-06,
+      "estimated_energy": 2.00704e-06
+    },
+    {
+      "source": 105,
+      "destination": 115,
+      "tensor_shape": [
+        1,
+        80,
+        28,
+        28
+      ],
+      "tensor_bytes": 250880,
+      "estimated_latency": 5.1176e-06,
+      "estimated_energy": 2.00704e-06
+    },
+    {
+      "source": 115,
+      "destination": 116,
+      "tensor_shape": [
+        1,
+        80,
+        28,
+        28
+      ],
+      "tensor_bytes": 250880,
+      "estimated_latency": 5.1176e-06,
+      "estimated_energy": 2.00704e-06
+    },
+    {
+      "source": 116,
+      "destination": 117,
+      "tensor_shape": [
+        1,
+        80,
+        784
+      ],
+      "tensor_bytes": 250880,
+      "estimated_latency": 5.1176e-06,
+      "estimated_energy": 2.00704e-06
+    },
+    {
+      "source": 117,
+      "destination": 118,
+      "tensor_shape": [
+        1,
+        784,
+        80
+      ],
+      "tensor_bytes": 250880,
+      "estimated_latency": 5.1176e-06,
+      "estimated_energy": 2.00704e-06
+    },
+    {
+      "source": 118,
+      "destination": 119,
+      "tensor_shape": [
+        1,
+        784,
+        80
+      ],
+      "tensor_bytes": 250880,
+      "estimated_latency": 5.1176e-06,
+      "estimated_energy": 2.00704e-06
+    },
+    {
+      "source": 119,
+      "destination": 120,
+      "tensor_shape": [
+        1,
+        784,
+        240
+      ],
+      "tensor_bytes": 752640,
+      "estimated_latency": 1.51528e-05,
+      "estimated_energy": 6.0211199999999995e-06
+    },
+    {
+      "source": 120,
+      "destination": 121,
+      "tensor_shape": [
+        1,
+        784,
+        3,
+        8,
+        10
+      ],
+      "tensor_bytes": 752640,
+      "estimated_latency": 1.51528e-05,
+      "estimated_energy": 6.0211199999999995e-06
+    },
+    {
+      "source": 121,
+      "destination": 122,
+      "tensor_shape": [
+        3,
+        1,
+        8,
+        784,
+        10
+      ],
+      "tensor_bytes": 752640,
+      "estimated_latency": 1.51528e-05,
+      "estimated_energy": 6.0211199999999995e-06
+    },
+    {
+      "source": 121,
+      "destination": 123,
+      "tensor_shape": [
+        3,
+        1,
+        8,
+        784,
+        10
+      ],
+      "tensor_bytes": 752640,
+      "estimated_latency": 1.51528e-05,
+      "estimated_energy": 6.0211199999999995e-06
+    },
+    {
+      "source": 121,
+      "destination": 124,
+      "tensor_shape": [
+        3,
+        1,
+        8,
+        784,
+        10
+      ],
+      "tensor_bytes": 752640,
+      "estimated_latency": 1.51528e-05,
+      "estimated_energy": 6.0211199999999995e-06
+    },
+    {
+      "source": 122,
+      "destination": 125,
+      "tensor_shape": [
+        1,
+        8,
+        784,
+        10
+      ],
+      "tensor_bytes": 250880,
+      "estimated_latency": 5.1176e-06,
+      "estimated_energy": 2.00704e-06
+    },
+    {
+      "source": 123,
+      "destination": 126,
+      "tensor_shape": [
+        1,
+        8,
+        784,
+        10
+      ],
+      "tensor_bytes": 250880,
+      "estimated_latency": 5.1176e-06,
+      "estimated_energy": 2.00704e-06
+    },
+    {
+      "source": 124,
+      "destination": 127,
+      "tensor_shape": [
+        1,
+        8,
+        784,
+        10
+      ],
+      "tensor_bytes": 250880,
+      "estimated_latency": 5.1176e-06,
+      "estimated_energy": 2.00704e-06
+    },
+    {
+      "source": 125,
+      "destination": 128,
+      "tensor_shape": [
+        1,
+        8,
+        10,
+        784
+      ],
+      "tensor_bytes": 250880,
+      "estimated_latency": 5.1176e-06,
+      "estimated_energy": 2.00704e-06
+    },
+    {
+      "source": 126,
+      "destination": 129,
+      "tensor_shape": [
+        1,
+        8,
+        10,
+        784
+      ],
+      "tensor_bytes": 250880,
+      "estimated_latency": 5.1176e-06,
+      "estimated_energy": 2.00704e-06
+    },
+    {
+      "source": 128,
+      "destination": 130,
+      "tensor_shape": [
+        1,
+        8,
+        10,
+        784
+      ],
+      "tensor_bytes": 250880,
+      "estimated_latency": 5.1176e-06,
+      "estimated_energy": 2.00704e-06
+    },
+    {
+      "source": 129,
+      "destination": 130,
+      "tensor_shape": [
+        1,
+        8,
+        10,
+        784
+      ],
+      "tensor_bytes": 250880,
+      "estimated_latency": 5.1176e-06,
+      "estimated_energy": 2.00704e-06
+    },
+    {
+      "source": 130,
+      "destination": 131,
+      "tensor_shape": [
+        1,
+        8,
+        10,
+        10
+      ],
+      "tensor_bytes": 3200,
+      "estimated_latency": 1.6399999999999999e-07,
+      "estimated_energy": 2.56e-08
+    },
+    {
+      "source": 131,
+      "destination": 132,
+      "tensor_shape": [
+        1,
+        8,
+        10,
+        10
+      ],
+      "tensor_bytes": 3200,
+      "estimated_latency": 1.6399999999999999e-07,
+      "estimated_energy": 2.56e-08
+    },
+    {
+      "source": 127,
+      "destination": 132,
+      "tensor_shape": [
+        1,
+        8,
+        10,
+        784
+      ],
+      "tensor_bytes": 250880,
+      "estimated_latency": 5.1176e-06,
+      "estimated_energy": 2.00704e-06
+    },
+    {
+      "source": 132,
+      "destination": 133,
+      "tensor_shape": [
+        1,
+        8,
+        10,
+        784
+      ],
+      "tensor_bytes": 250880,
+      "estimated_latency": 5.1176e-06,
+      "estimated_energy": 2.00704e-06
+    },
+    {
+      "source": 133,
+      "destination": 134,
+      "tensor_shape": [
+        1,
+        784,
+        8,
+        10
+      ],
+      "tensor_bytes": 250880,
+      "estimated_latency": 5.1176e-06,
+      "estimated_energy": 2.00704e-06
+    },
+    {
+      "source": 134,
+      "destination": 135,
+      "tensor_shape": [
+        1,
+        784,
+        80
+      ],
+      "tensor_bytes": 250880,
+      "estimated_latency": 5.1176e-06,
+      "estimated_energy": 2.00704e-06
+    },
+    {
+      "source": 135,
+      "destination": 136,
+      "tensor_shape": [
+        1,
+        784,
+        80
+      ],
+      "tensor_bytes": 250880,
+      "estimated_latency": 5.1176e-06,
+      "estimated_energy": 2.00704e-06
+    },
+    {
+      "source": 136,
+      "destination": 137,
+      "tensor_shape": [
+        1,
+        784,
+        80
+      ],
+      "tensor_bytes": 250880,
+      "estimated_latency": 5.1176e-06,
+      "estimated_energy": 2.00704e-06
+    },
+    {
+      "source": 117,
+      "destination": 137,
+      "tensor_shape": [
+        1,
+        784,
+        80
+      ],
+      "tensor_bytes": 250880,
+      "estimated_latency": 5.1176e-06,
+      "estimated_energy": 2.00704e-06
+    },
+    {
+      "source": 137,
+      "destination": 138,
+      "tensor_shape": [
+        1,
+        784,
+        80
+      ],
+      "tensor_bytes": 250880,
+      "estimated_latency": 5.1176e-06,
+      "estimated_energy": 2.00704e-06
+    },
+    {
+      "source": 138,
+      "destination": 139,
+      "tensor_shape": [
+        1,
+        28,
+        28,
+        80
+      ],
+      "tensor_bytes": 250880,
+      "estimated_latency": 5.1176e-06,
+      "estimated_energy": 2.00704e-06
+    },
+    {
+      "source": 139,
+      "destination": 140,
+      "tensor_shape": [
+        1,
+        28,
+        28,
+        80
+      ],
+      "tensor_bytes": 250880,
+      "estimated_latency": 5.1176e-06,
+      "estimated_energy": 2.00704e-06
+    },
+    {
+      "source": 140,
+      "destination": 141,
+      "tensor_shape": [
+        1,
+        28,
+        28,
+        480
+      ],
+      "tensor_bytes": 1505280,
+      "estimated_latency": 3.0205599999999998e-05,
+      "estimated_energy": 1.2042239999999999e-05
+    },
+    {
+      "source": 141,
+      "destination": 142,
+      "tensor_shape": [
+        1,
+        28,
+        28,
+        480
+      ],
+      "tensor_bytes": 1505280,
+      "estimated_latency": 3.0205599999999998e-05,
+      "estimated_energy": 1.2042239999999999e-05
+    },
+    {
+      "source": 142,
+      "destination": 143,
+      "tensor_shape": [
+        1,
+        28,
+        28,
+        80
+      ],
+      "tensor_bytes": 250880,
+      "estimated_latency": 5.1176e-06,
+      "estimated_energy": 2.00704e-06
+    },
+    {
+      "source": 143,
+      "destination": 144,
+      "tensor_shape": [
+        1,
+        28,
+        28,
+        80
+      ],
+      "tensor_bytes": 250880,
+      "estimated_latency": 5.1176e-06,
+      "estimated_energy": 2.00704e-06
+    },
+    {
+      "source": 144,
+      "destination": 145,
+      "tensor_shape": [
+        1,
+        80,
+        28,
+        28
+      ],
+      "tensor_bytes": 250880,
+      "estimated_latency": 5.1176e-06,
+      "estimated_energy": 2.00704e-06
+    },
+    {
+      "source": 145,
+      "destination": 146,
+      "tensor_shape": [
+        1,
+        80,
+        28,
+        28
+      ],
+      "tensor_bytes": 250880,
+      "estimated_latency": 5.1176e-06,
+      "estimated_energy": 2.00704e-06
+    },
+    {
+      "source": 115,
+      "destination": 146,
+      "tensor_shape": [
+        1,
+        80,
+        28,
+        28
+      ],
+      "tensor_bytes": 250880,
+      "estimated_latency": 5.1176e-06,
+      "estimated_energy": 2.00704e-06
+    },
+    {
+      "source": 147,
+      "destination": 148,
+      "tensor_shape": [
+        1,
+        128,
+        14,
+        14
+      ],
+      "tensor_bytes": 100352,
+      "estimated_latency": 2.1070399999999997e-06,
+      "estimated_energy": 8.02816e-07
+    },
+    {
+      "source": 148,
+      "destination": 149,
+      "tensor_shape": [
+        1,
+        128,
+        14,
+        14
+      ],
+      "tensor_bytes": 100352,
+      "estimated_latency": 2.1070399999999997e-06,
+      "estimated_energy": 8.02816e-07
+    },
+    {
+      "source": 149,
+      "destination": 150,
+      "tensor_shape": [
+        1,
+        128,
+        14,
+        14
+      ],
+      "tensor_bytes": 100352,
+      "estimated_latency": 2.1070399999999997e-06,
+      "estimated_energy": 8.02816e-07
+    },
+    {
+      "source": 150,
+      "destination": 151,
+      "tensor_shape": [
+        1,
+        14,
+        14,
+        128
+      ],
+      "tensor_bytes": 100352,
+      "estimated_latency": 2.1070399999999997e-06,
+      "estimated_energy": 8.02816e-07
+    },
+    {
+      "source": 151,
+      "destination": 152,
+      "tensor_shape": [
+        1,
+        14,
+        14,
+        768
+      ],
+      "tensor_bytes": 602112,
+      "estimated_latency": 1.2142240000000002e-05,
+      "estimated_energy": 4.816896e-06
+    },
+    {
+      "source": 152,
+      "destination": 153,
+      "tensor_shape": [
+        1,
+        14,
+        14,
+        768
+      ],
+      "tensor_bytes": 602112,
+      "estimated_latency": 1.2142240000000002e-05,
+      "estimated_energy": 4.816896e-06
+    },
+    {
+      "source": 153,
+      "destination": 154,
+      "tensor_shape": [
+        1,
+        14,
+        14,
+        128
+      ],
+      "tensor_bytes": 100352,
+      "estimated_latency": 2.1070399999999997e-06,
+      "estimated_energy": 8.02816e-07
+    },
+    {
+      "source": 154,
+      "destination": 155,
+      "tensor_shape": [
+        1,
+        14,
+        14,
+        128
+      ],
+      "tensor_bytes": 100352,
+      "estimated_latency": 2.1070399999999997e-06,
+      "estimated_energy": 8.02816e-07
+    },
+    {
+      "source": 155,
+      "destination": 156,
+      "tensor_shape": [
+        1,
+        128,
+        14,
+        14
+      ],
+      "tensor_bytes": 100352,
+      "estimated_latency": 2.1070399999999997e-06,
+      "estimated_energy": 8.02816e-07
+    },
+    {
+      "source": 156,
+      "destination": 157,
+      "tensor_shape": [
+        1,
+        128,
+        14,
+        14
+      ],
+      "tensor_bytes": 100352,
+      "estimated_latency": 2.1070399999999997e-06,
+      "estimated_energy": 8.02816e-07
+    },
+    {
+      "source": 147,
+      "destination": 157,
+      "tensor_shape": [
+        1,
+        128,
+        14,
+        14
+      ],
+      "tensor_bytes": 100352,
+      "estimated_latency": 2.1070399999999997e-06,
+      "estimated_energy": 8.02816e-07
+    },
+    {
+      "source": 157,
+      "destination": 158,
+      "tensor_shape": [
+        1,
+        128,
+        14,
+        14
+      ],
+      "tensor_bytes": 100352,
+      "estimated_latency": 2.1070399999999997e-06,
+      "estimated_energy": 8.02816e-07
+    },
+    {
+      "source": 158,
+      "destination": 159,
+      "tensor_shape": [
+        1,
+        128,
+        14,
+        14
+      ],
+      "tensor_bytes": 100352,
+      "estimated_latency": 2.1070399999999997e-06,
+      "estimated_energy": 8.02816e-07
+    },
+    {
+      "source": 159,
+      "destination": 160,
+      "tensor_shape": [
+        1,
+        128,
+        14,
+        14
+      ],
+      "tensor_bytes": 100352,
+      "estimated_latency": 2.1070399999999997e-06,
+      "estimated_energy": 8.02816e-07
+    },
+    {
+      "source": 160,
+      "destination": 161,
+      "tensor_shape": [
+        1,
+        14,
+        14,
+        128
+      ],
+      "tensor_bytes": 100352,
+      "estimated_latency": 2.1070399999999997e-06,
+      "estimated_energy": 8.02816e-07
+    },
+    {
+      "source": 161,
+      "destination": 162,
+      "tensor_shape": [
+        1,
+        14,
+        14,
+        768
+      ],
+      "tensor_bytes": 602112,
+      "estimated_latency": 1.2142240000000002e-05,
+      "estimated_energy": 4.816896e-06
+    },
+    {
+      "source": 162,
+      "destination": 163,
+      "tensor_shape": [
+        1,
+        14,
+        14,
+        768
+      ],
+      "tensor_bytes": 602112,
+      "estimated_latency": 1.2142240000000002e-05,
+      "estimated_energy": 4.816896e-06
+    },
+    {
+      "source": 163,
+      "destination": 164,
+      "tensor_shape": [
+        1,
+        14,
+        14,
+        128
+      ],
+      "tensor_bytes": 100352,
+      "estimated_latency": 2.1070399999999997e-06,
+      "estimated_energy": 8.02816e-07
+    },
+    {
+      "source": 164,
+      "destination": 165,
+      "tensor_shape": [
+        1,
+        14,
+        14,
+        128
+      ],
+      "tensor_bytes": 100352,
+      "estimated_latency": 2.1070399999999997e-06,
+      "estimated_energy": 8.02816e-07
+    },
+    {
+      "source": 165,
+      "destination": 166,
+      "tensor_shape": [
+        1,
+        128,
+        14,
+        14
+      ],
+      "tensor_bytes": 100352,
+      "estimated_latency": 2.1070399999999997e-06,
+      "estimated_energy": 8.02816e-07
+    },
+    {
+      "source": 166,
+      "destination": 167,
+      "tensor_shape": [
+        1,
+        128,
+        14,
+        14
+      ],
+      "tensor_bytes": 100352,
+      "estimated_latency": 2.1070399999999997e-06,
+      "estimated_energy": 8.02816e-07
+    },
+    {
+      "source": 157,
+      "destination": 167,
+      "tensor_shape": [
+        1,
+        128,
+        14,
+        14
+      ],
+      "tensor_bytes": 100352,
+      "estimated_latency": 2.1070399999999997e-06,
+      "estimated_energy": 8.02816e-07
+    },
+    {
+      "source": 167,
+      "destination": 168,
+      "tensor_shape": [
+        1,
+        128,
+        14,
+        14
+      ],
+      "tensor_bytes": 100352,
+      "estimated_latency": 2.1070399999999997e-06,
+      "estimated_energy": 8.02816e-07
+    },
+    {
+      "source": 168,
+      "destination": 169,
+      "tensor_shape": [
+        1,
+        128,
+        14,
+        14
+      ],
+      "tensor_bytes": 100352,
+      "estimated_latency": 2.1070399999999997e-06,
+      "estimated_energy": 8.02816e-07
+    },
+    {
+      "source": 169,
+      "destination": 170,
+      "tensor_shape": [
+        1,
+        128,
+        14,
+        14
+      ],
+      "tensor_bytes": 100352,
+      "estimated_latency": 2.1070399999999997e-06,
+      "estimated_energy": 8.02816e-07
+    },
+    {
+      "source": 170,
+      "destination": 171,
+      "tensor_shape": [
+        1,
+        14,
+        14,
+        128
+      ],
+      "tensor_bytes": 100352,
+      "estimated_latency": 2.1070399999999997e-06,
+      "estimated_energy": 8.02816e-07
+    },
+    {
+      "source": 171,
+      "destination": 172,
+      "tensor_shape": [
+        1,
+        14,
+        14,
+        768
+      ],
+      "tensor_bytes": 602112,
+      "estimated_latency": 1.2142240000000002e-05,
+      "estimated_energy": 4.816896e-06
+    },
+    {
+      "source": 172,
+      "destination": 173,
+      "tensor_shape": [
+        1,
+        14,
+        14,
+        768
+      ],
+      "tensor_bytes": 602112,
+      "estimated_latency": 1.2142240000000002e-05,
+      "estimated_energy": 4.816896e-06
+    },
+    {
+      "source": 173,
+      "destination": 174,
+      "tensor_shape": [
+        1,
+        14,
+        14,
+        128
+      ],
+      "tensor_bytes": 100352,
+      "estimated_latency": 2.1070399999999997e-06,
+      "estimated_energy": 8.02816e-07
+    },
+    {
+      "source": 174,
+      "destination": 175,
+      "tensor_shape": [
+        1,
+        14,
+        14,
+        128
+      ],
+      "tensor_bytes": 100352,
+      "estimated_latency": 2.1070399999999997e-06,
+      "estimated_energy": 8.02816e-07
+    },
+    {
+      "source": 175,
+      "destination": 176,
+      "tensor_shape": [
+        1,
+        128,
+        14,
+        14
+      ],
+      "tensor_bytes": 100352,
+      "estimated_latency": 2.1070399999999997e-06,
+      "estimated_energy": 8.02816e-07
+    },
+    {
+      "source": 176,
+      "destination": 177,
+      "tensor_shape": [
+        1,
+        128,
+        14,
+        14
+      ],
+      "tensor_bytes": 100352,
+      "estimated_latency": 2.1070399999999997e-06,
+      "estimated_energy": 8.02816e-07
+    },
+    {
+      "source": 167,
+      "destination": 177,
+      "tensor_shape": [
+        1,
+        128,
+        14,
+        14
+      ],
+      "tensor_bytes": 100352,
+      "estimated_latency": 2.1070399999999997e-06,
+      "estimated_energy": 8.02816e-07
+    },
+    {
+      "source": 177,
+      "destination": 178,
+      "tensor_shape": [
+        1,
+        128,
+        14,
+        14
+      ],
+      "tensor_bytes": 100352,
+      "estimated_latency": 2.1070399999999997e-06,
+      "estimated_energy": 8.02816e-07
+    },
+    {
+      "source": 178,
+      "destination": 179,
+      "tensor_shape": [
+        1,
+        128,
+        14,
+        14
+      ],
+      "tensor_bytes": 100352,
+      "estimated_latency": 2.1070399999999997e-06,
+      "estimated_energy": 8.02816e-07
+    },
+    {
+      "source": 179,
+      "destination": 180,
+      "tensor_shape": [
+        1,
+        128,
+        14,
+        14
+      ],
+      "tensor_bytes": 100352,
+      "estimated_latency": 2.1070399999999997e-06,
+      "estimated_energy": 8.02816e-07
+    },
+    {
+      "source": 180,
+      "destination": 181,
+      "tensor_shape": [
+        1,
+        14,
+        14,
+        128
+      ],
+      "tensor_bytes": 100352,
+      "estimated_latency": 2.1070399999999997e-06,
+      "estimated_energy": 8.02816e-07
+    },
+    {
+      "source": 181,
+      "destination": 182,
+      "tensor_shape": [
+        1,
+        14,
+        14,
+        768
+      ],
+      "tensor_bytes": 602112,
+      "estimated_latency": 1.2142240000000002e-05,
+      "estimated_energy": 4.816896e-06
+    },
+    {
+      "source": 182,
+      "destination": 183,
+      "tensor_shape": [
+        1,
+        14,
+        14,
+        768
+      ],
+      "tensor_bytes": 602112,
+      "estimated_latency": 1.2142240000000002e-05,
+      "estimated_energy": 4.816896e-06
+    },
+    {
+      "source": 183,
+      "destination": 184,
+      "tensor_shape": [
+        1,
+        14,
+        14,
+        128
+      ],
+      "tensor_bytes": 100352,
+      "estimated_latency": 2.1070399999999997e-06,
+      "estimated_energy": 8.02816e-07
+    },
+    {
+      "source": 184,
+      "destination": 185,
+      "tensor_shape": [
+        1,
+        14,
+        14,
+        128
+      ],
+      "tensor_bytes": 100352,
+      "estimated_latency": 2.1070399999999997e-06,
+      "estimated_energy": 8.02816e-07
+    },
+    {
+      "source": 185,
+      "destination": 186,
+      "tensor_shape": [
+        1,
+        128,
+        14,
+        14
+      ],
+      "tensor_bytes": 100352,
+      "estimated_latency": 2.1070399999999997e-06,
+      "estimated_energy": 8.02816e-07
+    },
+    {
+      "source": 186,
+      "destination": 187,
+      "tensor_shape": [
+        1,
+        128,
+        14,
+        14
+      ],
+      "tensor_bytes": 100352,
+      "estimated_latency": 2.1070399999999997e-06,
+      "estimated_energy": 8.02816e-07
+    },
+    {
+      "source": 177,
+      "destination": 187,
+      "tensor_shape": [
+        1,
+        128,
+        14,
+        14
+      ],
+      "tensor_bytes": 100352,
+      "estimated_latency": 2.1070399999999997e-06,
+      "estimated_energy": 8.02816e-07
+    },
+    {
+      "source": 187,
+      "destination": 188,
+      "tensor_shape": [
+        1,
+        128,
+        14,
+        14
+      ],
+      "tensor_bytes": 100352,
+      "estimated_latency": 2.1070399999999997e-06,
+      "estimated_energy": 8.02816e-07
+    },
+    {
+      "source": 188,
+      "destination": 189,
+      "tensor_shape": [
+        1,
+        128,
+        14,
+        14
+      ],
+      "tensor_bytes": 100352,
+      "estimated_latency": 2.1070399999999997e-06,
+      "estimated_energy": 8.02816e-07
+    },
+    {
+      "source": 189,
+      "destination": 190,
+      "tensor_shape": [
+        1,
+        128,
+        14,
+        14
+      ],
+      "tensor_bytes": 100352,
+      "estimated_latency": 2.1070399999999997e-06,
+      "estimated_energy": 8.02816e-07
+    },
+    {
+      "source": 190,
+      "destination": 191,
+      "tensor_shape": [
+        1,
+        14,
+        14,
+        128
+      ],
+      "tensor_bytes": 100352,
+      "estimated_latency": 2.1070399999999997e-06,
+      "estimated_energy": 8.02816e-07
+    },
+    {
+      "source": 191,
+      "destination": 192,
+      "tensor_shape": [
+        1,
+        14,
+        14,
+        768
+      ],
+      "tensor_bytes": 602112,
+      "estimated_latency": 1.2142240000000002e-05,
+      "estimated_energy": 4.816896e-06
+    },
+    {
+      "source": 192,
+      "destination": 193,
+      "tensor_shape": [
+        1,
+        14,
+        14,
+        768
+      ],
+      "tensor_bytes": 602112,
+      "estimated_latency": 1.2142240000000002e-05,
+      "estimated_energy": 4.816896e-06
+    },
+    {
+      "source": 193,
+      "destination": 194,
+      "tensor_shape": [
+        1,
+        14,
+        14,
+        128
+      ],
+      "tensor_bytes": 100352,
+      "estimated_latency": 2.1070399999999997e-06,
+      "estimated_energy": 8.02816e-07
+    },
+    {
+      "source": 194,
+      "destination": 195,
+      "tensor_shape": [
+        1,
+        14,
+        14,
+        128
+      ],
+      "tensor_bytes": 100352,
+      "estimated_latency": 2.1070399999999997e-06,
+      "estimated_energy": 8.02816e-07
+    },
+    {
+      "source": 195,
+      "destination": 196,
+      "tensor_shape": [
+        1,
+        128,
+        14,
+        14
+      ],
+      "tensor_bytes": 100352,
+      "estimated_latency": 2.1070399999999997e-06,
+      "estimated_energy": 8.02816e-07
+    },
+    {
+      "source": 196,
+      "destination": 197,
+      "tensor_shape": [
+        1,
+        128,
+        14,
+        14
+      ],
+      "tensor_bytes": 100352,
+      "estimated_latency": 2.1070399999999997e-06,
+      "estimated_energy": 8.02816e-07
+    },
+    {
+      "source": 187,
+      "destination": 197,
+      "tensor_shape": [
+        1,
+        128,
+        14,
+        14
+      ],
+      "tensor_bytes": 100352,
+      "estimated_latency": 2.1070399999999997e-06,
+      "estimated_energy": 8.02816e-07
+    },
+    {
+      "source": 197,
+      "destination": 198,
+      "tensor_shape": [
+        1,
+        128,
+        14,
+        14
+      ],
+      "tensor_bytes": 100352,
+      "estimated_latency": 2.1070399999999997e-06,
+      "estimated_energy": 8.02816e-07
+    },
+    {
+      "source": 198,
+      "destination": 199,
+      "tensor_shape": [
+        1,
+        128,
+        14,
+        14
+      ],
+      "tensor_bytes": 100352,
+      "estimated_latency": 2.1070399999999997e-06,
+      "estimated_energy": 8.02816e-07
+    },
+    {
+      "source": 199,
+      "destination": 200,
+      "tensor_shape": [
+        1,
+        128,
+        14,
+        14
+      ],
+      "tensor_bytes": 100352,
+      "estimated_latency": 2.1070399999999997e-06,
+      "estimated_energy": 8.02816e-07
+    },
+    {
+      "source": 200,
+      "destination": 201,
+      "tensor_shape": [
+        1,
+        14,
+        14,
+        128
+      ],
+      "tensor_bytes": 100352,
+      "estimated_latency": 2.1070399999999997e-06,
+      "estimated_energy": 8.02816e-07
+    },
+    {
+      "source": 201,
+      "destination": 202,
+      "tensor_shape": [
+        1,
+        14,
+        14,
+        768
+      ],
+      "tensor_bytes": 602112,
+      "estimated_latency": 1.2142240000000002e-05,
+      "estimated_energy": 4.816896e-06
+    },
+    {
+      "source": 202,
+      "destination": 203,
+      "tensor_shape": [
+        1,
+        14,
+        14,
+        768
+      ],
+      "tensor_bytes": 602112,
+      "estimated_latency": 1.2142240000000002e-05,
+      "estimated_energy": 4.816896e-06
+    },
+    {
+      "source": 203,
+      "destination": 204,
+      "tensor_shape": [
+        1,
+        14,
+        14,
+        128
+      ],
+      "tensor_bytes": 100352,
+      "estimated_latency": 2.1070399999999997e-06,
+      "estimated_energy": 8.02816e-07
+    },
+    {
+      "source": 204,
+      "destination": 205,
+      "tensor_shape": [
+        1,
+        14,
+        14,
+        128
+      ],
+      "tensor_bytes": 100352,
+      "estimated_latency": 2.1070399999999997e-06,
+      "estimated_energy": 8.02816e-07
+    },
+    {
+      "source": 205,
+      "destination": 206,
+      "tensor_shape": [
+        1,
+        128,
+        14,
+        14
+      ],
+      "tensor_bytes": 100352,
+      "estimated_latency": 2.1070399999999997e-06,
+      "estimated_energy": 8.02816e-07
+    },
+    {
+      "source": 206,
+      "destination": 207,
+      "tensor_shape": [
+        1,
+        128,
+        14,
+        14
+      ],
+      "tensor_bytes": 100352,
+      "estimated_latency": 2.1070399999999997e-06,
+      "estimated_energy": 8.02816e-07
+    },
+    {
+      "source": 197,
+      "destination": 207,
+      "tensor_shape": [
+        1,
+        128,
+        14,
+        14
+      ],
+      "tensor_bytes": 100352,
+      "estimated_latency": 2.1070399999999997e-06,
+      "estimated_energy": 8.02816e-07
+    },
+    {
+      "source": 207,
+      "destination": 208,
+      "tensor_shape": [
+        1,
+        128,
+        14,
+        14
+      ],
+      "tensor_bytes": 100352,
+      "estimated_latency": 2.1070399999999997e-06,
+      "estimated_energy": 8.02816e-07
+    },
+    {
+      "source": 208,
+      "destination": 209,
+      "tensor_shape": [
+        1,
+        128,
+        14,
+        14
+      ],
+      "tensor_bytes": 100352,
+      "estimated_latency": 2.1070399999999997e-06,
+      "estimated_energy": 8.02816e-07
+    },
+    {
+      "source": 209,
+      "destination": 210,
+      "tensor_shape": [
+        1,
+        128,
+        14,
+        14
+      ],
+      "tensor_bytes": 100352,
+      "estimated_latency": 2.1070399999999997e-06,
+      "estimated_energy": 8.02816e-07
+    },
+    {
+      "source": 210,
+      "destination": 211,
+      "tensor_shape": [
+        1,
+        14,
+        14,
+        128
+      ],
+      "tensor_bytes": 100352,
+      "estimated_latency": 2.1070399999999997e-06,
+      "estimated_energy": 8.02816e-07
+    },
+    {
+      "source": 211,
+      "destination": 212,
+      "tensor_shape": [
+        1,
+        14,
+        14,
+        768
+      ],
+      "tensor_bytes": 602112,
+      "estimated_latency": 1.2142240000000002e-05,
+      "estimated_energy": 4.816896e-06
+    },
+    {
+      "source": 212,
+      "destination": 213,
+      "tensor_shape": [
+        1,
+        14,
+        14,
+        768
+      ],
+      "tensor_bytes": 602112,
+      "estimated_latency": 1.2142240000000002e-05,
+      "estimated_energy": 4.816896e-06
+    },
+    {
+      "source": 213,
+      "destination": 214,
+      "tensor_shape": [
+        1,
+        14,
+        14,
+        128
+      ],
+      "tensor_bytes": 100352,
+      "estimated_latency": 2.1070399999999997e-06,
+      "estimated_energy": 8.02816e-07
+    },
+    {
+      "source": 214,
+      "destination": 215,
+      "tensor_shape": [
+        1,
+        14,
+        14,
+        128
+      ],
+      "tensor_bytes": 100352,
+      "estimated_latency": 2.1070399999999997e-06,
+      "estimated_energy": 8.02816e-07
+    },
+    {
+      "source": 215,
+      "destination": 216,
+      "tensor_shape": [
+        1,
+        128,
+        14,
+        14
+      ],
+      "tensor_bytes": 100352,
+      "estimated_latency": 2.1070399999999997e-06,
+      "estimated_energy": 8.02816e-07
+    },
+    {
+      "source": 216,
+      "destination": 217,
+      "tensor_shape": [
+        1,
+        128,
+        14,
+        14
+      ],
+      "tensor_bytes": 100352,
+      "estimated_latency": 2.1070399999999997e-06,
+      "estimated_energy": 8.02816e-07
+    },
+    {
+      "source": 207,
+      "destination": 217,
+      "tensor_shape": [
+        1,
+        128,
+        14,
+        14
+      ],
+      "tensor_bytes": 100352,
+      "estimated_latency": 2.1070399999999997e-06,
+      "estimated_energy": 8.02816e-07
+    },
+    {
+      "source": 217,
+      "destination": 218,
+      "tensor_shape": [
+        1,
+        128,
+        14,
+        14
+      ],
+      "tensor_bytes": 100352,
+      "estimated_latency": 2.1070399999999997e-06,
+      "estimated_energy": 8.02816e-07
+    },
+    {
+      "source": 218,
+      "destination": 219,
+      "tensor_shape": [
+        1,
+        128,
+        14,
+        14
+      ],
+      "tensor_bytes": 100352,
+      "estimated_latency": 2.1070399999999997e-06,
+      "estimated_energy": 8.02816e-07
+    },
+    {
+      "source": 219,
+      "destination": 220,
+      "tensor_shape": [
+        1,
+        128,
+        14,
+        14
+      ],
+      "tensor_bytes": 100352,
+      "estimated_latency": 2.1070399999999997e-06,
+      "estimated_energy": 8.02816e-07
+    },
+    {
+      "source": 220,
+      "destination": 221,
+      "tensor_shape": [
+        1,
+        14,
+        14,
+        128
+      ],
+      "tensor_bytes": 100352,
+      "estimated_latency": 2.1070399999999997e-06,
+      "estimated_energy": 8.02816e-07
+    },
+    {
+      "source": 221,
+      "destination": 222,
+      "tensor_shape": [
+        1,
+        14,
+        14,
+        768
+      ],
+      "tensor_bytes": 602112,
+      "estimated_latency": 1.2142240000000002e-05,
+      "estimated_energy": 4.816896e-06
+    },
+    {
+      "source": 222,
+      "destination": 223,
+      "tensor_shape": [
+        1,
+        14,
+        14,
+        768
+      ],
+      "tensor_bytes": 602112,
+      "estimated_latency": 1.2142240000000002e-05,
+      "estimated_energy": 4.816896e-06
+    },
+    {
+      "source": 223,
+      "destination": 224,
+      "tensor_shape": [
+        1,
+        14,
+        14,
+        128
+      ],
+      "tensor_bytes": 100352,
+      "estimated_latency": 2.1070399999999997e-06,
+      "estimated_energy": 8.02816e-07
+    },
+    {
+      "source": 224,
+      "destination": 225,
+      "tensor_shape": [
+        1,
+        14,
+        14,
+        128
+      ],
+      "tensor_bytes": 100352,
+      "estimated_latency": 2.1070399999999997e-06,
+      "estimated_energy": 8.02816e-07
+    },
+    {
+      "source": 225,
+      "destination": 226,
+      "tensor_shape": [
+        1,
+        128,
+        14,
+        14
+      ],
+      "tensor_bytes": 100352,
+      "estimated_latency": 2.1070399999999997e-06,
+      "estimated_energy": 8.02816e-07
+    },
+    {
+      "source": 226,
+      "destination": 227,
+      "tensor_shape": [
+        1,
+        128,
+        14,
+        14
+      ],
+      "tensor_bytes": 100352,
+      "estimated_latency": 2.1070399999999997e-06,
+      "estimated_energy": 8.02816e-07
+    },
+    {
+      "source": 217,
+      "destination": 227,
+      "tensor_shape": [
+        1,
+        128,
+        14,
+        14
+      ],
+      "tensor_bytes": 100352,
+      "estimated_latency": 2.1070399999999997e-06,
+      "estimated_energy": 8.02816e-07
+    },
+    {
+      "source": 227,
+      "destination": 228,
+      "tensor_shape": [
+        1,
+        128,
+        14,
+        14
+      ],
+      "tensor_bytes": 100352,
+      "estimated_latency": 2.1070399999999997e-06,
+      "estimated_energy": 8.02816e-07
+    },
+    {
+      "source": 228,
+      "destination": 229,
+      "tensor_shape": [
+        1,
+        128,
+        14,
+        14
+      ],
+      "tensor_bytes": 100352,
+      "estimated_latency": 2.1070399999999997e-06,
+      "estimated_energy": 8.02816e-07
+    },
+    {
+      "source": 229,
+      "destination": 230,
+      "tensor_shape": [
+        1,
+        128,
+        14,
+        14
+      ],
+      "tensor_bytes": 100352,
+      "estimated_latency": 2.1070399999999997e-06,
+      "estimated_energy": 8.02816e-07
+    },
+    {
+      "source": 230,
+      "destination": 231,
+      "tensor_shape": [
+        1,
+        14,
+        14,
+        128
+      ],
+      "tensor_bytes": 100352,
+      "estimated_latency": 2.1070399999999997e-06,
+      "estimated_energy": 8.02816e-07
+    },
+    {
+      "source": 231,
+      "destination": 232,
+      "tensor_shape": [
+        1,
+        14,
+        14,
+        768
+      ],
+      "tensor_bytes": 602112,
+      "estimated_latency": 1.2142240000000002e-05,
+      "estimated_energy": 4.816896e-06
+    },
+    {
+      "source": 232,
+      "destination": 233,
+      "tensor_shape": [
+        1,
+        14,
+        14,
+        768
+      ],
+      "tensor_bytes": 602112,
+      "estimated_latency": 1.2142240000000002e-05,
+      "estimated_energy": 4.816896e-06
+    },
+    {
+      "source": 233,
+      "destination": 234,
+      "tensor_shape": [
+        1,
+        14,
+        14,
+        128
+      ],
+      "tensor_bytes": 100352,
+      "estimated_latency": 2.1070399999999997e-06,
+      "estimated_energy": 8.02816e-07
+    },
+    {
+      "source": 234,
+      "destination": 235,
+      "tensor_shape": [
+        1,
+        14,
+        14,
+        128
+      ],
+      "tensor_bytes": 100352,
+      "estimated_latency": 2.1070399999999997e-06,
+      "estimated_energy": 8.02816e-07
+    },
+    {
+      "source": 235,
+      "destination": 236,
+      "tensor_shape": [
+        1,
+        128,
+        14,
+        14
+      ],
+      "tensor_bytes": 100352,
+      "estimated_latency": 2.1070399999999997e-06,
+      "estimated_energy": 8.02816e-07
+    },
+    {
+      "source": 236,
+      "destination": 237,
+      "tensor_shape": [
+        1,
+        128,
+        14,
+        14
+      ],
+      "tensor_bytes": 100352,
+      "estimated_latency": 2.1070399999999997e-06,
+      "estimated_energy": 8.02816e-07
+    },
+    {
+      "source": 227,
+      "destination": 237,
+      "tensor_shape": [
+        1,
+        128,
+        14,
+        14
+      ],
+      "tensor_bytes": 100352,
+      "estimated_latency": 2.1070399999999997e-06,
+      "estimated_energy": 8.02816e-07
+    },
+    {
+      "source": 237,
+      "destination": 238,
+      "tensor_shape": [
+        1,
+        128,
+        14,
+        14
+      ],
+      "tensor_bytes": 100352,
+      "estimated_latency": 2.1070399999999997e-06,
+      "estimated_energy": 8.02816e-07
+    },
+    {
+      "source": 238,
+      "destination": 239,
+      "tensor_shape": [
+        1,
+        128,
+        196
+      ],
+      "tensor_bytes": 100352,
+      "estimated_latency": 2.1070399999999997e-06,
+      "estimated_energy": 8.02816e-07
+    },
+    {
+      "source": 239,
+      "destination": 240,
+      "tensor_shape": [
+        1,
+        196,
+        128
+      ],
+      "tensor_bytes": 100352,
+      "estimated_latency": 2.1070399999999997e-06,
+      "estimated_energy": 8.02816e-07
+    },
+    {
+      "source": 240,
+      "destination": 241,
+      "tensor_shape": [
+        1,
+        196,
+        128
+      ],
+      "tensor_bytes": 100352,
+      "estimated_latency": 2.1070399999999997e-06,
+      "estimated_energy": 8.02816e-07
+    },
+    {
+      "source": 241,
+      "destination": 242,
+      "tensor_shape": [
+        1,
+        196,
+        384
+      ],
+      "tensor_bytes": 301056,
+      "estimated_latency": 6.12112e-06,
+      "estimated_energy": 2.408448e-06
+    },
+    {
+      "source": 242,
+      "destination": 243,
+      "tensor_shape": [
+        1,
+        196,
+        3,
+        8,
+        16
+      ],
+      "tensor_bytes": 301056,
+      "estimated_latency": 6.12112e-06,
+      "estimated_energy": 2.408448e-06
+    },
+    {
+      "source": 243,
+      "destination": 244,
+      "tensor_shape": [
+        3,
+        1,
+        8,
+        196,
+        16
+      ],
+      "tensor_bytes": 301056,
+      "estimated_latency": 6.12112e-06,
+      "estimated_energy": 2.408448e-06
+    },
+    {
+      "source": 243,
+      "destination": 245,
+      "tensor_shape": [
+        3,
+        1,
+        8,
+        196,
+        16
+      ],
+      "tensor_bytes": 301056,
+      "estimated_latency": 6.12112e-06,
+      "estimated_energy": 2.408448e-06
+    },
+    {
+      "source": 243,
+      "destination": 246,
+      "tensor_shape": [
+        3,
+        1,
+        8,
+        196,
+        16
+      ],
+      "tensor_bytes": 301056,
+      "estimated_latency": 6.12112e-06,
+      "estimated_energy": 2.408448e-06
+    },
+    {
+      "source": 244,
+      "destination": 247,
+      "tensor_shape": [
+        1,
+        8,
+        196,
+        16
+      ],
+      "tensor_bytes": 100352,
+      "estimated_latency": 2.1070399999999997e-06,
+      "estimated_energy": 8.02816e-07
+    },
+    {
+      "source": 245,
+      "destination": 248,
+      "tensor_shape": [
+        1,
+        8,
+        196,
+        16
+      ],
+      "tensor_bytes": 100352,
+      "estimated_latency": 2.1070399999999997e-06,
+      "estimated_energy": 8.02816e-07
+    },
+    {
+      "source": 246,
+      "destination": 249,
+      "tensor_shape": [
+        1,
+        8,
+        196,
+        16
+      ],
+      "tensor_bytes": 100352,
+      "estimated_latency": 2.1070399999999997e-06,
+      "estimated_energy": 8.02816e-07
+    },
+    {
+      "source": 247,
+      "destination": 250,
+      "tensor_shape": [
+        1,
+        8,
+        16,
+        196
+      ],
+      "tensor_bytes": 100352,
+      "estimated_latency": 2.1070399999999997e-06,
+      "estimated_energy": 8.02816e-07
+    },
+    {
+      "source": 248,
+      "destination": 251,
+      "tensor_shape": [
+        1,
+        8,
+        16,
+        196
+      ],
+      "tensor_bytes": 100352,
+      "estimated_latency": 2.1070399999999997e-06,
+      "estimated_energy": 8.02816e-07
+    },
+    {
+      "source": 250,
+      "destination": 252,
+      "tensor_shape": [
+        1,
+        8,
+        16,
+        196
+      ],
+      "tensor_bytes": 100352,
+      "estimated_latency": 2.1070399999999997e-06,
+      "estimated_energy": 8.02816e-07
+    },
+    {
+      "source": 251,
+      "destination": 252,
+      "tensor_shape": [
+        1,
+        8,
+        16,
+        196
+      ],
+      "tensor_bytes": 100352,
+      "estimated_latency": 2.1070399999999997e-06,
+      "estimated_energy": 8.02816e-07
+    },
+    {
+      "source": 252,
+      "destination": 253,
+      "tensor_shape": [
+        1,
+        8,
+        16,
+        16
+      ],
+      "tensor_bytes": 8192,
+      "estimated_latency": 2.6383999999999996e-07,
+      "estimated_energy": 6.5536e-08
+    },
+    {
+      "source": 253,
+      "destination": 254,
+      "tensor_shape": [
+        1,
+        8,
+        16,
+        16
+      ],
+      "tensor_bytes": 8192,
+      "estimated_latency": 2.6383999999999996e-07,
+      "estimated_energy": 6.5536e-08
+    },
+    {
+      "source": 249,
+      "destination": 254,
+      "tensor_shape": [
+        1,
+        8,
+        16,
+        196
+      ],
+      "tensor_bytes": 100352,
+      "estimated_latency": 2.1070399999999997e-06,
+      "estimated_energy": 8.02816e-07
+    },
+    {
+      "source": 254,
+      "destination": 255,
+      "tensor_shape": [
+        1,
+        8,
+        16,
+        196
+      ],
+      "tensor_bytes": 100352,
+      "estimated_latency": 2.1070399999999997e-06,
+      "estimated_energy": 8.02816e-07
+    },
+    {
+      "source": 255,
+      "destination": 256,
+      "tensor_shape": [
+        1,
+        196,
+        8,
+        16
+      ],
+      "tensor_bytes": 100352,
+      "estimated_latency": 2.1070399999999997e-06,
+      "estimated_energy": 8.02816e-07
+    },
+    {
+      "source": 256,
+      "destination": 257,
+      "tensor_shape": [
+        1,
+        196,
+        128
+      ],
+      "tensor_bytes": 100352,
+      "estimated_latency": 2.1070399999999997e-06,
+      "estimated_energy": 8.02816e-07
+    },
+    {
+      "source": 257,
+      "destination": 258,
+      "tensor_shape": [
+        1,
+        196,
+        128
+      ],
+      "tensor_bytes": 100352,
+      "estimated_latency": 2.1070399999999997e-06,
+      "estimated_energy": 8.02816e-07
+    },
+    {
+      "source": 258,
+      "destination": 259,
+      "tensor_shape": [
+        1,
+        196,
+        128
+      ],
+      "tensor_bytes": 100352,
+      "estimated_latency": 2.1070399999999997e-06,
+      "estimated_energy": 8.02816e-07
+    },
+    {
+      "source": 239,
+      "destination": 259,
+      "tensor_shape": [
+        1,
+        196,
+        128
+      ],
+      "tensor_bytes": 100352,
+      "estimated_latency": 2.1070399999999997e-06,
+      "estimated_energy": 8.02816e-07
+    },
+    {
+      "source": 259,
+      "destination": 260,
+      "tensor_shape": [
+        1,
+        196,
+        128
+      ],
+      "tensor_bytes": 100352,
+      "estimated_latency": 2.1070399999999997e-06,
+      "estimated_energy": 8.02816e-07
+    },
+    {
+      "source": 260,
+      "destination": 261,
+      "tensor_shape": [
+        1,
+        14,
+        14,
+        128
+      ],
+      "tensor_bytes": 100352,
+      "estimated_latency": 2.1070399999999997e-06,
+      "estimated_energy": 8.02816e-07
+    },
+    {
+      "source": 261,
+      "destination": 262,
+      "tensor_shape": [
+        1,
+        14,
+        14,
+        128
+      ],
+      "tensor_bytes": 100352,
+      "estimated_latency": 2.1070399999999997e-06,
+      "estimated_energy": 8.02816e-07
+    },
+    {
+      "source": 262,
+      "destination": 263,
+      "tensor_shape": [
+        1,
+        14,
+        14,
+        768
+      ],
+      "tensor_bytes": 602112,
+      "estimated_latency": 1.2142240000000002e-05,
+      "estimated_energy": 4.816896e-06
+    },
+    {
+      "source": 263,
+      "destination": 264,
+      "tensor_shape": [
+        1,
+        14,
+        14,
+        768
+      ],
+      "tensor_bytes": 602112,
+      "estimated_latency": 1.2142240000000002e-05,
+      "estimated_energy": 4.816896e-06
+    },
+    {
+      "source": 264,
+      "destination": 265,
+      "tensor_shape": [
+        1,
+        14,
+        14,
+        128
+      ],
+      "tensor_bytes": 100352,
+      "estimated_latency": 2.1070399999999997e-06,
+      "estimated_energy": 8.02816e-07
+    },
+    {
+      "source": 265,
+      "destination": 266,
+      "tensor_shape": [
+        1,
+        14,
+        14,
+        128
+      ],
+      "tensor_bytes": 100352,
+      "estimated_latency": 2.1070399999999997e-06,
+      "estimated_energy": 8.02816e-07
+    },
+    {
+      "source": 266,
+      "destination": 267,
+      "tensor_shape": [
+        1,
+        128,
+        14,
+        14
+      ],
+      "tensor_bytes": 100352,
+      "estimated_latency": 2.1070399999999997e-06,
+      "estimated_energy": 8.02816e-07
+    },
+    {
+      "source": 267,
+      "destination": 268,
+      "tensor_shape": [
+        1,
+        128,
+        14,
+        14
+      ],
+      "tensor_bytes": 100352,
+      "estimated_latency": 2.1070399999999997e-06,
+      "estimated_energy": 8.02816e-07
+    },
+    {
+      "source": 237,
+      "destination": 268,
+      "tensor_shape": [
+        1,
+        128,
+        14,
+        14
+      ],
+      "tensor_bytes": 100352,
+      "estimated_latency": 2.1070399999999997e-06,
+      "estimated_energy": 8.02816e-07
+    }
+  ],
+  "hardware_config": {
+    "compute_throughput": 10000000000000.0,
+    "compute_efficiency": 5e-12,
+    "memory_bandwidth": 900000000000.0,
+    "memory_energy": 2e-11,
+    "interconnect_bandwidth": 400000000000.0,
+    "interconnect_latency": 1e-07,
+    "interconnect_energy": 1e-12
+  }
+}

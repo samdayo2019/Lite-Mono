@@ -5,6 +5,86 @@ import torch.nn.functional as F
 from timm.models.layers import DropPath
 import math
 import torch.cuda
+from torchvision.models.residual_add import ResidualAdd
+
+# Custom compute functions
+class MatrixMultiply(nn.Module):
+    def forward(self, q, k, temperature):
+        return (q @ k.transpose(-2, -1)) * temperature
+    
+class Softmax(nn.Module):
+    def __init__(self, dim):
+        super().__init__()
+        self.dim = dim
+    def forward(self, attn):
+        return attn.softmax(dim=-1)
+
+class WeightedSum(nn.Module):
+    def forward(self, attn, v):
+        return attn @ v
+
+class GammaMultiply(nn.Module):
+    def __init__(self):
+        super().__init__()
+    def forward(self, gamma, x):
+        return gamma * x
+
+#------------------------------------------------------------------------------------------------
+
+# Permute and Reshape Layers
+class Permute4d(nn.Module):
+    def forward(self, x, pos: list):
+        return x.permute(pos[0], pos[1], pos[2], pos[3])
+    
+class Permute3d(nn.Module): 
+    def forward(self, x, pos: list):
+        return x.permute(pos[0], pos[1], pos[2])
+
+class Permute5d(nn.Module):
+    def forward(self, x, pos: list):
+        return x.permute(pos[0], pos[1], pos[2], pos[3], pos[4])
+    
+class Reshape3d(nn.Module):
+    def forward(self, x, pos: list):
+        return x.reshape(pos[0], pos[1], pos[2])
+
+class Reshape4d(nn.Module):
+    def forward(self, x, pos: list):
+        return x.reshape(pos[0], pos[1], pos[2], pos[3])
+    
+class Reshape5d(nn.Module):
+    def forward(self, x, pos: list):
+        return x.reshape(pos[0], pos[1], pos[2], pos[3], pos[4])
+
+#------------------------------------------------------------------------------------------------
+
+# Transpose and Normalize Layers
+class Transpose2d(nn.Module):
+    def forward(self, x, dim1, dim2):
+        return x.transpose(dim1, dim2)
+
+class Normalize2d(nn.Module):
+    def __init__(self, dim):
+        super().__init__()
+        self.dim = dim
+    def forward(self, x):
+        return torch.nn.functional.normalize(x, dim=self.dim)
+#------------------------------------------------------------------------------------------------
+
+# Extract Layer
+class Extract2dq(nn.Module):
+    def forward(self, x):
+        return x[0]
+
+class Extract2dk(nn.Module):
+    def forward(self, x):
+        return x[1]
+
+class Extract2dv(nn.Module):
+    def forward(self, x):
+        return x[2]
+
+
 
 
 class PositionalEncodingFourier(nn.Module):
@@ -22,7 +102,8 @@ class PositionalEncodingFourier(nn.Module):
         self.hidden_dim = hidden_dim
         self.dim = dim
 
-    def forward(self, B, H, W):
+    def forward(self, position_tensor: torch.Tensor):
+        B, H, W = position_tensor.shape
         mask = torch.zeros(B, H, W).bool().to(self.token_projection.weight.device)
         not_mask = ~mask
         y_embed = not_mask.cumsum(1, dtype=torch.float32)
@@ -60,25 +141,58 @@ class XCA(nn.Module):
         self.attn_drop = nn.Dropout(attn_drop)
         self.proj = nn.Linear(dim, dim)
         self.proj_drop = nn.Dropout(proj_drop)
+        self.matmul = MatrixMultiply()
+        self.softmax = Softmax(dim=-1)
+        self.weighted_sum = WeightedSum()
+        self.permute4 = Permute4d()
+        self.reshape3 = Reshape3d()
+        self.reshape5 = Reshape5d()
+        self.permute5 = Permute5d()
+        self.transpoeq= Transpose2d()
+        self.transposek = Transpose2d()
+        self.transposev = Transpose2d()
+        self.normalizeq = Normalize2d(dim = 1)
+        self.normalizek = Normalize2d(dim = 1)
+        self.extractq = Extract2dq()
+        self.extractk = Extract2dk()
+        self.extractv = Extract2dv()
+
 
     def forward(self, x):
         B, N, C = x.shape
-        qkv = self.qkv(x).reshape(B, N, 3, self.num_heads, C // self.num_heads)
-        qkv = qkv.permute(2, 0, 3, 1, 4)
-        q, k, v = qkv[0], qkv[1], qkv[2]
+        qkv = self.qkv(x)
+        qkv = self.reshape5(qkv, [B, N, 3, self.num_heads, C // self.num_heads])
+        qkv = self.permute5(qkv, [2, 0, 3, 1, 4])
+        # qkv = self.qkv(x).reshape(B, N, 3, self.num_heads, C // self.num_heads)
+        # qkv = qkv.permute(2, 0, 3, 1, 4)
+        q = self.extractq(qkv)
+        k = self.extractk(qkv)
+        v = self.extractv(qkv)
+        # q, k, v = qkv[0], qkv[1], qkv[2]
 
-        q = q.transpose(-2, -1)
-        k = k.transpose(-2, -1)
-        v = v.transpose(-2, -1)
+        q = self.transpoeq(q, -2, -1)
+        k = self.transposek(k, -2, -1)
+        v = self.transposev(v, -2, -1)
+        # q = q.transpose(-2, -1)
+        # k = k.transpose(-2, -1)
+        # v = v.transpose(-2, -1)
 
-        q = torch.nn.functional.normalize(q, dim=-1)
-        k = torch.nn.functional.normalize(k, dim=-1)
+        q = self.normalizeq(q)
+        k = self.normalizek(k)
 
-        attn = (q @ k.transpose(-2, -1)) * self.temperature
-        attn = attn.softmax(dim=-1)
+        # q = torch.nn.functional.normalize(q, dim=-1)
+        # k = torch.nn.functional.normalize(k, dim=-1)
+
+        # attn = (q @ k.transpose(-2, -1)) * self.temperature
+        attn = self.matmul(q, k, self.temperature)
+        attn = self.softmax(attn)
         attn = self.attn_drop(attn)
 
-        x = (attn @ v).permute(0, 3, 1, 2).reshape(B, N, C)
+        # x = (attn @ v).permute(0, 3, 1, 2).reshape(B, N, C)
+        x = self.weighted_sum(attn, v)
+        x = self.permute4(x, [0, 3, 1, 2])
+        x = self.reshape3(x, [B, N, C])
+        # x = self.weighted_sum(attn, v).permute(0, 3, 1, 2).reshape(B, N, C)
         x = self.proj(x)
         x = self.proj_drop(x)
         return x
@@ -201,6 +315,10 @@ class DilatedConv(nn.Module):
         self.gamma = nn.Parameter(layer_scale_init_value * torch.ones(dim),
                                   requires_grad=True) if layer_scale_init_value > 0 else None
         self.drop_path = DropPath(drop_path) if drop_path > 0. else nn.Identity()
+        self.residual_add = ResidualAdd()
+        self.permute41 = Permute4d()
+        self.permute42 = Permute4d()
+        self.gammamult = GammaMultiply()
 
     def forward(self, x):
         input = x
@@ -208,15 +326,19 @@ class DilatedConv(nn.Module):
         x = self.ddwconv(x)
         x = self.bn1(x)
 
-        x = x.permute(0, 2, 3, 1)  # (N, C, H, W) -> (N, H, W, C)
+        # x = x.permute(0, 2, 3, 1)  # (N, C, H, W) -> (N, H, W, C)
+        x = self.permute41(x, [0, 2, 3, 1])
         x = self.pwconv1(x)
         x = self.act(x)
         x = self.pwconv2(x)
         if self.gamma is not None:
-            x = self.gamma * x
-        x = x.permute(0, 3, 1, 2)  # (N, H, W, C) -> (N, C, H, W)
-
-        x = input + self.drop_path(x)
+            # x = self.gamma * x
+            x = self.gammamult(self.gamma, x)
+        # x = x.permute(0, 3, 1, 2)  # (N, H, W, C) -> (N, C, H, W)
+        x = self.permute42(x, [0, 3, 1, 2])
+        x = self.drop_path(x)
+        x = self.residual_add(x, input)
+        # x = input + self.drop_path(x)
 
         return x
 
@@ -247,32 +369,58 @@ class LGFI(nn.Module):
         self.gamma = nn.Parameter(layer_scale_init_value * torch.ones((self.dim)),
                                   requires_grad=True) if layer_scale_init_value > 0 else None
         self.drop_path = DropPath(drop_path) if drop_path > 0. else nn.Identity()
+        self.residual_add1 = ResidualAdd()
+        self.residual_add2 = ResidualAdd()
+        self.residual_add3 = ResidualAdd()
+        self.gammamult1 = GammaMultiply()
+        self.gammamult2 = GammaMultiply()
+        self.permute4 = Permute4d()
+        self.permute3 = Permute3d()
+        self.reshape31 = Reshape3d()
+        self.reshape32 = Reshape3d()
+        self.reshape4 = Reshape4d()
 
     def forward(self, x):
         input_ = x
 
         # XCA
         B, C, H, W = x.shape
-        x = x.reshape(B, C, H * W).permute(0, 2, 1)
+        x = self.reshape31(x, [B, C, H*W])
+        x = self.permute3(x, [0, 2, 1])
+        # x = x.reshape(B, C, H * W).permute(0, 2, 1)
 
         if self.pos_embd:
-            pos_encoding = self.pos_embd(B, H, W).reshape(B, -1, x.shape[1]).permute(0, 2, 1)
-            x = x + pos_encoding
+            position_tensor = torch.ones(B, H, W)
+            # pos_encoding = self.pos_embd(B, H, W).reshape(B, -1, x.shape[1]).permute(0, 2, 1)
+            pos_encoding = self.pos_embd(position_tensor)
+            pos_encoding = self.reshape32(pos_encoding, [B, -1, x.shape[1]])
+            pos_encoding = self.permute3(pos_encoding, [0, 2, 1])
+            x = self.residual_add1(x, pos_encoding)
+            # x = x + pos_encoding
+        skip = x
+        x = self.norm_xca(x)
+        x = self.xca(x)
+        x = self.gammamult1(x, self.gamma_xca)
+        # x = self.xca(x) * self.gamma_xca
+        x = self.residual_add2(x, skip)
 
-        x = x + self.gamma_xca * self.xca(self.norm_xca(x))
+        # x = x + self.gamma_xca * self.xca(self.norm_xca(x))
 
-        x = x.reshape(B, H, W, C)
-
+        # x = x.reshape(B, H, W, C)
+        x = self.reshape4(x, [B, H, W, C])
         # Inverted Bottleneck
         x = self.norm(x)
         x = self.pwconv1(x)
         x = self.act(x)
         x = self.pwconv2(x)
         if self.gamma is not None:
-            x = self.gamma * x
-        x = x.permute(0, 3, 1, 2)  # (N, H, W, C) -> (N, C, H, W)
-
-        x = input_ + self.drop_path(x)
+            # x = self.gamma * x
+            x = self.gammamult2(self.gamma, x)
+        x = self.permute4(x, [0, 3, 1, 2])
+        # x = x.permute(0, 3, 1, 2)  # (N, H, W, C) -> (N, C, H, W)
+        x = self.drop_path(x)
+        x = self.residual_add3(x, input_)
+        # x = input_ + self.drop_path(x)
 
         return x
 
