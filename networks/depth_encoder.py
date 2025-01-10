@@ -83,28 +83,30 @@ class Extract2dk(nn.Module):
 class Extract2dv(nn.Module):
     def forward(self, x):
         return x[2]
+    
+#------------------------------------------------------------------------------------------------
 
+# Concatenation Functions
+class Cat(nn.Module):
+    def __init__(self, dim):
+        super(Cat, self).__init__()
+        self.dim = dim
 
+    def forward(self, *inputs):
+        return torch.cat(inputs, dim=self.dim)
 
-
-class PositionalEncodingFourier(nn.Module):
-    """
-    Positional encoding relying on a fourier kernel matching the one used in the
-    "Attention is all of Need" paper. The implementation builds on DeTR code
-    https://github.com/facebookresearch/detr/blob/master/models/position_encoding.py
-    """
-
-    def __init__(self, hidden_dim=32, dim=768, temperature=10000):
-        super().__init__()
-        self.token_projection = nn.Conv2d(hidden_dim * 2, dim, kernel_size=1)
-        self.scale = 2 * math.pi
-        self.temperature = temperature
+class PosEncode(nn.Module):
+    def __init__(self, hidden_dim = 32, dim=768, temperature=10000, scale=2*math.pi):
+        super(PosEncode, self).__init__()
         self.hidden_dim = hidden_dim
         self.dim = dim
+        self.temperature = temperature
+        self.scale = scale
+
 
     def forward(self, position_tensor: torch.Tensor):
         B, H, W = position_tensor.shape
-        mask = torch.zeros(B, H, W).bool().to(self.token_projection.weight.device)
+        mask = torch.zeros(B, H, W).bool()
         not_mask = ~mask
         y_embed = not_mask.cumsum(1, dtype=torch.float32)
         x_embed = not_mask.cumsum(2, dtype=torch.float32)
@@ -122,6 +124,49 @@ class PositionalEncodingFourier(nn.Module):
         pos_y = torch.stack((pos_y[:, :, :, 0::2].sin(),
                              pos_y[:, :, :, 1::2].cos()), dim=4).flatten(3)
         pos = torch.cat((pos_y, pos_x), dim=3).permute(0, 3, 1, 2)
+
+        return pos
+
+
+
+class PositionalEncodingFourier(nn.Module):
+    """
+    Positional encoding relying on a fourier kernel matching the one used in the
+    "Attention is all of Need" paper. The implementation builds on DeTR code
+    https://github.com/facebookresearch/detr/blob/master/models/position_encoding.py
+    """
+
+    def __init__(self, hidden_dim=32, dim=768, temperature=10000):
+        super().__init__()
+        self.token_projection = nn.Conv2d(hidden_dim * 2, dim, kernel_size=1)
+        self.scale = 2 * math.pi
+        self.temperature = temperature
+        self.hidden_dim = hidden_dim
+        self.dim = dim
+        self.posencoder= PosEncode(hidden_dim=self.hidden_dim, dim=self.dim, temperature=self.temperature, scale=self.scale)
+        
+
+    def forward(self, position_tensor: torch.Tensor):
+        # B, H, W = position_tensor.shape
+        # mask = torch.zeros(B, H, W).bool().to(self.token_projection.weight.device)
+        # not_mask = ~mask
+        # y_embed = not_mask.cumsum(1, dtype=torch.float32)
+        # x_embed = not_mask.cumsum(2, dtype=torch.float32)
+        # eps = 1e-6
+        # y_embed = y_embed / (y_embed[:, -1:, :] + eps) * self.scale
+        # x_embed = x_embed / (x_embed[:, :, -1:] + eps) * self.scale
+
+        # dim_t = torch.arange(self.hidden_dim, dtype=torch.float32, device=mask.device)
+        # dim_t = self.temperature ** (2 * (dim_t // 2) / self.hidden_dim)
+
+        # pos_x = x_embed[:, :, :, None] / dim_t
+        # pos_y = y_embed[:, :, :, None] / dim_t
+        # pos_x = torch.stack((pos_x[:, :, :, 0::2].sin(),
+        #                      pos_x[:, :, :, 1::2].cos()), dim=4).flatten(3)
+        # pos_y = torch.stack((pos_y[:, :, :, 0::2].sin(),
+        #                      pos_y[:, :, :, 1::2].cos()), dim=4).flatten(3)
+        # pos = torch.cat((pos_y, pos_x), dim=3).permute(0, 3, 1, 2)
+        pos = self.posencoder(position_tensor)
         pos = self.token_projection(pos)
         return pos
 
@@ -497,16 +542,16 @@ class LiteMono(nn.Module):
         )
 
         self.stem2 = nn.Sequential(
-            Conv(self.dims[0]+3, self.dims[0], kSize=3, stride=2, padding=1, bn_act=False),
+            Conv(self.dims[0]+3, self.dims[0], kSize=3, stride=2, padding=1, bn_act=False), # 51 -> 48 convolution 
         )
 
         self.downsample_layers.append(stem1)
 
         # create 4 average pooling modules Takes HxWX3 --> H/2 x W/2 x 3 for example. Add no parameters
         self.input_downsample = nn.ModuleList()
-        for i in range(1, 5):
+        for i in range(1, 4):
             self.input_downsample.append(AvgPool(i))
-            # sample 1 : H/2 x W/2 X 3
+            # sample 1 : H/2 x W/2 X 3 (3 x 112 x 112)
             # sample 2 : H/4 x W/4 X 3
             # Sample 3 : H/8 x W/8 X 3
             # Sample 4 : H/16 x W/16 x 3
@@ -540,6 +585,9 @@ class LiteMono(nn.Module):
 
             self.stages.append(nn.Sequential(*stage_blocks))
             cur += self.depth[i]
+        
+        self.cat1 = Cat(dim=1)
+        self.cat2 = Cat(dim=1)
 
         self.apply(self._init_weights)
 
@@ -560,23 +608,26 @@ class LiteMono(nn.Module):
         x = (x - 0.45) / 0.225
 
         x_down = []
-        for i in range(4):
-            x_down.append(self.input_downsample[i](x))
+        for i in range(3):
+            x_down.append(self.input_downsample[i](x)) # generates 4 different levels of avg pooling
 
         tmp_x = []
-        x = self.downsample_layers[0](x)
-        x = self.stem2(torch.cat((x, x_down[0]), dim=1))
-        tmp_x.append(x)
+        x = self.downsample_layers[0](x) # 3 sequential conv layers
+        x = self.cat1(x, x_down[0]) # concatenate 3 x 112 x 112 and 48 x 112 x 112 into 51 x 112 x 112
+        x = self.stem2(x) # contatenate (3 x 112 x 112 and 48 x 112 x 112 into 51 x 112 x 112) conv outputs 48 channels
+        # x = self.stem2(torch.cat((x, x_down[0]), dim=1)) # contatenate (3 x 112 x 112 and 48 x 112 x 112 into 51 x 112 x 112) conv outputs 48 channels
+        tmp_x.append(x) # append 51 x 112 x 112 to the front
 
         for s in range(len(self.stages[0])-1):
-            x = self.stages[0][s](x)
+            x = self.stages[0][s](x) # iterating through the Dilated COnvs and LGFI blocks
         x = self.stages[0][-1](x)
         tmp_x.append(x)
         features.append(x)
 
         for i in range(1, 3):
             tmp_x.append(x_down[i])
-            x = torch.cat(tmp_x, dim=1)
+            x = self.cat2(*tmp_x)
+            # x = torch.cat(tmp_x, dim=1)
             x = self.downsample_layers[i](x)
 
             tmp_x = [x]

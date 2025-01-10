@@ -134,95 +134,7 @@
     },
     {
       "id": 6,
-      "name": "AvgPool2d_6",
-      "op_type": "AvgPool2d",
-      "weight_shape": [],
-      "weight_bytes": 0,
-      "flops": 338688,
-      "input_shape": [
-        1,
-        3,
-        224,
-        224
-      ],
-      "output_shape": [
-        1,
-        3,
-        112,
-        112
-      ],
-      "estimated_runtime": 3.38688e-08,
-      "estimated_energy": 1.69344e-06
-    },
-    {
-      "id": 7,
-      "name": "AvgPool2d_7",
-      "op_type": "AvgPool2d",
-      "weight_shape": [],
-      "weight_bytes": 0,
-      "flops": 84672,
-      "input_shape": [
-        1,
-        3,
-        112,
-        112
-      ],
-      "output_shape": [
-        1,
-        3,
-        56,
-        56
-      ],
-      "estimated_runtime": 8.4672e-09,
-      "estimated_energy": 4.2336e-07
-    },
-    {
-      "id": 8,
-      "name": "AvgPool2d_8",
-      "op_type": "AvgPool2d",
-      "weight_shape": [],
-      "weight_bytes": 0,
-      "flops": 21168,
-      "input_shape": [
-        1,
-        3,
-        56,
-        56
-      ],
-      "output_shape": [
-        1,
-        3,
-        28,
-        28
-      ],
-      "estimated_runtime": 2.1168e-09,
-      "estimated_energy": 1.0584e-07
-    },
-    {
-      "id": 9,
-      "name": "AvgPool2d_9",
-      "op_type": "AvgPool2d",
-      "weight_shape": [],
-      "weight_bytes": 0,
-      "flops": 5292,
-      "input_shape": [
-        1,
-        3,
-        28,
-        28
-      ],
-      "output_shape": [
-        1,
-        3,
-        14,
-        14
-      ],
-      "estimated_runtime": 5.292e-10,
-      "estimated_energy": 2.646e-08
-    },
-    {
-      "id": 10,
-      "name": "Conv2d_10",
+      "name": "Conv2d_6",
       "op_type": "Conv2d",
       "weight_shape": [
         48,
@@ -248,8 +160,8 @@
       "estimated_energy": 0.00015955968
     },
     {
-      "id": 11,
-      "name": "BatchNorm2d_11",
+      "id": 7,
+      "name": "BatchNorm2d_7",
       "op_type": "BatchNorm2d",
       "weight_shape": [
         48
@@ -272,8 +184,8 @@
       "estimated_energy": 6.0211199999999995e-06
     },
     {
-      "id": 12,
-      "name": "GELU_12",
+      "id": 8,
+      "name": "GELU_8",
       "op_type": "GELU",
       "weight_shape": [],
       "weight_bytes": 0,
@@ -294,8 +206,8 @@
       "estimated_energy": 0.0
     },
     {
-      "id": 13,
-      "name": "Conv2d_13",
+      "id": 9,
+      "name": "Conv2d_9",
       "op_type": "Conv2d",
       "weight_shape": [
         48,
@@ -321,8 +233,8 @@
       "estimated_energy": 0.0025981132799999997
     },
     {
-      "id": 14,
-      "name": "BatchNorm2d_14",
+      "id": 10,
+      "name": "BatchNorm2d_10",
       "op_type": "BatchNorm2d",
       "weight_shape": [
         48
@@ -345,8 +257,8 @@
       "estimated_energy": 6.0211199999999995e-06
     },
     {
-      "id": 15,
-      "name": "GELU_15",
+      "id": 11,
+      "name": "GELU_11",
       "op_type": "GELU",
       "weight_shape": [],
       "weight_bytes": 0,
@@ -360,6 +272,101 @@
       "output_shape": [
         1,
         48,
+        112,
+        112
+      ],
+      "estimated_runtime": 0.0,
+      "estimated_energy": 0.0
+    },
+    {
+      "id": 12,
+      "name": "Conv2d_12",
+      "op_type": "Conv2d",
+      "weight_shape": [
+        48,
+        48,
+        3,
+        3
+      ],
+      "weight_bytes": 82944,
+      "flops": 519622656,
+      "input_shape": [
+        1,
+        48,
+        112,
+        112
+      ],
+      "output_shape": [
+        1,
+        48,
+        112,
+        112
+      ],
+      "estimated_runtime": 5.19622656e-05,
+      "estimated_energy": 0.0025981132799999997
+    },
+    {
+      "id": 13,
+      "name": "BatchNorm2d_13",
+      "op_type": "BatchNorm2d",
+      "weight_shape": [
+        48
+      ],
+      "weight_bytes": 192,
+      "flops": 1204224,
+      "input_shape": [
+        1,
+        48,
+        112,
+        112
+      ],
+      "output_shape": [
+        1,
+        48,
+        112,
+        112
+      ],
+      "estimated_runtime": 1.204224e-07,
+      "estimated_energy": 6.0211199999999995e-06
+    },
+    {
+      "id": 14,
+      "name": "GELU_14",
+      "op_type": "GELU",
+      "weight_shape": [],
+      "weight_bytes": 0,
+      "flops": 0,
+      "input_shape": [
+        1,
+        48,
+        112,
+        112
+      ],
+      "output_shape": [
+        1,
+        48,
+        112,
+        112
+      ],
+      "estimated_runtime": 0.0,
+      "estimated_energy": 0.0
+    },
+    {
+      "id": 15,
+      "name": "Cat_15",
+      "op_type": "Cat",
+      "weight_shape": [],
+      "weight_bytes": 0,
+      "flops": 0,
+      "input_shape": [
+        1,
+        48,
+        112,
+        112
+      ],
+      "output_shape": [
+        1,
+        51,
         112,
         112
       ],
@@ -369,79 +376,6 @@
     {
       "id": 16,
       "name": "Conv2d_16",
-      "op_type": "Conv2d",
-      "weight_shape": [
-        48,
-        48,
-        3,
-        3
-      ],
-      "weight_bytes": 82944,
-      "flops": 519622656,
-      "input_shape": [
-        1,
-        48,
-        112,
-        112
-      ],
-      "output_shape": [
-        1,
-        48,
-        112,
-        112
-      ],
-      "estimated_runtime": 5.19622656e-05,
-      "estimated_energy": 0.0025981132799999997
-    },
-    {
-      "id": 17,
-      "name": "BatchNorm2d_17",
-      "op_type": "BatchNorm2d",
-      "weight_shape": [
-        48
-      ],
-      "weight_bytes": 192,
-      "flops": 1204224,
-      "input_shape": [
-        1,
-        48,
-        112,
-        112
-      ],
-      "output_shape": [
-        1,
-        48,
-        112,
-        112
-      ],
-      "estimated_runtime": 1.204224e-07,
-      "estimated_energy": 6.0211199999999995e-06
-    },
-    {
-      "id": 18,
-      "name": "GELU_18",
-      "op_type": "GELU",
-      "weight_shape": [],
-      "weight_bytes": 0,
-      "flops": 0,
-      "input_shape": [
-        1,
-        48,
-        112,
-        112
-      ],
-      "output_shape": [
-        1,
-        48,
-        112,
-        112
-      ],
-      "estimated_runtime": 0.0,
-      "estimated_energy": 0.0
-    },
-    {
-      "id": 19,
-      "name": "Conv2d_19",
       "op_type": "Conv2d",
       "weight_shape": [
         48,
@@ -467,8 +401,8 @@
       "estimated_energy": 0.00069017088
     },
     {
-      "id": 20,
-      "name": "Conv2d_20",
+      "id": 17,
+      "name": "Conv2d_17",
       "op_type": "Conv2d",
       "weight_shape": [
         48,
@@ -494,8 +428,8 @@
       "estimated_energy": 1.2794879999999999e-05
     },
     {
-      "id": 21,
-      "name": "BatchNorm2d_21",
+      "id": 18,
+      "name": "BatchNorm2d_18",
       "op_type": "BatchNorm2d",
       "weight_shape": [
         48
@@ -518,8 +452,8 @@
       "estimated_energy": 1.5052799999999999e-06
     },
     {
-      "id": 22,
-      "name": "Permute4d_22",
+      "id": 19,
+      "name": "Permute4d_19",
       "op_type": "Permute4d",
       "weight_shape": [],
       "weight_bytes": 0,
@@ -540,8 +474,8 @@
       "estimated_energy": 0.0
     },
     {
-      "id": 23,
-      "name": "Linear_23",
+      "id": 20,
+      "name": "Linear_20",
       "op_type": "Linear",
       "weight_shape": [
         288,
@@ -565,8 +499,8 @@
       "estimated_energy": 1.3679999999999998e-07
     },
     {
-      "id": 24,
-      "name": "GELU_24",
+      "id": 21,
+      "name": "GELU_21",
       "op_type": "GELU",
       "weight_shape": [],
       "weight_bytes": 0,
@@ -582,79 +516,79 @@
         56,
         56,
         288
+      ],
+      "estimated_runtime": 0.0,
+      "estimated_energy": 0.0
+    },
+    {
+      "id": 22,
+      "name": "Linear_22",
+      "op_type": "Linear",
+      "weight_shape": [
+        48,
+        288
+      ],
+      "weight_bytes": 55296,
+      "flops": 27600,
+      "input_shape": [
+        1,
+        56,
+        56,
+        288
+      ],
+      "output_shape": [
+        1,
+        56,
+        56,
+        48
+      ],
+      "estimated_runtime": 2.76e-09,
+      "estimated_energy": 1.38e-07
+    },
+    {
+      "id": 23,
+      "name": "GammaMultiply_23",
+      "op_type": "GammaMultiply",
+      "weight_shape": [],
+      "weight_bytes": 0,
+      "flops": 48,
+      "input_shape": [
+        48
+      ],
+      "output_shape": [
+        1,
+        56,
+        56,
+        48
+      ],
+      "estimated_runtime": 4.8e-12,
+      "estimated_energy": 2.4e-10
+    },
+    {
+      "id": 24,
+      "name": "Permute4d_24",
+      "op_type": "Permute4d",
+      "weight_shape": [],
+      "weight_bytes": 0,
+      "flops": 0,
+      "input_shape": [
+        1,
+        56,
+        56,
+        48
+      ],
+      "output_shape": [
+        1,
+        48,
+        56,
+        56
       ],
       "estimated_runtime": 0.0,
       "estimated_energy": 0.0
     },
     {
       "id": 25,
-      "name": "Linear_25",
-      "op_type": "Linear",
-      "weight_shape": [
-        48,
-        288
-      ],
-      "weight_bytes": 55296,
-      "flops": 27600,
-      "input_shape": [
-        1,
-        56,
-        56,
-        288
-      ],
-      "output_shape": [
-        1,
-        56,
-        56,
-        48
-      ],
-      "estimated_runtime": 2.76e-09,
-      "estimated_energy": 1.38e-07
-    },
-    {
-      "id": 26,
-      "name": "GammaMultiply_26",
-      "op_type": "GammaMultiply",
-      "weight_shape": [],
-      "weight_bytes": 0,
-      "flops": 48,
-      "input_shape": [
-        48
-      ],
-      "output_shape": [
-        1,
-        56,
-        56,
-        48
-      ],
-      "estimated_runtime": 4.8e-12,
-      "estimated_energy": 2.4e-10
-    },
-    {
-      "id": 27,
-      "name": "Permute4d_27",
-      "op_type": "Permute4d",
-      "weight_shape": [],
-      "weight_bytes": 0,
-      "flops": 0,
-      "input_shape": [
-        1,
-        56,
-        56,
-        48
-      ],
-      "output_shape": [
-        1,
-        48,
-        56,
-        56
-      ],
-      "estimated_runtime": 0.0,
-      "estimated_energy": 0.0
-    },
-    {
-      "id": 28,
-      "name": "ResidualAdd_28",
+      "name": "ResidualAdd_25",
       "op_type": "ResidualAdd",
       "weight_shape": [],
       "weight_bytes": 0,
@@ -675,8 +609,8 @@
       "estimated_energy": 7.526399999999999e-07
     },
     {
-      "id": 29,
-      "name": "Conv2d_29",
+      "id": 26,
+      "name": "Conv2d_26",
       "op_type": "Conv2d",
       "weight_shape": [
         48,
@@ -702,8 +636,8 @@
       "estimated_energy": 1.2794879999999999e-05
     },
     {
-      "id": 30,
-      "name": "BatchNorm2d_30",
+      "id": 27,
+      "name": "BatchNorm2d_27",
       "op_type": "BatchNorm2d",
       "weight_shape": [
         48
@@ -726,8 +660,8 @@
       "estimated_energy": 1.5052799999999999e-06
     },
     {
-      "id": 31,
-      "name": "Permute4d_31",
+      "id": 28,
+      "name": "Permute4d_28",
       "op_type": "Permute4d",
       "weight_shape": [],
       "weight_bytes": 0,
@@ -748,8 +682,8 @@
       "estimated_energy": 0.0
     },
     {
-      "id": 32,
-      "name": "Linear_32",
+      "id": 29,
+      "name": "Linear_29",
       "op_type": "Linear",
       "weight_shape": [
         288,
@@ -773,8 +707,8 @@
       "estimated_energy": 1.3679999999999998e-07
     },
     {
-      "id": 33,
-      "name": "GELU_33",
+      "id": 30,
+      "name": "GELU_30",
       "op_type": "GELU",
       "weight_shape": [],
       "weight_bytes": 0,
@@ -790,79 +724,79 @@
         56,
         56,
         288
+      ],
+      "estimated_runtime": 0.0,
+      "estimated_energy": 0.0
+    },
+    {
+      "id": 31,
+      "name": "Linear_31",
+      "op_type": "Linear",
+      "weight_shape": [
+        48,
+        288
+      ],
+      "weight_bytes": 55296,
+      "flops": 27600,
+      "input_shape": [
+        1,
+        56,
+        56,
+        288
+      ],
+      "output_shape": [
+        1,
+        56,
+        56,
+        48
+      ],
+      "estimated_runtime": 2.76e-09,
+      "estimated_energy": 1.38e-07
+    },
+    {
+      "id": 32,
+      "name": "GammaMultiply_32",
+      "op_type": "GammaMultiply",
+      "weight_shape": [],
+      "weight_bytes": 0,
+      "flops": 48,
+      "input_shape": [
+        48
+      ],
+      "output_shape": [
+        1,
+        56,
+        56,
+        48
+      ],
+      "estimated_runtime": 4.8e-12,
+      "estimated_energy": 2.4e-10
+    },
+    {
+      "id": 33,
+      "name": "Permute4d_33",
+      "op_type": "Permute4d",
+      "weight_shape": [],
+      "weight_bytes": 0,
+      "flops": 0,
+      "input_shape": [
+        1,
+        56,
+        56,
+        48
+      ],
+      "output_shape": [
+        1,
+        48,
+        56,
+        56
       ],
       "estimated_runtime": 0.0,
       "estimated_energy": 0.0
     },
     {
       "id": 34,
-      "name": "Linear_34",
-      "op_type": "Linear",
-      "weight_shape": [
-        48,
-        288
-      ],
-      "weight_bytes": 55296,
-      "flops": 27600,
-      "input_shape": [
-        1,
-        56,
-        56,
-        288
-      ],
-      "output_shape": [
-        1,
-        56,
-        56,
-        48
-      ],
-      "estimated_runtime": 2.76e-09,
-      "estimated_energy": 1.38e-07
-    },
-    {
-      "id": 35,
-      "name": "GammaMultiply_35",
-      "op_type": "GammaMultiply",
-      "weight_shape": [],
-      "weight_bytes": 0,
-      "flops": 48,
-      "input_shape": [
-        48
-      ],
-      "output_shape": [
-        1,
-        56,
-        56,
-        48
-      ],
-      "estimated_runtime": 4.8e-12,
-      "estimated_energy": 2.4e-10
-    },
-    {
-      "id": 36,
-      "name": "Permute4d_36",
-      "op_type": "Permute4d",
-      "weight_shape": [],
-      "weight_bytes": 0,
-      "flops": 0,
-      "input_shape": [
-        1,
-        56,
-        56,
-        48
-      ],
-      "output_shape": [
-        1,
-        48,
-        56,
-        56
-      ],
-      "estimated_runtime": 0.0,
-      "estimated_energy": 0.0
-    },
-    {
-      "id": 37,
-      "name": "DropPath_37",
+      "name": "DropPath_34",
       "op_type": "DropPath",
       "weight_shape": [],
       "weight_bytes": 0,
@@ -883,8 +817,8 @@
       "estimated_energy": 0.0
     },
     {
-      "id": 38,
-      "name": "ResidualAdd_38",
+      "id": 35,
+      "name": "ResidualAdd_35",
       "op_type": "ResidualAdd",
       "weight_shape": [],
       "weight_bytes": 0,
@@ -905,8 +839,8 @@
       "estimated_energy": 7.526399999999999e-07
     },
     {
-      "id": 39,
-      "name": "Conv2d_39",
+      "id": 36,
+      "name": "Conv2d_36",
       "op_type": "Conv2d",
       "weight_shape": [
         48,
@@ -932,8 +866,8 @@
       "estimated_energy": 1.2794879999999999e-05
     },
     {
-      "id": 40,
-      "name": "BatchNorm2d_40",
+      "id": 37,
+      "name": "BatchNorm2d_37",
       "op_type": "BatchNorm2d",
       "weight_shape": [
         48
@@ -956,8 +890,8 @@
       "estimated_energy": 1.5052799999999999e-06
     },
     {
-      "id": 41,
-      "name": "Permute4d_41",
+      "id": 38,
+      "name": "Permute4d_38",
       "op_type": "Permute4d",
       "weight_shape": [],
       "weight_bytes": 0,
@@ -978,8 +912,8 @@
       "estimated_energy": 0.0
     },
     {
-      "id": 42,
-      "name": "Linear_42",
+      "id": 39,
+      "name": "Linear_39",
       "op_type": "Linear",
       "weight_shape": [
         288,
@@ -1003,8 +937,8 @@
       "estimated_energy": 1.3679999999999998e-07
     },
     {
-      "id": 43,
-      "name": "GELU_43",
+      "id": 40,
+      "name": "GELU_40",
       "op_type": "GELU",
       "weight_shape": [],
       "weight_bytes": 0,
@@ -1025,8 +959,8 @@
       "estimated_energy": 0.0
     },
     {
-      "id": 44,
-      "name": "Linear_44",
+      "id": 41,
+      "name": "Linear_41",
       "op_type": "Linear",
       "weight_shape": [
         48,
@@ -1050,8 +984,8 @@
       "estimated_energy": 1.38e-07
     },
     {
-      "id": 45,
-      "name": "GammaMultiply_45",
+      "id": 42,
+      "name": "GammaMultiply_42",
       "op_type": "GammaMultiply",
       "weight_shape": [],
       "weight_bytes": 0,
@@ -1069,8 +1003,8 @@
       "estimated_energy": 2.4e-10
     },
     {
-      "id": 46,
-      "name": "Permute4d_46",
+      "id": 43,
+      "name": "Permute4d_43",
       "op_type": "Permute4d",
       "weight_shape": [],
       "weight_bytes": 0,
@@ -1091,8 +1025,8 @@
       "estimated_energy": 0.0
     },
     {
-      "id": 47,
-      "name": "DropPath_47",
+      "id": 44,
+      "name": "DropPath_44",
       "op_type": "DropPath",
       "weight_shape": [],
       "weight_bytes": 0,
@@ -1113,8 +1047,8 @@
       "estimated_energy": 0.0
     },
     {
-      "id": 48,
-      "name": "ResidualAdd_48",
+      "id": 45,
+      "name": "ResidualAdd_45",
       "op_type": "ResidualAdd",
       "weight_shape": [],
       "weight_bytes": 0,
@@ -1135,8 +1069,8 @@
       "estimated_energy": 7.526399999999999e-07
     },
     {
-      "id": 49,
-      "name": "Reshape3d_49",
+      "id": 46,
+      "name": "Reshape3d_46",
       "op_type": "Reshape3d",
       "weight_shape": [],
       "weight_bytes": 0,
@@ -1156,8 +1090,8 @@
       "estimated_energy": 0.0
     },
     {
-      "id": 50,
-      "name": "Permute3d_50",
+      "id": 47,
+      "name": "Permute3d_47",
       "op_type": "Permute3d",
       "weight_shape": [],
       "weight_bytes": 0,
@@ -1176,8 +1110,29 @@
       "estimated_energy": 0.0
     },
     {
-      "id": 51,
-      "name": "Conv2d_51",
+      "id": 48,
+      "name": "PosEncode_48",
+      "op_type": "PosEncode",
+      "weight_shape": [],
+      "weight_bytes": 0,
+      "flops": 19684800,
+      "input_shape": [
+        1,
+        56,
+        56
+      ],
+      "output_shape": [
+        1,
+        64,
+        56,
+        56
+      ],
+      "estimated_runtime": 1.96848e-06,
+      "estimated_energy": 9.842399999999999e-05
+    },
+    {
+      "id": 49,
+      "name": "Conv2d_49",
       "op_type": "Conv2d",
       "weight_shape": [
         48,
@@ -1203,29 +1158,8 @@
       "estimated_energy": 9.558527999999999e-05
     },
     {
-      "id": 52,
-      "name": "PositionalEncodingFourier_52",
-      "op_type": "PositionalEncodingFourier",
-      "weight_shape": [],
-      "weight_bytes": 0,
-      "flops": 19684800,
-      "input_shape": [
-        1,
-        56,
-        56
-      ],
-      "output_shape": [
-        1,
-        48,
-        56,
-        56
-      ],
-      "estimated_runtime": 1.96848e-06,
-      "estimated_energy": 9.842399999999999e-05
-    },
-    {
-      "id": 53,
-      "name": "Reshape3d_53",
+      "id": 50,
+      "name": "Reshape3d_50",
       "op_type": "Reshape3d",
       "weight_shape": [],
       "weight_bytes": 0,
@@ -1245,8 +1179,8 @@
       "estimated_energy": 0.0
     },
     {
-      "id": 54,
-      "name": "Permute3d_54",
+      "id": 51,
+      "name": "Permute3d_51",
       "op_type": "Permute3d",
       "weight_shape": [],
       "weight_bytes": 0,
@@ -1265,8 +1199,8 @@
       "estimated_energy": 0.0
     },
     {
-      "id": 55,
-      "name": "ResidualAdd_55",
+      "id": 52,
+      "name": "ResidualAdd_52",
       "op_type": "ResidualAdd",
       "weight_shape": [],
       "weight_bytes": 0,
@@ -1285,8 +1219,8 @@
       "estimated_energy": 0.0
     },
     {
-      "id": 56,
-      "name": "LayerNorm_56",
+      "id": 53,
+      "name": "LayerNorm_53",
       "op_type": "LayerNorm",
       "weight_shape": [
         48
@@ -1307,8 +1241,8 @@
       "estimated_energy": 6.0211199999999995e-06
     },
     {
-      "id": 57,
-      "name": "Linear_57",
+      "id": 54,
+      "name": "Linear_54",
       "op_type": "Linear",
       "weight_shape": [
         144,
@@ -1330,8 +1264,8 @@
       "estimated_energy": 6.839999999999999e-08
     },
     {
-      "id": 58,
-      "name": "Reshape5d_58",
+      "id": 55,
+      "name": "Reshape5d_55",
       "op_type": "Reshape5d",
       "weight_shape": [],
       "weight_bytes": 0,
@@ -1352,8 +1286,8 @@
       "estimated_energy": 0.0
     },
     {
-      "id": 59,
-      "name": "Permute5d_59",
+      "id": 56,
+      "name": "Permute5d_56",
       "op_type": "Permute5d",
       "weight_shape": [],
       "weight_bytes": 0,
@@ -1376,8 +1310,8 @@
       "estimated_energy": 0.0
     },
     {
-      "id": 60,
-      "name": "Extract2dq_60",
+      "id": 57,
+      "name": "Extract2dq_57",
       "op_type": "Extract2dq",
       "weight_shape": [],
       "weight_bytes": 0,
@@ -1399,8 +1333,8 @@
       "estimated_energy": 0.0
     },
     {
-      "id": 61,
-      "name": "Extract2dk_61",
+      "id": 58,
+      "name": "Extract2dk_58",
       "op_type": "Extract2dk",
       "weight_shape": [],
       "weight_bytes": 0,
@@ -1422,8 +1356,8 @@
       "estimated_energy": 0.0
     },
     {
-      "id": 62,
-      "name": "Extract2dv_62",
+      "id": 59,
+      "name": "Extract2dv_59",
       "op_type": "Extract2dv",
       "weight_shape": [],
       "weight_bytes": 0,
@@ -1445,8 +1379,8 @@
       "estimated_energy": 0.0
     },
     {
-      "id": 63,
-      "name": "Transpose2d_63",
+      "id": 60,
+      "name": "Transpose2d_60",
       "op_type": "Transpose2d",
       "weight_shape": [],
       "weight_bytes": 0,
@@ -1456,6 +1390,72 @@
         8,
         3136,
         6
+      ],
+      "output_shape": [
+        1,
+        8,
+        6,
+        3136
+      ],
+      "estimated_runtime": 0.0,
+      "estimated_energy": 0.0
+    },
+    {
+      "id": 61,
+      "name": "Transpose2d_61",
+      "op_type": "Transpose2d",
+      "weight_shape": [],
+      "weight_bytes": 0,
+      "flops": 0,
+      "input_shape": [
+        1,
+        8,
+        3136,
+        6
+      ],
+      "output_shape": [
+        1,
+        8,
+        6,
+        3136
+      ],
+      "estimated_runtime": 0.0,
+      "estimated_energy": 0.0
+    },
+    {
+      "id": 62,
+      "name": "Transpose2d_62",
+      "op_type": "Transpose2d",
+      "weight_shape": [],
+      "weight_bytes": 0,
+      "flops": 0,
+      "input_shape": [
+        1,
+        8,
+        3136,
+        6
+      ],
+      "output_shape": [
+        1,
+        8,
+        6,
+        3136
+      ],
+      "estimated_runtime": 0.0,
+      "estimated_energy": 0.0
+    },
+    {
+      "id": 63,
+      "name": "Normalize2d_63",
+      "op_type": "Normalize2d",
+      "weight_shape": [],
+      "weight_bytes": 0,
+      "flops": 0,
+      "input_shape": [
+        1,
+        8,
+        6,
+        3136
       ],
       "output_shape": [
         1,
@@ -1468,16 +1468,16 @@
     },
     {
       "id": 64,
-      "name": "Transpose2d_64",
-      "op_type": "Transpose2d",
+      "name": "Normalize2d_64",
+      "op_type": "Normalize2d",
       "weight_shape": [],
       "weight_bytes": 0,
       "flops": 0,
       "input_shape": [
         1,
         8,
-        3136,
-        6
+        6,
+        3136
       ],
       "output_shape": [
         1,
@@ -1490,73 +1490,7 @@
     },
     {
       "id": 65,
-      "name": "Transpose2d_65",
-      "op_type": "Transpose2d",
-      "weight_shape": [],
-      "weight_bytes": 0,
-      "flops": 0,
-      "input_shape": [
-        1,
-        8,
-        3136,
-        6
-      ],
-      "output_shape": [
-        1,
-        8,
-        6,
-        3136
-      ],
-      "estimated_runtime": 0.0,
-      "estimated_energy": 0.0
-    },
-    {
-      "id": 66,
-      "name": "Normalize2d_66",
-      "op_type": "Normalize2d",
-      "weight_shape": [],
-      "weight_bytes": 0,
-      "flops": 0,
-      "input_shape": [
-        1,
-        8,
-        6,
-        3136
-      ],
-      "output_shape": [
-        1,
-        8,
-        6,
-        3136
-      ],
-      "estimated_runtime": 0.0,
-      "estimated_energy": 0.0
-    },
-    {
-      "id": 67,
-      "name": "Normalize2d_67",
-      "op_type": "Normalize2d",
-      "weight_shape": [],
-      "weight_bytes": 0,
-      "flops": 0,
-      "input_shape": [
-        1,
-        8,
-        6,
-        3136
-      ],
-      "output_shape": [
-        1,
-        8,
-        6,
-        3136
-      ],
-      "estimated_runtime": 0.0,
-      "estimated_energy": 0.0
-    },
-    {
-      "id": 68,
-      "name": "MatrixMultiply_68",
+      "name": "MatrixMultiply_65",
       "op_type": "MatrixMultiply",
       "weight_shape": [],
       "weight_bytes": 0,
@@ -1577,8 +1511,8 @@
       "estimated_energy": 9.031679999999999e-06
     },
     {
-      "id": 69,
-      "name": "Softmax_69",
+      "id": 66,
+      "name": "Softmax_66",
       "op_type": "Softmax",
       "weight_shape": [],
       "weight_bytes": 0,
@@ -1599,8 +1533,8 @@
       "estimated_energy": 2.88e-09
     },
     {
-      "id": 70,
-      "name": "WeightedSum_70",
+      "id": 67,
+      "name": "WeightedSum_67",
       "op_type": "WeightedSum",
       "weight_shape": [],
       "weight_bytes": 0,
@@ -1621,8 +1555,8 @@
       "estimated_energy": 0.0
     },
     {
-      "id": 71,
-      "name": "Permute4d_71",
+      "id": 68,
+      "name": "Permute4d_68",
       "op_type": "Permute4d",
       "weight_shape": [],
       "weight_bytes": 0,
@@ -1643,8 +1577,8 @@
       "estimated_energy": 0.0
     },
     {
-      "id": 72,
-      "name": "Reshape3d_72",
+      "id": 69,
+      "name": "Reshape3d_69",
       "op_type": "Reshape3d",
       "weight_shape": [],
       "weight_bytes": 0,
@@ -1664,8 +1598,8 @@
       "estimated_energy": 0.0
     },
     {
-      "id": 73,
-      "name": "Linear_73",
+      "id": 70,
+      "name": "Linear_70",
       "op_type": "Linear",
       "weight_shape": [
         48,
@@ -1687,8 +1621,8 @@
       "estimated_energy": 2.28e-08
     },
     {
-      "id": 74,
-      "name": "GammaMultiply_74",
+      "id": 71,
+      "name": "GammaMultiply_71",
       "op_type": "GammaMultiply",
       "weight_shape": [],
       "weight_bytes": 0,
@@ -1707,8 +1641,8 @@
       "estimated_energy": 7.526399999999999e-07
     },
     {
-      "id": 75,
-      "name": "ResidualAdd_75",
+      "id": 72,
+      "name": "ResidualAdd_72",
       "op_type": "ResidualAdd",
       "weight_shape": [],
       "weight_bytes": 0,
@@ -1727,8 +1661,8 @@
       "estimated_energy": 0.0
     },
     {
-      "id": 76,
-      "name": "Reshape4d_76",
+      "id": 73,
+      "name": "Reshape4d_73",
       "op_type": "Reshape4d",
       "weight_shape": [],
       "weight_bytes": 0,
@@ -1748,8 +1682,8 @@
       "estimated_energy": 0.0
     },
     {
-      "id": 77,
-      "name": "LayerNorm_77",
+      "id": 74,
+      "name": "LayerNorm_74",
       "op_type": "LayerNorm",
       "weight_shape": [
         48
@@ -1772,8 +1706,8 @@
       "estimated_energy": 6.0211199999999995e-06
     },
     {
-      "id": 78,
-      "name": "Linear_78",
+      "id": 75,
+      "name": "Linear_75",
       "op_type": "Linear",
       "weight_shape": [
         288,
@@ -1797,8 +1731,8 @@
       "estimated_energy": 1.3679999999999998e-07
     },
     {
-      "id": 79,
-      "name": "GELU_79",
+      "id": 76,
+      "name": "GELU_76",
       "op_type": "GELU",
       "weight_shape": [],
       "weight_bytes": 0,
@@ -1819,8 +1753,8 @@
       "estimated_energy": 0.0
     },
     {
-      "id": 80,
-      "name": "Linear_80",
+      "id": 77,
+      "name": "Linear_77",
       "op_type": "Linear",
       "weight_shape": [
         48,
@@ -1844,8 +1778,8 @@
       "estimated_energy": 1.38e-07
     },
     {
-      "id": 81,
-      "name": "GammaMultiply_81",
+      "id": 78,
+      "name": "GammaMultiply_78",
       "op_type": "GammaMultiply",
       "weight_shape": [],
       "weight_bytes": 0,
@@ -1863,8 +1797,8 @@
       "estimated_energy": 2.4e-10
     },
     {
-      "id": 82,
-      "name": "Permute4d_82",
+      "id": 79,
+      "name": "Permute4d_79",
       "op_type": "Permute4d",
       "weight_shape": [],
       "weight_bytes": 0,
@@ -1885,8 +1819,8 @@
       "estimated_energy": 0.0
     },
     {
-      "id": 83,
-      "name": "DropPath_83",
+      "id": 80,
+      "name": "DropPath_80",
       "op_type": "DropPath",
       "weight_shape": [],
       "weight_bytes": 0,
@@ -1907,8 +1841,8 @@
       "estimated_energy": 0.0
     },
     {
-      "id": 84,
-      "name": "ResidualAdd_84",
+      "id": 81,
+      "name": "ResidualAdd_81",
       "op_type": "ResidualAdd",
       "weight_shape": [],
       "weight_bytes": 0,
@@ -1929,8 +1863,30 @@
       "estimated_energy": 7.526399999999999e-07
     },
     {
-      "id": 85,
-      "name": "Conv2d_85",
+      "id": 82,
+      "name": "Cat_82",
+      "op_type": "Cat",
+      "weight_shape": [],
+      "weight_bytes": 0,
+      "flops": 0,
+      "input_shape": [
+        1,
+        48,
+        56,
+        56
+      ],
+      "output_shape": [
+        1,
+        99,
+        56,
+        56
+      ],
+      "estimated_runtime": 0.0,
+      "estimated_energy": 0.0
+    },
+    {
+      "id": 83,
+      "name": "Conv2d_83",
       "op_type": "Conv2d",
       "weight_shape": [
         80,
@@ -1956,8 +1912,8 @@
       "estimated_energy": 0.0005585216
     },
     {
-      "id": 86,
-      "name": "Conv2d_86",
+      "id": 84,
+      "name": "Conv2d_84",
       "op_type": "Conv2d",
       "weight_shape": [
         80,
@@ -1983,8 +1939,8 @@
       "estimated_energy": 5.3312e-06
     },
     {
-      "id": 87,
-      "name": "BatchNorm2d_87",
+      "id": 85,
+      "name": "BatchNorm2d_85",
       "op_type": "BatchNorm2d",
       "weight_shape": [
         80
@@ -2007,8 +1963,8 @@
       "estimated_energy": 6.272e-07
     },
     {
-      "id": 88,
-      "name": "Permute4d_88",
+      "id": 86,
+      "name": "Permute4d_86",
       "op_type": "Permute4d",
       "weight_shape": [],
       "weight_bytes": 0,
@@ -2024,6 +1980,53 @@
         28,
         28,
         80
+      ],
+      "estimated_runtime": 0.0,
+      "estimated_energy": 0.0
+    },
+    {
+      "id": 87,
+      "name": "Linear_87",
+      "op_type": "Linear",
+      "weight_shape": [
+        480,
+        80
+      ],
+      "weight_bytes": 153600,
+      "flops": 76320,
+      "input_shape": [
+        1,
+        28,
+        28,
+        80
+      ],
+      "output_shape": [
+        1,
+        28,
+        28,
+        480
+      ],
+      "estimated_runtime": 7.632e-09,
+      "estimated_energy": 3.816e-07
+    },
+    {
+      "id": 88,
+      "name": "GELU_88",
+      "op_type": "GELU",
+      "weight_shape": [],
+      "weight_bytes": 0,
+      "flops": 0,
+      "input_shape": [
+        1,
+        28,
+        28,
+        480
+      ],
+      "output_shape": [
+        1,
+        28,
+        28,
+        480
       ],
       "estimated_runtime": 0.0,
       "estimated_energy": 0.0
@@ -2033,53 +2036,6 @@
       "name": "Linear_89",
       "op_type": "Linear",
       "weight_shape": [
-        480,
-        80
-      ],
-      "weight_bytes": 153600,
-      "flops": 76320,
-      "input_shape": [
-        1,
-        28,
-        28,
-        80
-      ],
-      "output_shape": [
-        1,
-        28,
-        28,
-        480
-      ],
-      "estimated_runtime": 7.632e-09,
-      "estimated_energy": 3.816e-07
-    },
-    {
-      "id": 90,
-      "name": "GELU_90",
-      "op_type": "GELU",
-      "weight_shape": [],
-      "weight_bytes": 0,
-      "flops": 0,
-      "input_shape": [
-        1,
-        28,
-        28,
-        480
-      ],
-      "output_shape": [
-        1,
-        28,
-        28,
-        480
-      ],
-      "estimated_runtime": 0.0,
-      "estimated_energy": 0.0
-    },
-    {
-      "id": 91,
-      "name": "Linear_91",
-      "op_type": "Linear",
-      "weight_shape": [
         80,
         480
       ],
@@ -2101,8 +2057,8 @@
       "estimated_energy": 3.8359999999999997e-07
     },
     {
-      "id": 92,
-      "name": "GammaMultiply_92",
+      "id": 90,
+      "name": "GammaMultiply_90",
       "op_type": "GammaMultiply",
       "weight_shape": [],
       "weight_bytes": 0,
@@ -2120,8 +2076,8 @@
       "estimated_energy": 3.9999999999999996e-10
     },
     {
-      "id": 93,
-      "name": "Permute4d_93",
+      "id": 91,
+      "name": "Permute4d_91",
       "op_type": "Permute4d",
       "weight_shape": [],
       "weight_bytes": 0,
@@ -2142,8 +2098,8 @@
       "estimated_energy": 0.0
     },
     {
-      "id": 94,
-      "name": "DropPath_94",
+      "id": 92,
+      "name": "DropPath_92",
       "op_type": "DropPath",
       "weight_shape": [],
       "weight_bytes": 0,
@@ -2164,8 +2120,8 @@
       "estimated_energy": 0.0
     },
     {
-      "id": 95,
-      "name": "ResidualAdd_95",
+      "id": 93,
+      "name": "ResidualAdd_93",
       "op_type": "ResidualAdd",
       "weight_shape": [],
       "weight_bytes": 0,
@@ -2186,8 +2142,8 @@
       "estimated_energy": 3.136e-07
     },
     {
-      "id": 96,
-      "name": "Conv2d_96",
+      "id": 94,
+      "name": "Conv2d_94",
       "op_type": "Conv2d",
       "weight_shape": [
         80,
@@ -2213,8 +2169,8 @@
       "estimated_energy": 5.3312e-06
     },
     {
-      "id": 97,
-      "name": "BatchNorm2d_97",
+      "id": 95,
+      "name": "BatchNorm2d_95",
       "op_type": "BatchNorm2d",
       "weight_shape": [
         80
@@ -2237,8 +2193,8 @@
       "estimated_energy": 6.272e-07
     },
     {
-      "id": 98,
-      "name": "Permute4d_98",
+      "id": 96,
+      "name": "Permute4d_96",
       "op_type": "Permute4d",
       "weight_shape": [],
       "weight_bytes": 0,
@@ -2254,6 +2210,53 @@
         28,
         28,
         80
+      ],
+      "estimated_runtime": 0.0,
+      "estimated_energy": 0.0
+    },
+    {
+      "id": 97,
+      "name": "Linear_97",
+      "op_type": "Linear",
+      "weight_shape": [
+        480,
+        80
+      ],
+      "weight_bytes": 153600,
+      "flops": 76320,
+      "input_shape": [
+        1,
+        28,
+        28,
+        80
+      ],
+      "output_shape": [
+        1,
+        28,
+        28,
+        480
+      ],
+      "estimated_runtime": 7.632e-09,
+      "estimated_energy": 3.816e-07
+    },
+    {
+      "id": 98,
+      "name": "GELU_98",
+      "op_type": "GELU",
+      "weight_shape": [],
+      "weight_bytes": 0,
+      "flops": 0,
+      "input_shape": [
+        1,
+        28,
+        28,
+        480
+      ],
+      "output_shape": [
+        1,
+        28,
+        28,
+        480
       ],
       "estimated_runtime": 0.0,
       "estimated_energy": 0.0
@@ -2263,53 +2266,6 @@
       "name": "Linear_99",
       "op_type": "Linear",
       "weight_shape": [
-        480,
-        80
-      ],
-      "weight_bytes": 153600,
-      "flops": 76320,
-      "input_shape": [
-        1,
-        28,
-        28,
-        80
-      ],
-      "output_shape": [
-        1,
-        28,
-        28,
-        480
-      ],
-      "estimated_runtime": 7.632e-09,
-      "estimated_energy": 3.816e-07
-    },
-    {
-      "id": 100,
-      "name": "GELU_100",
-      "op_type": "GELU",
-      "weight_shape": [],
-      "weight_bytes": 0,
-      "flops": 0,
-      "input_shape": [
-        1,
-        28,
-        28,
-        480
-      ],
-      "output_shape": [
-        1,
-        28,
-        28,
-        480
-      ],
-      "estimated_runtime": 0.0,
-      "estimated_energy": 0.0
-    },
-    {
-      "id": 101,
-      "name": "Linear_101",
-      "op_type": "Linear",
-      "weight_shape": [
         80,
         480
       ],
@@ -2331,8 +2287,8 @@
       "estimated_energy": 3.8359999999999997e-07
     },
     {
-      "id": 102,
-      "name": "GammaMultiply_102",
+      "id": 100,
+      "name": "GammaMultiply_100",
       "op_type": "GammaMultiply",
       "weight_shape": [],
       "weight_bytes": 0,
@@ -2350,8 +2306,8 @@
       "estimated_energy": 3.9999999999999996e-10
     },
     {
-      "id": 103,
-      "name": "Permute4d_103",
+      "id": 101,
+      "name": "Permute4d_101",
       "op_type": "Permute4d",
       "weight_shape": [],
       "weight_bytes": 0,
@@ -2372,8 +2328,8 @@
       "estimated_energy": 0.0
     },
     {
-      "id": 104,
-      "name": "DropPath_104",
+      "id": 102,
+      "name": "DropPath_102",
       "op_type": "DropPath",
       "weight_shape": [],
       "weight_bytes": 0,
@@ -2394,8 +2350,8 @@
       "estimated_energy": 0.0
     },
     {
-      "id": 105,
-      "name": "ResidualAdd_105",
+      "id": 103,
+      "name": "ResidualAdd_103",
       "op_type": "ResidualAdd",
       "weight_shape": [],
       "weight_bytes": 0,
@@ -2416,8 +2372,8 @@
       "estimated_energy": 3.136e-07
     },
     {
-      "id": 106,
-      "name": "Conv2d_106",
+      "id": 104,
+      "name": "Conv2d_104",
       "op_type": "Conv2d",
       "weight_shape": [
         80,
@@ -2443,8 +2399,8 @@
       "estimated_energy": 5.3312e-06
     },
     {
-      "id": 107,
-      "name": "BatchNorm2d_107",
+      "id": 105,
+      "name": "BatchNorm2d_105",
       "op_type": "BatchNorm2d",
       "weight_shape": [
         80
@@ -2467,8 +2423,8 @@
       "estimated_energy": 6.272e-07
     },
     {
-      "id": 108,
-      "name": "Permute4d_108",
+      "id": 106,
+      "name": "Permute4d_106",
       "op_type": "Permute4d",
       "weight_shape": [],
       "weight_bytes": 0,
@@ -2489,8 +2445,8 @@
       "estimated_energy": 0.0
     },
     {
-      "id": 109,
-      "name": "Linear_109",
+      "id": 107,
+      "name": "Linear_107",
       "op_type": "Linear",
       "weight_shape": [
         480,
@@ -2514,8 +2470,8 @@
       "estimated_energy": 3.816e-07
     },
     {
-      "id": 110,
-      "name": "GELU_110",
+      "id": 108,
+      "name": "GELU_108",
       "op_type": "GELU",
       "weight_shape": [],
       "weight_bytes": 0,
@@ -2536,8 +2492,8 @@
       "estimated_energy": 0.0
     },
     {
-      "id": 111,
-      "name": "Linear_111",
+      "id": 109,
+      "name": "Linear_109",
       "op_type": "Linear",
       "weight_shape": [
         80,
@@ -2561,8 +2517,8 @@
       "estimated_energy": 3.8359999999999997e-07
     },
     {
-      "id": 112,
-      "name": "GammaMultiply_112",
+      "id": 110,
+      "name": "GammaMultiply_110",
       "op_type": "GammaMultiply",
       "weight_shape": [],
       "weight_bytes": 0,
@@ -2580,8 +2536,8 @@
       "estimated_energy": 3.9999999999999996e-10
     },
     {
-      "id": 113,
-      "name": "Permute4d_113",
+      "id": 111,
+      "name": "Permute4d_111",
       "op_type": "Permute4d",
       "weight_shape": [],
       "weight_bytes": 0,
@@ -2602,8 +2558,8 @@
       "estimated_energy": 0.0
     },
     {
-      "id": 114,
-      "name": "DropPath_114",
+      "id": 112,
+      "name": "DropPath_112",
       "op_type": "DropPath",
       "weight_shape": [],
       "weight_bytes": 0,
@@ -2624,8 +2580,8 @@
       "estimated_energy": 0.0
     },
     {
-      "id": 115,
-      "name": "ResidualAdd_115",
+      "id": 113,
+      "name": "ResidualAdd_113",
       "op_type": "ResidualAdd",
       "weight_shape": [],
       "weight_bytes": 0,
@@ -2646,8 +2602,8 @@
       "estimated_energy": 3.136e-07
     },
     {
-      "id": 116,
-      "name": "Reshape3d_116",
+      "id": 114,
+      "name": "Reshape3d_114",
       "op_type": "Reshape3d",
       "weight_shape": [],
       "weight_bytes": 0,
@@ -2667,8 +2623,8 @@
       "estimated_energy": 0.0
     },
     {
-      "id": 117,
-      "name": "Permute3d_117",
+      "id": 115,
+      "name": "Permute3d_115",
       "op_type": "Permute3d",
       "weight_shape": [],
       "weight_bytes": 0,
@@ -2687,8 +2643,8 @@
       "estimated_energy": 0.0
     },
     {
-      "id": 118,
-      "name": "LayerNorm_118",
+      "id": 116,
+      "name": "LayerNorm_116",
       "op_type": "LayerNorm",
       "weight_shape": [
         80
@@ -2709,8 +2665,8 @@
       "estimated_energy": 2.5088e-06
     },
     {
-      "id": 119,
-      "name": "Linear_119",
+      "id": 117,
+      "name": "Linear_117",
       "op_type": "Linear",
       "weight_shape": [
         240,
@@ -2732,8 +2688,8 @@
       "estimated_energy": 1.908e-07
     },
     {
-      "id": 120,
-      "name": "Reshape5d_120",
+      "id": 118,
+      "name": "Reshape5d_118",
       "op_type": "Reshape5d",
       "weight_shape": [],
       "weight_bytes": 0,
@@ -2754,8 +2710,8 @@
       "estimated_energy": 0.0
     },
     {
-      "id": 121,
-      "name": "Permute5d_121",
+      "id": 119,
+      "name": "Permute5d_119",
       "op_type": "Permute5d",
       "weight_shape": [],
       "weight_bytes": 0,
@@ -2778,8 +2734,8 @@
       "estimated_energy": 0.0
     },
     {
-      "id": 122,
-      "name": "Extract2dq_122",
+      "id": 120,
+      "name": "Extract2dq_120",
       "op_type": "Extract2dq",
       "weight_shape": [],
       "weight_bytes": 0,
@@ -2801,8 +2757,8 @@
       "estimated_energy": 0.0
     },
     {
-      "id": 123,
-      "name": "Extract2dk_123",
+      "id": 121,
+      "name": "Extract2dk_121",
       "op_type": "Extract2dk",
       "weight_shape": [],
       "weight_bytes": 0,
@@ -2824,8 +2780,8 @@
       "estimated_energy": 0.0
     },
     {
-      "id": 124,
-      "name": "Extract2dv_124",
+      "id": 122,
+      "name": "Extract2dv_122",
       "op_type": "Extract2dv",
       "weight_shape": [],
       "weight_bytes": 0,
@@ -2842,6 +2798,50 @@
         8,
         784,
         10
+      ],
+      "estimated_runtime": 0.0,
+      "estimated_energy": 0.0
+    },
+    {
+      "id": 123,
+      "name": "Transpose2d_123",
+      "op_type": "Transpose2d",
+      "weight_shape": [],
+      "weight_bytes": 0,
+      "flops": 0,
+      "input_shape": [
+        1,
+        8,
+        784,
+        10
+      ],
+      "output_shape": [
+        1,
+        8,
+        10,
+        784
+      ],
+      "estimated_runtime": 0.0,
+      "estimated_energy": 0.0
+    },
+    {
+      "id": 124,
+      "name": "Transpose2d_124",
+      "op_type": "Transpose2d",
+      "weight_shape": [],
+      "weight_bytes": 0,
+      "flops": 0,
+      "input_shape": [
+        1,
+        8,
+        784,
+        10
+      ],
+      "output_shape": [
+        1,
+        8,
+        10,
+        784
       ],
       "estimated_runtime": 0.0,
       "estimated_energy": 0.0
@@ -2870,16 +2870,16 @@
     },
     {
       "id": 126,
-      "name": "Transpose2d_126",
-      "op_type": "Transpose2d",
+      "name": "Normalize2d_126",
+      "op_type": "Normalize2d",
       "weight_shape": [],
       "weight_bytes": 0,
       "flops": 0,
       "input_shape": [
         1,
         8,
-        784,
-        10
+        10,
+        784
       ],
       "output_shape": [
         1,
@@ -2892,16 +2892,16 @@
     },
     {
       "id": 127,
-      "name": "Transpose2d_127",
-      "op_type": "Transpose2d",
+      "name": "Normalize2d_127",
+      "op_type": "Normalize2d",
       "weight_shape": [],
       "weight_bytes": 0,
       "flops": 0,
       "input_shape": [
         1,
         8,
-        784,
-        10
+        10,
+        784
       ],
       "output_shape": [
         1,
@@ -2914,51 +2914,7 @@
     },
     {
       "id": 128,
-      "name": "Normalize2d_128",
-      "op_type": "Normalize2d",
-      "weight_shape": [],
-      "weight_bytes": 0,
-      "flops": 0,
-      "input_shape": [
-        1,
-        8,
-        10,
-        784
-      ],
-      "output_shape": [
-        1,
-        8,
-        10,
-        784
-      ],
-      "estimated_runtime": 0.0,
-      "estimated_energy": 0.0
-    },
-    {
-      "id": 129,
-      "name": "Normalize2d_129",
-      "op_type": "Normalize2d",
-      "weight_shape": [],
-      "weight_bytes": 0,
-      "flops": 0,
-      "input_shape": [
-        1,
-        8,
-        10,
-        784
-      ],
-      "output_shape": [
-        1,
-        8,
-        10,
-        784
-      ],
-      "estimated_runtime": 0.0,
-      "estimated_energy": 0.0
-    },
-    {
-      "id": 130,
-      "name": "MatrixMultiply_130",
+      "name": "MatrixMultiply_128",
       "op_type": "MatrixMultiply",
       "weight_shape": [],
       "weight_bytes": 0,
@@ -2979,8 +2935,8 @@
       "estimated_energy": 6.271999999999999e-06
     },
     {
-      "id": 131,
-      "name": "Softmax_131",
+      "id": 129,
+      "name": "Softmax_129",
       "op_type": "Softmax",
       "weight_shape": [],
       "weight_bytes": 0,
@@ -3001,8 +2957,8 @@
       "estimated_energy": 7.999999999999999e-09
     },
     {
-      "id": 132,
-      "name": "WeightedSum_132",
+      "id": 130,
+      "name": "WeightedSum_130",
       "op_type": "WeightedSum",
       "weight_shape": [],
       "weight_bytes": 0,
@@ -3023,8 +2979,8 @@
       "estimated_energy": 0.0
     },
     {
-      "id": 133,
-      "name": "Permute4d_133",
+      "id": 131,
+      "name": "Permute4d_131",
       "op_type": "Permute4d",
       "weight_shape": [],
       "weight_bytes": 0,
@@ -3045,8 +3001,8 @@
       "estimated_energy": 0.0
     },
     {
-      "id": 134,
-      "name": "Reshape3d_134",
+      "id": 132,
+      "name": "Reshape3d_132",
       "op_type": "Reshape3d",
       "weight_shape": [],
       "weight_bytes": 0,
@@ -3066,8 +3022,8 @@
       "estimated_energy": 0.0
     },
     {
-      "id": 135,
-      "name": "Linear_135",
+      "id": 133,
+      "name": "Linear_133",
       "op_type": "Linear",
       "weight_shape": [
         80,
@@ -3089,8 +3045,8 @@
       "estimated_energy": 6.36e-08
     },
     {
-      "id": 136,
-      "name": "GammaMultiply_136",
+      "id": 134,
+      "name": "GammaMultiply_134",
       "op_type": "GammaMultiply",
       "weight_shape": [],
       "weight_bytes": 0,
@@ -3109,8 +3065,8 @@
       "estimated_energy": 3.136e-07
     },
     {
-      "id": 137,
-      "name": "ResidualAdd_137",
+      "id": 135,
+      "name": "ResidualAdd_135",
       "op_type": "ResidualAdd",
       "weight_shape": [],
       "weight_bytes": 0,
@@ -3129,8 +3085,8 @@
       "estimated_energy": 0.0
     },
     {
-      "id": 138,
-      "name": "Reshape4d_138",
+      "id": 136,
+      "name": "Reshape4d_136",
       "op_type": "Reshape4d",
       "weight_shape": [],
       "weight_bytes": 0,
@@ -3150,8 +3106,8 @@
       "estimated_energy": 0.0
     },
     {
-      "id": 139,
-      "name": "LayerNorm_139",
+      "id": 137,
+      "name": "LayerNorm_137",
       "op_type": "LayerNorm",
       "weight_shape": [
         80
@@ -3174,8 +3130,8 @@
       "estimated_energy": 2.5088e-06
     },
     {
-      "id": 140,
-      "name": "Linear_140",
+      "id": 138,
+      "name": "Linear_138",
       "op_type": "Linear",
       "weight_shape": [
         480,
@@ -3199,8 +3155,8 @@
       "estimated_energy": 3.816e-07
     },
     {
-      "id": 141,
-      "name": "GELU_141",
+      "id": 139,
+      "name": "GELU_139",
       "op_type": "GELU",
       "weight_shape": [],
       "weight_bytes": 0,
@@ -3221,8 +3177,8 @@
       "estimated_energy": 0.0
     },
     {
-      "id": 142,
-      "name": "Linear_142",
+      "id": 140,
+      "name": "Linear_140",
       "op_type": "Linear",
       "weight_shape": [
         80,
@@ -3246,8 +3202,8 @@
       "estimated_energy": 3.8359999999999997e-07
     },
     {
-      "id": 143,
-      "name": "GammaMultiply_143",
+      "id": 141,
+      "name": "GammaMultiply_141",
       "op_type": "GammaMultiply",
       "weight_shape": [],
       "weight_bytes": 0,
@@ -3265,8 +3221,8 @@
       "estimated_energy": 3.9999999999999996e-10
     },
     {
-      "id": 144,
-      "name": "Permute4d_144",
+      "id": 142,
+      "name": "Permute4d_142",
       "op_type": "Permute4d",
       "weight_shape": [],
       "weight_bytes": 0,
@@ -3287,8 +3243,8 @@
       "estimated_energy": 0.0
     },
     {
-      "id": 145,
-      "name": "DropPath_145",
+      "id": 143,
+      "name": "DropPath_143",
       "op_type": "DropPath",
       "weight_shape": [],
       "weight_bytes": 0,
@@ -3309,8 +3265,8 @@
       "estimated_energy": 0.0
     },
     {
-      "id": 146,
-      "name": "ResidualAdd_146",
+      "id": 144,
+      "name": "ResidualAdd_144",
       "op_type": "ResidualAdd",
       "weight_shape": [],
       "weight_bytes": 0,
@@ -3331,8 +3287,30 @@
       "estimated_energy": 3.136e-07
     },
     {
-      "id": 147,
-      "name": "Conv2d_147",
+      "id": 145,
+      "name": "Cat_145",
+      "op_type": "Cat",
+      "weight_shape": [],
+      "weight_bytes": 0,
+      "flops": 0,
+      "input_shape": [
+        1,
+        80,
+        28,
+        28
+      ],
+      "output_shape": [
+        1,
+        163,
+        28,
+        28
+      ],
+      "estimated_runtime": 0.0,
+      "estimated_energy": 0.0
+    },
+    {
+      "id": 146,
+      "name": "Conv2d_146",
       "op_type": "Conv2d",
       "weight_shape": [
         128,
@@ -3358,8 +3336,8 @@
       "estimated_energy": 0.00036791552
     },
     {
-      "id": 148,
-      "name": "Conv2d_148",
+      "id": 147,
+      "name": "Conv2d_147",
       "op_type": "Conv2d",
       "weight_shape": [
         128,
@@ -3385,8 +3363,8 @@
       "estimated_energy": 2.1324799999999998e-06
     },
     {
-      "id": 149,
-      "name": "BatchNorm2d_149",
+      "id": 148,
+      "name": "BatchNorm2d_148",
       "op_type": "BatchNorm2d",
       "weight_shape": [
         128
@@ -3409,8 +3387,8 @@
       "estimated_energy": 2.5088e-07
     },
     {
-      "id": 150,
-      "name": "Permute4d_150",
+      "id": 149,
+      "name": "Permute4d_149",
       "op_type": "Permute4d",
       "weight_shape": [],
       "weight_bytes": 0,
@@ -3431,8 +3409,8 @@
       "estimated_energy": 0.0
     },
     {
-      "id": 151,
-      "name": "Linear_151",
+      "id": 150,
+      "name": "Linear_150",
       "op_type": "Linear",
       "weight_shape": [
         768,
@@ -3456,8 +3434,8 @@
       "estimated_energy": 9.791999999999999e-07
     },
     {
-      "id": 152,
-      "name": "GELU_152",
+      "id": 151,
+      "name": "GELU_151",
       "op_type": "GELU",
       "weight_shape": [],
       "weight_bytes": 0,
@@ -3478,8 +3456,8 @@
       "estimated_energy": 0.0
     },
     {
-      "id": 153,
-      "name": "Linear_153",
+      "id": 152,
+      "name": "Linear_152",
       "op_type": "Linear",
       "weight_shape": [
         128,
@@ -3503,8 +3481,8 @@
       "estimated_energy": 9.824e-07
     },
     {
-      "id": 154,
-      "name": "GammaMultiply_154",
+      "id": 153,
+      "name": "GammaMultiply_153",
       "op_type": "GammaMultiply",
       "weight_shape": [],
       "weight_bytes": 0,
@@ -3522,8 +3500,8 @@
       "estimated_energy": 6.4e-10
     },
     {
-      "id": 155,
-      "name": "Permute4d_155",
+      "id": 154,
+      "name": "Permute4d_154",
       "op_type": "Permute4d",
       "weight_shape": [],
       "weight_bytes": 0,
@@ -3533,6 +3511,28 @@
         14,
         14,
         128
+      ],
+      "output_shape": [
+        1,
+        128,
+        14,
+        14
+      ],
+      "estimated_runtime": 0.0,
+      "estimated_energy": 0.0
+    },
+    {
+      "id": 155,
+      "name": "DropPath_155",
+      "op_type": "DropPath",
+      "weight_shape": [],
+      "weight_bytes": 0,
+      "flops": 0,
+      "input_shape": [
+        1,
+        128,
+        14,
+        14
       ],
       "output_shape": [
         1,
@@ -3545,29 +3545,7 @@
     },
     {
       "id": 156,
-      "name": "DropPath_156",
-      "op_type": "DropPath",
-      "weight_shape": [],
-      "weight_bytes": 0,
-      "flops": 0,
-      "input_shape": [
-        1,
-        128,
-        14,
-        14
-      ],
-      "output_shape": [
-        1,
-        128,
-        14,
-        14
-      ],
-      "estimated_runtime": 0.0,
-      "estimated_energy": 0.0
-    },
-    {
-      "id": 157,
-      "name": "ResidualAdd_157",
+      "name": "ResidualAdd_156",
       "op_type": "ResidualAdd",
       "weight_shape": [],
       "weight_bytes": 0,
@@ -3588,8 +3566,8 @@
       "estimated_energy": 1.2544e-07
     },
     {
-      "id": 158,
-      "name": "Conv2d_158",
+      "id": 157,
+      "name": "Conv2d_157",
       "op_type": "Conv2d",
       "weight_shape": [
         128,
@@ -3615,8 +3593,8 @@
       "estimated_energy": 2.1324799999999998e-06
     },
     {
-      "id": 159,
-      "name": "BatchNorm2d_159",
+      "id": 158,
+      "name": "BatchNorm2d_158",
       "op_type": "BatchNorm2d",
       "weight_shape": [
         128
@@ -3639,8 +3617,8 @@
       "estimated_energy": 2.5088e-07
     },
     {
-      "id": 160,
-      "name": "Permute4d_160",
+      "id": 159,
+      "name": "Permute4d_159",
       "op_type": "Permute4d",
       "weight_shape": [],
       "weight_bytes": 0,
@@ -3661,8 +3639,8 @@
       "estimated_energy": 0.0
     },
     {
-      "id": 161,
-      "name": "Linear_161",
+      "id": 160,
+      "name": "Linear_160",
       "op_type": "Linear",
       "weight_shape": [
         768,
@@ -3686,8 +3664,8 @@
       "estimated_energy": 9.791999999999999e-07
     },
     {
-      "id": 162,
-      "name": "GELU_162",
+      "id": 161,
+      "name": "GELU_161",
       "op_type": "GELU",
       "weight_shape": [],
       "weight_bytes": 0,
@@ -3708,8 +3686,8 @@
       "estimated_energy": 0.0
     },
     {
-      "id": 163,
-      "name": "Linear_163",
+      "id": 162,
+      "name": "Linear_162",
       "op_type": "Linear",
       "weight_shape": [
         128,
@@ -3733,8 +3711,8 @@
       "estimated_energy": 9.824e-07
     },
     {
-      "id": 164,
-      "name": "GammaMultiply_164",
+      "id": 163,
+      "name": "GammaMultiply_163",
       "op_type": "GammaMultiply",
       "weight_shape": [],
       "weight_bytes": 0,
@@ -3752,8 +3730,8 @@
       "estimated_energy": 6.4e-10
     },
     {
-      "id": 165,
-      "name": "Permute4d_165",
+      "id": 164,
+      "name": "Permute4d_164",
       "op_type": "Permute4d",
       "weight_shape": [],
       "weight_bytes": 0,
@@ -3763,6 +3741,28 @@
         14,
         14,
         128
+      ],
+      "output_shape": [
+        1,
+        128,
+        14,
+        14
+      ],
+      "estimated_runtime": 0.0,
+      "estimated_energy": 0.0
+    },
+    {
+      "id": 165,
+      "name": "DropPath_165",
+      "op_type": "DropPath",
+      "weight_shape": [],
+      "weight_bytes": 0,
+      "flops": 0,
+      "input_shape": [
+        1,
+        128,
+        14,
+        14
       ],
       "output_shape": [
         1,
@@ -3775,29 +3775,7 @@
     },
     {
       "id": 166,
-      "name": "DropPath_166",
-      "op_type": "DropPath",
-      "weight_shape": [],
-      "weight_bytes": 0,
-      "flops": 0,
-      "input_shape": [
-        1,
-        128,
-        14,
-        14
-      ],
-      "output_shape": [
-        1,
-        128,
-        14,
-        14
-      ],
-      "estimated_runtime": 0.0,
-      "estimated_energy": 0.0
-    },
-    {
-      "id": 167,
-      "name": "ResidualAdd_167",
+      "name": "ResidualAdd_166",
       "op_type": "ResidualAdd",
       "weight_shape": [],
       "weight_bytes": 0,
@@ -3818,8 +3796,8 @@
       "estimated_energy": 1.2544e-07
     },
     {
-      "id": 168,
-      "name": "Conv2d_168",
+      "id": 167,
+      "name": "Conv2d_167",
       "op_type": "Conv2d",
       "weight_shape": [
         128,
@@ -3845,8 +3823,8 @@
       "estimated_energy": 2.1324799999999998e-06
     },
     {
-      "id": 169,
-      "name": "BatchNorm2d_169",
+      "id": 168,
+      "name": "BatchNorm2d_168",
       "op_type": "BatchNorm2d",
       "weight_shape": [
         128
@@ -3869,8 +3847,8 @@
       "estimated_energy": 2.5088e-07
     },
     {
-      "id": 170,
-      "name": "Permute4d_170",
+      "id": 169,
+      "name": "Permute4d_169",
       "op_type": "Permute4d",
       "weight_shape": [],
       "weight_bytes": 0,
@@ -3891,8 +3869,8 @@
       "estimated_energy": 0.0
     },
     {
-      "id": 171,
-      "name": "Linear_171",
+      "id": 170,
+      "name": "Linear_170",
       "op_type": "Linear",
       "weight_shape": [
         768,
@@ -3916,8 +3894,8 @@
       "estimated_energy": 9.791999999999999e-07
     },
     {
-      "id": 172,
-      "name": "GELU_172",
+      "id": 171,
+      "name": "GELU_171",
       "op_type": "GELU",
       "weight_shape": [],
       "weight_bytes": 0,
@@ -3938,8 +3916,8 @@
       "estimated_energy": 0.0
     },
     {
-      "id": 173,
-      "name": "Linear_173",
+      "id": 172,
+      "name": "Linear_172",
       "op_type": "Linear",
       "weight_shape": [
         128,
@@ -3963,8 +3941,8 @@
       "estimated_energy": 9.824e-07
     },
     {
-      "id": 174,
-      "name": "GammaMultiply_174",
+      "id": 173,
+      "name": "GammaMultiply_173",
       "op_type": "GammaMultiply",
       "weight_shape": [],
       "weight_bytes": 0,
@@ -3982,8 +3960,8 @@
       "estimated_energy": 6.4e-10
     },
     {
-      "id": 175,
-      "name": "Permute4d_175",
+      "id": 174,
+      "name": "Permute4d_174",
       "op_type": "Permute4d",
       "weight_shape": [],
       "weight_bytes": 0,
@@ -3993,6 +3971,28 @@
         14,
         14,
         128
+      ],
+      "output_shape": [
+        1,
+        128,
+        14,
+        14
+      ],
+      "estimated_runtime": 0.0,
+      "estimated_energy": 0.0
+    },
+    {
+      "id": 175,
+      "name": "DropPath_175",
+      "op_type": "DropPath",
+      "weight_shape": [],
+      "weight_bytes": 0,
+      "flops": 0,
+      "input_shape": [
+        1,
+        128,
+        14,
+        14
       ],
       "output_shape": [
         1,
@@ -4005,29 +4005,7 @@
     },
     {
       "id": 176,
-      "name": "DropPath_176",
-      "op_type": "DropPath",
-      "weight_shape": [],
-      "weight_bytes": 0,
-      "flops": 0,
-      "input_shape": [
-        1,
-        128,
-        14,
-        14
-      ],
-      "output_shape": [
-        1,
-        128,
-        14,
-        14
-      ],
-      "estimated_runtime": 0.0,
-      "estimated_energy": 0.0
-    },
-    {
-      "id": 177,
-      "name": "ResidualAdd_177",
+      "name": "ResidualAdd_176",
       "op_type": "ResidualAdd",
       "weight_shape": [],
       "weight_bytes": 0,
@@ -4048,8 +4026,8 @@
       "estimated_energy": 1.2544e-07
     },
     {
-      "id": 178,
-      "name": "Conv2d_178",
+      "id": 177,
+      "name": "Conv2d_177",
       "op_type": "Conv2d",
       "weight_shape": [
         128,
@@ -4075,8 +4053,8 @@
       "estimated_energy": 2.1324799999999998e-06
     },
     {
-      "id": 179,
-      "name": "BatchNorm2d_179",
+      "id": 178,
+      "name": "BatchNorm2d_178",
       "op_type": "BatchNorm2d",
       "weight_shape": [
         128
@@ -4099,8 +4077,8 @@
       "estimated_energy": 2.5088e-07
     },
     {
-      "id": 180,
-      "name": "Permute4d_180",
+      "id": 179,
+      "name": "Permute4d_179",
       "op_type": "Permute4d",
       "weight_shape": [],
       "weight_bytes": 0,
@@ -4121,8 +4099,8 @@
       "estimated_energy": 0.0
     },
     {
-      "id": 181,
-      "name": "Linear_181",
+      "id": 180,
+      "name": "Linear_180",
       "op_type": "Linear",
       "weight_shape": [
         768,
@@ -4146,8 +4124,8 @@
       "estimated_energy": 9.791999999999999e-07
     },
     {
-      "id": 182,
-      "name": "GELU_182",
+      "id": 181,
+      "name": "GELU_181",
       "op_type": "GELU",
       "weight_shape": [],
       "weight_bytes": 0,
@@ -4168,8 +4146,8 @@
       "estimated_energy": 0.0
     },
     {
-      "id": 183,
-      "name": "Linear_183",
+      "id": 182,
+      "name": "Linear_182",
       "op_type": "Linear",
       "weight_shape": [
         128,
@@ -4193,8 +4171,8 @@
       "estimated_energy": 9.824e-07
     },
     {
-      "id": 184,
-      "name": "GammaMultiply_184",
+      "id": 183,
+      "name": "GammaMultiply_183",
       "op_type": "GammaMultiply",
       "weight_shape": [],
       "weight_bytes": 0,
@@ -4212,8 +4190,8 @@
       "estimated_energy": 6.4e-10
     },
     {
-      "id": 185,
-      "name": "Permute4d_185",
+      "id": 184,
+      "name": "Permute4d_184",
       "op_type": "Permute4d",
       "weight_shape": [],
       "weight_bytes": 0,
@@ -4223,6 +4201,28 @@
         14,
         14,
         128
+      ],
+      "output_shape": [
+        1,
+        128,
+        14,
+        14
+      ],
+      "estimated_runtime": 0.0,
+      "estimated_energy": 0.0
+    },
+    {
+      "id": 185,
+      "name": "DropPath_185",
+      "op_type": "DropPath",
+      "weight_shape": [],
+      "weight_bytes": 0,
+      "flops": 0,
+      "input_shape": [
+        1,
+        128,
+        14,
+        14
       ],
       "output_shape": [
         1,
@@ -4235,29 +4235,7 @@
     },
     {
       "id": 186,
-      "name": "DropPath_186",
-      "op_type": "DropPath",
-      "weight_shape": [],
-      "weight_bytes": 0,
-      "flops": 0,
-      "input_shape": [
-        1,
-        128,
-        14,
-        14
-      ],
-      "output_shape": [
-        1,
-        128,
-        14,
-        14
-      ],
-      "estimated_runtime": 0.0,
-      "estimated_energy": 0.0
-    },
-    {
-      "id": 187,
-      "name": "ResidualAdd_187",
+      "name": "ResidualAdd_186",
       "op_type": "ResidualAdd",
       "weight_shape": [],
       "weight_bytes": 0,
@@ -4278,8 +4256,8 @@
       "estimated_energy": 1.2544e-07
     },
     {
-      "id": 188,
-      "name": "Conv2d_188",
+      "id": 187,
+      "name": "Conv2d_187",
       "op_type": "Conv2d",
       "weight_shape": [
         128,
@@ -4305,8 +4283,8 @@
       "estimated_energy": 2.1324799999999998e-06
     },
     {
-      "id": 189,
-      "name": "BatchNorm2d_189",
+      "id": 188,
+      "name": "BatchNorm2d_188",
       "op_type": "BatchNorm2d",
       "weight_shape": [
         128
@@ -4329,8 +4307,8 @@
       "estimated_energy": 2.5088e-07
     },
     {
-      "id": 190,
-      "name": "Permute4d_190",
+      "id": 189,
+      "name": "Permute4d_189",
       "op_type": "Permute4d",
       "weight_shape": [],
       "weight_bytes": 0,
@@ -4351,8 +4329,8 @@
       "estimated_energy": 0.0
     },
     {
-      "id": 191,
-      "name": "Linear_191",
+      "id": 190,
+      "name": "Linear_190",
       "op_type": "Linear",
       "weight_shape": [
         768,
@@ -4376,8 +4354,8 @@
       "estimated_energy": 9.791999999999999e-07
     },
     {
-      "id": 192,
-      "name": "GELU_192",
+      "id": 191,
+      "name": "GELU_191",
       "op_type": "GELU",
       "weight_shape": [],
       "weight_bytes": 0,
@@ -4398,8 +4376,8 @@
       "estimated_energy": 0.0
     },
     {
-      "id": 193,
-      "name": "Linear_193",
+      "id": 192,
+      "name": "Linear_192",
       "op_type": "Linear",
       "weight_shape": [
         128,
@@ -4423,8 +4401,8 @@
       "estimated_energy": 9.824e-07
     },
     {
-      "id": 194,
-      "name": "GammaMultiply_194",
+      "id": 193,
+      "name": "GammaMultiply_193",
       "op_type": "GammaMultiply",
       "weight_shape": [],
       "weight_bytes": 0,
@@ -4442,8 +4420,8 @@
       "estimated_energy": 6.4e-10
     },
     {
-      "id": 195,
-      "name": "Permute4d_195",
+      "id": 194,
+      "name": "Permute4d_194",
       "op_type": "Permute4d",
       "weight_shape": [],
       "weight_bytes": 0,
@@ -4453,6 +4431,28 @@
         14,
         14,
         128
+      ],
+      "output_shape": [
+        1,
+        128,
+        14,
+        14
+      ],
+      "estimated_runtime": 0.0,
+      "estimated_energy": 0.0
+    },
+    {
+      "id": 195,
+      "name": "DropPath_195",
+      "op_type": "DropPath",
+      "weight_shape": [],
+      "weight_bytes": 0,
+      "flops": 0,
+      "input_shape": [
+        1,
+        128,
+        14,
+        14
       ],
       "output_shape": [
         1,
@@ -4465,29 +4465,7 @@
     },
     {
       "id": 196,
-      "name": "DropPath_196",
-      "op_type": "DropPath",
-      "weight_shape": [],
-      "weight_bytes": 0,
-      "flops": 0,
-      "input_shape": [
-        1,
-        128,
-        14,
-        14
-      ],
-      "output_shape": [
-        1,
-        128,
-        14,
-        14
-      ],
-      "estimated_runtime": 0.0,
-      "estimated_energy": 0.0
-    },
-    {
-      "id": 197,
-      "name": "ResidualAdd_197",
+      "name": "ResidualAdd_196",
       "op_type": "ResidualAdd",
       "weight_shape": [],
       "weight_bytes": 0,
@@ -4508,8 +4486,8 @@
       "estimated_energy": 1.2544e-07
     },
     {
-      "id": 198,
-      "name": "Conv2d_198",
+      "id": 197,
+      "name": "Conv2d_197",
       "op_type": "Conv2d",
       "weight_shape": [
         128,
@@ -4535,8 +4513,8 @@
       "estimated_energy": 2.1324799999999998e-06
     },
     {
-      "id": 199,
-      "name": "BatchNorm2d_199",
+      "id": 198,
+      "name": "BatchNorm2d_198",
       "op_type": "BatchNorm2d",
       "weight_shape": [
         128
@@ -4559,8 +4537,8 @@
       "estimated_energy": 2.5088e-07
     },
     {
-      "id": 200,
-      "name": "Permute4d_200",
+      "id": 199,
+      "name": "Permute4d_199",
       "op_type": "Permute4d",
       "weight_shape": [],
       "weight_bytes": 0,
@@ -4581,8 +4559,8 @@
       "estimated_energy": 0.0
     },
     {
-      "id": 201,
-      "name": "Linear_201",
+      "id": 200,
+      "name": "Linear_200",
       "op_type": "Linear",
       "weight_shape": [
         768,
@@ -4606,8 +4584,8 @@
       "estimated_energy": 9.791999999999999e-07
     },
     {
-      "id": 202,
-      "name": "GELU_202",
+      "id": 201,
+      "name": "GELU_201",
       "op_type": "GELU",
       "weight_shape": [],
       "weight_bytes": 0,
@@ -4628,8 +4606,8 @@
       "estimated_energy": 0.0
     },
     {
-      "id": 203,
-      "name": "Linear_203",
+      "id": 202,
+      "name": "Linear_202",
       "op_type": "Linear",
       "weight_shape": [
         128,
@@ -4653,8 +4631,8 @@
       "estimated_energy": 9.824e-07
     },
     {
-      "id": 204,
-      "name": "GammaMultiply_204",
+      "id": 203,
+      "name": "GammaMultiply_203",
       "op_type": "GammaMultiply",
       "weight_shape": [],
       "weight_bytes": 0,
@@ -4672,8 +4650,8 @@
       "estimated_energy": 6.4e-10
     },
     {
-      "id": 205,
-      "name": "Permute4d_205",
+      "id": 204,
+      "name": "Permute4d_204",
       "op_type": "Permute4d",
       "weight_shape": [],
       "weight_bytes": 0,
@@ -4683,6 +4661,28 @@
         14,
         14,
         128
+      ],
+      "output_shape": [
+        1,
+        128,
+        14,
+        14
+      ],
+      "estimated_runtime": 0.0,
+      "estimated_energy": 0.0
+    },
+    {
+      "id": 205,
+      "name": "DropPath_205",
+      "op_type": "DropPath",
+      "weight_shape": [],
+      "weight_bytes": 0,
+      "flops": 0,
+      "input_shape": [
+        1,
+        128,
+        14,
+        14
       ],
       "output_shape": [
         1,
@@ -4695,29 +4695,7 @@
     },
     {
       "id": 206,
-      "name": "DropPath_206",
-      "op_type": "DropPath",
-      "weight_shape": [],
-      "weight_bytes": 0,
-      "flops": 0,
-      "input_shape": [
-        1,
-        128,
-        14,
-        14
-      ],
-      "output_shape": [
-        1,
-        128,
-        14,
-        14
-      ],
-      "estimated_runtime": 0.0,
-      "estimated_energy": 0.0
-    },
-    {
-      "id": 207,
-      "name": "ResidualAdd_207",
+      "name": "ResidualAdd_206",
       "op_type": "ResidualAdd",
       "weight_shape": [],
       "weight_bytes": 0,
@@ -4738,8 +4716,8 @@
       "estimated_energy": 1.2544e-07
     },
     {
-      "id": 208,
-      "name": "Conv2d_208",
+      "id": 207,
+      "name": "Conv2d_207",
       "op_type": "Conv2d",
       "weight_shape": [
         128,
@@ -4765,8 +4743,8 @@
       "estimated_energy": 2.1324799999999998e-06
     },
     {
-      "id": 209,
-      "name": "BatchNorm2d_209",
+      "id": 208,
+      "name": "BatchNorm2d_208",
       "op_type": "BatchNorm2d",
       "weight_shape": [
         128
@@ -4789,8 +4767,8 @@
       "estimated_energy": 2.5088e-07
     },
     {
-      "id": 210,
-      "name": "Permute4d_210",
+      "id": 209,
+      "name": "Permute4d_209",
       "op_type": "Permute4d",
       "weight_shape": [],
       "weight_bytes": 0,
@@ -4811,8 +4789,8 @@
       "estimated_energy": 0.0
     },
     {
-      "id": 211,
-      "name": "Linear_211",
+      "id": 210,
+      "name": "Linear_210",
       "op_type": "Linear",
       "weight_shape": [
         768,
@@ -4836,8 +4814,8 @@
       "estimated_energy": 9.791999999999999e-07
     },
     {
-      "id": 212,
-      "name": "GELU_212",
+      "id": 211,
+      "name": "GELU_211",
       "op_type": "GELU",
       "weight_shape": [],
       "weight_bytes": 0,
@@ -4858,8 +4836,8 @@
       "estimated_energy": 0.0
     },
     {
-      "id": 213,
-      "name": "Linear_213",
+      "id": 212,
+      "name": "Linear_212",
       "op_type": "Linear",
       "weight_shape": [
         128,
@@ -4883,8 +4861,8 @@
       "estimated_energy": 9.824e-07
     },
     {
-      "id": 214,
-      "name": "GammaMultiply_214",
+      "id": 213,
+      "name": "GammaMultiply_213",
       "op_type": "GammaMultiply",
       "weight_shape": [],
       "weight_bytes": 0,
@@ -4902,8 +4880,8 @@
       "estimated_energy": 6.4e-10
     },
     {
-      "id": 215,
-      "name": "Permute4d_215",
+      "id": 214,
+      "name": "Permute4d_214",
       "op_type": "Permute4d",
       "weight_shape": [],
       "weight_bytes": 0,
@@ -4913,6 +4891,28 @@
         14,
         14,
         128
+      ],
+      "output_shape": [
+        1,
+        128,
+        14,
+        14
+      ],
+      "estimated_runtime": 0.0,
+      "estimated_energy": 0.0
+    },
+    {
+      "id": 215,
+      "name": "DropPath_215",
+      "op_type": "DropPath",
+      "weight_shape": [],
+      "weight_bytes": 0,
+      "flops": 0,
+      "input_shape": [
+        1,
+        128,
+        14,
+        14
       ],
       "output_shape": [
         1,
@@ -4925,29 +4925,7 @@
     },
     {
       "id": 216,
-      "name": "DropPath_216",
-      "op_type": "DropPath",
-      "weight_shape": [],
-      "weight_bytes": 0,
-      "flops": 0,
-      "input_shape": [
-        1,
-        128,
-        14,
-        14
-      ],
-      "output_shape": [
-        1,
-        128,
-        14,
-        14
-      ],
-      "estimated_runtime": 0.0,
-      "estimated_energy": 0.0
-    },
-    {
-      "id": 217,
-      "name": "ResidualAdd_217",
+      "name": "ResidualAdd_216",
       "op_type": "ResidualAdd",
       "weight_shape": [],
       "weight_bytes": 0,
@@ -4968,8 +4946,8 @@
       "estimated_energy": 1.2544e-07
     },
     {
-      "id": 218,
-      "name": "Conv2d_218",
+      "id": 217,
+      "name": "Conv2d_217",
       "op_type": "Conv2d",
       "weight_shape": [
         128,
@@ -4995,8 +4973,8 @@
       "estimated_energy": 2.1324799999999998e-06
     },
     {
-      "id": 219,
-      "name": "BatchNorm2d_219",
+      "id": 218,
+      "name": "BatchNorm2d_218",
       "op_type": "BatchNorm2d",
       "weight_shape": [
         128
@@ -5019,8 +4997,8 @@
       "estimated_energy": 2.5088e-07
     },
     {
-      "id": 220,
-      "name": "Permute4d_220",
+      "id": 219,
+      "name": "Permute4d_219",
       "op_type": "Permute4d",
       "weight_shape": [],
       "weight_bytes": 0,
@@ -5041,8 +5019,8 @@
       "estimated_energy": 0.0
     },
     {
-      "id": 221,
-      "name": "Linear_221",
+      "id": 220,
+      "name": "Linear_220",
       "op_type": "Linear",
       "weight_shape": [
         768,
@@ -5066,8 +5044,8 @@
       "estimated_energy": 9.791999999999999e-07
     },
     {
-      "id": 222,
-      "name": "GELU_222",
+      "id": 221,
+      "name": "GELU_221",
       "op_type": "GELU",
       "weight_shape": [],
       "weight_bytes": 0,
@@ -5088,8 +5066,8 @@
       "estimated_energy": 0.0
     },
     {
-      "id": 223,
-      "name": "Linear_223",
+      "id": 222,
+      "name": "Linear_222",
       "op_type": "Linear",
       "weight_shape": [
         128,
@@ -5113,8 +5091,8 @@
       "estimated_energy": 9.824e-07
     },
     {
-      "id": 224,
-      "name": "GammaMultiply_224",
+      "id": 223,
+      "name": "GammaMultiply_223",
       "op_type": "GammaMultiply",
       "weight_shape": [],
       "weight_bytes": 0,
@@ -5132,8 +5110,8 @@
       "estimated_energy": 6.4e-10
     },
     {
-      "id": 225,
-      "name": "Permute4d_225",
+      "id": 224,
+      "name": "Permute4d_224",
       "op_type": "Permute4d",
       "weight_shape": [],
       "weight_bytes": 0,
@@ -5143,6 +5121,28 @@
         14,
         14,
         128
+      ],
+      "output_shape": [
+        1,
+        128,
+        14,
+        14
+      ],
+      "estimated_runtime": 0.0,
+      "estimated_energy": 0.0
+    },
+    {
+      "id": 225,
+      "name": "DropPath_225",
+      "op_type": "DropPath",
+      "weight_shape": [],
+      "weight_bytes": 0,
+      "flops": 0,
+      "input_shape": [
+        1,
+        128,
+        14,
+        14
       ],
       "output_shape": [
         1,
@@ -5155,29 +5155,7 @@
     },
     {
       "id": 226,
-      "name": "DropPath_226",
-      "op_type": "DropPath",
-      "weight_shape": [],
-      "weight_bytes": 0,
-      "flops": 0,
-      "input_shape": [
-        1,
-        128,
-        14,
-        14
-      ],
-      "output_shape": [
-        1,
-        128,
-        14,
-        14
-      ],
-      "estimated_runtime": 0.0,
-      "estimated_energy": 0.0
-    },
-    {
-      "id": 227,
-      "name": "ResidualAdd_227",
+      "name": "ResidualAdd_226",
       "op_type": "ResidualAdd",
       "weight_shape": [],
       "weight_bytes": 0,
@@ -5198,8 +5176,8 @@
       "estimated_energy": 1.2544e-07
     },
     {
-      "id": 228,
-      "name": "Conv2d_228",
+      "id": 227,
+      "name": "Conv2d_227",
       "op_type": "Conv2d",
       "weight_shape": [
         128,
@@ -5225,8 +5203,8 @@
       "estimated_energy": 2.1324799999999998e-06
     },
     {
-      "id": 229,
-      "name": "BatchNorm2d_229",
+      "id": 228,
+      "name": "BatchNorm2d_228",
       "op_type": "BatchNorm2d",
       "weight_shape": [
         128
@@ -5249,8 +5227,8 @@
       "estimated_energy": 2.5088e-07
     },
     {
-      "id": 230,
-      "name": "Permute4d_230",
+      "id": 229,
+      "name": "Permute4d_229",
       "op_type": "Permute4d",
       "weight_shape": [],
       "weight_bytes": 0,
@@ -5271,8 +5249,8 @@
       "estimated_energy": 0.0
     },
     {
-      "id": 231,
-      "name": "Linear_231",
+      "id": 230,
+      "name": "Linear_230",
       "op_type": "Linear",
       "weight_shape": [
         768,
@@ -5296,8 +5274,8 @@
       "estimated_energy": 9.791999999999999e-07
     },
     {
-      "id": 232,
-      "name": "GELU_232",
+      "id": 231,
+      "name": "GELU_231",
       "op_type": "GELU",
       "weight_shape": [],
       "weight_bytes": 0,
@@ -5318,8 +5296,8 @@
       "estimated_energy": 0.0
     },
     {
-      "id": 233,
-      "name": "Linear_233",
+      "id": 232,
+      "name": "Linear_232",
       "op_type": "Linear",
       "weight_shape": [
         128,
@@ -5343,8 +5321,8 @@
       "estimated_energy": 9.824e-07
     },
     {
-      "id": 234,
-      "name": "GammaMultiply_234",
+      "id": 233,
+      "name": "GammaMultiply_233",
       "op_type": "GammaMultiply",
       "weight_shape": [],
       "weight_bytes": 0,
@@ -5362,8 +5340,8 @@
       "estimated_energy": 6.4e-10
     },
     {
-      "id": 235,
-      "name": "Permute4d_235",
+      "id": 234,
+      "name": "Permute4d_234",
       "op_type": "Permute4d",
       "weight_shape": [],
       "weight_bytes": 0,
@@ -5384,8 +5362,8 @@
       "estimated_energy": 0.0
     },
     {
-      "id": 236,
-      "name": "DropPath_236",
+      "id": 235,
+      "name": "DropPath_235",
       "op_type": "DropPath",
       "weight_shape": [],
       "weight_bytes": 0,
@@ -5406,8 +5384,8 @@
       "estimated_energy": 0.0
     },
     {
-      "id": 237,
-      "name": "ResidualAdd_237",
+      "id": 236,
+      "name": "ResidualAdd_236",
       "op_type": "ResidualAdd",
       "weight_shape": [],
       "weight_bytes": 0,
@@ -5428,8 +5406,8 @@
       "estimated_energy": 1.2544e-07
     },
     {
-      "id": 238,
-      "name": "Reshape3d_238",
+      "id": 237,
+      "name": "Reshape3d_237",
       "op_type": "Reshape3d",
       "weight_shape": [],
       "weight_bytes": 0,
@@ -5449,8 +5427,8 @@
       "estimated_energy": 0.0
     },
     {
-      "id": 239,
-      "name": "Permute3d_239",
+      "id": 238,
+      "name": "Permute3d_238",
       "op_type": "Permute3d",
       "weight_shape": [],
       "weight_bytes": 0,
@@ -5469,8 +5447,8 @@
       "estimated_energy": 0.0
     },
     {
-      "id": 240,
-      "name": "LayerNorm_240",
+      "id": 239,
+      "name": "LayerNorm_239",
       "op_type": "LayerNorm",
       "weight_shape": [
         128
@@ -5491,8 +5469,8 @@
       "estimated_energy": 1.00352e-06
     },
     {
-      "id": 241,
-      "name": "Linear_241",
+      "id": 240,
+      "name": "Linear_240",
       "op_type": "Linear",
       "weight_shape": [
         384,
@@ -5514,8 +5492,8 @@
       "estimated_energy": 4.895999999999999e-07
     },
     {
-      "id": 242,
-      "name": "Reshape5d_242",
+      "id": 241,
+      "name": "Reshape5d_241",
       "op_type": "Reshape5d",
       "weight_shape": [],
       "weight_bytes": 0,
@@ -5536,8 +5514,8 @@
       "estimated_energy": 0.0
     },
     {
-      "id": 243,
-      "name": "Permute5d_243",
+      "id": 242,
+      "name": "Permute5d_242",
       "op_type": "Permute5d",
       "weight_shape": [],
       "weight_bytes": 0,
@@ -5560,8 +5538,8 @@
       "estimated_energy": 0.0
     },
     {
-      "id": 244,
-      "name": "Extract2dq_244",
+      "id": 243,
+      "name": "Extract2dq_243",
       "op_type": "Extract2dq",
       "weight_shape": [],
       "weight_bytes": 0,
@@ -5583,8 +5561,8 @@
       "estimated_energy": 0.0
     },
     {
-      "id": 245,
-      "name": "Extract2dk_245",
+      "id": 244,
+      "name": "Extract2dk_244",
       "op_type": "Extract2dk",
       "weight_shape": [],
       "weight_bytes": 0,
@@ -5606,8 +5584,8 @@
       "estimated_energy": 0.0
     },
     {
-      "id": 246,
-      "name": "Extract2dv_246",
+      "id": 245,
+      "name": "Extract2dv_245",
       "op_type": "Extract2dv",
       "weight_shape": [],
       "weight_bytes": 0,
@@ -5624,6 +5602,28 @@
         8,
         196,
         16
+      ],
+      "estimated_runtime": 0.0,
+      "estimated_energy": 0.0
+    },
+    {
+      "id": 246,
+      "name": "Transpose2d_246",
+      "op_type": "Transpose2d",
+      "weight_shape": [],
+      "weight_bytes": 0,
+      "flops": 0,
+      "input_shape": [
+        1,
+        8,
+        196,
+        16
+      ],
+      "output_shape": [
+        1,
+        8,
+        16,
+        196
       ],
       "estimated_runtime": 0.0,
       "estimated_energy": 0.0
@@ -5674,16 +5674,16 @@
     },
     {
       "id": 249,
-      "name": "Transpose2d_249",
-      "op_type": "Transpose2d",
+      "name": "Normalize2d_249",
+      "op_type": "Normalize2d",
       "weight_shape": [],
       "weight_bytes": 0,
       "flops": 0,
       "input_shape": [
         1,
         8,
-        196,
-        16
+        16,
+        196
       ],
       "output_shape": [
         1,
@@ -5718,29 +5718,7 @@
     },
     {
       "id": 251,
-      "name": "Normalize2d_251",
-      "op_type": "Normalize2d",
-      "weight_shape": [],
-      "weight_bytes": 0,
-      "flops": 0,
-      "input_shape": [
-        1,
-        8,
-        16,
-        196
-      ],
-      "output_shape": [
-        1,
-        8,
-        16,
-        196
-      ],
-      "estimated_runtime": 0.0,
-      "estimated_energy": 0.0
-    },
-    {
-      "id": 252,
-      "name": "MatrixMultiply_252",
+      "name": "MatrixMultiply_251",
       "op_type": "MatrixMultiply",
       "weight_shape": [],
       "weight_bytes": 0,
@@ -5761,8 +5739,8 @@
       "estimated_energy": 4.01408e-06
     },
     {
-      "id": 253,
-      "name": "Softmax_253",
+      "id": 252,
+      "name": "Softmax_252",
       "op_type": "Softmax",
       "weight_shape": [],
       "weight_bytes": 0,
@@ -5783,8 +5761,8 @@
       "estimated_energy": 2.048e-08
     },
     {
-      "id": 254,
-      "name": "WeightedSum_254",
+      "id": 253,
+      "name": "WeightedSum_253",
       "op_type": "WeightedSum",
       "weight_shape": [],
       "weight_bytes": 0,
@@ -5805,8 +5783,8 @@
       "estimated_energy": 0.0
     },
     {
-      "id": 255,
-      "name": "Permute4d_255",
+      "id": 254,
+      "name": "Permute4d_254",
       "op_type": "Permute4d",
       "weight_shape": [],
       "weight_bytes": 0,
@@ -5827,8 +5805,8 @@
       "estimated_energy": 0.0
     },
     {
-      "id": 256,
-      "name": "Reshape3d_256",
+      "id": 255,
+      "name": "Reshape3d_255",
       "op_type": "Reshape3d",
       "weight_shape": [],
       "weight_bytes": 0,
@@ -5848,8 +5826,8 @@
       "estimated_energy": 0.0
     },
     {
-      "id": 257,
-      "name": "Linear_257",
+      "id": 256,
+      "name": "Linear_256",
       "op_type": "Linear",
       "weight_shape": [
         128,
@@ -5871,8 +5849,8 @@
       "estimated_energy": 1.6319999999999998e-07
     },
     {
-      "id": 258,
-      "name": "GammaMultiply_258",
+      "id": 257,
+      "name": "GammaMultiply_257",
       "op_type": "GammaMultiply",
       "weight_shape": [],
       "weight_bytes": 0,
@@ -5891,8 +5869,8 @@
       "estimated_energy": 1.2544e-07
     },
     {
-      "id": 259,
-      "name": "ResidualAdd_259",
+      "id": 258,
+      "name": "ResidualAdd_258",
       "op_type": "ResidualAdd",
       "weight_shape": [],
       "weight_bytes": 0,
@@ -5911,8 +5889,8 @@
       "estimated_energy": 0.0
     },
     {
-      "id": 260,
-      "name": "Reshape4d_260",
+      "id": 259,
+      "name": "Reshape4d_259",
       "op_type": "Reshape4d",
       "weight_shape": [],
       "weight_bytes": 0,
@@ -5932,8 +5910,8 @@
       "estimated_energy": 0.0
     },
     {
-      "id": 261,
-      "name": "LayerNorm_261",
+      "id": 260,
+      "name": "LayerNorm_260",
       "op_type": "LayerNorm",
       "weight_shape": [
         128
@@ -5956,8 +5934,8 @@
       "estimated_energy": 1.00352e-06
     },
     {
-      "id": 262,
-      "name": "Linear_262",
+      "id": 261,
+      "name": "Linear_261",
       "op_type": "Linear",
       "weight_shape": [
         768,
@@ -5981,8 +5959,8 @@
       "estimated_energy": 9.791999999999999e-07
     },
     {
-      "id": 263,
-      "name": "GELU_263",
+      "id": 262,
+      "name": "GELU_262",
       "op_type": "GELU",
       "weight_shape": [],
       "weight_bytes": 0,
@@ -6003,8 +5981,8 @@
       "estimated_energy": 0.0
     },
     {
-      "id": 264,
-      "name": "Linear_264",
+      "id": 263,
+      "name": "Linear_263",
       "op_type": "Linear",
       "weight_shape": [
         128,
@@ -6028,8 +6006,8 @@
       "estimated_energy": 9.824e-07
     },
     {
-      "id": 265,
-      "name": "GammaMultiply_265",
+      "id": 264,
+      "name": "GammaMultiply_264",
       "op_type": "GammaMultiply",
       "weight_shape": [],
       "weight_bytes": 0,
@@ -6047,8 +6025,8 @@
       "estimated_energy": 6.4e-10
     },
     {
-      "id": 266,
-      "name": "Permute4d_266",
+      "id": 265,
+      "name": "Permute4d_265",
       "op_type": "Permute4d",
       "weight_shape": [],
       "weight_bytes": 0,
@@ -6069,8 +6047,8 @@
       "estimated_energy": 0.0
     },
     {
-      "id": 267,
-      "name": "DropPath_267",
+      "id": 266,
+      "name": "DropPath_266",
       "op_type": "DropPath",
       "weight_shape": [],
       "weight_bytes": 0,
@@ -6091,8 +6069,8 @@
       "estimated_energy": 0.0
     },
     {
-      "id": 268,
-      "name": "ResidualAdd_268",
+      "id": 267,
+      "name": "ResidualAdd_267",
       "op_type": "ResidualAdd",
       "weight_shape": [],
       "weight_bytes": 0,
@@ -6158,39 +6136,52 @@
       "destination": 7,
       "tensor_shape": [
         1,
-        3,
+        48,
         112,
         112
       ],
-      "tensor_bytes": 150528,
-      "estimated_latency": 3.11056e-06,
-      "estimated_energy": 1.204224e-06
+      "tensor_bytes": 2408448,
+      "estimated_latency": 4.8268960000000005e-05,
+      "estimated_energy": 1.9267584e-05
     },
     {
       "source": 7,
       "destination": 8,
       "tensor_shape": [
         1,
-        3,
-        56,
-        56
+        48,
+        112,
+        112
       ],
-      "tensor_bytes": 37632,
-      "estimated_latency": 8.5264e-07,
-      "estimated_energy": 3.01056e-07
+      "tensor_bytes": 2408448,
+      "estimated_latency": 4.8268960000000005e-05,
+      "estimated_energy": 1.9267584e-05
     },
     {
       "source": 8,
       "destination": 9,
       "tensor_shape": [
         1,
-        3,
-        28,
-        28
+        48,
+        112,
+        112
       ],
-      "tensor_bytes": 9408,
-      "estimated_latency": 2.8816e-07,
-      "estimated_energy": 7.5264e-08
+      "tensor_bytes": 2408448,
+      "estimated_latency": 4.8268960000000005e-05,
+      "estimated_energy": 1.9267584e-05
+    },
+    {
+      "source": 9,
+      "destination": 10,
+      "tensor_shape": [
+        1,
+        48,
+        112,
+        112
+      ],
+      "tensor_bytes": 2408448,
+      "estimated_latency": 4.8268960000000005e-05,
+      "estimated_energy": 1.9267584e-05
     },
     {
       "source": 10,
@@ -6258,17 +6249,30 @@
       "estimated_energy": 1.9267584e-05
     },
     {
+      "source": 0,
+      "destination": 15,
+      "tensor_shape": [
+        1,
+        3,
+        112,
+        112
+      ],
+      "tensor_bytes": 150528,
+      "estimated_latency": 3.11056e-06,
+      "estimated_energy": 1.204224e-06
+    },
+    {
       "source": 15,
       "destination": 16,
       "tensor_shape": [
         1,
-        48,
+        51,
         112,
         112
       ],
-      "tensor_bytes": 2408448,
-      "estimated_latency": 4.8268960000000005e-05,
-      "estimated_energy": 1.9267584e-05
+      "tensor_bytes": 2558976,
+      "estimated_latency": 5.1279520000000004e-05,
+      "estimated_energy": 2.0471807999999998e-05
     },
     {
       "source": 16,
@@ -6276,12 +6280,12 @@
       "tensor_shape": [
         1,
         48,
-        112,
-        112
+        56,
+        56
       ],
-      "tensor_bytes": 2408448,
-      "estimated_latency": 4.8268960000000005e-05,
-      "estimated_energy": 1.9267584e-05
+      "tensor_bytes": 602112,
+      "estimated_latency": 1.2142240000000002e-05,
+      "estimated_energy": 4.816896e-06
     },
     {
       "source": 17,
@@ -6289,21 +6293,34 @@
       "tensor_shape": [
         1,
         48,
-        112,
-        112
+        56,
+        56
       ],
-      "tensor_bytes": 2408448,
-      "estimated_latency": 4.8268960000000005e-05,
-      "estimated_energy": 1.9267584e-05
+      "tensor_bytes": 602112,
+      "estimated_latency": 1.2142240000000002e-05,
+      "estimated_energy": 4.816896e-06
+    },
+    {
+      "source": 18,
+      "destination": 19,
+      "tensor_shape": [
+        1,
+        48,
+        56,
+        56
+      ],
+      "tensor_bytes": 602112,
+      "estimated_latency": 1.2142240000000002e-05,
+      "estimated_energy": 4.816896e-06
     },
     {
       "source": 19,
       "destination": 20,
       "tensor_shape": [
         1,
-        48,
         56,
-        56
+        56,
+        48
       ],
       "tensor_bytes": 602112,
       "estimated_latency": 1.2142240000000002e-05,
@@ -6314,26 +6331,26 @@
       "destination": 21,
       "tensor_shape": [
         1,
-        48,
         56,
-        56
+        56,
+        288
       ],
-      "tensor_bytes": 602112,
-      "estimated_latency": 1.2142240000000002e-05,
-      "estimated_energy": 4.816896e-06
+      "tensor_bytes": 3612672,
+      "estimated_latency": 7.235344000000001e-05,
+      "estimated_energy": 2.8901376e-05
     },
     {
       "source": 21,
       "destination": 22,
       "tensor_shape": [
         1,
-        48,
         56,
-        56
+        56,
+        288
       ],
-      "tensor_bytes": 602112,
-      "estimated_latency": 1.2142240000000002e-05,
-      "estimated_energy": 4.816896e-06
+      "tensor_bytes": 3612672,
+      "estimated_latency": 7.235344000000001e-05,
+      "estimated_energy": 2.8901376e-05
     },
     {
       "source": 22,
@@ -6355,33 +6372,46 @@
         1,
         56,
         56,
-        288
+        48
       ],
-      "tensor_bytes": 3612672,
-      "estimated_latency": 7.235344000000001e-05,
-      "estimated_energy": 2.8901376e-05
+      "tensor_bytes": 602112,
+      "estimated_latency": 1.2142240000000002e-05,
+      "estimated_energy": 4.816896e-06
     },
     {
       "source": 24,
       "destination": 25,
       "tensor_shape": [
         1,
+        48,
         56,
-        56,
-        288
+        56
       ],
-      "tensor_bytes": 3612672,
-      "estimated_latency": 7.235344000000001e-05,
-      "estimated_energy": 2.8901376e-05
+      "tensor_bytes": 602112,
+      "estimated_latency": 1.2142240000000002e-05,
+      "estimated_energy": 4.816896e-06
+    },
+    {
+      "source": 16,
+      "destination": 25,
+      "tensor_shape": [
+        1,
+        48,
+        56,
+        56
+      ],
+      "tensor_bytes": 602112,
+      "estimated_latency": 1.2142240000000002e-05,
+      "estimated_energy": 4.816896e-06
     },
     {
       "source": 25,
       "destination": 26,
       "tensor_shape": [
         1,
+        48,
         56,
-        56,
-        48
+        56
       ],
       "tensor_bytes": 602112,
       "estimated_latency": 1.2142240000000002e-05,
@@ -6392,9 +6422,9 @@
       "destination": 27,
       "tensor_shape": [
         1,
+        48,
         56,
-        56,
-        48
+        56
       ],
       "tensor_bytes": 602112,
       "estimated_latency": 1.2142240000000002e-05,
@@ -6414,26 +6444,13 @@
       "estimated_energy": 4.816896e-06
     },
     {
-      "source": 19,
-      "destination": 28,
-      "tensor_shape": [
-        1,
-        48,
-        56,
-        56
-      ],
-      "tensor_bytes": 602112,
-      "estimated_latency": 1.2142240000000002e-05,
-      "estimated_energy": 4.816896e-06
-    },
-    {
       "source": 28,
       "destination": 29,
       "tensor_shape": [
         1,
-        48,
         56,
-        56
+        56,
+        48
       ],
       "tensor_bytes": 602112,
       "estimated_latency": 1.2142240000000002e-05,
@@ -6444,26 +6461,26 @@
       "destination": 30,
       "tensor_shape": [
         1,
-        48,
         56,
-        56
+        56,
+        288
       ],
-      "tensor_bytes": 602112,
-      "estimated_latency": 1.2142240000000002e-05,
-      "estimated_energy": 4.816896e-06
+      "tensor_bytes": 3612672,
+      "estimated_latency": 7.235344000000001e-05,
+      "estimated_energy": 2.8901376e-05
     },
     {
       "source": 30,
       "destination": 31,
       "tensor_shape": [
         1,
-        48,
         56,
-        56
+        56,
+        288
       ],
-      "tensor_bytes": 602112,
-      "estimated_latency": 1.2142240000000002e-05,
-      "estimated_energy": 4.816896e-06
+      "tensor_bytes": 3612672,
+      "estimated_latency": 7.235344000000001e-05,
+      "estimated_energy": 2.8901376e-05
     },
     {
       "source": 31,
@@ -6485,33 +6502,46 @@
         1,
         56,
         56,
-        288
+        48
       ],
-      "tensor_bytes": 3612672,
-      "estimated_latency": 7.235344000000001e-05,
-      "estimated_energy": 2.8901376e-05
+      "tensor_bytes": 602112,
+      "estimated_latency": 1.2142240000000002e-05,
+      "estimated_energy": 4.816896e-06
     },
     {
       "source": 33,
       "destination": 34,
       "tensor_shape": [
         1,
+        48,
         56,
-        56,
-        288
+        56
       ],
-      "tensor_bytes": 3612672,
-      "estimated_latency": 7.235344000000001e-05,
-      "estimated_energy": 2.8901376e-05
+      "tensor_bytes": 602112,
+      "estimated_latency": 1.2142240000000002e-05,
+      "estimated_energy": 4.816896e-06
     },
     {
       "source": 34,
       "destination": 35,
       "tensor_shape": [
         1,
+        48,
         56,
+        56
+      ],
+      "tensor_bytes": 602112,
+      "estimated_latency": 1.2142240000000002e-05,
+      "estimated_energy": 4.816896e-06
+    },
+    {
+      "source": 25,
+      "destination": 35,
+      "tensor_shape": [
+        1,
+        48,
         56,
-        48
+        56
       ],
       "tensor_bytes": 602112,
       "estimated_latency": 1.2142240000000002e-05,
@@ -6522,9 +6552,9 @@
       "destination": 36,
       "tensor_shape": [
         1,
+        48,
         56,
-        56,
-        48
+        56
       ],
       "tensor_bytes": 602112,
       "estimated_latency": 1.2142240000000002e-05,
@@ -6557,26 +6587,13 @@
       "estimated_energy": 4.816896e-06
     },
     {
-      "source": 28,
-      "destination": 38,
-      "tensor_shape": [
-        1,
-        48,
-        56,
-        56
-      ],
-      "tensor_bytes": 602112,
-      "estimated_latency": 1.2142240000000002e-05,
-      "estimated_energy": 4.816896e-06
-    },
-    {
       "source": 38,
       "destination": 39,
       "tensor_shape": [
         1,
-        48,
         56,
-        56
+        56,
+        48
       ],
       "tensor_bytes": 602112,
       "estimated_latency": 1.2142240000000002e-05,
@@ -6587,26 +6604,26 @@
       "destination": 40,
       "tensor_shape": [
         1,
-        48,
         56,
-        56
+        56,
+        288
       ],
-      "tensor_bytes": 602112,
-      "estimated_latency": 1.2142240000000002e-05,
-      "estimated_energy": 4.816896e-06
+      "tensor_bytes": 3612672,
+      "estimated_latency": 7.235344000000001e-05,
+      "estimated_energy": 2.8901376e-05
     },
     {
       "source": 40,
       "destination": 41,
       "tensor_shape": [
         1,
-        48,
         56,
-        56
+        56,
+        288
       ],
-      "tensor_bytes": 602112,
-      "estimated_latency": 1.2142240000000002e-05,
-      "estimated_energy": 4.816896e-06
+      "tensor_bytes": 3612672,
+      "estimated_latency": 7.235344000000001e-05,
+      "estimated_energy": 2.8901376e-05
     },
     {
       "source": 41,
@@ -6628,33 +6645,46 @@
         1,
         56,
         56,
-        288
+        48
       ],
-      "tensor_bytes": 3612672,
-      "estimated_latency": 7.235344000000001e-05,
-      "estimated_energy": 2.8901376e-05
+      "tensor_bytes": 602112,
+      "estimated_latency": 1.2142240000000002e-05,
+      "estimated_energy": 4.816896e-06
     },
     {
       "source": 43,
       "destination": 44,
       "tensor_shape": [
         1,
+        48,
         56,
-        56,
-        288
+        56
       ],
-      "tensor_bytes": 3612672,
-      "estimated_latency": 7.235344000000001e-05,
-      "estimated_energy": 2.8901376e-05
+      "tensor_bytes": 602112,
+      "estimated_latency": 1.2142240000000002e-05,
+      "estimated_energy": 4.816896e-06
     },
     {
       "source": 44,
       "destination": 45,
       "tensor_shape": [
         1,
+        48,
         56,
+        56
+      ],
+      "tensor_bytes": 602112,
+      "estimated_latency": 1.2142240000000002e-05,
+      "estimated_energy": 4.816896e-06
+    },
+    {
+      "source": 35,
+      "destination": 45,
+      "tensor_shape": [
+        1,
+        48,
         56,
-        48
+        56
       ],
       "tensor_bytes": 602112,
       "estimated_latency": 1.2142240000000002e-05,
@@ -6665,9 +6695,9 @@
       "destination": 46,
       "tensor_shape": [
         1,
+        48,
         56,
-        56,
-        48
+        56
       ],
       "tensor_bytes": 602112,
       "estimated_latency": 1.2142240000000002e-05,
@@ -6679,34 +6709,7 @@
       "tensor_shape": [
         1,
         48,
-        56,
-        56
-      ],
-      "tensor_bytes": 602112,
-      "estimated_latency": 1.2142240000000002e-05,
-      "estimated_energy": 4.816896e-06
-    },
-    {
-      "source": 47,
-      "destination": 48,
-      "tensor_shape": [
-        1,
-        48,
-        56,
-        56
-      ],
-      "tensor_bytes": 602112,
-      "estimated_latency": 1.2142240000000002e-05,
-      "estimated_energy": 4.816896e-06
-    },
-    {
-      "source": 38,
-      "destination": 48,
-      "tensor_shape": [
-        1,
-        48,
-        56,
-        56
+        3136
       ],
       "tensor_bytes": 602112,
       "estimated_latency": 1.2142240000000002e-05,
@@ -6717,6 +6720,19 @@
       "destination": 49,
       "tensor_shape": [
         1,
+        64,
+        56,
+        56
+      ],
+      "tensor_bytes": 802816,
+      "estimated_latency": 1.6156319999999998e-05,
+      "estimated_energy": 6.422528e-06
+    },
+    {
+      "source": 49,
+      "destination": 50,
+      "tensor_shape": [
+        1,
         48,
         56,
         56
@@ -6726,12 +6742,36 @@
       "estimated_energy": 4.816896e-06
     },
     {
-      "source": 49,
-      "destination": 50,
+      "source": 50,
+      "destination": 51,
       "tensor_shape": [
         1,
         48,
         3136
+      ],
+      "tensor_bytes": 602112,
+      "estimated_latency": 1.2142240000000002e-05,
+      "estimated_energy": 4.816896e-06
+    },
+    {
+      "source": 47,
+      "destination": 52,
+      "tensor_shape": [
+        1,
+        3136,
+        48
+      ],
+      "tensor_bytes": 602112,
+      "estimated_latency": 1.2142240000000002e-05,
+      "estimated_energy": 4.816896e-06
+    },
+    {
+      "source": 51,
+      "destination": 52,
+      "tensor_shape": [
+        1,
+        3136,
+        48
       ],
       "tensor_bytes": 602112,
       "estimated_latency": 1.2142240000000002e-05,
@@ -6742,9 +6782,8 @@
       "destination": 53,
       "tensor_shape": [
         1,
-        48,
-        56,
-        56
+        3136,
+        48
       ],
       "tensor_bytes": 602112,
       "estimated_latency": 1.2142240000000002e-05,
@@ -6753,18 +6792,6 @@
     {
       "source": 53,
       "destination": 54,
-      "tensor_shape": [
-        1,
-        48,
-        3136
-      ],
-      "tensor_bytes": 602112,
-      "estimated_latency": 1.2142240000000002e-05,
-      "estimated_energy": 4.816896e-06
-    },
-    {
-      "source": 50,
-      "destination": 55,
       "tensor_shape": [
         1,
         3136,
@@ -6780,42 +6807,6 @@
       "tensor_shape": [
         1,
         3136,
-        48
-      ],
-      "tensor_bytes": 602112,
-      "estimated_latency": 1.2142240000000002e-05,
-      "estimated_energy": 4.816896e-06
-    },
-    {
-      "source": 55,
-      "destination": 56,
-      "tensor_shape": [
-        1,
-        3136,
-        48
-      ],
-      "tensor_bytes": 602112,
-      "estimated_latency": 1.2142240000000002e-05,
-      "estimated_energy": 4.816896e-06
-    },
-    {
-      "source": 56,
-      "destination": 57,
-      "tensor_shape": [
-        1,
-        3136,
-        48
-      ],
-      "tensor_bytes": 602112,
-      "estimated_latency": 1.2142240000000002e-05,
-      "estimated_energy": 4.816896e-06
-    },
-    {
-      "source": 57,
-      "destination": 58,
-      "tensor_shape": [
-        1,
-        3136,
         144
       ],
       "tensor_bytes": 1806336,
@@ -6823,13 +6814,55 @@
       "estimated_energy": 1.4450688e-05
     },
     {
-      "source": 58,
+      "source": 55,
+      "destination": 56,
+      "tensor_shape": [
+        1,
+        3136,
+        3,
+        8,
+        6
+      ],
+      "tensor_bytes": 1806336,
+      "estimated_latency": 3.6226720000000005e-05,
+      "estimated_energy": 1.4450688e-05
+    },
+    {
+      "source": 56,
+      "destination": 57,
+      "tensor_shape": [
+        3,
+        1,
+        8,
+        3136,
+        6
+      ],
+      "tensor_bytes": 1806336,
+      "estimated_latency": 3.6226720000000005e-05,
+      "estimated_energy": 1.4450688e-05
+    },
+    {
+      "source": 56,
+      "destination": 58,
+      "tensor_shape": [
+        3,
+        1,
+        8,
+        3136,
+        6
+      ],
+      "tensor_bytes": 1806336,
+      "estimated_latency": 3.6226720000000005e-05,
+      "estimated_energy": 1.4450688e-05
+    },
+    {
+      "source": 56,
       "destination": 59,
       "tensor_shape": [
-        1,
-        3136,
         3,
+        1,
         8,
+        3136,
         6
       ],
       "tensor_bytes": 1806336,
@@ -6837,46 +6870,43 @@
       "estimated_energy": 1.4450688e-05
     },
     {
-      "source": 59,
+      "source": 57,
       "destination": 60,
       "tensor_shape": [
-        3,
         1,
         8,
         3136,
         6
       ],
-      "tensor_bytes": 1806336,
-      "estimated_latency": 3.6226720000000005e-05,
-      "estimated_energy": 1.4450688e-05
+      "tensor_bytes": 602112,
+      "estimated_latency": 1.2142240000000002e-05,
+      "estimated_energy": 4.816896e-06
     },
     {
-      "source": 59,
+      "source": 58,
       "destination": 61,
       "tensor_shape": [
-        3,
         1,
         8,
         3136,
         6
       ],
-      "tensor_bytes": 1806336,
-      "estimated_latency": 3.6226720000000005e-05,
-      "estimated_energy": 1.4450688e-05
+      "tensor_bytes": 602112,
+      "estimated_latency": 1.2142240000000002e-05,
+      "estimated_energy": 4.816896e-06
     },
     {
       "source": 59,
       "destination": 62,
       "tensor_shape": [
-        3,
         1,
         8,
         3136,
         6
       ],
-      "tensor_bytes": 1806336,
-      "estimated_latency": 3.6226720000000005e-05,
-      "estimated_energy": 1.4450688e-05
+      "tensor_bytes": 602112,
+      "estimated_latency": 1.2142240000000002e-05,
+      "estimated_energy": 4.816896e-06
     },
     {
       "source": 60,
@@ -6884,8 +6914,8 @@
       "tensor_shape": [
         1,
         8,
-        3136,
-        6
+        6,
+        3136
       ],
       "tensor_bytes": 602112,
       "estimated_latency": 1.2142240000000002e-05,
@@ -6897,21 +6927,8 @@
       "tensor_shape": [
         1,
         8,
-        3136,
-        6
-      ],
-      "tensor_bytes": 602112,
-      "estimated_latency": 1.2142240000000002e-05,
-      "estimated_energy": 4.816896e-06
-    },
-    {
-      "source": 62,
-      "destination": 65,
-      "tensor_shape": [
-        1,
-        8,
-        3136,
-        6
+        6,
+        3136
       ],
       "tensor_bytes": 602112,
       "estimated_latency": 1.2142240000000002e-05,
@@ -6919,7 +6936,7 @@
     },
     {
       "source": 63,
-      "destination": 66,
+      "destination": 65,
       "tensor_shape": [
         1,
         8,
@@ -6932,7 +6949,7 @@
     },
     {
       "source": 64,
-      "destination": 67,
+      "destination": 65,
       "tensor_shape": [
         1,
         8,
@@ -6944,8 +6961,34 @@
       "estimated_energy": 4.816896e-06
     },
     {
+      "source": 65,
+      "destination": 66,
+      "tensor_shape": [
+        1,
+        8,
+        6,
+        6
+      ],
+      "tensor_bytes": 1152,
+      "estimated_latency": 1.2304e-07,
+      "estimated_energy": 9.216e-09
+    },
+    {
       "source": 66,
-      "destination": 68,
+      "destination": 67,
+      "tensor_shape": [
+        1,
+        8,
+        6,
+        6
+      ],
+      "tensor_bytes": 1152,
+      "estimated_latency": 1.2304e-07,
+      "estimated_energy": 9.216e-09
+    },
+    {
+      "source": 62,
+      "destination": 67,
       "tensor_shape": [
         1,
         8,
@@ -6974,35 +7017,21 @@
       "destination": 69,
       "tensor_shape": [
         1,
+        3136,
         8,
-        6,
         6
       ],
-      "tensor_bytes": 1152,
-      "estimated_latency": 1.2304e-07,
-      "estimated_energy": 9.216e-09
+      "tensor_bytes": 602112,
+      "estimated_latency": 1.2142240000000002e-05,
+      "estimated_energy": 4.816896e-06
     },
     {
       "source": 69,
       "destination": 70,
       "tensor_shape": [
         1,
-        8,
-        6,
-        6
-      ],
-      "tensor_bytes": 1152,
-      "estimated_latency": 1.2304e-07,
-      "estimated_energy": 9.216e-09
-    },
-    {
-      "source": 65,
-      "destination": 70,
-      "tensor_shape": [
-        1,
-        8,
-        6,
-        3136
+        3136,
+        48
       ],
       "tensor_bytes": 602112,
       "estimated_latency": 1.2142240000000002e-05,
@@ -7013,9 +7042,8 @@
       "destination": 71,
       "tensor_shape": [
         1,
-        8,
-        6,
-        3136
+        3136,
+        48
       ],
       "tensor_bytes": 602112,
       "estimated_latency": 1.2142240000000002e-05,
@@ -7027,8 +7055,19 @@
       "tensor_shape": [
         1,
         3136,
-        8,
-        6
+        48
+      ],
+      "tensor_bytes": 602112,
+      "estimated_latency": 1.2142240000000002e-05,
+      "estimated_energy": 4.816896e-06
+    },
+    {
+      "source": 52,
+      "destination": 72,
+      "tensor_shape": [
+        1,
+        3136,
+        48
       ],
       "tensor_bytes": 602112,
       "estimated_latency": 1.2142240000000002e-05,
@@ -7051,7 +7090,8 @@
       "destination": 74,
       "tensor_shape": [
         1,
-        3136,
+        56,
+        56,
         48
       ],
       "tensor_bytes": 602112,
@@ -7063,19 +7103,8 @@
       "destination": 75,
       "tensor_shape": [
         1,
-        3136,
-        48
-      ],
-      "tensor_bytes": 602112,
-      "estimated_latency": 1.2142240000000002e-05,
-      "estimated_energy": 4.816896e-06
-    },
-    {
-      "source": 55,
-      "destination": 75,
-      "tensor_shape": [
-        1,
-        3136,
+        56,
+        56,
         48
       ],
       "tensor_bytes": 602112,
@@ -7087,12 +7116,13 @@
       "destination": 76,
       "tensor_shape": [
         1,
-        3136,
-        48
+        56,
+        56,
+        288
       ],
-      "tensor_bytes": 602112,
-      "estimated_latency": 1.2142240000000002e-05,
-      "estimated_energy": 4.816896e-06
+      "tensor_bytes": 3612672,
+      "estimated_latency": 7.235344000000001e-05,
+      "estimated_energy": 2.8901376e-05
     },
     {
       "source": 76,
@@ -7101,11 +7131,11 @@
         1,
         56,
         56,
-        48
+        288
       ],
-      "tensor_bytes": 602112,
-      "estimated_latency": 1.2142240000000002e-05,
-      "estimated_energy": 4.816896e-06
+      "tensor_bytes": 3612672,
+      "estimated_latency": 7.235344000000001e-05,
+      "estimated_energy": 2.8901376e-05
     },
     {
       "source": 77,
@@ -7127,33 +7157,59 @@
         1,
         56,
         56,
-        288
+        48
       ],
-      "tensor_bytes": 3612672,
-      "estimated_latency": 7.235344000000001e-05,
-      "estimated_energy": 2.8901376e-05
+      "tensor_bytes": 602112,
+      "estimated_latency": 1.2142240000000002e-05,
+      "estimated_energy": 4.816896e-06
     },
     {
       "source": 79,
       "destination": 80,
       "tensor_shape": [
         1,
+        48,
         56,
-        56,
-        288
+        56
       ],
-      "tensor_bytes": 3612672,
-      "estimated_latency": 7.235344000000001e-05,
-      "estimated_energy": 2.8901376e-05
+      "tensor_bytes": 602112,
+      "estimated_latency": 1.2142240000000002e-05,
+      "estimated_energy": 4.816896e-06
     },
     {
       "source": 80,
       "destination": 81,
       "tensor_shape": [
         1,
+        48,
         56,
+        56
+      ],
+      "tensor_bytes": 602112,
+      "estimated_latency": 1.2142240000000002e-05,
+      "estimated_energy": 4.816896e-06
+    },
+    {
+      "source": 45,
+      "destination": 81,
+      "tensor_shape": [
+        1,
+        48,
         56,
-        48
+        56
+      ],
+      "tensor_bytes": 602112,
+      "estimated_latency": 1.2142240000000002e-05,
+      "estimated_energy": 4.816896e-06
+    },
+    {
+      "source": 16,
+      "destination": 82,
+      "tensor_shape": [
+        1,
+        48,
+        56,
+        56
       ],
       "tensor_bytes": 602112,
       "estimated_latency": 1.2142240000000002e-05,
@@ -7164,52 +7220,65 @@
       "destination": 82,
       "tensor_shape": [
         1,
+        48,
         56,
-        56,
-        48
+        56
       ],
       "tensor_bytes": 602112,
       "estimated_latency": 1.2142240000000002e-05,
       "estimated_energy": 4.816896e-06
+    },
+    {
+      "source": 2,
+      "destination": 82,
+      "tensor_shape": [
+        1,
+        3,
+        56,
+        56
+      ],
+      "tensor_bytes": 37632,
+      "estimated_latency": 8.5264e-07,
+      "estimated_energy": 3.01056e-07
     },
     {
       "source": 82,
       "destination": 83,
       "tensor_shape": [
         1,
-        48,
+        99,
         56,
         56
       ],
-      "tensor_bytes": 602112,
-      "estimated_latency": 1.2142240000000002e-05,
-      "estimated_energy": 4.816896e-06
+      "tensor_bytes": 1241856,
+      "estimated_latency": 2.493712e-05,
+      "estimated_energy": 9.934848e-06
     },
     {
       "source": 83,
       "destination": 84,
       "tensor_shape": [
         1,
-        48,
-        56,
-        56
+        80,
+        28,
+        28
       ],
-      "tensor_bytes": 602112,
-      "estimated_latency": 1.2142240000000002e-05,
-      "estimated_energy": 4.816896e-06
+      "tensor_bytes": 250880,
+      "estimated_latency": 5.1176e-06,
+      "estimated_energy": 2.00704e-06
     },
     {
-      "source": 48,
-      "destination": 84,
+      "source": 84,
+      "destination": 85,
       "tensor_shape": [
         1,
-        48,
-        56,
-        56
+        80,
+        28,
+        28
       ],
-      "tensor_bytes": 602112,
-      "estimated_latency": 1.2142240000000002e-05,
-      "estimated_energy": 4.816896e-06
+      "tensor_bytes": 250880,
+      "estimated_latency": 5.1176e-06,
+      "estimated_energy": 2.00704e-06
     },
     {
       "source": 85,
@@ -7229,9 +7298,9 @@
       "destination": 87,
       "tensor_shape": [
         1,
-        80,
         28,
-        28
+        28,
+        80
       ],
       "tensor_bytes": 250880,
       "estimated_latency": 5.1176e-06,
@@ -7242,13 +7311,13 @@
       "destination": 88,
       "tensor_shape": [
         1,
-        80,
         28,
-        28
+        28,
+        480
       ],
-      "tensor_bytes": 250880,
-      "estimated_latency": 5.1176e-06,
-      "estimated_energy": 2.00704e-06
+      "tensor_bytes": 1505280,
+      "estimated_latency": 3.0205599999999998e-05,
+      "estimated_energy": 1.2042239999999999e-05
     },
     {
       "source": 88,
@@ -7257,11 +7326,11 @@
         1,
         28,
         28,
-        80
+        480
       ],
-      "tensor_bytes": 250880,
-      "estimated_latency": 5.1176e-06,
-      "estimated_energy": 2.00704e-06
+      "tensor_bytes": 1505280,
+      "estimated_latency": 3.0205599999999998e-05,
+      "estimated_energy": 1.2042239999999999e-05
     },
     {
       "source": 89,
@@ -7270,11 +7339,11 @@
         1,
         28,
         28,
-        480
+        80
       ],
-      "tensor_bytes": 1505280,
-      "estimated_latency": 3.0205599999999998e-05,
-      "estimated_energy": 1.2042239999999999e-05
+      "tensor_bytes": 250880,
+      "estimated_latency": 5.1176e-06,
+      "estimated_energy": 2.00704e-06
     },
     {
       "source": 90,
@@ -7283,20 +7352,20 @@
         1,
         28,
         28,
-        480
+        80
       ],
-      "tensor_bytes": 1505280,
-      "estimated_latency": 3.0205599999999998e-05,
-      "estimated_energy": 1.2042239999999999e-05
+      "tensor_bytes": 250880,
+      "estimated_latency": 5.1176e-06,
+      "estimated_energy": 2.00704e-06
     },
     {
       "source": 91,
       "destination": 92,
       "tensor_shape": [
         1,
+        80,
         28,
-        28,
-        80
+        28
       ],
       "tensor_bytes": 250880,
       "estimated_latency": 5.1176e-06,
@@ -7307,9 +7376,22 @@
       "destination": 93,
       "tensor_shape": [
         1,
+        80,
         28,
+        28
+      ],
+      "tensor_bytes": 250880,
+      "estimated_latency": 5.1176e-06,
+      "estimated_energy": 2.00704e-06
+    },
+    {
+      "source": 83,
+      "destination": 93,
+      "tensor_shape": [
+        1,
+        80,
         28,
-        80
+        28
       ],
       "tensor_bytes": 250880,
       "estimated_latency": 5.1176e-06,
@@ -7342,19 +7424,6 @@
       "estimated_energy": 2.00704e-06
     },
     {
-      "source": 85,
-      "destination": 95,
-      "tensor_shape": [
-        1,
-        80,
-        28,
-        28
-      ],
-      "tensor_bytes": 250880,
-      "estimated_latency": 5.1176e-06,
-      "estimated_energy": 2.00704e-06
-    },
-    {
       "source": 95,
       "destination": 96,
       "tensor_shape": [
@@ -7372,9 +7441,9 @@
       "destination": 97,
       "tensor_shape": [
         1,
-        80,
         28,
-        28
+        28,
+        80
       ],
       "tensor_bytes": 250880,
       "estimated_latency": 5.1176e-06,
@@ -7385,13 +7454,13 @@
       "destination": 98,
       "tensor_shape": [
         1,
-        80,
         28,
-        28
+        28,
+        480
       ],
-      "tensor_bytes": 250880,
-      "estimated_latency": 5.1176e-06,
-      "estimated_energy": 2.00704e-06
+      "tensor_bytes": 1505280,
+      "estimated_latency": 3.0205599999999998e-05,
+      "estimated_energy": 1.2042239999999999e-05
     },
     {
       "source": 98,
@@ -7400,11 +7469,11 @@
         1,
         28,
         28,
-        80
+        480
       ],
-      "tensor_bytes": 250880,
-      "estimated_latency": 5.1176e-06,
-      "estimated_energy": 2.00704e-06
+      "tensor_bytes": 1505280,
+      "estimated_latency": 3.0205599999999998e-05,
+      "estimated_energy": 1.2042239999999999e-05
     },
     {
       "source": 99,
@@ -7413,11 +7482,11 @@
         1,
         28,
         28,
-        480
+        80
       ],
-      "tensor_bytes": 1505280,
-      "estimated_latency": 3.0205599999999998e-05,
-      "estimated_energy": 1.2042239999999999e-05
+      "tensor_bytes": 250880,
+      "estimated_latency": 5.1176e-06,
+      "estimated_energy": 2.00704e-06
     },
     {
       "source": 100,
@@ -7426,20 +7495,20 @@
         1,
         28,
         28,
-        480
+        80
       ],
-      "tensor_bytes": 1505280,
-      "estimated_latency": 3.0205599999999998e-05,
-      "estimated_energy": 1.2042239999999999e-05
+      "tensor_bytes": 250880,
+      "estimated_latency": 5.1176e-06,
+      "estimated_energy": 2.00704e-06
     },
     {
       "source": 101,
       "destination": 102,
       "tensor_shape": [
         1,
+        80,
         28,
-        28,
-        80
+        28
       ],
       "tensor_bytes": 250880,
       "estimated_latency": 5.1176e-06,
@@ -7450,9 +7519,22 @@
       "destination": 103,
       "tensor_shape": [
         1,
+        80,
         28,
+        28
+      ],
+      "tensor_bytes": 250880,
+      "estimated_latency": 5.1176e-06,
+      "estimated_energy": 2.00704e-06
+    },
+    {
+      "source": 93,
+      "destination": 103,
+      "tensor_shape": [
+        1,
+        80,
         28,
-        80
+        28
       ],
       "tensor_bytes": 250880,
       "estimated_latency": 5.1176e-06,
@@ -7485,19 +7567,6 @@
       "estimated_energy": 2.00704e-06
     },
     {
-      "source": 95,
-      "destination": 105,
-      "tensor_shape": [
-        1,
-        80,
-        28,
-        28
-      ],
-      "tensor_bytes": 250880,
-      "estimated_latency": 5.1176e-06,
-      "estimated_energy": 2.00704e-06
-    },
-    {
       "source": 105,
       "destination": 106,
       "tensor_shape": [
@@ -7515,9 +7584,9 @@
       "destination": 107,
       "tensor_shape": [
         1,
-        80,
         28,
-        28
+        28,
+        80
       ],
       "tensor_bytes": 250880,
       "estimated_latency": 5.1176e-06,
@@ -7528,13 +7597,13 @@
       "destination": 108,
       "tensor_shape": [
         1,
-        80,
         28,
-        28
+        28,
+        480
       ],
-      "tensor_bytes": 250880,
-      "estimated_latency": 5.1176e-06,
-      "estimated_energy": 2.00704e-06
+      "tensor_bytes": 1505280,
+      "estimated_latency": 3.0205599999999998e-05,
+      "estimated_energy": 1.2042239999999999e-05
     },
     {
       "source": 108,
@@ -7543,11 +7612,11 @@
         1,
         28,
         28,
-        80
+        480
       ],
-      "tensor_bytes": 250880,
-      "estimated_latency": 5.1176e-06,
-      "estimated_energy": 2.00704e-06
+      "tensor_bytes": 1505280,
+      "estimated_latency": 3.0205599999999998e-05,
+      "estimated_energy": 1.2042239999999999e-05
     },
     {
       "source": 109,
@@ -7556,11 +7625,11 @@
         1,
         28,
         28,
-        480
+        80
       ],
-      "tensor_bytes": 1505280,
-      "estimated_latency": 3.0205599999999998e-05,
-      "estimated_energy": 1.2042239999999999e-05
+      "tensor_bytes": 250880,
+      "estimated_latency": 5.1176e-06,
+      "estimated_energy": 2.00704e-06
     },
     {
       "source": 110,
@@ -7569,20 +7638,20 @@
         1,
         28,
         28,
-        480
+        80
       ],
-      "tensor_bytes": 1505280,
-      "estimated_latency": 3.0205599999999998e-05,
-      "estimated_energy": 1.2042239999999999e-05
+      "tensor_bytes": 250880,
+      "estimated_latency": 5.1176e-06,
+      "estimated_energy": 2.00704e-06
     },
     {
       "source": 111,
       "destination": 112,
       "tensor_shape": [
         1,
+        80,
         28,
-        28,
-        80
+        28
       ],
       "tensor_bytes": 250880,
       "estimated_latency": 5.1176e-06,
@@ -7593,9 +7662,22 @@
       "destination": 113,
       "tensor_shape": [
         1,
+        80,
         28,
+        28
+      ],
+      "tensor_bytes": 250880,
+      "estimated_latency": 5.1176e-06,
+      "estimated_energy": 2.00704e-06
+    },
+    {
+      "source": 103,
+      "destination": 113,
+      "tensor_shape": [
+        1,
+        80,
         28,
-        80
+        28
       ],
       "tensor_bytes": 250880,
       "estimated_latency": 5.1176e-06,
@@ -7620,21 +7702,7 @@
       "tensor_shape": [
         1,
         80,
-        28,
-        28
-      ],
-      "tensor_bytes": 250880,
-      "estimated_latency": 5.1176e-06,
-      "estimated_energy": 2.00704e-06
-    },
-    {
-      "source": 105,
-      "destination": 115,
-      "tensor_shape": [
-        1,
-        80,
-        28,
-        28
+        784
       ],
       "tensor_bytes": 250880,
       "estimated_latency": 5.1176e-06,
@@ -7645,9 +7713,8 @@
       "destination": 116,
       "tensor_shape": [
         1,
-        80,
-        28,
-        28
+        784,
+        80
       ],
       "tensor_bytes": 250880,
       "estimated_latency": 5.1176e-06,
@@ -7658,8 +7725,8 @@
       "destination": 117,
       "tensor_shape": [
         1,
-        80,
-        784
+        784,
+        80
       ],
       "tensor_bytes": 250880,
       "estimated_latency": 5.1176e-06,
@@ -7671,30 +7738,6 @@
       "tensor_shape": [
         1,
         784,
-        80
-      ],
-      "tensor_bytes": 250880,
-      "estimated_latency": 5.1176e-06,
-      "estimated_energy": 2.00704e-06
-    },
-    {
-      "source": 118,
-      "destination": 119,
-      "tensor_shape": [
-        1,
-        784,
-        80
-      ],
-      "tensor_bytes": 250880,
-      "estimated_latency": 5.1176e-06,
-      "estimated_energy": 2.00704e-06
-    },
-    {
-      "source": 119,
-      "destination": 120,
-      "tensor_shape": [
-        1,
-        784,
         240
       ],
       "tensor_bytes": 752640,
@@ -7702,8 +7745,8 @@
       "estimated_energy": 6.0211199999999995e-06
     },
     {
-      "source": 120,
-      "destination": 121,
+      "source": 118,
+      "destination": 119,
       "tensor_shape": [
         1,
         784,
@@ -7716,7 +7759,35 @@
       "estimated_energy": 6.0211199999999995e-06
     },
     {
-      "source": 121,
+      "source": 119,
+      "destination": 120,
+      "tensor_shape": [
+        3,
+        1,
+        8,
+        784,
+        10
+      ],
+      "tensor_bytes": 752640,
+      "estimated_latency": 1.51528e-05,
+      "estimated_energy": 6.0211199999999995e-06
+    },
+    {
+      "source": 119,
+      "destination": 121,
+      "tensor_shape": [
+        3,
+        1,
+        8,
+        784,
+        10
+      ],
+      "tensor_bytes": 752640,
+      "estimated_latency": 1.51528e-05,
+      "estimated_energy": 6.0211199999999995e-06
+    },
+    {
+      "source": 119,
       "destination": 122,
       "tensor_shape": [
         3,
@@ -7730,32 +7801,30 @@
       "estimated_energy": 6.0211199999999995e-06
     },
     {
-      "source": 121,
+      "source": 120,
       "destination": 123,
       "tensor_shape": [
-        3,
         1,
         8,
         784,
         10
       ],
-      "tensor_bytes": 752640,
-      "estimated_latency": 1.51528e-05,
-      "estimated_energy": 6.0211199999999995e-06
+      "tensor_bytes": 250880,
+      "estimated_latency": 5.1176e-06,
+      "estimated_energy": 2.00704e-06
     },
     {
       "source": 121,
       "destination": 124,
       "tensor_shape": [
-        3,
         1,
         8,
         784,
         10
       ],
-      "tensor_bytes": 752640,
-      "estimated_latency": 1.51528e-05,
-      "estimated_energy": 6.0211199999999995e-06
+      "tensor_bytes": 250880,
+      "estimated_latency": 5.1176e-06,
+      "estimated_energy": 2.00704e-06
     },
     {
       "source": 122,
@@ -7776,8 +7845,8 @@
       "tensor_shape": [
         1,
         8,
-        784,
-        10
+        10,
+        784
       ],
       "tensor_bytes": 250880,
       "estimated_latency": 5.1176e-06,
@@ -7786,19 +7855,6 @@
     {
       "source": 124,
       "destination": 127,
-      "tensor_shape": [
-        1,
-        8,
-        784,
-        10
-      ],
-      "tensor_bytes": 250880,
-      "estimated_latency": 5.1176e-06,
-      "estimated_energy": 2.00704e-06
-    },
-    {
-      "source": 125,
-      "destination": 128,
       "tensor_shape": [
         1,
         8,
@@ -7811,7 +7867,20 @@
     },
     {
       "source": 126,
-      "destination": 129,
+      "destination": 128,
+      "tensor_shape": [
+        1,
+        8,
+        10,
+        784
+      ],
+      "tensor_bytes": 250880,
+      "estimated_latency": 5.1176e-06,
+      "estimated_energy": 2.00704e-06
+    },
+    {
+      "source": 127,
+      "destination": 128,
       "tensor_shape": [
         1,
         8,
@@ -7824,19 +7893,32 @@
     },
     {
       "source": 128,
+      "destination": 129,
+      "tensor_shape": [
+        1,
+        8,
+        10,
+        10
+      ],
+      "tensor_bytes": 3200,
+      "estimated_latency": 1.6399999999999999e-07,
+      "estimated_energy": 2.56e-08
+    },
+    {
+      "source": 129,
       "destination": 130,
       "tensor_shape": [
         1,
         8,
         10,
-        784
+        10
       ],
-      "tensor_bytes": 250880,
-      "estimated_latency": 5.1176e-06,
-      "estimated_energy": 2.00704e-06
+      "tensor_bytes": 3200,
+      "estimated_latency": 1.6399999999999999e-07,
+      "estimated_energy": 2.56e-08
     },
     {
-      "source": 129,
+      "source": 125,
       "destination": 130,
       "tensor_shape": [
         1,
@@ -7855,54 +7937,15 @@
         1,
         8,
         10,
-        10
+        784
       ],
-      "tensor_bytes": 3200,
-      "estimated_latency": 1.6399999999999999e-07,
-      "estimated_energy": 2.56e-08
+      "tensor_bytes": 250880,
+      "estimated_latency": 5.1176e-06,
+      "estimated_energy": 2.00704e-06
     },
     {
       "source": 131,
       "destination": 132,
-      "tensor_shape": [
-        1,
-        8,
-        10,
-        10
-      ],
-      "tensor_bytes": 3200,
-      "estimated_latency": 1.6399999999999999e-07,
-      "estimated_energy": 2.56e-08
-    },
-    {
-      "source": 127,
-      "destination": 132,
-      "tensor_shape": [
-        1,
-        8,
-        10,
-        784
-      ],
-      "tensor_bytes": 250880,
-      "estimated_latency": 5.1176e-06,
-      "estimated_energy": 2.00704e-06
-    },
-    {
-      "source": 132,
-      "destination": 133,
-      "tensor_shape": [
-        1,
-        8,
-        10,
-        784
-      ],
-      "tensor_bytes": 250880,
-      "estimated_latency": 5.1176e-06,
-      "estimated_energy": 2.00704e-06
-    },
-    {
-      "source": 133,
-      "destination": 134,
       "tensor_shape": [
         1,
         784,
@@ -7914,7 +7957,43 @@
       "estimated_energy": 2.00704e-06
     },
     {
+      "source": 132,
+      "destination": 133,
+      "tensor_shape": [
+        1,
+        784,
+        80
+      ],
+      "tensor_bytes": 250880,
+      "estimated_latency": 5.1176e-06,
+      "estimated_energy": 2.00704e-06
+    },
+    {
+      "source": 133,
+      "destination": 134,
+      "tensor_shape": [
+        1,
+        784,
+        80
+      ],
+      "tensor_bytes": 250880,
+      "estimated_latency": 5.1176e-06,
+      "estimated_energy": 2.00704e-06
+    },
+    {
       "source": 134,
+      "destination": 135,
+      "tensor_shape": [
+        1,
+        784,
+        80
+      ],
+      "tensor_bytes": 250880,
+      "estimated_latency": 5.1176e-06,
+      "estimated_energy": 2.00704e-06
+    },
+    {
+      "source": 115,
       "destination": 135,
       "tensor_shape": [
         1,
@@ -7942,19 +8021,8 @@
       "destination": 137,
       "tensor_shape": [
         1,
-        784,
-        80
-      ],
-      "tensor_bytes": 250880,
-      "estimated_latency": 5.1176e-06,
-      "estimated_energy": 2.00704e-06
-    },
-    {
-      "source": 117,
-      "destination": 137,
-      "tensor_shape": [
-        1,
-        784,
+        28,
+        28,
         80
       ],
       "tensor_bytes": 250880,
@@ -7966,7 +8034,8 @@
       "destination": 138,
       "tensor_shape": [
         1,
-        784,
+        28,
+        28,
         80
       ],
       "tensor_bytes": 250880,
@@ -7980,11 +8049,11 @@
         1,
         28,
         28,
-        80
+        480
       ],
-      "tensor_bytes": 250880,
-      "estimated_latency": 5.1176e-06,
-      "estimated_energy": 2.00704e-06
+      "tensor_bytes": 1505280,
+      "estimated_latency": 3.0205599999999998e-05,
+      "estimated_energy": 1.2042239999999999e-05
     },
     {
       "source": 139,
@@ -7993,11 +8062,11 @@
         1,
         28,
         28,
-        80
+        480
       ],
-      "tensor_bytes": 250880,
-      "estimated_latency": 5.1176e-06,
-      "estimated_energy": 2.00704e-06
+      "tensor_bytes": 1505280,
+      "estimated_latency": 3.0205599999999998e-05,
+      "estimated_energy": 1.2042239999999999e-05
     },
     {
       "source": 140,
@@ -8006,11 +8075,11 @@
         1,
         28,
         28,
-        480
+        80
       ],
-      "tensor_bytes": 1505280,
-      "estimated_latency": 3.0205599999999998e-05,
-      "estimated_energy": 1.2042239999999999e-05
+      "tensor_bytes": 250880,
+      "estimated_latency": 5.1176e-06,
+      "estimated_energy": 2.00704e-06
     },
     {
       "source": 141,
@@ -8019,20 +8088,20 @@
         1,
         28,
         28,
-        480
+        80
       ],
-      "tensor_bytes": 1505280,
-      "estimated_latency": 3.0205599999999998e-05,
-      "estimated_energy": 1.2042239999999999e-05
+      "tensor_bytes": 250880,
+      "estimated_latency": 5.1176e-06,
+      "estimated_energy": 2.00704e-06
     },
     {
       "source": 142,
       "destination": 143,
       "tensor_shape": [
         1,
+        80,
         28,
-        28,
-        80
+        28
       ],
       "tensor_bytes": 250880,
       "estimated_latency": 5.1176e-06,
@@ -8043,9 +8112,35 @@
       "destination": 144,
       "tensor_shape": [
         1,
+        80,
         28,
+        28
+      ],
+      "tensor_bytes": 250880,
+      "estimated_latency": 5.1176e-06,
+      "estimated_energy": 2.00704e-06
+    },
+    {
+      "source": 113,
+      "destination": 144,
+      "tensor_shape": [
+        1,
+        80,
         28,
-        80
+        28
+      ],
+      "tensor_bytes": 250880,
+      "estimated_latency": 5.1176e-06,
+      "estimated_energy": 2.00704e-06
+    },
+    {
+      "source": 83,
+      "destination": 145,
+      "tensor_shape": [
+        1,
+        80,
+        28,
+        28
       ],
       "tensor_bytes": 250880,
       "estimated_latency": 5.1176e-06,
@@ -8065,30 +8160,43 @@
       "estimated_energy": 2.00704e-06
     },
     {
+      "source": 5,
+      "destination": 145,
+      "tensor_shape": [
+        1,
+        3,
+        28,
+        28
+      ],
+      "tensor_bytes": 9408,
+      "estimated_latency": 2.8816e-07,
+      "estimated_energy": 7.5264e-08
+    },
+    {
       "source": 145,
       "destination": 146,
       "tensor_shape": [
         1,
-        80,
+        163,
         28,
         28
       ],
-      "tensor_bytes": 250880,
-      "estimated_latency": 5.1176e-06,
-      "estimated_energy": 2.00704e-06
+      "tensor_bytes": 511168,
+      "estimated_latency": 1.032336e-05,
+      "estimated_energy": 4.089344e-06
     },
     {
-      "source": 115,
-      "destination": 146,
+      "source": 146,
+      "destination": 147,
       "tensor_shape": [
         1,
-        80,
-        28,
-        28
+        128,
+        14,
+        14
       ],
-      "tensor_bytes": 250880,
-      "estimated_latency": 5.1176e-06,
-      "estimated_energy": 2.00704e-06
+      "tensor_bytes": 100352,
+      "estimated_latency": 2.1070399999999997e-06,
+      "estimated_energy": 8.02816e-07
     },
     {
       "source": 147,
@@ -8121,9 +8229,9 @@
       "destination": 150,
       "tensor_shape": [
         1,
-        128,
         14,
-        14
+        14,
+        128
       ],
       "tensor_bytes": 100352,
       "estimated_latency": 2.1070399999999997e-06,
@@ -8136,11 +8244,11 @@
         1,
         14,
         14,
-        128
+        768
       ],
-      "tensor_bytes": 100352,
-      "estimated_latency": 2.1070399999999997e-06,
-      "estimated_energy": 8.02816e-07
+      "tensor_bytes": 602112,
+      "estimated_latency": 1.2142240000000002e-05,
+      "estimated_energy": 4.816896e-06
     },
     {
       "source": 151,
@@ -8162,11 +8270,11 @@
         1,
         14,
         14,
-        768
+        128
       ],
-      "tensor_bytes": 602112,
-      "estimated_latency": 1.2142240000000002e-05,
-      "estimated_energy": 4.816896e-06
+      "tensor_bytes": 100352,
+      "estimated_latency": 2.1070399999999997e-06,
+      "estimated_energy": 8.02816e-07
     },
     {
       "source": 153,
@@ -8186,9 +8294,9 @@
       "destination": 155,
       "tensor_shape": [
         1,
+        128,
         14,
-        14,
-        128
+        14
       ],
       "tensor_bytes": 100352,
       "estimated_latency": 2.1070399999999997e-06,
@@ -8208,8 +8316,8 @@
       "estimated_energy": 8.02816e-07
     },
     {
-      "source": 156,
-      "destination": 157,
+      "source": 146,
+      "destination": 156,
       "tensor_shape": [
         1,
         128,
@@ -8221,7 +8329,7 @@
       "estimated_energy": 8.02816e-07
     },
     {
-      "source": 147,
+      "source": 156,
       "destination": 157,
       "tensor_shape": [
         1,
@@ -8264,9 +8372,9 @@
       "destination": 160,
       "tensor_shape": [
         1,
-        128,
         14,
-        14
+        14,
+        128
       ],
       "tensor_bytes": 100352,
       "estimated_latency": 2.1070399999999997e-06,
@@ -8279,11 +8387,11 @@
         1,
         14,
         14,
-        128
+        768
       ],
-      "tensor_bytes": 100352,
-      "estimated_latency": 2.1070399999999997e-06,
-      "estimated_energy": 8.02816e-07
+      "tensor_bytes": 602112,
+      "estimated_latency": 1.2142240000000002e-05,
+      "estimated_energy": 4.816896e-06
     },
     {
       "source": 161,
@@ -8305,11 +8413,11 @@
         1,
         14,
         14,
-        768
+        128
       ],
-      "tensor_bytes": 602112,
-      "estimated_latency": 1.2142240000000002e-05,
-      "estimated_energy": 4.816896e-06
+      "tensor_bytes": 100352,
+      "estimated_latency": 2.1070399999999997e-06,
+      "estimated_energy": 8.02816e-07
     },
     {
       "source": 163,
@@ -8329,9 +8437,9 @@
       "destination": 165,
       "tensor_shape": [
         1,
+        128,
         14,
-        14,
-        128
+        14
       ],
       "tensor_bytes": 100352,
       "estimated_latency": 2.1070399999999997e-06,
@@ -8351,8 +8459,8 @@
       "estimated_energy": 8.02816e-07
     },
     {
-      "source": 166,
-      "destination": 167,
+      "source": 156,
+      "destination": 166,
       "tensor_shape": [
         1,
         128,
@@ -8364,7 +8472,7 @@
       "estimated_energy": 8.02816e-07
     },
     {
-      "source": 157,
+      "source": 166,
       "destination": 167,
       "tensor_shape": [
         1,
@@ -8407,9 +8515,9 @@
       "destination": 170,
       "tensor_shape": [
         1,
-        128,
         14,
-        14
+        14,
+        128
       ],
       "tensor_bytes": 100352,
       "estimated_latency": 2.1070399999999997e-06,
@@ -8422,11 +8530,11 @@
         1,
         14,
         14,
-        128
+        768
       ],
-      "tensor_bytes": 100352,
-      "estimated_latency": 2.1070399999999997e-06,
-      "estimated_energy": 8.02816e-07
+      "tensor_bytes": 602112,
+      "estimated_latency": 1.2142240000000002e-05,
+      "estimated_energy": 4.816896e-06
     },
     {
       "source": 171,
@@ -8448,11 +8556,11 @@
         1,
         14,
         14,
-        768
+        128
       ],
-      "tensor_bytes": 602112,
-      "estimated_latency": 1.2142240000000002e-05,
-      "estimated_energy": 4.816896e-06
+      "tensor_bytes": 100352,
+      "estimated_latency": 2.1070399999999997e-06,
+      "estimated_energy": 8.02816e-07
     },
     {
       "source": 173,
@@ -8472,9 +8580,9 @@
       "destination": 175,
       "tensor_shape": [
         1,
+        128,
         14,
-        14,
-        128
+        14
       ],
       "tensor_bytes": 100352,
       "estimated_latency": 2.1070399999999997e-06,
@@ -8494,8 +8602,8 @@
       "estimated_energy": 8.02816e-07
     },
     {
-      "source": 176,
-      "destination": 177,
+      "source": 166,
+      "destination": 176,
       "tensor_shape": [
         1,
         128,
@@ -8507,7 +8615,7 @@
       "estimated_energy": 8.02816e-07
     },
     {
-      "source": 167,
+      "source": 176,
       "destination": 177,
       "tensor_shape": [
         1,
@@ -8550,9 +8658,9 @@
       "destination": 180,
       "tensor_shape": [
         1,
-        128,
         14,
-        14
+        14,
+        128
       ],
       "tensor_bytes": 100352,
       "estimated_latency": 2.1070399999999997e-06,
@@ -8565,11 +8673,11 @@
         1,
         14,
         14,
-        128
+        768
       ],
-      "tensor_bytes": 100352,
-      "estimated_latency": 2.1070399999999997e-06,
-      "estimated_energy": 8.02816e-07
+      "tensor_bytes": 602112,
+      "estimated_latency": 1.2142240000000002e-05,
+      "estimated_energy": 4.816896e-06
     },
     {
       "source": 181,
@@ -8591,11 +8699,11 @@
         1,
         14,
         14,
-        768
+        128
       ],
-      "tensor_bytes": 602112,
-      "estimated_latency": 1.2142240000000002e-05,
-      "estimated_energy": 4.816896e-06
+      "tensor_bytes": 100352,
+      "estimated_latency": 2.1070399999999997e-06,
+      "estimated_energy": 8.02816e-07
     },
     {
       "source": 183,
@@ -8615,9 +8723,9 @@
       "destination": 185,
       "tensor_shape": [
         1,
+        128,
         14,
-        14,
-        128
+        14
       ],
       "tensor_bytes": 100352,
       "estimated_latency": 2.1070399999999997e-06,
@@ -8637,8 +8745,8 @@
       "estimated_energy": 8.02816e-07
     },
     {
-      "source": 186,
-      "destination": 187,
+      "source": 176,
+      "destination": 186,
       "tensor_shape": [
         1,
         128,
@@ -8650,7 +8758,7 @@
       "estimated_energy": 8.02816e-07
     },
     {
-      "source": 177,
+      "source": 186,
       "destination": 187,
       "tensor_shape": [
         1,
@@ -8693,9 +8801,9 @@
       "destination": 190,
       "tensor_shape": [
         1,
-        128,
         14,
-        14
+        14,
+        128
       ],
       "tensor_bytes": 100352,
       "estimated_latency": 2.1070399999999997e-06,
@@ -8708,11 +8816,11 @@
         1,
         14,
         14,
-        128
+        768
       ],
-      "tensor_bytes": 100352,
-      "estimated_latency": 2.1070399999999997e-06,
-      "estimated_energy": 8.02816e-07
+      "tensor_bytes": 602112,
+      "estimated_latency": 1.2142240000000002e-05,
+      "estimated_energy": 4.816896e-06
     },
     {
       "source": 191,
@@ -8734,11 +8842,11 @@
         1,
         14,
         14,
-        768
+        128
       ],
-      "tensor_bytes": 602112,
-      "estimated_latency": 1.2142240000000002e-05,
-      "estimated_energy": 4.816896e-06
+      "tensor_bytes": 100352,
+      "estimated_latency": 2.1070399999999997e-06,
+      "estimated_energy": 8.02816e-07
     },
     {
       "source": 193,
@@ -8758,9 +8866,9 @@
       "destination": 195,
       "tensor_shape": [
         1,
+        128,
         14,
-        14,
-        128
+        14
       ],
       "tensor_bytes": 100352,
       "estimated_latency": 2.1070399999999997e-06,
@@ -8780,8 +8888,8 @@
       "estimated_energy": 8.02816e-07
     },
     {
-      "source": 196,
-      "destination": 197,
+      "source": 186,
+      "destination": 196,
       "tensor_shape": [
         1,
         128,
@@ -8793,7 +8901,7 @@
       "estimated_energy": 8.02816e-07
     },
     {
-      "source": 187,
+      "source": 196,
       "destination": 197,
       "tensor_shape": [
         1,
@@ -8836,9 +8944,9 @@
       "destination": 200,
       "tensor_shape": [
         1,
-        128,
         14,
-        14
+        14,
+        128
       ],
       "tensor_bytes": 100352,
       "estimated_latency": 2.1070399999999997e-06,
@@ -8851,11 +8959,11 @@
         1,
         14,
         14,
-        128
+        768
       ],
-      "tensor_bytes": 100352,
-      "estimated_latency": 2.1070399999999997e-06,
-      "estimated_energy": 8.02816e-07
+      "tensor_bytes": 602112,
+      "estimated_latency": 1.2142240000000002e-05,
+      "estimated_energy": 4.816896e-06
     },
     {
       "source": 201,
@@ -8877,11 +8985,11 @@
         1,
         14,
         14,
-        768
+        128
       ],
-      "tensor_bytes": 602112,
-      "estimated_latency": 1.2142240000000002e-05,
-      "estimated_energy": 4.816896e-06
+      "tensor_bytes": 100352,
+      "estimated_latency": 2.1070399999999997e-06,
+      "estimated_energy": 8.02816e-07
     },
     {
       "source": 203,
@@ -8901,9 +9009,9 @@
       "destination": 205,
       "tensor_shape": [
         1,
+        128,
         14,
-        14,
-        128
+        14
       ],
       "tensor_bytes": 100352,
       "estimated_latency": 2.1070399999999997e-06,
@@ -8923,8 +9031,8 @@
       "estimated_energy": 8.02816e-07
     },
     {
-      "source": 206,
-      "destination": 207,
+      "source": 196,
+      "destination": 206,
       "tensor_shape": [
         1,
         128,
@@ -8936,7 +9044,7 @@
       "estimated_energy": 8.02816e-07
     },
     {
-      "source": 197,
+      "source": 206,
       "destination": 207,
       "tensor_shape": [
         1,
@@ -8979,9 +9087,9 @@
       "destination": 210,
       "tensor_shape": [
         1,
-        128,
         14,
-        14
+        14,
+        128
       ],
       "tensor_bytes": 100352,
       "estimated_latency": 2.1070399999999997e-06,
@@ -8994,11 +9102,11 @@
         1,
         14,
         14,
-        128
+        768
       ],
-      "tensor_bytes": 100352,
-      "estimated_latency": 2.1070399999999997e-06,
-      "estimated_energy": 8.02816e-07
+      "tensor_bytes": 602112,
+      "estimated_latency": 1.2142240000000002e-05,
+      "estimated_energy": 4.816896e-06
     },
     {
       "source": 211,
@@ -9020,11 +9128,11 @@
         1,
         14,
         14,
-        768
+        128
       ],
-      "tensor_bytes": 602112,
-      "estimated_latency": 1.2142240000000002e-05,
-      "estimated_energy": 4.816896e-06
+      "tensor_bytes": 100352,
+      "estimated_latency": 2.1070399999999997e-06,
+      "estimated_energy": 8.02816e-07
     },
     {
       "source": 213,
@@ -9044,9 +9152,9 @@
       "destination": 215,
       "tensor_shape": [
         1,
+        128,
         14,
-        14,
-        128
+        14
       ],
       "tensor_bytes": 100352,
       "estimated_latency": 2.1070399999999997e-06,
@@ -9066,8 +9174,8 @@
       "estimated_energy": 8.02816e-07
     },
     {
-      "source": 216,
-      "destination": 217,
+      "source": 206,
+      "destination": 216,
       "tensor_shape": [
         1,
         128,
@@ -9079,7 +9187,7 @@
       "estimated_energy": 8.02816e-07
     },
     {
-      "source": 207,
+      "source": 216,
       "destination": 217,
       "tensor_shape": [
         1,
@@ -9122,9 +9230,9 @@
       "destination": 220,
       "tensor_shape": [
         1,
-        128,
         14,
-        14
+        14,
+        128
       ],
       "tensor_bytes": 100352,
       "estimated_latency": 2.1070399999999997e-06,
@@ -9137,11 +9245,11 @@
         1,
         14,
         14,
-        128
+        768
       ],
-      "tensor_bytes": 100352,
-      "estimated_latency": 2.1070399999999997e-06,
-      "estimated_energy": 8.02816e-07
+      "tensor_bytes": 602112,
+      "estimated_latency": 1.2142240000000002e-05,
+      "estimated_energy": 4.816896e-06
     },
     {
       "source": 221,
@@ -9163,11 +9271,11 @@
         1,
         14,
         14,
-        768
+        128
       ],
-      "tensor_bytes": 602112,
-      "estimated_latency": 1.2142240000000002e-05,
-      "estimated_energy": 4.816896e-06
+      "tensor_bytes": 100352,
+      "estimated_latency": 2.1070399999999997e-06,
+      "estimated_energy": 8.02816e-07
     },
     {
       "source": 223,
@@ -9187,9 +9295,9 @@
       "destination": 225,
       "tensor_shape": [
         1,
+        128,
         14,
-        14,
-        128
+        14
       ],
       "tensor_bytes": 100352,
       "estimated_latency": 2.1070399999999997e-06,
@@ -9209,8 +9317,8 @@
       "estimated_energy": 8.02816e-07
     },
     {
-      "source": 226,
-      "destination": 227,
+      "source": 216,
+      "destination": 226,
       "tensor_shape": [
         1,
         128,
@@ -9222,7 +9330,7 @@
       "estimated_energy": 8.02816e-07
     },
     {
-      "source": 217,
+      "source": 226,
       "destination": 227,
       "tensor_shape": [
         1,
@@ -9265,9 +9373,9 @@
       "destination": 230,
       "tensor_shape": [
         1,
-        128,
         14,
-        14
+        14,
+        128
       ],
       "tensor_bytes": 100352,
       "estimated_latency": 2.1070399999999997e-06,
@@ -9280,11 +9388,11 @@
         1,
         14,
         14,
-        128
+        768
       ],
-      "tensor_bytes": 100352,
-      "estimated_latency": 2.1070399999999997e-06,
-      "estimated_energy": 8.02816e-07
+      "tensor_bytes": 602112,
+      "estimated_latency": 1.2142240000000002e-05,
+      "estimated_energy": 4.816896e-06
     },
     {
       "source": 231,
@@ -9306,11 +9414,11 @@
         1,
         14,
         14,
-        768
+        128
       ],
-      "tensor_bytes": 602112,
-      "estimated_latency": 1.2142240000000002e-05,
-      "estimated_energy": 4.816896e-06
+      "tensor_bytes": 100352,
+      "estimated_latency": 2.1070399999999997e-06,
+      "estimated_energy": 8.02816e-07
     },
     {
       "source": 233,
@@ -9330,9 +9438,9 @@
       "destination": 235,
       "tensor_shape": [
         1,
+        128,
         14,
-        14,
-        128
+        14
       ],
       "tensor_bytes": 100352,
       "estimated_latency": 2.1070399999999997e-06,
@@ -9340,6 +9448,19 @@
     },
     {
       "source": 235,
+      "destination": 236,
+      "tensor_shape": [
+        1,
+        128,
+        14,
+        14
+      ],
+      "tensor_bytes": 100352,
+      "estimated_latency": 2.1070399999999997e-06,
+      "estimated_energy": 8.02816e-07
+    },
+    {
+      "source": 226,
       "destination": 236,
       "tensor_shape": [
         1,
@@ -9365,26 +9486,12 @@
       "estimated_energy": 8.02816e-07
     },
     {
-      "source": 227,
-      "destination": 237,
-      "tensor_shape": [
-        1,
-        128,
-        14,
-        14
-      ],
-      "tensor_bytes": 100352,
-      "estimated_latency": 2.1070399999999997e-06,
-      "estimated_energy": 8.02816e-07
-    },
-    {
       "source": 237,
       "destination": 238,
       "tensor_shape": [
         1,
         128,
-        14,
-        14
+        196
       ],
       "tensor_bytes": 100352,
       "estimated_latency": 2.1070399999999997e-06,
@@ -9395,8 +9502,8 @@
       "destination": 239,
       "tensor_shape": [
         1,
-        128,
-        196
+        196,
+        128
       ],
       "tensor_bytes": 100352,
       "estimated_latency": 2.1070399999999997e-06,
@@ -9420,18 +9527,6 @@
       "tensor_shape": [
         1,
         196,
-        128
-      ],
-      "tensor_bytes": 100352,
-      "estimated_latency": 2.1070399999999997e-06,
-      "estimated_energy": 8.02816e-07
-    },
-    {
-      "source": 241,
-      "destination": 242,
-      "tensor_shape": [
-        1,
-        196,
         384
       ],
       "tensor_bytes": 301056,
@@ -9439,8 +9534,8 @@
       "estimated_energy": 2.408448e-06
     },
     {
-      "source": 242,
-      "destination": 243,
+      "source": 241,
+      "destination": 242,
       "tensor_shape": [
         1,
         196,
@@ -9453,7 +9548,21 @@
       "estimated_energy": 2.408448e-06
     },
     {
-      "source": 243,
+      "source": 242,
+      "destination": 243,
+      "tensor_shape": [
+        3,
+        1,
+        8,
+        196,
+        16
+      ],
+      "tensor_bytes": 301056,
+      "estimated_latency": 6.12112e-06,
+      "estimated_energy": 2.408448e-06
+    },
+    {
+      "source": 242,
       "destination": 244,
       "tensor_shape": [
         3,
@@ -9467,7 +9576,7 @@
       "estimated_energy": 2.408448e-06
     },
     {
-      "source": 243,
+      "source": 242,
       "destination": 245,
       "tensor_shape": [
         3,
@@ -9484,15 +9593,14 @@
       "source": 243,
       "destination": 246,
       "tensor_shape": [
-        3,
         1,
         8,
         196,
         16
       ],
-      "tensor_bytes": 301056,
-      "estimated_latency": 6.12112e-06,
-      "estimated_energy": 2.408448e-06
+      "tensor_bytes": 100352,
+      "estimated_latency": 2.1070399999999997e-06,
+      "estimated_energy": 8.02816e-07
     },
     {
       "source": 244,
@@ -9526,8 +9634,8 @@
       "tensor_shape": [
         1,
         8,
-        196,
-        16
+        16,
+        196
       ],
       "tensor_bytes": 100352,
       "estimated_latency": 2.1070399999999997e-06,
@@ -9547,7 +9655,7 @@
       "estimated_energy": 8.02816e-07
     },
     {
-      "source": 248,
+      "source": 249,
       "destination": 251,
       "tensor_shape": [
         1,
@@ -9561,7 +9669,7 @@
     },
     {
       "source": 250,
-      "destination": 252,
+      "destination": 251,
       "tensor_shape": [
         1,
         8,
@@ -9579,11 +9687,11 @@
         1,
         8,
         16,
-        196
+        16
       ],
-      "tensor_bytes": 100352,
-      "estimated_latency": 2.1070399999999997e-06,
-      "estimated_energy": 8.02816e-07
+      "tensor_bytes": 8192,
+      "estimated_latency": 2.6383999999999996e-07,
+      "estimated_energy": 6.5536e-08
     },
     {
       "source": 252,
@@ -9599,20 +9707,20 @@
       "estimated_energy": 6.5536e-08
     },
     {
-      "source": 253,
-      "destination": 254,
+      "source": 248,
+      "destination": 253,
       "tensor_shape": [
         1,
         8,
         16,
-        16
+        196
       ],
-      "tensor_bytes": 8192,
-      "estimated_latency": 2.6383999999999996e-07,
-      "estimated_energy": 6.5536e-08
+      "tensor_bytes": 100352,
+      "estimated_latency": 2.1070399999999997e-06,
+      "estimated_energy": 8.02816e-07
     },
     {
-      "source": 249,
+      "source": 253,
       "destination": 254,
       "tensor_shape": [
         1,
@@ -9629,9 +9737,9 @@
       "destination": 255,
       "tensor_shape": [
         1,
+        196,
         8,
-        16,
-        196
+        16
       ],
       "tensor_bytes": 100352,
       "estimated_latency": 2.1070399999999997e-06,
@@ -9643,8 +9751,7 @@
       "tensor_shape": [
         1,
         196,
-        8,
-        16
+        128
       ],
       "tensor_bytes": 100352,
       "estimated_latency": 2.1070399999999997e-06,
@@ -9675,8 +9782,8 @@
       "estimated_energy": 8.02816e-07
     },
     {
-      "source": 258,
-      "destination": 259,
+      "source": 238,
+      "destination": 258,
       "tensor_shape": [
         1,
         196,
@@ -9687,7 +9794,7 @@
       "estimated_energy": 8.02816e-07
     },
     {
-      "source": 239,
+      "source": 258,
       "destination": 259,
       "tensor_shape": [
         1,
@@ -9703,7 +9810,8 @@
       "destination": 260,
       "tensor_shape": [
         1,
-        196,
+        14,
+        14,
         128
       ],
       "tensor_bytes": 100352,
@@ -9730,11 +9838,11 @@
         1,
         14,
         14,
-        128
+        768
       ],
-      "tensor_bytes": 100352,
-      "estimated_latency": 2.1070399999999997e-06,
-      "estimated_energy": 8.02816e-07
+      "tensor_bytes": 602112,
+      "estimated_latency": 1.2142240000000002e-05,
+      "estimated_energy": 4.816896e-06
     },
     {
       "source": 262,
@@ -9756,11 +9864,11 @@
         1,
         14,
         14,
-        768
+        128
       ],
-      "tensor_bytes": 602112,
-      "estimated_latency": 1.2142240000000002e-05,
-      "estimated_energy": 4.816896e-06
+      "tensor_bytes": 100352,
+      "estimated_latency": 2.1070399999999997e-06,
+      "estimated_energy": 8.02816e-07
     },
     {
       "source": 264,
@@ -9780,9 +9888,9 @@
       "destination": 266,
       "tensor_shape": [
         1,
+        128,
         14,
-        14,
-        128
+        14
       ],
       "tensor_bytes": 100352,
       "estimated_latency": 2.1070399999999997e-06,
@@ -9802,21 +9910,8 @@
       "estimated_energy": 8.02816e-07
     },
     {
-      "source": 267,
-      "destination": 268,
-      "tensor_shape": [
-        1,
-        128,
-        14,
-        14
-      ],
-      "tensor_bytes": 100352,
-      "estimated_latency": 2.1070399999999997e-06,
-      "estimated_energy": 8.02816e-07
-    },
-    {
-      "source": 237,
-      "destination": 268,
+      "source": 236,
+      "destination": 267,
       "tensor_shape": [
         1,
         128,
