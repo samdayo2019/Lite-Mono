@@ -3,6 +3,7 @@ import torch
 import torch.nn as nn
 from collections import OrderedDict
 from timm.models.layers import trunc_normal_
+from depth_encoder import Cat
 
 
 class PoseDecoder(nn.Module):
@@ -26,6 +27,8 @@ class PoseDecoder(nn.Module):
 
         self.net = nn.ModuleList(list(self.convs.values()))
 
+        self.cat1 = Cat(dim=1)
+
         self.apply(self._init_weights)
 
     def _init_weights(self, m):
@@ -39,7 +42,8 @@ class PoseDecoder(nn.Module):
         last_features = [f[-1] for f in input_features]
 
         cat_features = [self.relu(self.convs["squeeze"](f)) for f in last_features]
-        cat_features = torch.cat(cat_features, 1)
+        cat_features = self.cat1(*cat_features)
+        # cat_features = torch.cat(cat_features, 1)
 
         out = cat_features
         for i in range(3):
