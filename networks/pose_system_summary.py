@@ -4,8 +4,8 @@ from torchinfo import summary
 
 from pose_decoder import PoseDecoder
 from resnet_encoder import ResnetEncoder
-from fvcore.nn import FlopCountAnalysis, ActivationCountAnalysis
-from ptflops import get_model_complexity_info
+# from fvcore.nn import FlopCountAnalysis, ActivationCountAnalysis
+# from ptflops import get_model_complexity_info
 
 
 # Assuming the ResnetEncoder and PoseDecoder classes are defined as per your code
@@ -19,8 +19,8 @@ def generate_pose_model_summaries():
     num_input_features = 1
     num_frames_to_predict_for = 2
     batch_size = 1
-    height = 192
-    width = 640
+    height = 224
+    width = 224
 
     # Instantiate the ResnetEncoder
     model = ResnetEncoder(
@@ -63,7 +63,7 @@ def generate_pose_model_summaries():
         model,
         input_data=input_features,
         col_names=["input_size", "output_size", "num_params"],
-        depth=5,
+        depth=6,
         verbose=1
     )
 
